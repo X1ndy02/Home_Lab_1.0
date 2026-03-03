@@ -1,5 +1,8 @@
 UPS Shutdown Validation
 
+Related issue:
+https://github.com/X1ndy02/RaspPi5_Home_Lab/issues/5
+
 Date: 2026-03-10  
 Shutdown threshold: 20%
 
