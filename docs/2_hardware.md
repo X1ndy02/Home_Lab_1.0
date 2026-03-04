@@ -4,7 +4,9 @@ Core system
 
 - Raspberry Pi 5 Model B (16GB RAM)
 - 52Pi Ultra Thin ICE Tower Cooler
-
+  
+- Raspberry pizero2W
+- Raspberry pizero2WH
 
 Primary storage (boot drive)
 
