@@ -1,39 +1,28 @@
-RaspPi5_Home_Lab
+# Home_Lab_1.0
 
-This is my first attempt at building a home lab from scratch.
+This repository documents and gradually captures the real implementation of my Raspberry Pi home lab.
 
-The goal was to understand how real systems actually operate — not just install applications on prebuilt platforms, but run services properly, monitor them, secure them, back them up, and troubleshoot failures on hardware I assembled and configured myself.
+The goal is to build operational knowledge by running services properly, monitoring them, securing them, backing them up, and validating failure and recovery behaviour on hardware I assembled and configured myself.
 
-The system runs 24/7 and behaves like a small standalone server.
+## Repository layout
 
----
+- [pi5/](pi5) contains Raspberry Pi 5 documentation, validation notes, assets, and implementation exports.
+- [pi0/](pi0) contains Raspberry Pi Zero hardware and software notes.
+- [projects/](projects) contains related side projects built around the lab.
 
-Documentation
+## Pi 5 overview
 
-Detailed technical documentation:
-- Software Overview  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/blob/main/docs/1_software.md
-- Hardware Overview  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/blob/main/docs/2_hardware.md
-- Monitoring & Power Management  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/blob/main/docs/3_monitoring_%26_PowerMngmnt.md
-- Security & Backup Strategy  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/blob/main/docs/4_security_%26_backup.md
+- [Hardware overview](pi5/overview/hardware.md)
+- [Software overview](pi5/overview/software.md)
+- [Monitoring and power management](pi5/overview/monitoring_power.md)
+- [Security and backup](pi5/overview/security_backup.md)
 
----
+## Pi 5 validation
 
-Validation & Testing
+- [Tracker](pi5/validation/tracker.md)
+- [UPS shutdown validation](pi5/validation/reports/ups_natural_shutdown.md)
+- [Improvement checklist](pi5/validation/reports/improvements_required.md)
 
-- Test Scenarios  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/tree/main/tests
+## Implementation exports
 
-- Improvement Tracker  
-  https://github.com/X1ndy02/RaspPi5_Home_Lab/blob/main/TRACKER.md
-
----
-
-Objective
-The original goal was simple:
-Build real operational experience, not just theoretical knowledge.
-
-Instead of only reading about infrastructure concepts, this lab is used to simulate failures, validate recovery behaviour, and iteratively improve reliability.
+The `pi5/implementation/` tree is reserved for structured copies of the live Pi 5 configuration and service files. Each subsystem is kept in its own folder so the repo can grow section by section without mixing documentation and runtime artifacts.
