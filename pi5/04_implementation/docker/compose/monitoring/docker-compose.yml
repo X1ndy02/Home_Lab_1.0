@@ -1,0 +1,50 @@
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    restart: unless-stopped
+    volumes:
+      - /srv/monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    restart: unless-stopped
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.sysfs=/host/sys"
+      - "--path.rootfs=/rootfs"
+      - "--collector.textfile.directory=/textfile"
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)(/|$)"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+      - /srv/monitoring/metrics/textfile:/textfile:ro
+    ports:
+      - "9100:9100"
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=CHANGE_ME
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+      - GF_DATE_FORMATS_DEFAULT_TIMEZONE=local
+      - GF_RENDERING_SERVER_URL=http://renderer:8081/render
+      - GF_RENDERING_CALLBACK_URL=http://grafana:3000/
+    volumes:
+      - /srv/monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - /srv/monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - /srv/monitoring/grafana/data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+
+  renderer:
+    image: grafana/grafana-image-renderer:latest
+    restart: unless-stopped
+    environment:
+      - ENABLE_METRICS=true
+    ports:
+      - "8081:8081"
