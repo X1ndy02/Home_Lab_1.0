@@ -12,17 +12,17 @@ The goal is to build operational knowledge by running services properly, monitor
 
 ## Pi 5 overview
 
-- [Hardware overview](pi5/overview/hardware.md)
-- [Software overview](pi5/overview/software.md)
-- [Monitoring and power management](pi5/overview/monitoring_power.md)
-- [Security and backup](pi5/overview/security_backup.md)
+- [Hardware overview](pi5/01_overview/01_hardware.md)
+- [Software overview](pi5/01_overview/02_software.md)
+- [Monitoring and power management](pi5/01_overview/03_monitoring_power.md)
+- [Security and backup](pi5/01_overview/04_security_backup.md)
 
 ## Pi 5 validation
 
-- [Tracker](pi5/validation/tracker.md)
-- [UPS shutdown validation](pi5/validation/reports/ups_natural_shutdown.md)
-- [Improvement checklist](pi5/validation/reports/improvements_required.md)
+- [Tracker](pi5/03_validation/01_tracker.md)
+- [UPS shutdown validation](pi5/03_validation/reports/ups_natural_shutdown.md)
+- [Improvement checklist](pi5/03_validation/reports/improvements_required.md)
 
 ## Implementation exports
 
-The `pi5/implementation/` tree is reserved for structured copies of the live Pi 5 configuration and service files. Each subsystem is kept in its own folder so the repo can grow section by section without mixing documentation and runtime artifacts.
+The `pi5/04_implementation/` tree is reserved for structured copies of the live Pi 5 configuration and service files. Each subsystem is kept in its own folder so the repo can grow section by section without mixing documentation and runtime artifacts.
