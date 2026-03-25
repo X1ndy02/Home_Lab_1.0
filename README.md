@@ -6,7 +6,7 @@ The goal is to build operational knowledge by running services properly, monitor
 
 ## Repository layout
 
-- [pi5/](pi5) contains Raspberry Pi 5 documentation, validation notes, assets, and implementation exports.
+- [pi5/](pi5) contains Raspberry Pi 5 documentation, reports, photos/screenshots, issues, and implementation exports.
 - [pi0/](pi0) contains Raspberry Pi Zero hardware and software notes.
 - [projects/](projects) contains related side projects built around the lab.
 
@@ -17,11 +17,11 @@ The goal is to build operational knowledge by running services properly, monitor
 - [Monitoring and power management](pi5/01_overview/03_monitoring_power.md)
 - [Security and backup](pi5/01_overview/04_security_backup.md)
 
-## Pi 5 validation
+## Pi 5 reports
 
-- [Tracker](pi5/03_validation/01_tracker.md)
-- [UPS shutdown validation](pi5/03_validation/reports/ups_natural_shutdown.md)
-- [Improvement checklist](pi5/03_validation/reports/improvements_required.md)
+- [Tracker](pi5/03_reports/01_tracker.md)
+- [UPS shutdown report](pi5/03_reports/ups_natural_shutdown.md)
+- [Improvement notes](pi5/03_reports/improvements_required.md)
 
 ## Implementation exports
 
