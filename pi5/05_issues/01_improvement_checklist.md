@@ -12,6 +12,7 @@ Current checklist
 - Bring Home Assistant-related configuration under the main Pi 5 repo structure.
 - Repair or replace the screen stats script path now that the display side is broken.
 - Improve monitoring for each Docker container instead of treating container uptime alone as enough signal.
+- Make monitoring findings feed back into GitHub so important problems are documented and turned into issues when found.
 - Rework weak areas in the Docker setup that still depend on rough secret handling and incomplete runtime visibility.
 - Document the current limits of the single-node design so isolation trade-offs stay explicit.
 
