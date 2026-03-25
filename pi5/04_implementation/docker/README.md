@@ -1,54 +1,62 @@
 # Docker Implementation
 
-This directory captures the live Docker implementation currently running on the Raspberry Pi 5.
+This part of the lab is not meant to be a Docker tutorial. The point is to show how container runtime choices were used inside a small single-node Pi system, what role each stack plays, and where the design is still rough around the edges.
 
-## Runtime summary
+## System view
 
-- Engine: Docker 26.1.5
-- Compose: Docker Compose v2.26.1
-- Docker root: `/var/lib/docker`
-- Storage driver: `overlay2`
-- Cgroup driver: `systemd`
-- Logging driver: `json-file`
-- Service manager: `systemd` via `docker.service`
+- Single-node container host
+- Services grouped by function rather than mixed into one large compose file
+- Persistent application data kept outside containers
+- Monitoring kept separate from application traffic
+- One service uses host networking where direct local integration is more useful than strict network isolation
 
-## Active compose projects
+In practice the container layer is doing three jobs:
 
-| Project | Source path | Containers | Network mode |
-|---|---|---:|---|
-| `nextcloud` | `/srv/nextcloud/docker-compose.yml` | 5 | bridge (`nextcloud_default`) |
-| `monitoring` | `/srv/monitoring/docker-compose.yml` | 4 | bridge (`monitoring_default`) |
-| `home-assistant` | `/home/xindy/RaspPi5_Home_Lab/home-assistant/docker-compose.yml` | 1 | host |
+1. isolate services from each other
+2. make updates and rebuilds easier
+3. keep the host usable as the control plane for backup, monitoring, UPS handling, and recovery
 
-## Running containers
+## Why this design
 
-| Container | Image | Project | Service |
-|---|---|---|---|
-| `nextcloud-db-1` | `mariadb:11.4` | `nextcloud` | `db` |
-| `nextcloud-redis-1` | `redis:7-alpine` | `nextcloud` | `redis` |
-| `nextcloud-clamav-1` | `mkodockx/docker-clamav:latest` | `nextcloud` | `clamav` |
-| `nextcloud-app-1` | `nextcloud:29-apache` | `nextcloud` | `app` |
-| `nextcloud-proxy-1` | `nginx:alpine` | `nextcloud` | `proxy` |
-| `monitoring-prometheus-1` | `prom/prometheus:latest` | `monitoring` | `prometheus` |
-| `monitoring-node-exporter-1` | `prom/node-exporter:latest` | `monitoring` | `node-exporter` |
-| `monitoring-grafana-1` | `grafana/grafana-oss:latest` | `monitoring` | `grafana` |
-| `monitoring-renderer-1` | `grafana/grafana-image-renderer:latest` | `monitoring` | `renderer` |
-| `homeassistant` | `ghcr.io/home-assistant/home-assistant:stable` | `home-assistant` | `homeassistant` |
+- Containers were chosen instead of full virtual machines because the hardware is good enough for multiple services, but not a machine I want to burden with VM overhead.
+- Service groups were split into separate stacks so failures are easier to reason about.
+- Persistent bind mounts were preferred over keeping state only inside Docker-managed internals because backups, inspection, and recovery are simpler that way.
 
-## Files in this directory
+This is a pragmatic layout, not a purity exercise. It trades some isolation for easier maintenance on a small system.
 
-- `engine.md` describes the host-level Docker service configuration.
-- `stacks.md` summarizes the three compose stacks and their storage layout.
-- `compose/` contains sanitized copies of the live compose files and selected safe config snapshots.
+## Flow
 
-## Sensitive values
+### User-facing flow
 
-Sensitive values are not committed here.
+- Client request reaches the reverse proxy layer
+- Proxy forwards traffic to the application container
+- Application container depends on database and cache services
+- Persistent state is written to host-backed storage rather than ephemeral container layers
 
-The live system currently stores secrets in places that should eventually be cleaned up:
+### Monitoring flow
 
-- `/srv/nextcloud/.env` contains database and admin credentials.
-- `/srv/monitoring/docker-compose.yml` currently hard-codes the Grafana admin password.
-- `/srv/monitoring/grafana/api.key` and `/srv/monitoring/grafana/admin.password` exist on disk and are intentionally excluded.
+- Host and container-adjacent metrics are exposed to the monitoring stack
+- Prometheus scrapes those metrics
+- Grafana reads from Prometheus and provides dashboards and rendered output
 
-The copies in this repo are redacted templates, not raw secrets.
+### Operational flow
+
+- Containers run under a `systemd`-managed Docker service
+- Restart policies handle ordinary process exits
+- Host-level backup, UPS, and monitoring logic stay outside Docker so they can still act on the stacks during degraded conditions
+
+## Trade-offs
+
+- Containers are lighter than VMs, but they do not give the same isolation boundary.
+- Bind mounts make recovery easier, but they also mean host filesystem layout matters more.
+- Separate compose projects improve clarity, but they spread configuration across multiple places.
+- Host networking for Home Assistant is practical, but it is a weaker separation model than bridge networking.
+
+## What is here
+
+- [engine.md](engine.md): runtime model and host/container boundary
+- [stacks.md](stacks.md): service grouping, dependency paths, and failure implications
+- [issues_and_improvements.md](issues_and_improvements.md): real problems found so far and what should be cleaned up next
+- `compose/`: sanitized reference copies of the current stack definitions
+
+The compose files are reference material, not the main story. The important part is the system shape and the decisions behind it.

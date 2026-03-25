@@ -1,39 +1,62 @@
-# Docker Engine Notes
+# Runtime Model
 
-## Service
+## Host and container boundary
 
-Docker is started by the distro-provided `docker.service` unit:
+The host is still the real control plane.
 
-- Unit file: `/usr/lib/systemd/system/docker.service`
-- Start command: `/usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock $DOCKER_OPTS`
-- Restart policy: `always`
+Docker is used for long-running application services, but the machine-level concerns remain outside the containers:
 
-There is currently no custom `/etc/docker/daemon.json` on this host.
+- backup scheduling
+- service supervision
+- UPS shutdown handling
+- security tooling
+- system monitoring logic
 
-## Host defaults observed on the Pi
+That split is deliberate. If the host loses power, needs shutdown coordination, or has to inspect service state, it should not depend on the application containers being healthy first.
 
-- Docker root directory: `/var/lib/docker`
-- Storage driver: `overlay2`
-- Cgroup driver: `systemd`
-- Logging driver: `json-file`
+## Isolation model
 
-## Compose projects currently running
+The runtime is a middle ground between convenience and separation:
 
-- `nextcloud`
-- `monitoring`
-- `home-assistant`
+- application stacks are separated into distinct compose projects
+- most services use bridge networking
+- persistence is externalised onto host-backed storage
+- restart behaviour is handled by the container runtime rather than custom wrapper scripts
 
-## Current Docker networks
+This is enough isolation for a small lab environment without turning the Pi into a maze of one-off service management logic.
 
-- `bridge`
-- `host`
-- `none`
-- `nextcloud_default`
-- `monitoring_default`
+## Persistence model
 
-## Current Docker volumes
+Stateful services are designed around persistent storage outside ephemeral container layers.
 
-- `nextcloud_clamav-db`
-- one anonymous local volume present on the host
+That matters for three reasons:
 
-The application stacks primarily use bind mounts under `/srv` and the Home Assistant project directory.
+1. backups target stable host paths
+2. data can be inspected without rebuilding containers
+3. recovery does not depend on preserving a container filesystem
+
+Docker-managed volumes are used where they make sense, but most important state is intentionally visible from the host side.
+
+## Recovery model
+
+Ordinary failures are expected to be handled by restart policies and compose-managed service grouping.
+
+More serious recovery paths rely on the host:
+
+- the host can stop or start the runtime cleanly
+- backup tooling operates independently of the application stacks
+- power-loss handling can shut services down in a controlled way
+
+That separation is more useful on a small always-on system than pushing every operational concern into containers.
+
+## Why not a heavier model
+
+I did not use full virtualisation for this layer because the goal here was service isolation with low overhead, not hypervisor-style separation.
+
+For this hardware, containerisation is the practical point on the curve:
+
+- easier to iterate on
+- cheaper in resource use
+- good enough for the current risk level
+
+If the lab grows into multiple nodes or more exposed services, this part should probably become stricter.

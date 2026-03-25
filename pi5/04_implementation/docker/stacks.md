@@ -1,73 +1,62 @@
-# Compose Stack Summary
+# Stack View
 
-## Nextcloud
+## Functional grouping
 
-Source path:
-- `/srv/nextcloud/docker-compose.yml`
+The Docker layer is split into three functional groups rather than one combined deployment:
 
-Services:
-- `db` (`mariadb:11.4`)
-- `redis` (`redis:7-alpine`)
-- `clamav` (`mkodockx/docker-clamav:latest`)
-- `app` (`nextcloud:29-apache`)
-- `proxy` (`nginx:alpine`)
+- `nextcloud`: user-facing storage and collaboration path
+- `monitoring`: observability and dashboarding path
+- `home-assistant`: local automation and host-adjacent integration
 
-Persistent paths:
-- `/srv/nextcloud/db`
-- `/srv/nextcloud/redis`
-- `/srv/nextcloud/app`
-- `/srv/nextcloud/nginx`
-- `/srv/nextcloud/certs`
-- Docker volume `nextcloud_clamav-db`
+That split keeps the application path separate from the system visibility path. If monitoring breaks, the storage stack can still run. If the storage stack breaks, the monitoring layer can still report on the host and surrounding services.
 
-Ports exposed on host:
-- `80/tcp`
-- `443/tcp`
+## Request and dependency flow
 
-Notes:
-- Uses `.env` for database and Nextcloud admin credentials.
-- Reverse proxy terminates TLS and forwards traffic to the `app` container.
+### Storage path
 
-## Monitoring
+The storage stack follows a standard dependency chain:
 
-Source path:
-- `/srv/monitoring/docker-compose.yml`
+- client
+- reverse proxy
+- application service
+- database
+- cache
 
-Services:
-- `prometheus` (`prom/prometheus:latest`)
-- `node-exporter` (`prom/node-exporter:latest`)
-- `grafana` (`grafana/grafana-oss:latest`)
-- `renderer` (`grafana/grafana-image-renderer:latest`)
+That means failures are not equal:
 
-Persistent paths:
-- `/srv/monitoring/prometheus`
-- `/srv/monitoring/grafana`
-- `/srv/monitoring/metrics/textfile`
+- if the proxy is down, outside access fails first
+- if the application container is down, the service is effectively unavailable
+- if the database is down, the application path may still answer but cannot behave correctly
+- if the cache is down, the service may still function but with a degraded profile depending on workload
 
-Ports exposed on host:
-- `3000/tcp`
-- `8081/tcp`
-- `9090/tcp`
-- `9100/tcp`
+An antivirus sidecar exists beside the main path rather than directly inside it, which keeps that responsibility separated but adds one more moving part.
 
-Notes:
-- Grafana admin credentials are currently defined directly in the live compose file and should be moved to an env file or secret mechanism.
-- Prometheus currently scrapes only `node-exporter`.
+## Monitoring path
 
-## Home Assistant
+The monitoring stack is intentionally simpler:
 
-Source path:
-- `/home/xindy/RaspPi5_Home_Lab/home-assistant/docker-compose.yml`
+- host and exported metrics
+- Prometheus collection
+- Grafana visualisation
+- renderer support for image output
 
-Services:
-- `homeassistant` (`ghcr.io/home-assistant/home-assistant:stable`)
+This stack is operationally important, but not part of the primary user request path. Losing it hurts visibility, not core data flow.
 
-Persistent paths:
-- `/home/xindy/RaspPi5_Home_Lab/home-assistant/config`
+## Home Assistant path
 
-Network mode:
-- `host`
+Home Assistant is kept separate because its integration model is different from the other stacks.
 
-Notes:
-- Uses the host timezone `Australia/Sydney`.
-- Home Assistant configuration is currently kept outside this repo's `pi5` tree and should be migrated later if you want full repo coverage.
+It needs closer access to the host environment, so practicality won over stricter network separation. That is useful for a home-lab automation role, but it is also the least clean isolation choice in the Docker layout.
+
+## Design choices that matter
+
+- Separate compose projects reduce blast radius during routine changes.
+- Persistent storage is attached from the host side so state survives container replacement.
+- Monitoring is not bundled into the application stack, which keeps failures easier to classify.
+- Reverse proxying is treated as the entry layer, not as an afterthought inside the app container.
+
+## What this still does badly
+
+- Secrets are not handled well enough yet in the live stack.
+- Some service health assumptions still depend on container uptime rather than stronger health modelling.
+- The repo now reflects the shape of the deployment, but it does not yet capture every surrounding runtime detail in one place.
