@@ -1,6 +1,6 @@
-# Stack View
+Stack View
 
-## Functional grouping
+Functional grouping
 
 The Docker layer is split into three functional groups rather than one combined deployment:
 
@@ -10,9 +10,9 @@ The Docker layer is split into three functional groups rather than one combined 
 
 That split keeps the application path separate from the system visibility path. If monitoring breaks, the storage stack can still run. If the storage stack breaks, the monitoring layer can still report on the host and surrounding services.
 
-## Request and dependency flow
+Request and dependency flow
 
-### Storage path
+Storage path
 
 The storage stack follows a standard dependency chain:
 
@@ -31,7 +31,7 @@ That means failures are not equal:
 
 An antivirus sidecar exists beside the main path rather than directly inside it, which keeps that responsibility separated but adds one more moving part.
 
-## Monitoring path
+Monitoring path
 
 The monitoring stack is intentionally simpler:
 
@@ -42,20 +42,20 @@ The monitoring stack is intentionally simpler:
 
 This stack is operationally important, but not part of the primary user request path. Losing it hurts visibility, not core data flow.
 
-## Home Assistant path
+Home Assistant path
 
 Home Assistant is kept separate because its integration model is different from the other stacks.
 
 It needs closer access to the host environment, so practicality won over stricter network separation. That is useful for a home-lab automation role, but it is also the least clean isolation choice in the Docker layout.
 
-## Design choices that matter
+Design choices that matter
 
 - Separate compose projects reduce blast radius during routine changes.
 - Persistent storage is attached from the host side so state survives container replacement.
 - Monitoring is not bundled into the application stack, which keeps failures easier to classify.
 - Reverse proxying is treated as the entry layer, not as an afterthought inside the app container.
 
-## What this still does badly
+What this still does badly
 
 - Secrets are not handled well enough yet in the live stack.
 - Some service health assumptions still depend on container uptime rather than stronger health modelling.

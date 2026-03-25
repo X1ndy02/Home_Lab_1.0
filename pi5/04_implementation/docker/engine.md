@@ -1,6 +1,6 @@
-# Runtime Model
+Runtime Model
 
-## Host and container boundary
+Host and container boundary
 
 The host is still the real control plane.
 
@@ -14,7 +14,7 @@ Docker is used for long-running application services, but the machine-level conc
 
 That split is deliberate. If the host loses power, needs shutdown coordination, or has to inspect service state, it should not depend on the application containers being healthy first.
 
-## Isolation model
+Isolation model
 
 The runtime is a middle ground between convenience and separation:
 
@@ -25,7 +25,7 @@ The runtime is a middle ground between convenience and separation:
 
 This is enough isolation for a small lab environment without turning the Pi into a maze of one-off service management logic.
 
-## Persistence model
+Persistence model
 
 Stateful services are designed around persistent storage outside ephemeral container layers.
 
@@ -37,7 +37,7 @@ That matters for three reasons:
 
 Docker-managed volumes are used where they make sense, but most important state is intentionally visible from the host side.
 
-## Recovery model
+Recovery model
 
 Ordinary failures are expected to be handled by restart policies and compose-managed service grouping.
 
@@ -49,7 +49,7 @@ More serious recovery paths rely on the host:
 
 That separation is more useful on a small always-on system than pushing every operational concern into containers.
 
-## Why not a heavier model
+Why not a heavier model
 
 I did not use full virtualisation for this layer because the goal here was service isolation with low overhead, not hypervisor-style separation.
 
