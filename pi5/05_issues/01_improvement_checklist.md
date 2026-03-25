@@ -1,7 +1,5 @@
 Pi 5 Improvement Checklist
 
-This file is for short practical items that still need work.
-
 Current checklist
 
 - Review secret handling across Docker-related configs and move sensitive values out of compose files where possible.
@@ -15,8 +13,3 @@ Current checklist
 - Make monitoring findings feed back into GitHub so important problems are documented and turned into issues when found.
 - Rework weak areas in the Docker setup that still depend on rough secret handling and incomplete runtime visibility.
 - Document the current limits of the single-node design so isolation trade-offs stay explicit.
-
-Notes
-
-- Keep this file short and checklist-focused.
-- Move detailed writeups into validation reports or implementation notes when needed.
