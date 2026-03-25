@@ -26,3 +26,7 @@ The goal is to build operational knowledge by running services properly, monitor
 ## Implementation exports
 
 The `pi5/04_implementation/` tree is reserved for structured copies of the live Pi 5 configuration and service files. Each subsystem is kept in its own folder so the repo can grow section by section without mixing documentation and runtime artifacts.
+
+## Pi 5 issues
+
+- [Improvement checklist](pi5/05_issues/01_improvement_checklist.md)
