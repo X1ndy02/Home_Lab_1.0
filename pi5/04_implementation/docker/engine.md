@@ -14,6 +14,8 @@ Docker is used for long-running application services, but the machine-level conc
 
 That split is deliberate. If the host loses power, needs shutdown coordination, or has to inspect service state, it should not depend on the application containers being healthy first.
 
+The important design decision here is that orchestration convenience did not get allowed to replace operational control. The host is intentionally above the stacks, not buried inside them.
+
 Isolation model
 
 The runtime is a middle ground between convenience and separation:
@@ -24,6 +26,8 @@ The runtime is a middle ground between convenience and separation:
 - restart behaviour is handled by the container runtime rather than custom wrapper scripts
 
 This is enough isolation for a small lab environment without turning the Pi into a maze of one-off service management logic.
+
+It also reflects a constraint: on a small ARM-based always-on machine, every extra layer has a cost. The runtime had to stay simple enough to operate without building a private platform just to run a few services.
 
 Persistence model
 
@@ -37,6 +41,8 @@ That matters for three reasons:
 
 Docker-managed volumes are used where they make sense, but most important state is intentionally visible from the host side.
 
+That was not only a convenience choice. It was a failure-handling choice. If a container dies, the recovery path should still be obvious from the host.
+
 Recovery model
 
 Ordinary failures are expected to be handled by restart policies and compose-managed service grouping.
@@ -48,6 +54,8 @@ More serious recovery paths rely on the host:
 - power-loss handling can shut services down in a controlled way
 
 That separation is more useful on a small always-on system than pushing every operational concern into containers.
+
+Real operation already proved why this matters. During UPS shutdown validation, one container did not exit cleanly inside the normal stop window. That is exactly the kind of problem that would be harder to reason about if recovery logic lived inside the same service layer that was failing.
 
 Why not a heavier model
 

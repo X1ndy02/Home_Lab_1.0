@@ -16,13 +16,28 @@ In practice the container layer is doing three jobs:
 2. make updates and rebuilds easier
 3. keep the host usable as the control plane for backup, monitoring, UPS handling, and recovery
 
+What interacts with what
+
+- client traffic reaches the proxy layer before it ever touches the storage application
+- the storage application depends on both database and cache services, so app uptime alone does not mean the full service is healthy
+- host metrics move into the monitoring stack, then into dashboards and alert outputs
+- host-side backup and shutdown logic can act on the Docker runtime without depending on the containers to coordinate themselves
+
 Why this design
 
 - Containers were chosen instead of full virtual machines because the hardware is good enough for multiple services, but not a machine I want to burden with VM overhead.
 - Service groups were split into separate stacks so failures are easier to reason about.
 - Persistent bind mounts were preferred over keeping state only inside Docker-managed internals because backups, inspection, and recovery are simpler that way.
+- The host remains the operational control layer because power events, backup runs, and service recovery need one place that stays above the application stacks.
 
 This is a pragmatic layout, not a purity exercise. It trades some isolation for easier maintenance on a small system.
+
+Constraints that shaped it
+
+- single-node design, so separation has to come from service boundaries rather than host boundaries
+- limited hardware overhead compared with a larger server, so the runtime model has to stay light
+- always-on role, so shutdown and restart behaviour matters more than fast initial setup
+- mixed workload, so monitoring and user-facing services cannot all be treated as equally critical
 
 Flow
 
@@ -45,12 +60,16 @@ Operational flow
 - Restart policies handle ordinary process exits
 - Host-level backup, UPS, and monitoring logic stay outside Docker so they can still act on the stacks during degraded conditions
 
+This matters because the host can still stop, back up, or inspect the runtime even when the application path is unhealthy.
+
 Trade-offs
 
 - Containers are lighter than VMs, but they do not give the same isolation boundary.
 - Bind mounts make recovery easier, but they also mean host filesystem layout matters more.
 - Separate compose projects improve clarity, but they spread configuration across multiple places.
 - Host networking for Home Assistant is practical, but it is a weaker separation model than bridge networking.
+
+What makes this believable is not that it looks tidy. It is that the design already shows pressure from real operational concerns: secret sprawl, shutdown sequencing, and the fact that some containers behave very differently once the host is under stress.
 
 What is here
 
