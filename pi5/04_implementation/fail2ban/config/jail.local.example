@@ -1,0 +1,35 @@
+[DEFAULT]
+ignoreip = LAN_SUBNET
+bantime = 1h
+findtime = 1h
+maxretry = 5
+bantime.increment = true
+backend = auto
+destemail = alerts@example.invalid
+sender = alerts@example.invalid
+action = %(action_)s
+         sendmail-whois-lines-notes[sender="%(sender)s", dest="%(destemail)s", logpath="%(logpath)s"]
+
+[sshd]
+enabled = true
+backend = systemd
+
+[nextcloud]
+enabled = true
+filter = nextcloud
+logpath = /path/to/nextcloud.log
+
+[nginx-http-auth]
+enabled = true
+logpath = /path/to/nginx/error.log
+
+[nginx-botsearch]
+enabled = true
+logpath = /path/to/nginx/access.log
+
+[recidive]
+enabled = true
+logpath = /var/log/fail2ban.log
+bantime = -1
+findtime = 7d
+maxretry = 5

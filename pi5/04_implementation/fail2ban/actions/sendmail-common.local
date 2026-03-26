@@ -1,0 +1,4 @@
+# Local overrides for Fail2Ban sendmail actions
+
+[Init]
+sendername = Fail2Ban <name>
