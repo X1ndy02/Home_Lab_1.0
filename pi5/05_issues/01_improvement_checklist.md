@@ -13,3 +13,8 @@ Current checklist
 - Make monitoring findings feed back into GitHub so important problems are documented and turned into issues when found.
 - Rework weak areas in the Docker setup that still depend on rough secret handling and incomplete runtime visibility.
 - Document the current limits of the single-node design so isolation trade-offs stay explicit.
+- Add a broader security hardening pass across SSH, Docker, exposed web services, and firewall rules so the lab improves beyond secret handling alone.
+- Bring more of the web-facing jail behaviour into regular reporting, not only SSH.
+- Add monitoring around Fail2Ban itself so jail failures or path drift become more visible.
+- Review log path dependencies whenever Dockerized services or storage paths change.
+- Keep the repo copy aligned with the live jail setup and custom action files.
