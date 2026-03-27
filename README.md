@@ -22,6 +22,7 @@ The goal is to build operational knowledge by running services properly, monitor
 - [Tracker](pi5/03_reports/01_tracker.md)
 - [UPS shutdown report](pi5/03_reports/ups_natural_shutdown.md)
 - [Improvement notes](pi5/03_reports/improvements_required.md)
+- [SMTP report archive](pi5/03_reports/03_smtp/README.md)
 
 ## Implementation exports
 
