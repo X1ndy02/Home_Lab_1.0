@@ -27,6 +27,14 @@ Push model
 - `--push` commits only the archived files and pushes the current `HEAD`
 - HTTPS push can use `GITHUB_TOKEN` or `SMTP_ARCHIVE_GITHUB_TOKEN`
 
+Failure model
+
+- if archive, commit, or push fails, the script still exits with an error
+- when notification mail settings are available, it also sends a separate failure email
+- the failure mail includes the script name, repo path, source, push target, and error text
+- notification settings can come from `SMTP_ARCHIVE_NOTIFY_TO` and `SMTP_ARCHIVE_NOTIFY_FROM`
+- if those are not set, the scripts try the same local mail config sources already used elsewhere on the Pi
+
 Example flow
 
 Weekly Grafana report

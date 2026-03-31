@@ -50,3 +50,12 @@ Fallback behavior
 Push note
 
 - if GitHub HTTPS auth is not already configured, export `GITHUB_TOKEN` before using `--push`
+
+Failure notification
+
+- if archive or push fails, the scripts can send a separate failure email
+- preferred settings are `SMTP_ARCHIVE_NOTIFY_TO` and `SMTP_ARCHIVE_NOTIFY_FROM`
+- optional settings:
+  - `SMTP_ARCHIVE_NOTIFY_SUBJECT_PREFIX`
+  - `SMTP_ARCHIVE_MSMTP_CONF`
+- if those are not set, the scripts try local Pi mail config as a fallback

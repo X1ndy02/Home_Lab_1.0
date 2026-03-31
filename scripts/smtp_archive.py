@@ -4,6 +4,7 @@ import json
 import os
 import re
 import shutil
+import socket
 import subprocess
 import sys
 from datetime import datetime
@@ -267,6 +268,130 @@ def get_push_target(repo_root, remote_name, branch):
     return remote_name, branch
 
 
+def load_kv(path):
+    cfg = {}
+    file_path = Path(path)
+    if not file_path.exists():
+        return cfg
+    for raw_line in file_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        cfg[key.strip()] = value.strip().strip('"')
+    return cfg
+
+
+def parse_msmtp_from(path):
+    file_path = Path(path)
+    if not file_path.exists():
+        return ""
+    for raw_line in file_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split(None, 1)
+        if len(parts) != 2:
+            continue
+        key, value = parts
+        if key == "from":
+            return value.strip()
+    return ""
+
+
+def resolve_notify_config():
+    cfg = {
+        "to": os.environ.get("SMTP_ARCHIVE_NOTIFY_TO", "").strip(),
+        "from": os.environ.get("SMTP_ARCHIVE_NOTIFY_FROM", "").strip(),
+        "subject_prefix": os.environ.get("SMTP_ARCHIVE_NOTIFY_SUBJECT_PREFIX", "[SMTP Archive]").strip()
+        or "[SMTP Archive]",
+        "msmtp_conf": os.environ.get("SMTP_ARCHIVE_MSMTP_CONF", "").strip(),
+    }
+
+    if not cfg["to"] or not cfg["from"]:
+        ups_cfg = load_kv("/etc/x120x/ups-notify.conf")
+        if not cfg["to"]:
+            cfg["to"] = ups_cfg.get("TO", "")
+        if not cfg["from"]:
+            cfg["from"] = ups_cfg.get("FROM", "")
+
+    if not cfg["to"] or not cfg["from"]:
+        fail2ban_cfg = load_kv("/etc/fail2ban/jail.local")
+        if not cfg["to"]:
+            cfg["to"] = fail2ban_cfg.get("destemail", "")
+        if not cfg["from"]:
+            cfg["from"] = fail2ban_cfg.get("sender", "")
+
+    if not cfg["from"]:
+        cfg["from"] = parse_msmtp_from("/etc/msmtprc") or parse_msmtp_from("/srv/monitoring/msmtp.conf")
+
+    if not cfg["to"]:
+        cfg["to"] = cfg["from"]
+
+    return cfg
+
+
+def resolve_mail_command(msmtp_conf=""):
+    if msmtp_conf and shutil.which("msmtp"):
+        return ["msmtp", "-C", msmtp_conf, "-t"]
+    if shutil.which("sendmail"):
+        return ["sendmail", "-t"]
+    if shutil.which("msmtp"):
+        return ["msmtp", "-t"]
+    return None
+
+
+def send_error_notification(script_name, context, error_text):
+    cfg = resolve_notify_config()
+    if not cfg["to"] or not cfg["from"]:
+        return False
+
+    mail_cmd = resolve_mail_command(cfg["msmtp_conf"])
+    if not mail_cmd:
+        return False
+
+    host = socket.gethostname()
+    now = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M:%S %z")
+    subject = f"{cfg['subject_prefix']} FAILURE {script_name} on {host}"
+
+    lines = [
+        f"Script: {script_name}",
+        f"Host: {host}",
+        f"Time: {now}",
+    ]
+    for key in ("repo", "source", "subject", "push", "git_remote", "git_branch", "email_file"):
+        value = context.get(key)
+        if value:
+            lines.append(f"{key}: {value}")
+    lines.extend(
+        [
+            "",
+            "Error:",
+            error_text.strip() or "(no error text)",
+            "",
+            "This notification was sent because the SMTP archive workflow failed.",
+        ]
+    )
+    body = "\n".join(lines)
+    message = (
+        f"From: {cfg['from']}\n"
+        f"To: {cfg['to']}\n"
+        f"Subject: {subject}\n"
+        f"Date: {datetime.now().astimezone().strftime('%a, %d %b %Y %H:%M:%S %z')}\n"
+        "\n"
+        f"{body}\n"
+    )
+
+    result = subprocess.run(
+        mail_cmd,
+        input=message.encode("utf-8"),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        check=False,
+    )
+    return result.returncode == 0
+
+
 def git_commit_and_push(repo_root, files, source_id, dt, subject, remote_name, branch, do_push):
     rel_files = [str(path.relative_to(repo_root)) for path in files]
     run(["git", "add", "--", *rel_files], cwd=repo_root)
@@ -325,5 +450,60 @@ def main():
         print(path.relative_to(repo_root))
 
 
+def cli():
+    args = parse_args()
+    context = {
+        "repo": str(Path(args.repo).resolve()),
+        "source": args.source,
+        "subject": args.subject,
+        "push": "yes" if args.push else "no",
+        "git_remote": args.git_remote,
+        "git_branch": args.git_branch,
+    }
+    try:
+        repo_root = Path(args.repo).resolve()
+        if not (repo_root / ".git").exists():
+            raise SystemExit(f"Not a git repository: {repo_root}")
+
+        dt = parse_timestamp(args.timestamp)
+        body = read_body(args)
+        attachments = collect_attachment_paths(args)
+        files = write_archive(
+            repo_root,
+            args.source,
+            dt,
+            args.from_addr,
+            args.to_addr,
+            args.subject,
+            body,
+            attachments,
+        )
+
+        if not args.no_commit:
+            git_commit_and_push(
+                repo_root,
+                files,
+                args.source,
+                dt,
+                args.subject,
+                args.git_remote,
+                args.git_branch,
+                args.push,
+            )
+
+        for path in files:
+            print(path.relative_to(repo_root))
+    except SystemExit as exc:
+        code = exc.code if isinstance(exc.code, int) else 1
+        if code:
+            error_text = str(exc) or f"SystemExit({code})"
+            send_error_notification("smtp_archive.py", context, error_text)
+        raise
+    except Exception as exc:
+        error_text = str(exc) or exc.__class__.__name__
+        send_error_notification("smtp_archive.py", context, error_text)
+        raise
+
+
 if __name__ == "__main__":
-    main()
+    cli()

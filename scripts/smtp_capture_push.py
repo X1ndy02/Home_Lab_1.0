@@ -233,5 +233,59 @@ def main():
         print(path.relative_to(repo_root))
 
 
+def cli():
+    args = parse_args()
+    context = {
+        "repo": str(Path(args.repo).resolve()),
+        "source": args.source,
+        "push": "yes" if args.push else "no",
+        "git_remote": args.git_remote,
+        "git_branch": args.git_branch,
+        "email_file": args.email_file or "stdin",
+    }
+    try:
+        repo_root = Path(args.repo).resolve()
+        if not (repo_root / ".git").exists():
+            raise SystemExit(f"Not a git repository: {repo_root}")
+
+        if args.source != "auto" and args.source not in smtp_archive.SOURCES:
+            choices = ", ".join(sorted(smtp_archive.SOURCES))
+            raise SystemExit(f"Unknown source '{args.source}'. Known sources: {choices}")
+
+        raw = load_raw_message(args)
+        msg = BytesParser(policy=policy.default).parsebytes(raw)
+        body = extract_body(msg)
+
+        with tempfile.TemporaryDirectory(prefix="smtp-capture-") as tmpdir:
+            attachments = extract_attachments(msg, tmpdir)
+            source_id = args.source if args.source != "auto" else detect_source(msg.get("Subject"), body)
+            context["source"] = source_id
+            context["subject"] = (msg.get("Subject") or "").strip() or "(no subject)"
+            files = archive_from_message(
+                repo_root,
+                source_id,
+                msg,
+                body,
+                attachments,
+                args.push,
+                args.no_commit,
+                args.git_remote,
+                args.git_branch,
+            )
+
+        for path in files:
+            print(path.relative_to(repo_root))
+    except SystemExit as exc:
+        code = exc.code if isinstance(exc.code, int) else 1
+        if code:
+            error_text = str(exc) or f"SystemExit({code})"
+            smtp_archive.send_error_notification("smtp_capture_push.py", context, error_text)
+        raise
+    except Exception as exc:
+        error_text = str(exc) or exc.__class__.__name__
+        smtp_archive.send_error_notification("smtp_capture_push.py", context, error_text)
+        raise
+
+
 if __name__ == "__main__":
-    main()
+    cli()
