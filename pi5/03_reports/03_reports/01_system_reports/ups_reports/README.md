@@ -1,10 +1,10 @@
-# UPS Monthly
+# UPS Reports
 
 Source: `/usr/local/bin/x120x-ups-report.py`
 
 Schedule: monthly via `x120x-ups-report.timer`
 
-This mail is the monthly UPS battery report built from `/var/log/x120x-ups-events.jsonl`.
+This folder is for report-style UPS mail. The live sender currently produces a monthly battery report built from `/var/log/x120x-ups-events.jsonl`.
 
 Recommended path shape:
 

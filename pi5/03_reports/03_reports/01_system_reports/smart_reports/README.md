@@ -1,10 +1,10 @@
-# SMART Weekly
+# SMART Reports
 
 Source: `/usr/local/sbin/weekly-smartd-summary.py`
 
 Schedule: weekly via `/etc/cron.d/weekly-smartd-summary`
 
-This mail is the weekly SMART summary with a plain-text attachment containing the full smartd log lines for the period.
+This folder is for SMART summary mails. The live sender currently produces a weekly summary with a plain-text attachment containing the full smartd log lines for the period.
 
 Recommended path shape:
 

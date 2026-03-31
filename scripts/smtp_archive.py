@@ -12,56 +12,69 @@ from urllib.parse import urlparse
 
 
 SOURCES = {
+    "backup_status": {
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/backup_status",
+        "run_dir": "{date}/{stamp}_{slug}",
+    },
     "pi_monitor_weekly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/pi_monitor_weekly",
-        "run_dir": "{date}",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/pi_monitor_summaries",
+        "run_dir": "weekly-{date}",
     },
     "pi_monitor_monthly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/pi_monitor_monthly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/pi_monitor_summaries",
         "run_dir": "{year_month}",
     },
     "grafana_weekly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/grafana_weekly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/grafana_reports",
         "run_dir": "weekly-{date}",
     },
     "grafana_monthly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/grafana_monthly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/grafana_reports",
         "run_dir": "{year_month}",
     },
     "smart_weekly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/smart_weekly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/smart_reports",
         "run_dir": "{date}",
     },
     "fail2ban_monthly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/fail2ban_monthly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/fail2ban_reports",
         "run_dir": "{year_month}",
     },
     "ups_monthly": {
-        "kind": "recurring",
-        "base": "pi5/03_reports/03_smtp/recurring/ups_monthly",
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/ups_reports",
         "run_dir": "{year_month}",
     },
     "pi_monitor_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/03_smtp/alerts/pi_monitor",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/pi_monitor",
+    },
+    "fail2ban_ban_alert": {
+        "kind": "alert",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/fail2ban",
     },
     "ups_power_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/03_smtp/alerts/ups_power",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/ups_power",
     },
     "ups_shutdown_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/03_smtp/alerts/ups_shutdown",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/ups_shutdown",
     },
     "partition_health_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/03_smtp/alerts/partition_health",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/partition_health",
+    },
+    "network_failover_alert": {
+        "kind": "alert",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/network_failover",
     },
 }
 
@@ -144,10 +157,12 @@ def collect_attachment_paths(args):
 def resolve_target(repo_root, source_id, dt, subject, has_attachments):
     cfg = SOURCES[source_id]
     base = repo_root / cfg["base"]
-    if cfg["kind"] == "recurring":
+    if cfg["kind"] == "report":
         run_dir = cfg["run_dir"].format(
             date=dt.strftime("%Y-%m-%d"),
             year_month=dt.strftime("%Y-%m"),
+            stamp=dt.strftime("%Y-%m-%dT%H-%M-%S"),
+            slug=slugify(subject),
         )
         target_dir = base / run_dir
         email_path = target_dir / "email.txt"

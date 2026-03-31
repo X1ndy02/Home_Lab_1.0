@@ -4,7 +4,7 @@ Source: `/usr/local/bin/x120x-ups-notify.py`
 
 Cadence: event-driven
 
-This folder is for immediate UPS power mails such as `AC LOST` and `AC RESTORED`.
+This folder is for immediate UPS power-event mails such as `AC LOST` and `AC RESTORED`.
 
 Recommended path shape:
 

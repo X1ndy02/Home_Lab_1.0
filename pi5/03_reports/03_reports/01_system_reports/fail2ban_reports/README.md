@@ -1,10 +1,10 @@
-# Fail2Ban Monthly
+# Fail2Ban Reports
 
 Source: `/usr/local/bin/fail2ban-monthly-report.sh`
 
 Schedule: monthly via `/etc/cron.d/fail2ban-monthly-report`
 
-This mail is the monthly Fail2Ban SSH-oriented summary built from journal and `fail2ban.log`.
+This folder is for report-style Fail2Ban mail. The live sender currently produces a monthly SSH-oriented summary built from journal and `fail2ban.log`.
 
 Recommended path shape:
 
