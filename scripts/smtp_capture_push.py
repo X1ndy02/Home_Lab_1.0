@@ -279,11 +279,23 @@ def cli():
         code = exc.code if isinstance(exc.code, int) else 1
         if code:
             error_text = str(exc) or f"SystemExit({code})"
-            smtp_archive.send_error_notification("smtp_capture_push.py", context, error_text)
+            failure_kind = getattr(exc, "kind", "archive_workflow")
+            smtp_archive.send_error_notification(
+                "smtp_capture_push.py",
+                context,
+                error_text,
+                failure_kind=failure_kind,
+            )
         raise
     except Exception as exc:
         error_text = str(exc) or exc.__class__.__name__
-        smtp_archive.send_error_notification("smtp_capture_push.py", context, error_text)
+        failure_kind = getattr(exc, "kind", "archive_workflow")
+        smtp_archive.send_error_notification(
+            "smtp_capture_push.py",
+            context,
+            error_text,
+            failure_kind=failure_kind,
+        )
         raise
 
 

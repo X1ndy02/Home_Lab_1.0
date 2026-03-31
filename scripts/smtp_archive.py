@@ -12,6 +12,12 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
+class ArchiveWorkflowError(RuntimeError):
+    def __init__(self, kind, message):
+        super().__init__(message)
+        self.kind = kind
+
+
 SOURCES = {
     "backup_status": {
         "kind": "report",
@@ -341,7 +347,7 @@ def resolve_mail_command(msmtp_conf=""):
     return None
 
 
-def send_error_notification(script_name, context, error_text):
+def send_error_notification(script_name, context, error_text, failure_kind="archive_workflow"):
     cfg = resolve_notify_config()
     if not cfg["to"] or not cfg["from"]:
         return False
@@ -352,12 +358,16 @@ def send_error_notification(script_name, context, error_text):
 
     host = socket.gethostname()
     now = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M:%S %z")
-    subject = f"{cfg['subject_prefix']} FAILURE {script_name} on {host}"
+    if failure_kind == "git_push":
+        subject = "Git push failed"
+    else:
+        subject = f"{cfg['subject_prefix']} FAILURE {script_name} on {host}"
 
     lines = [
         f"Script: {script_name}",
         f"Host: {host}",
         f"Time: {now}",
+        f"Failure kind: {failure_kind}",
     ]
     for key in ("repo", "source", "subject", "push", "git_remote", "git_branch", "email_file"):
         value = context.get(key)
@@ -411,7 +421,10 @@ def git_commit_and_push(repo_root, files, source_id, dt, subject, remote_name, b
 
     if do_push:
         push_target, push_branch = get_push_target(repo_root, remote_name, branch)
-        run(["git", "push", push_target, f"HEAD:{push_branch}"], cwd=repo_root)
+        try:
+            run(["git", "push", push_target, f"HEAD:{push_branch}"], cwd=repo_root)
+        except RuntimeError as exc:
+            raise ArchiveWorkflowError("git_push", str(exc)) from exc
 
 
 def main():
@@ -497,11 +510,13 @@ def cli():
         code = exc.code if isinstance(exc.code, int) else 1
         if code:
             error_text = str(exc) or f"SystemExit({code})"
-            send_error_notification("smtp_archive.py", context, error_text)
+            failure_kind = getattr(exc, "kind", "archive_workflow")
+            send_error_notification("smtp_archive.py", context, error_text, failure_kind=failure_kind)
         raise
     except Exception as exc:
         error_text = str(exc) or exc.__class__.__name__
-        send_error_notification("smtp_archive.py", context, error_text)
+        failure_kind = getattr(exc, "kind", "archive_workflow")
+        send_error_notification("smtp_archive.py", context, error_text, failure_kind=failure_kind)
         raise
 
 
