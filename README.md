@@ -19,10 +19,9 @@ The goal is to build operational knowledge by running services properly, monitor
 
 ## Pi 5 reports
 
-- [Tracker](pi5/03_reports/01_tracker.md)
-- [UPS shutdown report](pi5/03_reports/ups_natural_shutdown.md)
-- [Improvement notes](pi5/03_reports/improvements_required.md)
-- [System mail archive](pi5/03_reports/03_reports/README.md)
+- [Tracker](pi5/03_reports/tracker/tracker.md)
+- [Reports](pi5/03_reports/reports)
+- [Alerts](pi5/03_reports/alerts)
 
 ## Implementation exports
 
