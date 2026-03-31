@@ -21,76 +21,76 @@ class ArchiveWorkflowError(RuntimeError):
 SOURCES = {
     "backup_status": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/backup_status",
+        "base": "pi5/03_reports/03_reports/01_system_reports/backup_status",
         "run_dir": "{date}/{stamp}_{slug}",
     },
     "pi_monitor_weekly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/pi_monitor_summaries",
+        "base": "pi5/03_reports/03_reports/01_system_reports/pi_monitor_summaries",
         "run_dir": "weekly-{date}",
     },
     "pi_monitor_monthly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/pi_monitor_summaries",
+        "base": "pi5/03_reports/03_reports/01_system_reports/pi_monitor_summaries",
         "run_dir": "{year_month}",
     },
     "grafana_weekly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/grafana_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/grafana_reports",
         "run_dir": "weekly-{date}",
     },
     "grafana_monthly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/grafana_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/grafana_reports",
         "run_dir": "{year_month}",
     },
     "smart_weekly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/smart_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/smart_reports",
         "run_dir": "{date}",
     },
     "fail2ban_monthly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/fail2ban_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/fail2ban_reports",
         "run_dir": "{year_month}",
     },
     "ups_monthly": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/ups_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/ups_reports",
         "run_dir": "{year_month}",
     },
     "misc_report": {
         "kind": "report",
-        "base": "pi5/03_reports/reports/misc_reports",
+        "base": "pi5/03_reports/03_reports/01_system_reports/misc_reports",
         "run_dir": "{date}/{stamp}_{slug}",
     },
     "pi_monitor_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/pi_monitor",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/pi_monitor",
     },
     "fail2ban_ban_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/fail2ban",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/fail2ban",
     },
     "ups_power_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/ups_power",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/ups_power",
     },
     "ups_shutdown_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/ups_shutdown",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/ups_shutdown",
     },
     "partition_health_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/partition_health",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/partition_health",
     },
     "network_failover_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/network_failover",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/network_failover",
     },
     "misc_alert": {
         "kind": "alert",
-        "base": "pi5/03_reports/alerts/misc_alerts",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/misc_alerts",
     },
 }
 

@@ -37,8 +37,8 @@ DETECTION_RULES = [
     ("partition_health_alert", re.compile(r"^alert:\s*dirty/unclean filesystem detected\b", re.I)),
     ("ups_power_alert", re.compile(r"\bpower event\b", re.I)),
     ("ups_shutdown_alert", re.compile(r"\blow battery\b.*\bshutting down\b", re.I)),
-    ("network_failover_alert", re.compile(r"\bnetwork failover:\b", re.I)),
-    ("pi_monitor_alert", re.compile(r"^\[pi monitor\]\b", re.I)),
+    ("network_failover_alert", re.compile(r"\bnetwork failover:", re.I)),
+    ("pi_monitor_alert", re.compile(r"^\[pi monitor\](?:\s|$)", re.I)),
 ]
 
 
