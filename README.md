@@ -19,7 +19,7 @@ The goal is to build operational knowledge by running services properly, monitor
 
 ## Pi 5 reports
 
-- [Tracker](pi5/03_reports/tracker/tracker.md)
+- [Tracker](pi5/03_reports/tracker.md)
 - [Reports](pi5/03_reports/reports)
 - [Alerts](pi5/03_reports/alerts)
 
