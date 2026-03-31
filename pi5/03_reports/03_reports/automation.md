@@ -1,64 +1,35 @@
-# SMTP Archive Automation
+Archive Automation
 
-This section documents how sent mail copies land in `03_reports/` and are pushed to GitHub.
+System view
 
-## Script
+- `scripts/smtp_archive.py` is the explicit archive path when the sender already knows the mail type
+- `scripts/smtp_capture_push.py` is the automatic path when a raw RFC822 mail copy is available
+- both scripts write into `pi5/03_reports/03_reports/` and can commit and push the result
 
-The archive entry point is `scripts/smtp_archive.py`.
+Detection model
 
-It does four jobs:
+- explicit mode uses a fixed source ID such as `grafana_weekly` or `fail2ban_ban_alert`
+- automatic mode reads the subject and content, then maps the mail into a known report or alert folder
+- if automatic detection does not match a known pattern, it falls back to `misc_report` or `misc_alert`
 
-1. map a mail source to the correct report or alert folder
-2. write the mail copy as `email.txt` or a timestamped alert file
-3. copy attachments or a whole report directory into the same archive entry
-4. `git add`, `git commit`, and optionally `git push`
+Archive model
 
-## Source Mapping
+- reports are written under `01_system_reports/`
+- alerts are written under `02_system_alerts/`
+- report mail is stored as one run folder with `email.txt` and copied attachments
+- alert mail without attachments is stored as one timestamped `.txt` file inside a monthly bucket
+- alert mail with attachments is stored as one timestamped folder
 
-Current source IDs:
+This keeps repeated summaries separate from one-off incidents while still preserving the mail body and the files that were sent with it.
 
-- `backup_status`
-- `pi_monitor_weekly`
-- `pi_monitor_monthly`
-- `grafana_weekly`
-- `grafana_monthly`
-- `smart_weekly`
-- `fail2ban_monthly`
-- `ups_monthly`
-- `pi_monitor_alert`
-- `fail2ban_ban_alert`
-- `partition_health_alert`
-- `ups_power_alert`
-- `ups_shutdown_alert`
-- `network_failover_alert`
+Push model
 
-Reports are written under `01_system_reports/`.
-Alerts are written under `02_system_alerts/`.
+- `--push` commits only the archived files and pushes the current `HEAD`
+- HTTPS push can use `GITHUB_TOKEN` or `SMTP_ARCHIVE_GITHUB_TOKEN`
 
-## Archive Rules
+Example flow
 
-Report sources write into a run folder:
-
-- `pi5/03_reports/03_reports/01_system_reports/<type>/<date-or-month>/email.txt`
-
-Alert sources write into a monthly bucket:
-
-- `pi5/03_reports/03_reports/02_system_alerts/<type>/YYYY-MM/YYYY-MM-DDTHH-MM-SS_subject.txt`
-
-If a report source can send more than once in one day, the run folder includes a timestamped subfolder so mails do not overwrite each other.
-
-## Push Behavior
-
-If `--push` is used, the script commits only the archived files and then pushes the current `HEAD` to the configured branch.
-
-If HTTPS credentials are not already stored, the script can use:
-
-- `GITHUB_TOKEN`
-- `SMTP_ARCHIVE_GITHUB_TOKEN`
-
-## Example Commands
-
-Weekly Grafana report with PNGs:
+Weekly Grafana report
 
 ```sh
 python3 scripts/smtp_archive.py \
@@ -73,16 +44,11 @@ python3 scripts/smtp_archive.py \
   --push
 ```
 
-Fail2Ban ban alert:
+Automatic capture from a raw mail
 
 ```sh
-python3 scripts/smtp_archive.py \
+python3 scripts/smtp_capture_push.py \
   --repo . \
-  --source fail2ban_ban_alert \
-  --timestamp 2026-03-26T23:06:18+11:00 \
-  --from-addr alerts@example.invalid \
-  --to-addr you@example.invalid \
-  --subject "[Fail2Ban] sshd: banned 10.244.10.1 from rootnode" \
-  --body-file /tmp/fail2ban-mail.txt \
+  --email-file /tmp/message.eml \
   --push
 ```

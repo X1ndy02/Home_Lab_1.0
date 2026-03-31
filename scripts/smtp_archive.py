@@ -52,6 +52,11 @@ SOURCES = {
         "base": "pi5/03_reports/03_reports/01_system_reports/ups_reports",
         "run_dir": "{year_month}",
     },
+    "misc_report": {
+        "kind": "report",
+        "base": "pi5/03_reports/03_reports/01_system_reports/misc_reports",
+        "run_dir": "{date}/{stamp}_{slug}",
+    },
     "pi_monitor_alert": {
         "kind": "alert",
         "base": "pi5/03_reports/03_reports/02_system_alerts/pi_monitor",
@@ -75,6 +80,10 @@ SOURCES = {
     "network_failover_alert": {
         "kind": "alert",
         "base": "pi5/03_reports/03_reports/02_system_alerts/network_failover",
+    },
+    "misc_alert": {
+        "kind": "alert",
+        "base": "pi5/03_reports/03_reports/02_system_alerts/misc_alerts",
     },
 }
 
