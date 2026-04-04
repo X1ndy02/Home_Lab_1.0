@@ -50,6 +50,7 @@ Fallback behavior
 Push note
 
 - if GitHub HTTPS auth is not already configured, export `GITHUB_TOKEN` before using `--push`
+- or point the scripts at a saved token file with `SMTP_ARCHIVE_GITHUB_TOKEN_FILE=/path/to/token.txt`
 
 Failure notification
 

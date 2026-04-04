@@ -261,9 +261,23 @@ def run(cmd, cwd, env=None):
     return result.stdout.strip()
 
 
+def load_github_token():
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("SMTP_ARCHIVE_GITHUB_TOKEN")
+    if token:
+        return token.strip()
+
+    token_file = os.environ.get("GITHUB_TOKEN_FILE") or os.environ.get("SMTP_ARCHIVE_GITHUB_TOKEN_FILE")
+    if token_file:
+        file_path = Path(token_file)
+        if file_path.exists():
+            return file_path.read_text(encoding="utf-8", errors="replace").strip()
+
+    return ""
+
+
 def get_push_target(repo_root, remote_name, branch):
     remote_url = run(["git", "remote", "get-url", remote_name], cwd=repo_root)
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("SMTP_ARCHIVE_GITHUB_TOKEN")
+    token = load_github_token()
     if token and remote_url.startswith("https://"):
         parsed = urlparse(remote_url)
         path = parsed.path.lstrip("/")
@@ -404,7 +418,7 @@ def send_error_notification(script_name, context, error_text, failure_kind="arch
 
 def git_commit_and_push(repo_root, files, source_id, dt, subject, remote_name, branch, do_push):
     rel_files = [str(path.relative_to(repo_root)) for path in files]
-    run(["git", "add", "--", *rel_files], cwd=repo_root)
+    run(["git", "add", "-f", "--", *rel_files], cwd=repo_root)
 
     diff_proc = subprocess.run(
         ["git", "diff", "--cached", "--quiet"],
