@@ -1,0 +1,9 @@
+Source: backup_status
+Date: 2026-04-04T21:01:25+11:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Backup SUCCESS (keep-last=4)
+
+Failures: 0
+Warnings: 0
+Successes: 70

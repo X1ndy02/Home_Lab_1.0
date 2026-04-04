@@ -1,0 +1,13 @@
+{
+  "source": "backup_status",
+  "timestamp": "2026-04-04T21:01:25+11:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Backup SUCCESS (keep-last=4)",
+  "files": [
+    "pi5/03_reports/03_reports/01_system_reports/backup_status/2026-04-04/2026-04-04T21-01-25_backup_success_keep_last_4/email.txt",
+    "pi5/03_reports/03_reports/01_system_reports/backup_status/2026-04-04/2026-04-04T21-01-25_backup_success_keep_last_4/restic-backup.log",
+    "pi5/03_reports/03_reports/01_system_reports/backup_status/2026-04-04/2026-04-04T21-01-25_backup_success_keep_last_4/restic-summary.log",
+    "pi5/03_reports/03_reports/01_system_reports/backup_status/2026-04-04/2026-04-04T21-01-25_backup_success_keep_last_4/restic-events.log"
+  ]
+}
