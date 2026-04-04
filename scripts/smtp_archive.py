@@ -231,6 +231,13 @@ def write_archive(repo_root, source_id, dt, from_addr, to_addr, subject, body, a
             shutil.copy2(attachment, dest)
             copied.append(dest)
 
+        links_path = target_dir / "attachments.md"
+        links_lines = ["# Attachments", ""]
+        for dest in copied[1:]:
+            links_lines.append(f"- [{dest.name}]({dest.name})")
+        links_path.write_text("\n".join(links_lines) + "\n", encoding="utf-8")
+        copied.append(links_path)
+
     meta = {
         "source": source_id,
         "timestamp": dt.isoformat(),

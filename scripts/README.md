@@ -4,6 +4,7 @@ SMTP archive
 
 - `smtp_archive.py` stores a mail copy in the correct report or alert folder when the source is already known
 - use it when a sender script can already tell whether the mail is backup, Grafana, Fail2Ban, UPS, or Pi monitor
+- when attachments are present, it also writes `attachments.md` so GitHub shows a simple clickable file list beside the saved mail copy
 
 Example
 
