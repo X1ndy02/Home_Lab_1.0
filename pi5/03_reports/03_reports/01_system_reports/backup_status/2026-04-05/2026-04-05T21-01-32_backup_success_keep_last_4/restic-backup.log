@@ -1,0 +1,3627 @@
+2026-01-26T21:20:19+11:00 Initializing restic repo at /mnt/backup/restic
+2026-01-26T21:20:42+11:00 Initializing restic repo at /mnt/backup/restic
+2026-01-26T21:20:44+11:00 Starting restic backup
+no parent snapshot found, will read all files
+
+Files:       401493 new,     0 changed,     0 unmodified
+Dirs:        70904 new,     0 changed,     0 unmodified
+Added to the repository: 25.529 GiB (17.135 GiB stored)
+
+processed 401493 files, 37.109 GiB in 4:51
+snapshot 273d2ee7 saved
+Applying Policy: keep 4 latest snapshots
+keep 1 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+273d2ee7  2026-01-26 21:20:44  rootnode                last snapshot  /      37.109 GiB
+---------------------------------------------------------------------------------------
+1 snapshots
+2026-01-26T21:25:38+11:00 Backup completed
+2026-01-27T20:24:23+11:00 Starting restic backup
+using parent snapshot 273d2ee7
+
+Files:        3927 new,  4935 changed, 396521 unmodified
+Dirs:          231 new, 12664 changed, 58220 unmodified
+Added to the repository: 852.953 MiB (404.653 MiB stored)
+
+processed 405383 files, 37.318 GiB in 0:32
+snapshot 0762163c saved
+Applying Policy: keep 4 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+273d2ee7  2026-01-26 21:20:44  rootnode                last snapshot  /      37.109 GiB
+0762163c  2026-01-27 20:24:23  rootnode                last snapshot  /      37.318 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+2026-01-27T20:24:57+11:00 Backup completed
+2026-01-27T21:00:19+11:00 Starting restic backup
+using parent snapshot 0762163c
+
+Files:           0 new,    50 changed, 405333 unmodified
+Dirs:            0 new,    65 changed, 71050 unmodified
+Added to the repository: 33.878 MiB (3.664 MiB stored)
+
+processed 405383 files, 37.319 GiB in 0:18
+snapshot 6b52a405 saved
+Applying Policy: keep 4 latest snapshots
+keep 3 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+273d2ee7  2026-01-26 21:20:44  rootnode                last snapshot  /      37.109 GiB
+0762163c  2026-01-27 20:24:23  rootnode                last snapshot  /      37.318 GiB
+6b52a405  2026-01-27 21:00:19  rootnode                last snapshot  /      37.319 GiB
+---------------------------------------------------------------------------------------
+3 snapshots
+2026-01-27T21:00:39+11:00 Backup completed
+2026-01-28T21:00:19+11:00 Starting restic backup
+using parent snapshot 6b52a405
+
+Files:          60 new,   170 changed, 405184 unmodified
+Dirs:           16 new,   146 changed, 70956 unmodified
+Added to the repository: 103.456 MiB (38.549 MiB stored)
+
+processed 405414 files, 37.335 GiB in 0:19
+snapshot d4bfdc02 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+273d2ee7  2026-01-26 21:20:44  rootnode                last snapshot  /      37.109 GiB
+0762163c  2026-01-27 20:24:23  rootnode                last snapshot  /      37.318 GiB
+6b52a405  2026-01-27 21:00:19  rootnode                last snapshot  /      37.319 GiB
+d4bfdc02  2026-01-28 21:00:19  rootnode                last snapshot  /      37.335 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+2026-01-28T21:00:40+11:00 Backup completed
+2026-01-29T21:00:02+11:00 Starting restic backup
+using parent snapshot d4bfdc02
+
+Files:        1544 new,  1344 changed, 403978 unmodified
+Dirs:          888 new,  6215 changed, 64883 unmodified
+Added to the repository: 770.697 MiB (381.885 MiB stored)
+
+processed 406866 files, 37.509 GiB in 0:30
+snapshot 813dd4ec saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+0762163c  2026-01-27 20:24:23  rootnode                last snapshot  /      37.318 GiB
+6b52a405  2026-01-27 21:00:19  rootnode                last snapshot  /      37.319 GiB
+d4bfdc02  2026-01-28 21:00:19  rootnode                last snapshot  /      37.335 GiB
+813dd4ec  2026-01-29 21:00:02  rootnode                last snapshot  /      37.509 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+273d2ee7  2026-01-26 21:20:44  rootnode                /      37.109 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1107 / 1107 packs processed
+
+to repack:         54106 blobs / 38.674 MiB
+this removes:      11304 blobs / 9.247 MiB
+to delete:            20 blobs / 16.090 MiB
+total prune:       11324 blobs / 25.337 MiB
+remaining:        306894 blobs / 17.908 GiB
+unused size after prune: 220.653 MiB (1.20% of remaining size)
+
+repacking packs
+[0:04] 100.00%  3 / 3 packs repacked
+rebuilding index
+[0:00] 100.00%  11 / 11 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 4 old packs
+[0:00] 100.00%  4 / 4 files deleted
+done
+2026-01-29T21:00:45+11:00 Backup completed
+2026-01-30T21:00:02+11:00 Starting restic backup
+using parent snapshot 813dd4ec
+
+Files:          92 new,   847 changed, 405959 unmodified
+Dirs:           78 new,   534 changed, 71441 unmodified
+Added to the repository: 400.219 MiB (154.658 MiB stored)
+
+processed 406898 files, 37.518 GiB in 0:23
+snapshot 350d5479 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+6b52a405  2026-01-27 21:00:19  rootnode                last snapshot  /      37.319 GiB
+d4bfdc02  2026-01-28 21:00:19  rootnode                last snapshot  /      37.335 GiB
+813dd4ec  2026-01-29 21:00:02  rootnode                last snapshot  /      37.509 GiB
+350d5479  2026-01-30 21:00:02  rootnode                last snapshot  /      37.518 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+0762163c  2026-01-27 20:24:23  rootnode                /      37.318 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1116 / 1116 packs processed
+
+to repack:         11515 blobs / 9.962 MiB
+this removes:         64 blobs / 66.875 KiB
+to delete:             0 blobs / 0 B
+total prune:          64 blobs / 66.875 KiB
+remaining:        308054 blobs / 18.058 GiB
+unused size after prune: 224.079 MiB (1.21% of remaining size)
+
+repacking packs
+[0:01] 100.00%  1 / 1 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 1 old packs
+[0:00] 100.00%  1 / 1 files deleted
+done
+2026-01-30T21:00:35+11:00 Backup completed
+2026-01-31T21:00:17+11:00 Starting restic backup
+using parent snapshot 350d5479
+
+Files:          68 new,   151 changed, 406696 unmodified
+Dirs:           15 new,   163 changed, 71877 unmodified
+Added to the repository: 128.135 MiB (50.225 MiB stored)
+
+processed 406915 files, 37.533 GiB in 0:20
+snapshot 271ab943 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+d4bfdc02  2026-01-28 21:00:19  rootnode                last snapshot  /      37.335 GiB
+813dd4ec  2026-01-29 21:00:02  rootnode                last snapshot  /      37.509 GiB
+350d5479  2026-01-30 21:00:02  rootnode                last snapshot  /      37.518 GiB
+271ab943  2026-01-31 21:00:17  rootnode                last snapshot  /      37.533 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+6b52a405  2026-01-27 21:00:19  rootnode                /      37.319 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1121 / 1121 packs processed
+
+to repack:         54317 blobs / 38.947 MiB
+this removes:        153 blobs / 176.390 KiB
+to delete:             0 blobs / 0 B
+total prune:         153 blobs / 176.390 KiB
+remaining:        308275 blobs / 18.107 GiB
+unused size after prune: 256.285 MiB (1.38% of remaining size)
+
+repacking packs
+[0:05] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 4 old packs
+[0:00] 100.00%  4 / 4 files deleted
+done
+2026-01-31T21:00:51+11:00 Backup completed
+2026-02-01T21:00:02+11:00 Starting restic backup
+using parent snapshot 271ab943
+
+Files:          80 new,   184 changed, 406708 unmodified
+Dirs:           68 new,   172 changed, 71874 unmodified
+Added to the repository: 748.632 MiB (392.640 MiB stored)
+
+processed 406972 files, 37.725 GiB in 0:27
+snapshot 85b9584f saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+813dd4ec  2026-01-29 21:00:02  rootnode                last snapshot  /      37.509 GiB
+350d5479  2026-01-30 21:00:02  rootnode                last snapshot  /      37.518 GiB
+271ab943  2026-01-31 21:00:17  rootnode                last snapshot  /      37.533 GiB
+85b9584f  2026-02-01 21:00:02  rootnode                last snapshot  /      37.725 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+d4bfdc02  2026-01-28 21:00:19  rootnode                /      37.335 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1145 / 1145 packs processed
+
+to repack:         54322 blobs / 38.952 MiB
+this removes:       4989 blobs / 4.754 MiB
+to delete:           187 blobs / 83.354 MiB
+total prune:        5176 blobs / 88.108 MiB
+remaining:        304140 blobs / 18.405 GiB
+unused size after prune: 388.844 MiB (2.06% of remaining size)
+
+repacking packs
+[0:05] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 9 old packs
+[0:00] 100.00%  9 / 9 files deleted
+done
+2026-02-01T21:00:42+11:00 Backup completed
+2026-02-02T21:00:04+11:00 Starting restic backup
+using parent snapshot 85b9584f
+
+Files:        3768 new,  1290 changed, 405603 unmodified
+Dirs:          382 new,   363 changed, 71729 unmodified
+Added to the repository: 376.864 MiB (182.326 MiB stored)
+
+processed 410661 files, 37.948 GiB in 0:23
+snapshot 26585cff saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+350d5479  2026-01-30 21:00:02  rootnode                last snapshot  /      37.518 GiB
+271ab943  2026-01-31 21:00:17  rootnode                last snapshot  /      37.533 GiB
+85b9584f  2026-02-01 21:00:02  rootnode                last snapshot  /      37.725 GiB
+26585cff  2026-02-02 21:00:04  rootnode                last snapshot  /      37.948 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+813dd4ec  2026-01-29 21:00:02  rootnode                /      37.509 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1151 / 1151 packs processed
+
+to repack:         55189 blobs / 39.317 MiB
+this removes:        531 blobs / 1.970 MiB
+to delete:             0 blobs / 0 B
+total prune:         531 blobs / 1.970 MiB
+remaining:        308400 blobs / 18.581 GiB
+unused size after prune: 537.625 MiB (2.83% of remaining size)
+
+repacking packs
+[0:05] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  3 / 3 old indexes deleted
+removing 4 old packs
+[0:00] 100.00%  4 / 4 files deleted
+done
+2026-02-02T21:00:40+11:00 Backup completed
+2026-02-03T21:00:07+11:00 Starting restic backup
+using parent snapshot 26585cff
+
+Files:         201 new,   340 changed, 410274 unmodified
+Dirs:           94 new,   257 changed, 72202 unmodified
+Added to the repository: 710.528 MiB (363.062 MiB stored)
+
+processed 410815 files, 38.160 GiB in 0:27
+snapshot 5b47560d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+271ab943  2026-01-31 21:00:17  rootnode                last snapshot  /      37.533 GiB
+85b9584f  2026-02-01 21:00:02  rootnode                last snapshot  /      37.725 GiB
+26585cff  2026-02-02 21:00:04  rootnode                last snapshot  /      37.948 GiB
+5b47560d  2026-02-03 21:00:07  rootnode                last snapshot  /      38.160 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+350d5479  2026-01-30 21:00:02  rootnode                /      37.518 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1173 / 1173 packs processed
+
+to repack:           602 blobs / 2.022 MiB
+this removes:        168 blobs / 189.161 KiB
+to delete:             0 blobs / 0 B
+total prune:         168 blobs / 189.161 KiB
+remaining:        309480 blobs / 18.935 GiB
+unused size after prune: 584.937 MiB (3.02% of remaining size)
+
+repacking packs
+[0:00] 100.00%  1 / 1 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  3 / 3 old indexes deleted
+removing 1 old packs
+[0:00] 100.00%  1 / 1 files deleted
+done
+2026-02-03T21:00:42+11:00 Backup completed
+2026-02-04T21:00:07+11:00 Starting restic backup
+using parent snapshot 5b47560d
+
+Files:          45 new,   180 changed, 410591 unmodified
+Dirs:           17 new,   185 changed, 72359 unmodified
+Added to the repository: 156.934 MiB (47.817 MiB stored)
+
+processed 410816 files, 38.215 GiB in 0:21
+snapshot 8bd31150 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+85b9584f  2026-02-01 21:00:02  rootnode                last snapshot  /      37.725 GiB
+26585cff  2026-02-02 21:00:04  rootnode                last snapshot  /      37.948 GiB
+5b47560d  2026-02-03 21:00:07  rootnode                last snapshot  /      38.160 GiB
+8bd31150  2026-02-04 21:00:07  rootnode                last snapshot  /      38.215 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+271ab943  2026-01-31 21:00:17  rootnode                /      37.533 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1177 / 1177 packs processed
+
+to repack:         50341 blobs / 35.970 MiB
+this removes:        172 blobs / 221.506 KiB
+to delete:           232 blobs / 97.094 MiB
+total prune:         404 blobs / 97.310 MiB
+remaining:        309528 blobs / 18.887 GiB
+unused size after prune: 688.361 MiB (3.56% of remaining size)
+
+repacking packs
+[0:05] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-02-04T21:00:42+11:00 Backup completed
+2026-02-05T21:00:07+11:00 Starting restic backup
+using parent snapshot 8bd31150
+
+Files:          47 new,   194 changed, 410595 unmodified
+Dirs:           27 new,   199 changed, 72349 unmodified
+Added to the repository: 740.191 MiB (381.814 MiB stored)
+
+processed 410836 files, 38.456 GiB in 0:29
+snapshot c3674248 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+26585cff  2026-02-02 21:00:04  rootnode                last snapshot  /      37.948 GiB
+5b47560d  2026-02-03 21:00:07  rootnode                last snapshot  /      38.160 GiB
+8bd31150  2026-02-04 21:00:07  rootnode                last snapshot  /      38.215 GiB
+c3674248  2026-02-05 21:00:07  rootnode                last snapshot  /      38.456 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+85b9584f  2026-02-01 21:00:02  rootnode                /      37.725 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1194 / 1194 packs processed
+
+to repack:         55321 blobs / 39.382 MiB
+this removes:        367 blobs / 1.628 MiB
+to delete:             0 blobs / 0 B
+total prune:         367 blobs / 1.628 MiB
+remaining:        310082 blobs / 19.258 GiB
+unused size after prune: 753.083 MiB (3.82% of remaining size)
+
+repacking packs
+[0:06] 100.00%  5 / 5 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 5 old packs
+[0:00] 100.00%  5 / 5 files deleted
+done
+2026-02-05T21:00:50+11:00 Backup completed
+2026-02-06T21:00:07+11:00 Starting restic backup
+using parent snapshot c3674248
+
+Files:          41 new,   169 changed, 410632 unmodified
+Dirs:           21 new,   174 changed, 72386 unmodified
+Added to the repository: 876.272 MiB (432.972 MiB stored)
+
+processed 410842 files, 38.658 GiB in 0:28
+snapshot 316cc387 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+5b47560d  2026-02-03 21:00:07  rootnode                last snapshot  /      38.160 GiB
+8bd31150  2026-02-04 21:00:07  rootnode                last snapshot  /      38.215 GiB
+c3674248  2026-02-05 21:00:07  rootnode                last snapshot  /      38.456 GiB
+316cc387  2026-02-06 21:00:07  rootnode                last snapshot  /      38.658 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+26585cff  2026-02-02 21:00:04  rootnode                /      37.948 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1220 / 1220 packs processed
+
+to repack:         50133 blobs / 35.890 MiB
+this removes:        262 blobs / 313.376 KiB
+to delete:           170 blobs / 81.687 MiB
+total prune:         432 blobs / 81.993 MiB
+remaining:        310754 blobs / 19.601 GiB
+unused size after prune: 859.844 MiB (4.28% of remaining size)
+
+repacking packs
+[0:05] 100.00%  3 / 3 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 8 old packs
+[0:00] 100.00%  8 / 8 files deleted
+done
+2026-02-06T21:00:49+11:00 Backup completed
+2026-02-07T21:00:07+11:00 Starting restic backup
+using parent snapshot 316cc387
+
+Files:          38 new,  1215 changed, 409564 unmodified
+Dirs:           16 new,   262 changed, 72307 unmodified
+Added to the repository: 566.956 MiB (215.011 MiB stored)
+
+processed 410817 files, 38.694 GiB in 0:26
+snapshot 42519137 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+8bd31150  2026-02-04 21:00:07  rootnode                last snapshot  /      38.215 GiB
+c3674248  2026-02-05 21:00:07  rootnode                last snapshot  /      38.456 GiB
+316cc387  2026-02-06 21:00:07  rootnode                last snapshot  /      38.658 GiB
+42519137  2026-02-07 21:00:07  rootnode                last snapshot  /      38.694 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+5b47560d  2026-02-03 21:00:07  rootnode                /      38.160 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1230 / 1230 packs processed
+
+to repack:         47554 blobs / 34.209 MiB
+this removes:        186 blobs / 235.202 KiB
+to delete:             0 blobs / 0 B
+total prune:         186 blobs / 235.202 KiB
+remaining:        311606 blobs / 19.810 GiB
+unused size after prune: 896.563 MiB (4.42% of remaining size)
+
+repacking packs
+[0:05] 100.00%  3 / 3 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 3 old packs
+[0:00] 100.00%  3 / 3 files deleted
+done
+2026-02-07T21:00:46+11:00 Backup completed
+2026-02-08T21:00:07+11:00 Starting restic backup
+using parent snapshot 42519137
+
+Files:         108 new,   180 changed, 410601 unmodified
+Dirs:           53 new,   242 changed, 72327 unmodified
+Added to the repository: 282.018 MiB (101.743 MiB stored)
+
+processed 410889 files, 38.723 GiB in 0:22
+snapshot ee0829b1 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+c3674248  2026-02-05 21:00:07  rootnode                last snapshot  /      38.456 GiB
+316cc387  2026-02-06 21:00:07  rootnode                last snapshot  /      38.658 GiB
+42519137  2026-02-07 21:00:07  rootnode                last snapshot  /      38.694 GiB
+ee0829b1  2026-02-08 21:00:07  rootnode                last snapshot  /      38.723 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+8bd31150  2026-02-04 21:00:07  rootnode                /      38.215 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1238 / 1238 packs processed
+
+to repack:         50016 blobs / 35.817 MiB
+this removes:        200 blobs / 240.146 KiB
+to delete:           295 blobs / 148.943 MiB
+total prune:         495 blobs / 149.177 MiB
+remaining:        311846 blobs / 19.764 GiB
+unused size after prune: 935.280 MiB (4.62% of remaining size)
+
+repacking packs
+[0:05] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-02-08T21:00:43+11:00 Backup completed
+2026-02-09T21:00:07+11:00 Starting restic backup
+using parent snapshot ee0829b1
+
+Files:          37 new,   172 changed, 410671 unmodified
+Dirs:           15 new,   171 changed, 72435 unmodified
+Added to the repository: 199.532 MiB (59.029 MiB stored)
+
+processed 410880 files, 38.761 GiB in 0:21
+snapshot 9e563745 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+316cc387  2026-02-06 21:00:07  rootnode                last snapshot  /      38.658 GiB
+42519137  2026-02-07 21:00:07  rootnode                last snapshot  /      38.694 GiB
+ee0829b1  2026-02-08 21:00:07  rootnode                last snapshot  /      38.723 GiB
+9e563745  2026-02-09 21:00:07  rootnode                last snapshot  /      38.761 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+c3674248  2026-02-05 21:00:07  rootnode                /      38.456 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1233 / 1233 packs processed
+
+to repack:         47626 blobs / 98.923 MiB
+this removes:        363 blobs / 64.980 MiB
+to delete:           309 blobs / 131.930 MiB
+total prune:         672 blobs / 196.910 MiB
+remaining:        311612 blobs / 19.629 GiB
+unused size after prune: 996.482 MiB (4.96% of remaining size)
+
+repacking packs
+[0:05] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 15 old packs
+[0:00] 100.00%  15 / 15 files deleted
+done
+2026-02-09T21:00:41+11:00 Backup completed
+2026-02-10T21:00:07+11:00 Starting restic backup
+using parent snapshot 9e563745
+
+Files:          34 new,   172 changed, 410685 unmodified
+Dirs:           15 new,   166 changed, 72446 unmodified
+Added to the repository: 252.980 MiB (91.604 MiB stored)
+
+processed 410891 files, 38.791 GiB in 0:22
+snapshot 55bd5901 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+42519137  2026-02-07 21:00:07  rootnode                last snapshot  /      38.694 GiB
+ee0829b1  2026-02-08 21:00:07  rootnode                last snapshot  /      38.723 GiB
+9e563745  2026-02-09 21:00:07  rootnode                last snapshot  /      38.761 GiB
+55bd5901  2026-02-10 21:00:07  rootnode                last snapshot  /      38.791 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+316cc387  2026-02-06 21:00:07  rootnode                /      38.658 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1229 / 1229 packs processed
+
+to repack:         56323 blobs / 232.334 MiB
+this removes:        956 blobs / 191.714 MiB
+to delete:            65 blobs / 16.027 MiB
+total prune:        1021 blobs / 207.741 MiB
+remaining:        311161 blobs / 19.516 GiB
+unused size after prune: 986.958 MiB (4.94% of remaining size)
+
+repacking packs
+[0:06] 100.00%  20 / 20 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 21 old packs
+[0:00] 100.00%  21 / 21 files deleted
+done
+2026-02-10T21:00:43+11:00 Backup completed
+2026-02-11T21:00:14+11:00 Starting restic backup
+using parent snapshot 55bd5901
+
+Files:          37 new,   164 changed, 410692 unmodified
+Dirs:           16 new,   167 changed, 72445 unmodified
+Added to the repository: 246.236 MiB (77.848 MiB stored)
+
+processed 410893 files, 38.823 GiB in 0:22
+snapshot b74f68c9 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+ee0829b1  2026-02-08 21:00:07  rootnode                last snapshot  /      38.723 GiB
+9e563745  2026-02-09 21:00:07  rootnode                last snapshot  /      38.761 GiB
+55bd5901  2026-02-10 21:00:07  rootnode                last snapshot  /      38.791 GiB
+b74f68c9  2026-02-11 21:00:14  rootnode                last snapshot  /      38.823 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+42519137  2026-02-07 21:00:07  rootnode                /      38.694 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1218 / 1218 packs processed
+
+to repack:         55829 blobs / 116.036 MiB
+this removes:        494 blobs / 74.736 MiB
+to delete:            18 blobs / 1.029 MiB
+total prune:         512 blobs / 75.766 MiB
+remaining:        311219 blobs / 19.518 GiB
+unused size after prune: 987.368 MiB (4.94% of remaining size)
+
+repacking packs
+[0:06] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-02-11T21:00:50+11:00 Backup completed
+2026-02-12T21:00:07+11:00 Starting restic backup
+using parent snapshot b74f68c9
+
+Files:          85 new,  1141 changed, 409717 unmodified
+Dirs:           20 new,   217 changed, 72395 unmodified
+Added to the repository: 701.711 MiB (359.685 MiB stored)
+
+processed 410943 files, 39.020 GiB in 0:27
+snapshot 0ab05203 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+9e563745  2026-02-09 21:00:07  rootnode                last snapshot  /      38.761 GiB
+55bd5901  2026-02-10 21:00:07  rootnode                last snapshot  /      38.791 GiB
+b74f68c9  2026-02-11 21:00:14  rootnode                last snapshot  /      38.823 GiB
+0ab05203  2026-02-12 21:00:07  rootnode                last snapshot  /      39.020 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+ee0829b1  2026-02-08 21:00:07  rootnode                /      38.723 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1235 / 1235 packs processed
+
+to repack:         25611 blobs / 49.783 MiB
+this removes:        273 blobs / 31.586 MiB
+to delete:            28 blobs / 4.620 MiB
+total prune:         301 blobs / 36.207 MiB
+remaining:        311924 blobs / 19.834 GiB
+unused size after prune: 1002.566 MiB (4.94% of remaining size)
+
+repacking packs
+[0:02] 100.00%  4 / 4 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 5 old packs
+[0:00] 100.00%  5 / 5 files deleted
+done
+2026-02-12T21:00:46+11:00 Backup completed
+2026-02-13T21:00:14+11:00 Starting restic backup
+using parent snapshot 0ab05203
+
+Files:          42 new,   195 changed, 410705 unmodified
+Dirs:           30 new,   148 changed, 72454 unmodified
+Added to the repository: 349.236 MiB (154.077 MiB stored)
+
+processed 410942 files, 38.749 GiB in 0:22
+snapshot e496cb4c saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+55bd5901  2026-02-10 21:00:07  rootnode                last snapshot  /      38.791 GiB
+b74f68c9  2026-02-11 21:00:14  rootnode                last snapshot  /      38.823 GiB
+0ab05203  2026-02-12 21:00:07  rootnode                last snapshot  /      39.020 GiB
+e496cb4c  2026-02-13 21:00:14  rootnode                last snapshot  /      38.749 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+9e563745  2026-02-09 21:00:07  rootnode                /      38.761 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1244 / 1244 packs processed
+
+to repack:         36135 blobs / 74.599 MiB
+this removes:        371 blobs / 47.228 MiB
+to delete:           123 blobs / 32.305 MiB
+total prune:         494 blobs / 79.533 MiB
+remaining:        312059 blobs / 19.906 GiB
+unused size after prune: 1007.298 MiB (4.94% of remaining size)
+
+repacking packs
+[0:04] 100.00%  6 / 6 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 8 old packs
+[0:00] 100.00%  8 / 8 files deleted
+done
+2026-02-13T21:00:49+11:00 Backup completed
+2026-02-14T21:00:07+11:00 Starting restic backup
+using parent snapshot e496cb4c
+
+Files:          42 new,   149 changed, 410758 unmodified
+Dirs:           23 new,   150 changed, 72467 unmodified
+Added to the repository: 366.834 MiB (157.873 MiB stored)
+
+processed 410949 files, 38.813 GiB in 0:22
+snapshot 5245d195 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+b74f68c9  2026-02-11 21:00:14  rootnode                last snapshot  /      38.823 GiB
+0ab05203  2026-02-12 21:00:07  rootnode                last snapshot  /      39.020 GiB
+e496cb4c  2026-02-13 21:00:14  rootnode                last snapshot  /      38.749 GiB
+5245d195  2026-02-14 21:00:07  rootnode                last snapshot  /      38.813 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+55bd5901  2026-02-10 21:00:07  rootnode                /      38.791 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1250 / 1250 packs processed
+
+to repack:         43326 blobs / 113.371 MiB
+this removes:        568 blobs / 79.707 MiB
+to delete:             0 blobs / 0 B
+total prune:         568 blobs / 79.707 MiB
+remaining:        312118 blobs / 19.983 GiB
+unused size after prune: 1018.091 MiB (4.98% of remaining size)
+
+repacking packs
+[0:05] 100.00%  10 / 10 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-02-14T21:00:43+11:00 Backup completed
+2026-02-15T21:00:03+11:00 Starting restic backup
+using parent snapshot 5245d195
+
+Files:          65 new,   151 changed, 410728 unmodified
+Dirs:           46 new,   176 changed, 72448 unmodified
+Added to the repository: 172.377 MiB (54.860 MiB stored)
+
+processed 410944 files, 38.834 GiB in 0:20
+snapshot 6a947cb6 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+0ab05203  2026-02-12 21:00:07  rootnode                last snapshot  /      39.020 GiB
+e496cb4c  2026-02-13 21:00:14  rootnode                last snapshot  /      38.749 GiB
+5245d195  2026-02-14 21:00:07  rootnode                last snapshot  /      38.813 GiB
+6a947cb6  2026-02-15 21:00:03  rootnode                last snapshot  /      38.834 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+b74f68c9  2026-02-11 21:00:14  rootnode                /      38.823 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1248 / 1248 packs processed
+
+to repack:         56603 blobs / 253.021 MiB
+this removes:       1127 blobs / 201.676 MiB
+to delete:             0 blobs / 0 B
+total prune:        1127 blobs / 201.676 MiB
+remaining:        311463 blobs / 19.839 GiB
+unused size after prune: 1007.436 MiB (4.96% of remaining size)
+
+repacking packs
+[0:07] 100.00%  18 / 18 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 18 old packs
+[0:00] 100.00%  18 / 18 files deleted
+done
+2026-02-15T21:00:38+11:00 Backup completed
+2026-02-16T21:00:07+11:00 Starting restic backup
+using parent snapshot 6a947cb6
+
+Files:          67 new,   125 changed, 410782 unmodified
+Dirs:           15 new,   152 changed, 72507 unmodified
+Added to the repository: 310.766 MiB (104.250 MiB stored)
+
+processed 410974 files, 38.861 GiB in 0:22
+snapshot b9eb732c saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e496cb4c  2026-02-13 21:00:14  rootnode                last snapshot  /      38.749 GiB
+5245d195  2026-02-14 21:00:07  rootnode                last snapshot  /      38.813 GiB
+6a947cb6  2026-02-15 21:00:03  rootnode                last snapshot  /      38.834 GiB
+b9eb732c  2026-02-16 21:00:07  rootnode                last snapshot  /      38.861 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+0ab05203  2026-02-12 21:00:07  rootnode                /      39.020 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1242 / 1242 packs processed
+
+to repack:         49735 blobs / 106.210 MiB
+this removes:        362 blobs / 68.105 MiB
+to delete:           361 blobs / 180.513 MiB
+total prune:         723 blobs / 248.618 MiB
+remaining:        311352 blobs / 19.698 GiB
+unused size after prune: 1005.877 MiB (4.99% of remaining size)
+
+repacking packs
+[0:05] 100.00%  8 / 8 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 19 old packs
+[0:00] 100.00%  19 / 19 files deleted
+done
+2026-02-16T21:00:43+11:00 Backup completed
+2026-02-17T21:00:13+11:00 Starting restic backup
+using parent snapshot b9eb732c
+
+Files:          42 new,   232 changed, 410679 unmodified
+Dirs:           17 new,   181 changed, 72478 unmodified
+Added to the repository: 264.903 MiB (100.892 MiB stored)
+
+processed 410953 files, 38.856 GiB in 0:22
+snapshot b7419691 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+5245d195  2026-02-14 21:00:07  rootnode                last snapshot  /      38.813 GiB
+6a947cb6  2026-02-15 21:00:03  rootnode                last snapshot  /      38.834 GiB
+b9eb732c  2026-02-16 21:00:07  rootnode                last snapshot  /      38.861 GiB
+b7419691  2026-02-17 21:00:13  rootnode                last snapshot  /      38.856 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e496cb4c  2026-02-13 21:00:14  rootnode                /      38.749 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1235 / 1235 packs processed
+
+to repack:         55888 blobs / 177.888 MiB
+this removes:        660 blobs / 132.340 MiB
+to delete:             0 blobs / 0 B
+total prune:         660 blobs / 132.340 MiB
+remaining:        311299 blobs / 19.668 GiB
+unused size after prune: 993.844 MiB (4.93% of remaining size)
+
+repacking packs
+[0:06] 100.00%  13 / 13 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-02-17T21:00:50+11:00 Backup completed
+2026-02-18T21:00:07+11:00 Starting restic backup
+using parent snapshot b7419691
+
+Files:          69 new,  1240 changed, 407619 unmodified
+Dirs:           23 new,   584 changed, 71936 unmodified
+Added to the repository: 504.739 MiB (179.907 MiB stored)
+
+processed 408928 files, 38.838 GiB in 0:24
+snapshot 1cf084cc saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+6a947cb6  2026-02-15 21:00:03  rootnode                last snapshot  /      38.834 GiB
+b9eb732c  2026-02-16 21:00:07  rootnode                last snapshot  /      38.861 GiB
+b7419691  2026-02-17 21:00:13  rootnode                last snapshot  /      38.856 GiB
+1cf084cc  2026-02-18 21:00:07  rootnode                last snapshot  /      38.838 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+5245d195  2026-02-14 21:00:07  rootnode                /      38.813 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1238 / 1238 packs processed
+
+to repack:         55800 blobs / 74.530 MiB
+this removes:        369 blobs / 34.383 MiB
+to delete:             0 blobs / 0 B
+total prune:         369 blobs / 34.383 MiB
+remaining:        312457 blobs / 19.810 GiB
+unused size after prune: 1007.798 MiB (4.97% of remaining size)
+
+repacking packs
+[0:06] 100.00%  8 / 8 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 8 old packs
+[0:00] 100.00%  8 / 8 files deleted
+done
+2026-02-18T21:00:46+11:00 Backup completed
+2026-02-19T21:00:07+11:00 Starting restic backup
+using parent snapshot 1cf084cc
+
+Files:          38 new,   254 changed, 408647 unmodified
+Dirs:           22 new,   205 changed, 72327 unmodified
+Added to the repository: 417.737 MiB (173.058 MiB stored)
+
+processed 408939 files, 38.899 GiB in 0:23
+snapshot 0dd03a87 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+b9eb732c  2026-02-16 21:00:07  rootnode                last snapshot  /      38.861 GiB
+b7419691  2026-02-17 21:00:13  rootnode                last snapshot  /      38.856 GiB
+1cf084cc  2026-02-18 21:00:07  rootnode                last snapshot  /      38.838 GiB
+0dd03a87  2026-02-19 21:00:07  rootnode                last snapshot  /      38.899 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+6a947cb6  2026-02-15 21:00:03  rootnode                /      38.834 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1246 / 1246 packs processed
+
+to repack:         32539 blobs / 124.902 MiB
+this removes:        461 blobs / 97.093 MiB
+to delete:             0 blobs / 0 B
+total prune:         461 blobs / 97.093 MiB
+remaining:        312782 blobs / 19.884 GiB
+unused size after prune: 1009.340 MiB (4.96% of remaining size)
+
+repacking packs
+[0:04] 100.00%  10 / 10 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-02-19T21:00:43+11:00 Backup completed
+2026-02-20T21:00:07+11:00 Starting restic backup
+using parent snapshot 0dd03a87
+
+Files:          41 new,   174 changed, 408729 unmodified
+Dirs:           17 new,   153 changed, 72386 unmodified
+Added to the repository: 227.647 MiB (68.981 MiB stored)
+
+processed 408944 files, 38.938 GiB in 0:23
+snapshot e2be688d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+b7419691  2026-02-17 21:00:13  rootnode                last snapshot  /      38.856 GiB
+1cf084cc  2026-02-18 21:00:07  rootnode                last snapshot  /      38.838 GiB
+0dd03a87  2026-02-19 21:00:07  rootnode                last snapshot  /      38.899 GiB
+e2be688d  2026-02-20 21:00:07  rootnode                last snapshot  /      38.938 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+b9eb732c  2026-02-16 21:00:07  rootnode                /      38.861 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1245 / 1245 packs processed
+
+to repack:         56413 blobs / 158.246 MiB
+this removes:        653 blobs / 112.854 MiB
+to delete:             0 blobs / 0 B
+total prune:         653 blobs / 112.854 MiB
+remaining:        312612 blobs / 19.841 GiB
+unused size after prune: 1004.091 MiB (4.94% of remaining size)
+
+repacking packs
+[0:06] 100.00%  12 / 12 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 12 old packs
+[0:00] 100.00%  12 / 12 files deleted
+done
+2026-02-20T21:00:46+11:00 Backup completed
+2026-02-21T21:00:07+11:00 Starting restic backup
+using parent snapshot e2be688d
+
+Files:          34 new,   389 changed, 408516 unmodified
+Dirs:           14 new,   171 changed, 72370 unmodified
+Added to the repository: 260.381 MiB (97.206 MiB stored)
+
+processed 408939 files, 38.959 GiB in 0:21
+snapshot 1d8d6eff saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+1cf084cc  2026-02-18 21:00:07  rootnode                last snapshot  /      38.838 GiB
+0dd03a87  2026-02-19 21:00:07  rootnode                last snapshot  /      38.899 GiB
+e2be688d  2026-02-20 21:00:07  rootnode                last snapshot  /      38.938 GiB
+1d8d6eff  2026-02-21 21:00:07  rootnode                last snapshot  /      38.959 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+b7419691  2026-02-17 21:00:13  rootnode                /      38.856 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1244 / 1244 packs processed
+
+to repack:         56766 blobs / 237.353 MiB
+this removes:       1483 blobs / 185.006 MiB
+to delete:            27 blobs / 16.418 MiB
+total prune:        1510 blobs / 201.424 MiB
+remaining:        311682 blobs / 19.739 GiB
+unused size after prune: 997.432 MiB (4.93% of remaining size)
+
+repacking packs
+[0:06] 100.00%  18 / 18 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 19 old packs
+[0:00] 100.00%  19 / 19 files deleted
+done
+2026-02-21T21:00:44+11:00 Backup completed
+2026-02-22T21:00:07+11:00 Starting restic backup
+using parent snapshot 1d8d6eff
+
+Files:          63 new,   192 changed, 408718 unmodified
+Dirs:           48 new,   160 changed, 72384 unmodified
+Added to the repository: 192.099 MiB (59.830 MiB stored)
+
+processed 408973 files, 38.995 GiB in 0:20
+snapshot e85b0bcf saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+0dd03a87  2026-02-19 21:00:07  rootnode                last snapshot  /      38.899 GiB
+e2be688d  2026-02-20 21:00:07  rootnode                last snapshot  /      38.938 GiB
+1d8d6eff  2026-02-21 21:00:07  rootnode                last snapshot  /      38.959 GiB
+e85b0bcf  2026-02-22 21:00:07  rootnode                last snapshot  /      38.995 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+1cf084cc  2026-02-18 21:00:07  rootnode                /      38.838 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1234 / 1234 packs processed
+
+to repack:         56330 blobs / 145.723 MiB
+this removes:        665 blobs / 95.303 MiB
+to delete:            71 blobs / 32.867 MiB
+total prune:         736 blobs / 128.170 MiB
+remaining:        311445 blobs / 19.672 GiB
+unused size after prune: 1000.351 MiB (4.97% of remaining size)
+
+repacking packs
+[0:07] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-02-22T21:00:43+11:00 Backup completed
+2026-02-23T21:00:07+11:00 Starting restic backup
+using parent snapshot e85b0bcf
+
+Files:          38 new,   113 changed, 408781 unmodified
+Dirs:           17 new,   150 changed, 72427 unmodified
+Added to the repository: 178.909 MiB (55.823 MiB stored)
+
+processed 408932 files, 39.012 GiB in 0:20
+snapshot 03526e47 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e2be688d  2026-02-20 21:00:07  rootnode                last snapshot  /      38.938 GiB
+1d8d6eff  2026-02-21 21:00:07  rootnode                last snapshot  /      38.959 GiB
+e85b0bcf  2026-02-22 21:00:07  rootnode                last snapshot  /      38.995 GiB
+03526e47  2026-02-23 21:00:07  rootnode                last snapshot  /      39.012 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+0dd03a87  2026-02-19 21:00:07  rootnode                /      38.899 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1230 / 1230 packs processed
+
+to repack:         56083 blobs / 109.109 MiB
+this removes:        448 blobs / 64.337 MiB
+to delete:             0 blobs / 0 B
+total prune:         448 blobs / 64.337 MiB
+remaining:        311399 blobs / 19.664 GiB
+unused size after prune: 1001.874 MiB (4.98% of remaining size)
+
+repacking packs
+[0:06] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 9 old packs
+[0:00] 100.00%  9 / 9 files deleted
+done
+2026-02-23T21:00:41+11:00 Backup completed
+2026-02-24T21:00:07+11:00 Starting restic backup
+using parent snapshot 03526e47
+
+Files:          67 new,   118 changed, 408777 unmodified
+Dirs:           15 new,   150 changed, 72429 unmodified
+Added to the repository: 216.322 MiB (62.441 MiB stored)
+
+processed 408962 files, 39.063 GiB in 0:20
+snapshot 725b786b saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+1d8d6eff  2026-02-21 21:00:07  rootnode                last snapshot  /      38.959 GiB
+e85b0bcf  2026-02-22 21:00:07  rootnode                last snapshot  /      38.995 GiB
+03526e47  2026-02-23 21:00:07  rootnode                last snapshot  /      39.012 GiB
+725b786b  2026-02-24 21:00:07  rootnode                last snapshot  /      39.063 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e2be688d  2026-02-20 21:00:07  rootnode                /      38.938 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1230 / 1230 packs processed
+
+to repack:         56069 blobs / 117.700 MiB
+this removes:        471 blobs / 72.059 MiB
+to delete:            69 blobs / 16.182 MiB
+total prune:         540 blobs / 88.241 MiB
+remaining:        311306 blobs / 19.639 GiB
+unused size after prune: 1004.621 MiB (5.00% of remaining size)
+
+repacking packs
+[0:06] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-02-24T21:00:42+11:00 Backup completed
+2026-02-25T21:00:07+11:00 Starting restic backup
+using parent snapshot 725b786b
+
+Files:          37 new,  2033 changed, 406898 unmodified
+Dirs:           17 new,   293 changed, 72290 unmodified
+Added to the repository: 648.969 MiB (244.258 MiB stored)
+
+processed 408968 files, 39.094 GiB in 0:26
+snapshot 183e9639 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e85b0bcf  2026-02-22 21:00:07  rootnode                last snapshot  /      38.995 GiB
+03526e47  2026-02-23 21:00:07  rootnode                last snapshot  /      39.012 GiB
+725b786b  2026-02-24 21:00:07  rootnode                last snapshot  /      39.063 GiB
+183e9639  2026-02-25 21:00:07  rootnode                last snapshot  /      39.094 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+1d8d6eff  2026-02-21 21:00:07  rootnode                /      38.959 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1240 / 1240 packs processed
+
+to repack:         55940 blobs / 88.196 MiB
+this removes:        227 blobs / 42.459 MiB
+to delete:             0 blobs / 0 B
+total prune:         227 blobs / 42.459 MiB
+remaining:        312244 blobs / 19.836 GiB
+unused size after prune: 1014.866 MiB (5.00% of remaining size)
+
+repacking packs
+[0:06] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+done
+2026-02-25T21:00:48+11:00 Backup completed
+2026-02-26T21:00:07+11:00 Starting restic backup
+using parent snapshot 183e9639
+
+Files:          47 new,   228 changed, 408698 unmodified
+Dirs:           25 new,   166 changed, 72419 unmodified
+Added to the repository: 411.894 MiB (175.786 MiB stored)
+
+processed 408973 files, 39.180 GiB in 0:23
+snapshot 79f6f908 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+03526e47  2026-02-23 21:00:07  rootnode                last snapshot  /      39.012 GiB
+725b786b  2026-02-24 21:00:07  rootnode                last snapshot  /      39.063 GiB
+183e9639  2026-02-25 21:00:07  rootnode                last snapshot  /      39.094 GiB
+79f6f908  2026-02-26 21:00:07  rootnode                last snapshot  /      39.180 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e85b0bcf  2026-02-22 21:00:07  rootnode                /      38.995 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1249 / 1249 packs processed
+
+to repack:         24139 blobs / 79.565 MiB
+this removes:        378 blobs / 55.177 MiB
+to delete:             0 blobs / 0 B
+total prune:         378 blobs / 55.177 MiB
+remaining:        312594 blobs / 19.954 GiB
+unused size after prune: 1010.870 MiB (4.95% of remaining size)
+
+repacking packs
+[0:03] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+done
+2026-02-26T21:00:41+11:00 Backup completed
+2026-02-27T21:00:03+11:00 Starting restic backup
+using parent snapshot 79f6f908
+
+Files:          35 new,   254 changed, 408682 unmodified
+Dirs:           15 new,   202 changed, 72393 unmodified
+Added to the repository: 440.006 MiB (148.190 MiB stored)
+
+processed 408971 files, 39.224 GiB in 0:23
+snapshot a471d204 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+725b786b  2026-02-24 21:00:07  rootnode                last snapshot  /      39.063 GiB
+183e9639  2026-02-25 21:00:07  rootnode                last snapshot  /      39.094 GiB
+79f6f908  2026-02-26 21:00:07  rootnode                last snapshot  /      39.180 GiB
+a471d204  2026-02-27 21:00:03  rootnode                last snapshot  /      39.224 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+03526e47  2026-02-23 21:00:07  rootnode                /      39.012 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1256 / 1256 packs processed
+
+to repack:         44069 blobs / 81.176 MiB
+this removes:        282 blobs / 45.003 MiB
+to delete:            43 blobs / 5.689 MiB
+total prune:         325 blobs / 50.692 MiB
+remaining:        312937 blobs / 20.049 GiB
+unused size after prune: 1017.238 MiB (4.95% of remaining size)
+
+repacking packs
+[0:05] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 8 old packs
+[0:00] 100.00%  8 / 8 files deleted
+done
+2026-02-27T21:00:40+11:00 Backup completed
+2026-02-28T21:00:07+11:00 Starting restic backup
+using parent snapshot a471d204
+
+Files:          44 new,   297 changed, 408642 unmodified
+Dirs:           25 new,   200 changed, 72398 unmodified
+Added to the repository: 375.181 MiB (168.215 MiB stored)
+
+processed 408983 files, 39.294 GiB in 0:23
+snapshot 2838290e saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+183e9639  2026-02-25 21:00:07  rootnode                last snapshot  /      39.094 GiB
+79f6f908  2026-02-26 21:00:07  rootnode                last snapshot  /      39.180 GiB
+a471d204  2026-02-27 21:00:03  rootnode                last snapshot  /      39.224 GiB
+2838290e  2026-02-28 21:00:07  rootnode                last snapshot  /      39.294 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+725b786b  2026-02-24 21:00:07  rootnode                /      39.063 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1263 / 1263 packs processed
+
+to repack:         56387 blobs / 182.180 MiB
+this removes:        778 blobs / 136.353 MiB
+to delete:           121 blobs / 82.151 MiB
+total prune:         899 blobs / 218.504 MiB
+remaining:        312756 blobs / 20.000 GiB
+unused size after prune: 1015.234 MiB (4.96% of remaining size)
+
+repacking packs
+[0:06] 100.00%  13 / 13 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 18 old packs
+[0:00] 100.00%  18 / 18 files deleted
+done
+2026-02-28T21:00:45+11:00 Backup completed
+2026-03-01T21:00:07+11:00 Starting restic backup
+using parent snapshot 2838290e
+
+Files:          95 new,   196 changed, 408750 unmodified
+Dirs:           71 new,   159 changed, 72449 unmodified
+Added to the repository: 172.969 MiB (57.647 MiB stored)
+
+processed 409041 files, 39.328 GiB in 0:20
+snapshot f203e346 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+79f6f908  2026-02-26 21:00:07  rootnode                last snapshot  /      39.180 GiB
+a471d204  2026-02-27 21:00:03  rootnode                last snapshot  /      39.224 GiB
+2838290e  2026-02-28 21:00:07  rootnode                last snapshot  /      39.294 GiB
+f203e346  2026-03-01 21:00:07  rootnode                last snapshot  /      39.328 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+183e9639  2026-02-25 21:00:07  rootnode                /      39.094 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1254 / 1254 packs processed
+
+to repack:         56310 blobs / 169.019 MiB
+this removes:        634 blobs / 125.292 MiB
+to delete:             0 blobs / 0 B
+total prune:         634 blobs / 125.292 MiB
+remaining:        312611 blobs / 19.934 GiB
+unused size after prune: 1018.638 MiB (4.99% of remaining size)
+
+repacking packs
+[0:06] 100.00%  12 / 12 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 12 old packs
+[0:00] 100.00%  12 / 12 files deleted
+done
+2026-03-01T21:00:42+11:00 Backup completed
+2026-03-02T21:00:01+11:00 Starting restic backup
+using parent snapshot f203e346
+
+Files:          39 new,   159 changed, 408823 unmodified
+Dirs:           17 new,   157 changed, 72506 unmodified
+Added to the repository: 167.958 MiB (37.148 MiB stored)
+
+processed 409021 files, 39.350 GiB in 0:20
+snapshot 3e1885ad saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+a471d204  2026-02-27 21:00:03  rootnode                last snapshot  /      39.224 GiB
+2838290e  2026-02-28 21:00:07  rootnode                last snapshot  /      39.294 GiB
+f203e346  2026-03-01 21:00:07  rootnode                last snapshot  /      39.328 GiB
+3e1885ad  2026-03-02 21:00:01  rootnode                last snapshot  /      39.350 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+79f6f908  2026-02-26 21:00:07  rootnode                /      39.180 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1250 / 1250 packs processed
+
+to repack:         56298 blobs / 164.268 MiB
+this removes:        606 blobs / 115.411 MiB
+to delete:            55 blobs / 32.614 MiB
+total prune:         661 blobs / 148.025 MiB
+remaining:        312361 blobs / 19.825 GiB
+unused size after prune: 1010.915 MiB (4.98% of remaining size)
+
+repacking packs
+[0:06] 100.00%  12 / 12 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 14 old packs
+[0:00] 100.00%  14 / 14 files deleted
+done
+2026-03-02T21:00:36+11:00 Backup completed
+2026-03-03T21:00:19+11:00 Starting restic backup
+using parent snapshot 3e1885ad
+
+Files:         102 new,   973 changed, 407882 unmodified
+Dirs:           36 new, 11504 changed, 61156 unmodified
+Added to the repository: 208.177 MiB (43.360 MiB stored)
+
+processed 408957 files, 39.357 GiB in 0:23
+snapshot 1b5930f1 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+2838290e  2026-02-28 21:00:07  rootnode                last snapshot  /      39.294 GiB
+f203e346  2026-03-01 21:00:07  rootnode                last snapshot  /      39.328 GiB
+3e1885ad  2026-03-02 21:00:01  rootnode                last snapshot  /      39.350 GiB
+1b5930f1  2026-03-03 21:00:19  rootnode                last snapshot  /      39.357 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+a471d204  2026-02-27 21:00:03  rootnode                /      39.224 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1244 / 1244 packs processed
+
+to repack:         56240 blobs / 136.306 MiB
+this removes:        587 blobs / 92.270 MiB
+to delete:            78 blobs / 32.721 MiB
+total prune:         665 blobs / 124.991 MiB
+remaining:        322390 blobs / 19.745 GiB
+unused size after prune: 1008.239 MiB (4.99% of remaining size)
+
+repacking packs
+[0:06] 100.00%  10 / 10 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 12 old packs
+[0:00] 100.00%  12 / 12 files deleted
+done
+2026-03-03T21:00:57+11:00 Backup completed
+2026-03-04T21:00:10+11:00 Starting restic backup
+using parent snapshot 1b5930f1
+
+Files:         170 new,   653 changed, 408265 unmodified
+Dirs:           40 new,   217 changed, 72463 unmodified
+Added to the repository: 791.727 MiB (316.868 MiB stored)
+
+processed 409088 files, 39.450 GiB in 0:27
+snapshot 2a0c2164 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+f203e346  2026-03-01 21:00:07  rootnode                last snapshot  /      39.328 GiB
+3e1885ad  2026-03-02 21:00:01  rootnode                last snapshot  /      39.350 GiB
+1b5930f1  2026-03-03 21:00:19  rootnode                last snapshot  /      39.357 GiB
+2a0c2164  2026-03-04 21:00:10  rootnode                last snapshot  /      39.450 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+2838290e  2026-02-28 21:00:07  rootnode                /      39.294 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1257 / 1257 packs processed
+
+to repack:         55907 blobs / 88.618 MiB
+this removes:        241 blobs / 41.398 MiB
+to delete:             0 blobs / 0 B
+total prune:         241 blobs / 41.398 MiB
+remaining:        323323 blobs / 20.014 GiB
+unused size after prune: 1019.152 MiB (4.97% of remaining size)
+
+repacking packs
+[0:06] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+done
+2026-03-04T21:00:52+11:00 Backup completed
+2026-03-05T21:00:03+11:00 Starting restic backup
+using parent snapshot 2a0c2164
+
+Files:         153 new,   963 changed, 408051 unmodified
+Dirs:           43 new, 12096 changed, 60596 unmodified
+Added to the repository: 412.579 MiB (125.220 MiB stored)
+
+processed 409167 files, 39.552 GiB in 0:26
+snapshot 206d5585 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+3e1885ad  2026-03-02 21:00:01  rootnode                last snapshot  /      39.350 GiB
+1b5930f1  2026-03-03 21:00:19  rootnode                last snapshot  /      39.357 GiB
+2a0c2164  2026-03-04 21:00:10  rootnode                last snapshot  /      39.450 GiB
+206d5585  2026-03-05 21:00:03  rootnode                last snapshot  /      39.552 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+f203e346  2026-03-01 21:00:07  rootnode                /      39.328 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:05] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1263 / 1263 packs processed
+
+to repack:         31594 blobs / 47.131 MiB
+this removes:        352 blobs / 20.587 MiB
+to delete:             0 blobs / 0 B
+total prune:         352 blobs / 20.587 MiB
+remaining:        334433 blobs / 20.116 GiB
+unused size after prune: 1.004 GiB (4.99% of remaining size)
+
+repacking packs
+[0:03] 100.00%  5 / 5 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 5 old packs
+[0:00] 100.00%  5 / 5 files deleted
+done
+2026-03-05T21:00:43+11:00 Backup completed
+2026-03-06T21:00:04+11:00 Starting restic backup
+using parent snapshot 206d5585
+
+Files:          48 new,   961 changed, 408173 unmodified
+Dirs:           34 new,  5749 changed, 66964 unmodified
+Added to the repository: 374.581 MiB (144.473 MiB stored)
+
+processed 409182 files, 39.634 GiB in 0:25
+snapshot 5d5ff5b3 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+1b5930f1  2026-03-03 21:00:19  rootnode                last snapshot  /      39.357 GiB
+2a0c2164  2026-03-04 21:00:10  rootnode                last snapshot  /      39.450 GiB
+206d5585  2026-03-05 21:00:03  rootnode                last snapshot  /      39.552 GiB
+5d5ff5b3  2026-03-06 21:00:04  rootnode                last snapshot  /      39.634 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+3e1885ad  2026-03-02 21:00:01  rootnode                /      39.350 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1271 / 1271 packs processed
+
+to repack:         56034 blobs / 72.120 MiB
+this removes:      10257 blobs / 33.212 MiB
+to delete:            40 blobs / 4.662 MiB
+total prune:       10297 blobs / 37.873 MiB
+remaining:        329247 blobs / 20.220 GiB
+unused size after prune: 1.007 GiB (4.98% of remaining size)
+
+repacking packs
+[0:05] 100.00%  6 / 6 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+done
+2026-03-06T21:00:44+11:00 Backup completed
+2026-03-07T21:00:04+11:00 Starting restic backup
+using parent snapshot 5d5ff5b3
+
+Files:          49 new,   208 changed, 408936 unmodified
+Dirs:           25 new,   173 changed, 72556 unmodified
+Added to the repository: 337.408 MiB (106.764 MiB stored)
+
+processed 409193 files, 39.680 GiB in 0:22
+snapshot 3e03226a saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+2a0c2164  2026-03-04 21:00:10  rootnode                last snapshot  /      39.450 GiB
+206d5585  2026-03-05 21:00:03  rootnode                last snapshot  /      39.552 GiB
+5d5ff5b3  2026-03-06 21:00:04  rootnode                last snapshot  /      39.634 GiB
+3e03226a  2026-03-07 21:00:04  rootnode                last snapshot  /      39.680 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+1b5930f1  2026-03-03 21:00:19  rootnode                /      39.357 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:04] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1275 / 1275 packs processed
+
+to repack:         56820 blobs / 282.292 MiB
+this removes:        830 blobs / 224.229 MiB
+to delete:           242 blobs / 58.604 MiB
+total prune:        1072 blobs / 282.833 MiB
+remaining:        328834 blobs / 20.048 GiB
+unused size after prune: 1015.675 MiB (4.95% of remaining size)
+
+repacking packs
+[0:07] 100.00%  19 / 19 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 24 old packs
+[0:00] 100.00%  24 / 24 files deleted
+done
+2026-03-07T21:00:43+11:00 Backup completed
+2026-03-08T21:00:09+11:00 Starting restic backup
+using parent snapshot 3e03226a
+
+Files:          59 new,   159 changed, 408997 unmodified
+Dirs:           44 new,   151 changed, 72588 unmodified
+Added to the repository: 166.611 MiB (51.067 MiB stored)
+
+processed 409215 files, 39.727 GiB in 0:20
+snapshot e9656527 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+206d5585  2026-03-05 21:00:03  rootnode                last snapshot  /      39.552 GiB
+5d5ff5b3  2026-03-06 21:00:04  rootnode                last snapshot  /      39.634 GiB
+3e03226a  2026-03-07 21:00:04  rootnode                last snapshot  /      39.680 GiB
+e9656527  2026-03-08 21:00:09  rootnode                last snapshot  /      39.727 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+2a0c2164  2026-03-04 21:00:10  rootnode                /      39.450 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1261 / 1261 packs processed
+
+to repack:         57064 blobs / 150.807 MiB
+this removes:      11137 blobs / 107.298 MiB
+to delete:             0 blobs / 0 B
+total prune:       11137 blobs / 107.298 MiB
+remaining:        318092 blobs / 19.993 GiB
+unused size after prune: 1013.923 MiB (4.95% of remaining size)
+
+repacking packs
+[0:06] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-03-08T21:00:44+11:00 Backup completed
+2026-03-09T21:00:06+11:00 Starting restic backup
+using parent snapshot e9656527
+
+Files:          34 new,   155 changed, 409021 unmodified
+Dirs:           14 new,   147 changed, 72625 unmodified
+Added to the repository: 194.461 MiB (54.913 MiB stored)
+
+processed 409210 files, 39.772 GiB in 0:20
+snapshot 3a418065 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+5d5ff5b3  2026-03-06 21:00:04  rootnode                last snapshot  /      39.634 GiB
+3e03226a  2026-03-07 21:00:04  rootnode                last snapshot  /      39.680 GiB
+e9656527  2026-03-08 21:00:09  rootnode                last snapshot  /      39.727 GiB
+3a418065  2026-03-09 21:00:06  rootnode                last snapshot  /      39.772 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+206d5585  2026-03-05 21:00:03  rootnode                /      39.552 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1258 / 1258 packs processed
+
+to repack:         56676 blobs / 155.185 MiB
+this removes:       5051 blobs / 98.332 MiB
+to delete:             0 blobs / 0 B
+total prune:        5051 blobs / 98.332 MiB
+remaining:        313415 blobs / 19.950 GiB
+unused size after prune: 1010.026 MiB (4.94% of remaining size)
+
+repacking packs
+[0:07] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-03-09T21:00:41+11:00 Backup completed
+2026-03-10T21:00:19+11:00 Starting restic backup
+using parent snapshot 3a418065
+
+Files:          47 new,   156 changed, 409016 unmodified
+Dirs:           26 new,   151 changed, 72619 unmodified
+Added to the repository: 354.750 MiB (137.633 MiB stored)
+
+processed 409219 files, 39.862 GiB in 0:22
+snapshot 9222452c saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+3e03226a  2026-03-07 21:00:04  rootnode                last snapshot  /      39.680 GiB
+e9656527  2026-03-08 21:00:09  rootnode                last snapshot  /      39.727 GiB
+3a418065  2026-03-09 21:00:06  rootnode                last snapshot  /      39.772 GiB
+9222452c  2026-03-10 21:00:19  rootnode                last snapshot  /      39.862 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+5d5ff5b3  2026-03-06 21:00:04  rootnode                /      39.634 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1262 / 1262 packs processed
+
+to repack:         56458 blobs / 145.281 MiB
+this removes:        617 blobs / 88.552 MiB
+to delete:             0 blobs / 0 B
+total prune:         617 blobs / 88.552 MiB
+remaining:        313325 blobs / 19.998 GiB
+unused size after prune: 1021.785 MiB (4.99% of remaining size)
+
+repacking packs
+[0:07] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-03-10T21:00:56+11:00 Backup completed
+2026-03-11T21:00:29+11:00 Starting restic backup
+using parent snapshot 9222452c
+
+Files:          43 new,   945 changed, 408227 unmodified
+Dirs:           23 new,   322 changed, 72459 unmodified
+Added to the repository: 436.724 MiB (189.385 MiB stored)
+
+processed 409215 files, 39.969 GiB in 0:23
+snapshot 22b9f54d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e9656527  2026-03-08 21:00:09  rootnode                last snapshot  /      39.727 GiB
+3a418065  2026-03-09 21:00:06  rootnode                last snapshot  /      39.772 GiB
+9222452c  2026-03-10 21:00:19  rootnode                last snapshot  /      39.862 GiB
+22b9f54d  2026-03-11 21:00:29  rootnode                last snapshot  /      39.969 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+3e03226a  2026-03-07 21:00:04  rootnode                /      39.680 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1269 / 1269 packs processed
+
+to repack:         47630 blobs / 84.197 MiB
+this removes:        256 blobs / 40.681 MiB
+to delete:             0 blobs / 0 B
+total prune:         256 blobs / 40.681 MiB
+remaining:        314122 blobs / 20.144 GiB
+unused size after prune: 1023.908 MiB (4.96% of remaining size)
+
+repacking packs
+[0:05] 100.00%  6 / 6 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 6 old packs
+[0:00] 100.00%  6 / 6 files deleted
+done
+2026-03-11T21:01:06+11:00 Backup completed
+2026-03-12T21:00:05+11:00 Starting restic backup
+using parent snapshot 22b9f54d
+
+Files:          39 new,   817 changed, 408368 unmodified
+Dirs:           22 new,   218 changed, 72575 unmodified
+Added to the repository: 826.307 MiB (341.872 MiB stored)
+
+processed 409224 files, 40.064 GiB in 0:28
+snapshot e90869cf saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+3a418065  2026-03-09 21:00:06  rootnode                last snapshot  /      39.772 GiB
+9222452c  2026-03-10 21:00:19  rootnode                last snapshot  /      39.862 GiB
+22b9f54d  2026-03-11 21:00:29  rootnode                last snapshot  /      39.969 GiB
+e90869cf  2026-03-12 21:00:05  rootnode                last snapshot  /      40.064 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e9656527  2026-03-08 21:00:09  rootnode                /      39.727 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1288 / 1288 packs processed
+
+to repack:         56186 blobs / 78.339 MiB
+this removes:        277 blobs / 31.374 MiB
+to delete:             0 blobs / 0 B
+total prune:         277 blobs / 31.374 MiB
+remaining:        314976 blobs / 20.447 GiB
+unused size after prune: 1.014 GiB (4.96% of remaining size)
+
+repacking packs
+[0:06] 100.00%  7 / 7 packs repacked
+rebuilding index
+[0:00] 100.00%  8 / 8 indexes processed
+[0:00] 100.00%  4 / 4 old indexes deleted
+removing 7 old packs
+[0:00] 100.00%  7 / 7 files deleted
+done
+2026-03-12T21:00:48+11:00 Backup completed
+2026-03-13T21:00:19+11:00 Starting restic backup
+using parent snapshot e90869cf
+
+Files:          40 new,   236 changed, 408951 unmodified
+Dirs:           16 new,   167 changed, 72633 unmodified
+Added to the repository: 348.835 MiB (100.848 MiB stored)
+
+processed 409227 files, 40.115 GiB in 0:22
+snapshot bf05a4f2 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+9222452c  2026-03-10 21:00:19  rootnode                last snapshot  /      39.862 GiB
+22b9f54d  2026-03-11 21:00:29  rootnode                last snapshot  /      39.969 GiB
+e90869cf  2026-03-12 21:00:05  rootnode                last snapshot  /      40.064 GiB
+bf05a4f2  2026-03-13 21:00:19  rootnode                last snapshot  /      40.115 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+3a418065  2026-03-09 21:00:06  rootnode                /      39.772 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1293 / 1293 packs processed
+
+to repack:         48069 blobs / 142.590 MiB
+this removes:        514 blobs / 93.905 MiB
+to delete:             0 blobs / 0 B
+total prune:         514 blobs / 93.905 MiB
+remaining:        315109 blobs / 20.454 GiB
+unused size after prune: 1.012 GiB (4.95% of remaining size)
+
+repacking packs
+[0:06] 100.00%  10 / 10 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-03-13T21:00:56+11:00 Backup completed
+2026-03-14T21:00:19+11:00 Starting restic backup
+using parent snapshot bf05a4f2
+
+Files:          35 new,  1467 changed, 407723 unmodified
+Dirs:           14 new,   244 changed, 72557 unmodified
+Added to the repository: 275.614 MiB (98.086 MiB stored)
+
+processed 409225 files, 40.153 GiB in 0:22
+snapshot e1ef7a5f saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+22b9f54d  2026-03-11 21:00:29  rootnode                last snapshot  /      39.969 GiB
+e90869cf  2026-03-12 21:00:05  rootnode                last snapshot  /      40.064 GiB
+bf05a4f2  2026-03-13 21:00:19  rootnode                last snapshot  /      40.115 GiB
+e1ef7a5f  2026-03-14 21:00:19  rootnode                last snapshot  /      40.153 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+9222452c  2026-03-10 21:00:19  rootnode                /      39.862 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1294 / 1294 packs processed
+
+to repack:         56437 blobs / 182.707 MiB
+this removes:        812 blobs / 123.445 MiB
+to delete:             0 blobs / 0 B
+total prune:         812 blobs / 123.445 MiB
+remaining:        315024 blobs / 20.429 GiB
+unused size after prune: 1.016 GiB (4.97% of remaining size)
+
+repacking packs
+[0:07] 100.00%  14 / 14 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 14 old packs
+[0:00] 100.00%  14 / 14 files deleted
+done
+2026-03-14T21:00:56+11:00 Backup completed
+2026-03-15T21:00:04+11:00 Starting restic backup
+using parent snapshot e1ef7a5f
+
+Files:          68 new,  3356 changed, 405834 unmodified
+Dirs:           48 new,   601 changed, 72202 unmodified
+Added to the repository: 575.239 MiB (201.807 MiB stored)
+
+processed 409258 files, 40.199 GiB in 0:25
+snapshot 942042fb saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e90869cf  2026-03-12 21:00:05  rootnode                last snapshot  /      40.064 GiB
+bf05a4f2  2026-03-13 21:00:19  rootnode                last snapshot  /      40.115 GiB
+e1ef7a5f  2026-03-14 21:00:19  rootnode                last snapshot  /      40.153 GiB
+942042fb  2026-03-15 21:00:04  rootnode                last snapshot  /      40.199 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+22b9f54d  2026-03-11 21:00:29  rootnode                /      39.969 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1299 / 1299 packs processed
+
+to repack:         56698 blobs / 327.067 MiB
+this removes:        918 blobs / 259.396 MiB
+to delete:            31 blobs / 16.204 MiB
+total prune:         949 blobs / 275.600 MiB
+remaining:        316825 blobs / 20.357 GiB
+unused size after prune: 1.008 GiB (4.95% of remaining size)
+
+repacking packs
+[0:07] 100.00%  22 / 22 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 23 old packs
+[0:00] 100.00%  23 / 23 files deleted
+done
+2026-03-15T21:00:45+11:00 Backup completed
+2026-03-16T21:00:19+11:00 Starting restic backup
+using parent snapshot 942042fb
+
+Files:          38 new,   180 changed, 409031 unmodified
+Dirs:           15 new,   143 changed, 72693 unmodified
+Added to the repository: 227.162 MiB (65.328 MiB stored)
+
+processed 409249 files, 40.243 GiB in 0:21
+snapshot e800e303 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+bf05a4f2  2026-03-13 21:00:19  rootnode                last snapshot  /      40.115 GiB
+e1ef7a5f  2026-03-14 21:00:19  rootnode                last snapshot  /      40.153 GiB
+942042fb  2026-03-15 21:00:04  rootnode                last snapshot  /      40.199 GiB
+e800e303  2026-03-16 21:00:19  rootnode                last snapshot  /      40.243 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e90869cf  2026-03-12 21:00:05  rootnode                /      40.064 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1287 / 1287 packs processed
+
+to repack:         56202 blobs / 117.511 MiB
+this removes:        458 blobs / 73.421 MiB
+to delete:           129 blobs / 32.139 MiB
+total prune:         587 blobs / 105.560 MiB
+remaining:        316647 blobs / 20.317 GiB
+unused size after prune: 1.014 GiB (4.99% of remaining size)
+
+repacking packs
+[0:06] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:00] 100.00%  9 / 9 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-03-16T21:00:54+11:00 Backup completed
+2026-03-17T21:00:16+11:00 Starting restic backup
+using parent snapshot e800e303
+
+Files:          35 new,  2174 changed, 407038 unmodified
+Dirs:           14 new,   352 changed, 72484 unmodified
+Added to the repository: 364.929 MiB (126.752 MiB stored)
+
+processed 409247 files, 40.280 GiB in 0:23
+snapshot f1ed78b9 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e1ef7a5f  2026-03-14 21:00:19  rootnode                last snapshot  /      40.153 GiB
+942042fb  2026-03-15 21:00:04  rootnode                last snapshot  /      40.199 GiB
+e800e303  2026-03-16 21:00:19  rootnode                last snapshot  /      40.243 GiB
+f1ed78b9  2026-03-17 21:00:16  rootnode                last snapshot  /      40.280 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+bf05a4f2  2026-03-13 21:00:19  rootnode                /      40.115 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:03] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1289 / 1289 packs processed
+
+to repack:         56446 blobs / 125.526 MiB
+this removes:        416 blobs / 65.433 MiB
+to delete:           131 blobs / 32.275 MiB
+total prune:         547 blobs / 97.709 MiB
+remaining:        316894 blobs / 20.346 GiB
+unused size after prune: 1.007 GiB (4.95% of remaining size)
+
+repacking packs
+[0:07] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  10 / 10 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-03-17T21:00:55+11:00 Backup completed
+2026-03-18T21:00:12+11:00 Starting restic backup
+using parent snapshot f1ed78b9
+
+Files:       308593 new,  5028 changed, 404155 unmodified
+Dirs:        31549 new, 12721 changed, 60103 unmodified
+Added to the repository: 3.249 GiB (1.357 GiB stored)
+
+processed 717776 files, 45.026 GiB in 1:11
+snapshot a932580c saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+942042fb  2026-03-15 21:00:04  rootnode                last snapshot  /      40.199 GiB
+e800e303  2026-03-16 21:00:19  rootnode                last snapshot  /      40.243 GiB
+f1ed78b9  2026-03-17 21:00:16  rootnode                last snapshot  /      40.280 GiB
+a932580c  2026-03-18 21:00:12  rootnode                last snapshot  /      45.026 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e1ef7a5f  2026-03-14 21:00:19  rootnode                /      40.153 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1367 / 1367 packs processed
+
+to repack:         56512 blobs / 147.780 MiB
+this removes:        885 blobs / 100.931 MiB
+to delete:            67 blobs / 16.236 MiB
+total prune:         952 blobs / 117.167 MiB
+remaining:        491497 blobs / 21.581 GiB
+unused size after prune: 1.075 GiB (4.98% of remaining size)
+
+repacking packs
+[0:06] 100.00%  12 / 12 packs repacked
+rebuilding index
+[0:01] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-03-18T21:01:42+11:00 Backup completed
+2026-03-19T21:00:25+11:00 Starting restic backup
+using parent snapshot a932580c
+
+Files:          47 new,  1080 changed, 716628 unmodified
+Dirs:           17 new,   361 changed, 103997 unmodified
+Added to the repository: 332.599 MiB (132.628 MiB stored)
+
+processed 717755 files, 45.073 GiB in 0:35
+snapshot 07b69b00 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e800e303  2026-03-16 21:00:19  rootnode                last snapshot  /      40.243 GiB
+f1ed78b9  2026-03-17 21:00:16  rootnode                last snapshot  /      40.280 GiB
+a932580c  2026-03-18 21:00:12  rootnode                last snapshot  /      45.026 GiB
+07b69b00  2026-03-19 21:00:25  rootnode                last snapshot  /      45.073 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+942042fb  2026-03-15 21:00:04  rootnode                /      40.199 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1368 / 1368 packs processed
+
+to repack:         50934 blobs / 92.286 MiB
+this removes:        362 blobs / 47.577 MiB
+to delete:             0 blobs / 0 B
+total prune:         362 blobs / 47.577 MiB
+remaining:        491996 blobs / 21.664 GiB
+unused size after prune: 1.083 GiB (5.00% of remaining size)
+
+repacking packs
+[0:06] 100.00%  8 / 8 packs repacked
+rebuilding index
+[0:00] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 8 old packs
+[0:00] 100.00%  8 / 8 files deleted
+done
+2026-03-19T21:01:18+11:00 Backup completed
+2026-03-20T21:00:25+11:00 Starting restic backup
+using parent snapshot 07b69b00
+
+Files:          65 new,   253 changed, 717466 unmodified
+Dirs:           13 new,   303 changed, 104057 unmodified
+Added to the repository: 308.071 MiB (106.588 MiB stored)
+
+processed 717784 files, 45.118 GiB in 0:35
+snapshot ebfdb02f saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+f1ed78b9  2026-03-17 21:00:16  rootnode                last snapshot  /      40.280 GiB
+a932580c  2026-03-18 21:00:12  rootnode                last snapshot  /      45.026 GiB
+07b69b00  2026-03-19 21:00:25  rootnode                last snapshot  /      45.073 GiB
+ebfdb02f  2026-03-20 21:00:25  rootnode                last snapshot  /      45.118 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e800e303  2026-03-16 21:00:19  rootnode                /      40.243 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1372 / 1372 packs processed
+
+to repack:         56594 blobs / 160.668 MiB
+this removes:        600 blobs / 94.351 MiB
+to delete:            51 blobs / 32.766 MiB
+total prune:         651 blobs / 127.117 MiB
+remaining:        492088 blobs / 21.644 GiB
+unused size after prune: 1.079 GiB (4.99% of remaining size)
+
+repacking packs
+[0:08] 100.00%  13 / 13 packs repacked
+rebuilding index
+[0:01] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 15 old packs
+[0:00] 100.00%  15 / 15 files deleted
+done
+2026-03-20T21:01:21+11:00 Backup completed
+2026-03-21T21:00:27+11:00 Starting restic backup
+using parent snapshot ebfdb02f
+
+Files:          53 new,   627 changed, 717129 unmodified
+Dirs:           13 new,   349 changed, 104013 unmodified
+Added to the repository: 399.618 MiB (123.858 MiB stored)
+
+processed 717809 files, 45.195 GiB in 0:36
+snapshot fdddbb5d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+a932580c  2026-03-18 21:00:12  rootnode                last snapshot  /      45.026 GiB
+07b69b00  2026-03-19 21:00:25  rootnode                last snapshot  /      45.073 GiB
+ebfdb02f  2026-03-20 21:00:25  rootnode                last snapshot  /      45.118 GiB
+fdddbb5d  2026-03-21 21:00:27  rootnode                last snapshot  /      45.195 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+f1ed78b9  2026-03-17 21:00:16  rootnode                /      40.280 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1371 / 1371 packs processed
+
+to repack:         57045 blobs / 219.070 MiB
+this removes:      11929 blobs / 162.052 MiB
+to delete:           225 blobs / 116.128 MiB
+total prune:       12154 blobs / 278.180 MiB
+remaining:        480991 blobs / 21.494 GiB
+unused size after prune: 1.068 GiB (4.97% of remaining size)
+
+repacking packs
+[0:06] 100.00%  17 / 17 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 24 old packs
+[0:00] 100.00%  24 / 24 files deleted
+done
+2026-03-21T21:01:21+11:00 Backup completed
+2026-03-22T21:00:00+11:00 Starting restic backup
+using parent snapshot fdddbb5d
+
+Files:          61 new,   279 changed, 717494 unmodified
+Dirs:           44 new,   304 changed, 104056 unmodified
+Added to the repository: 304.229 MiB (108.654 MiB stored)
+
+processed 717834 files, 45.228 GiB in 0:35
+snapshot 43741cbb saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+07b69b00  2026-03-19 21:00:25  rootnode                last snapshot  /      45.073 GiB
+ebfdb02f  2026-03-20 21:00:25  rootnode                last snapshot  /      45.118 GiB
+fdddbb5d  2026-03-21 21:00:27  rootnode                last snapshot  /      45.195 GiB
+43741cbb  2026-03-22 21:00:00  rootnode                last snapshot  /      45.228 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+a932580c  2026-03-18 21:00:12  rootnode                /      45.026 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1359 / 1359 packs processed
+
+to repack:         87954 blobs / 171.711 MiB
+this removes:        694 blobs / 75.921 MiB
+to delete:           135 blobs / 32.419 MiB
+total prune:         829 blobs / 108.340 MiB
+remaining:        480978 blobs / 21.494 GiB
+unused size after prune: 1.066 GiB (4.96% of remaining size)
+
+repacking packs
+[0:11] 100.00%  13 / 13 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  9 / 9 old indexes deleted
+removing 15 old packs
+[0:00] 100.00%  15 / 15 files deleted
+done
+2026-03-22T21:00:59+11:00 Backup completed
+2026-03-23T21:00:01+11:00 Starting restic backup
+using parent snapshot 43741cbb
+
+Files:          98 new,   851 changed, 716931 unmodified
+Dirs:           22 new,   382 changed, 104007 unmodified
+Added to the repository: 672.344 MiB (297.037 MiB stored)
+
+processed 717880 files, 45.601 GiB in 0:38
+snapshot 5d704c3d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+ebfdb02f  2026-03-20 21:00:25  rootnode                last snapshot  /      45.118 GiB
+fdddbb5d  2026-03-21 21:00:27  rootnode                last snapshot  /      45.195 GiB
+43741cbb  2026-03-22 21:00:00  rootnode                last snapshot  /      45.228 GiB
+5d704c3d  2026-03-23 21:00:01  rootnode                last snapshot  /      45.601 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+07b69b00  2026-03-19 21:00:25  rootnode                /      45.073 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1370 / 1370 packs processed
+
+to repack:         43976 blobs / 113.310 MiB
+this removes:        580 blobs / 71.721 MiB
+to delete:            66 blobs / 16.170 MiB
+total prune:         646 blobs / 87.891 MiB
+remaining:        481829 blobs / 21.698 GiB
+unused size after prune: 1.075 GiB (4.95% of remaining size)
+
+repacking packs
+[0:05] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 10 old packs
+[0:00] 100.00%  10 / 10 files deleted
+done
+2026-03-23T21:00:56+11:00 Backup completed
+2026-03-24T21:00:01+11:00 Starting restic backup
+using parent snapshot 5d704c3d
+
+Files:          39 new,   822 changed, 717030 unmodified
+Dirs:           13 new,   347 changed, 104053 unmodified
+Added to the repository: 1.017 GiB (472.749 MiB stored)
+
+processed 717891 files, 46.006 GiB in 0:43
+snapshot 91fbc7eb saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+fdddbb5d  2026-03-21 21:00:27  rootnode                last snapshot  /      45.195 GiB
+43741cbb  2026-03-22 21:00:00  rootnode                last snapshot  /      45.228 GiB
+5d704c3d  2026-03-23 21:00:01  rootnode                last snapshot  /      45.601 GiB
+91fbc7eb  2026-03-24 21:00:01  rootnode                last snapshot  /      46.006 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+ebfdb02f  2026-03-20 21:00:25  rootnode                /      45.118 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1393 / 1393 packs processed
+
+to repack:         87838 blobs / 153.665 MiB
+this removes:        726 blobs / 85.084 MiB
+to delete:             0 blobs / 0 B
+total prune:         726 blobs / 85.084 MiB
+remaining:        482798 blobs / 22.077 GiB
+unused size after prune: 1.098 GiB (4.97% of remaining size)
+
+repacking packs
+[0:10] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:00] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  5 / 5 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-03-24T21:01:06+11:00 Backup completed
+2026-03-25T21:00:24+11:00 Starting restic backup
+using parent snapshot 91fbc7eb
+
+Files:          38 new,   263 changed, 717592 unmodified
+Dirs:           15 new,   297 changed, 104101 unmodified
+Added to the repository: 325.894 MiB (99.774 MiB stored)
+
+processed 717893 files, 46.143 GiB in 0:34
+snapshot 5d576f8a saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+43741cbb  2026-03-22 21:00:00  rootnode                last snapshot  /      45.228 GiB
+5d704c3d  2026-03-23 21:00:01  rootnode                last snapshot  /      45.601 GiB
+91fbc7eb  2026-03-24 21:00:01  rootnode                last snapshot  /      46.006 GiB
+5d576f8a  2026-03-25 21:00:24  rootnode                last snapshot  /      46.143 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+fdddbb5d  2026-03-21 21:00:27  rootnode                /      45.195 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1394 / 1394 packs processed
+
+to repack:         87673 blobs / 129.869 MiB
+this removes:        462 blobs / 46.931 MiB
+to delete:           143 blobs / 48.450 MiB
+total prune:         605 blobs / 95.381 MiB
+remaining:        483051 blobs / 22.081 GiB
+unused size after prune: 1.101 GiB (4.99% of remaining size)
+
+repacking packs
+[0:11] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:00] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  6 / 6 old indexes deleted
+removing 12 old packs
+[0:00] 100.00%  12 / 12 files deleted
+done
+2026-03-25T21:01:22+11:00 Backup completed
+2026-03-26T21:00:24+11:00 Starting restic backup
+using parent snapshot 5d576f8a
+
+Files:         335 new,   934 changed, 716913 unmodified
+Dirs:          212 new,   432 changed, 103965 unmodified
+Added to the repository: 817.614 MiB (466.262 MiB stored)
+
+processed 718182 files, 46.454 GiB in 0:41
+snapshot 83e52f73 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+5d704c3d  2026-03-23 21:00:01  rootnode                last snapshot  /      45.601 GiB
+91fbc7eb  2026-03-24 21:00:01  rootnode                last snapshot  /      46.006 GiB
+5d576f8a  2026-03-25 21:00:24  rootnode                last snapshot  /      46.143 GiB
+83e52f73  2026-03-26 21:00:24  rootnode                last snapshot  /      46.454 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+43741cbb  2026-03-22 21:00:00  rootnode                /      45.228 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1417 / 1417 packs processed
+
+to repack:         88003 blobs / 188.485 MiB
+this removes:        855 blobs / 115.615 MiB
+to delete:             0 blobs / 0 B
+total prune:         855 blobs / 115.615 MiB
+remaining:        483792 blobs / 22.423 GiB
+unused size after prune: 1.109 GiB (4.95% of remaining size)
+
+repacking packs
+[0:10] 100.00%  13 / 13 packs repacked
+rebuilding index
+[0:00] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-03-26T21:01:28+11:00 Backup completed
+2026-03-27T21:00:02+11:00 Starting restic backup
+using parent snapshot 83e52f73
+
+Files:          37 new,   328 changed, 717793 unmodified
+Dirs:           14 new,   351 changed, 104246 unmodified
+Added to the repository: 667.254 MiB (294.072 MiB stored)
+
+processed 718158 files, 46.599 GiB in 0:40
+snapshot 4169fb78 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+91fbc7eb  2026-03-24 21:00:01  rootnode                last snapshot  /      46.006 GiB
+5d576f8a  2026-03-25 21:00:24  rootnode                last snapshot  /      46.143 GiB
+83e52f73  2026-03-26 21:00:24  rootnode                last snapshot  /      46.454 GiB
+4169fb78  2026-03-27 21:00:02  rootnode                last snapshot  /      46.599 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+5d704c3d  2026-03-23 21:00:01  rootnode                /      45.601 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1428 / 1428 packs processed
+
+to repack:         88352 blobs / 313.548 MiB
+this removes:        911 blobs / 205.687 MiB
+to delete:           129 blobs / 32.318 MiB
+total prune:        1040 blobs / 238.005 MiB
+remaining:        483872 blobs / 22.478 GiB
+unused size after prune: 1.118 GiB (4.97% of remaining size)
+
+repacking packs
+[0:12] 100.00%  21 / 21 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 23 old packs
+[0:00] 100.00%  23 / 23 files deleted
+done
+2026-03-27T21:01:06+11:00 Backup completed
+2026-03-28T21:00:01+11:00 Starting restic backup
+using parent snapshot 4169fb78
+
+Files:         375 new,   449 changed, 717410 unmodified
+Dirs:           84 new,   434 changed, 104143 unmodified
+Added to the repository: 538.226 MiB (170.744 MiB stored)
+
+processed 718234 files, 46.839 GiB in 0:41
+snapshot 7943f1c9 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+5d576f8a  2026-03-25 21:00:24  rootnode                last snapshot  /      46.143 GiB
+83e52f73  2026-03-26 21:00:24  rootnode                last snapshot  /      46.454 GiB
+4169fb78  2026-03-27 21:00:02  rootnode                last snapshot  /      46.599 GiB
+7943f1c9  2026-03-28 21:00:01  rootnode                last snapshot  /      46.839 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+91fbc7eb  2026-03-24 21:00:01  rootnode                /      46.006 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1424 / 1424 packs processed
+
+to repack:         68077 blobs / 131.296 MiB
+this removes:        530 blobs / 64.641 MiB
+to delete:             0 blobs / 0 B
+total prune:         530 blobs / 64.641 MiB
+remaining:        485138 blobs / 22.581 GiB
+unused size after prune: 1.123 GiB (4.97% of remaining size)
+
+repacking packs
+[0:10] 100.00%  9 / 9 packs repacked
+rebuilding index
+[0:01] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 9 old packs
+[0:00] 100.00%  9 / 9 files deleted
+done
+2026-03-28T21:01:05+11:00 Backup completed
+2026-03-29T21:00:01+11:00 Starting restic backup
+using parent snapshot 7943f1c9
+
+Files:          55 new,   277 changed, 717920 unmodified
+Dirs:           34 new,   308 changed, 104338 unmodified
+Added to the repository: 532.072 MiB (177.586 MiB stored)
+
+processed 718252 files, 47.092 GiB in 0:42
+snapshot adc45a1d saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+83e52f73  2026-03-26 21:00:24  rootnode                last snapshot  /      46.454 GiB
+4169fb78  2026-03-27 21:00:02  rootnode                last snapshot  /      46.599 GiB
+7943f1c9  2026-03-28 21:00:01  rootnode                last snapshot  /      46.839 GiB
+adc45a1d  2026-03-29 21:00:01  rootnode                last snapshot  /      47.092 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+5d576f8a  2026-03-25 21:00:24  rootnode                /      46.143 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:06] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1432 / 1432 packs processed
+
+to repack:         87938 blobs / 261.300 MiB
+this removes:        813 blobs / 179.702 MiB
+to delete:            65 blobs / 32.341 MiB
+total prune:         878 blobs / 212.042 MiB
+remaining:        485512 blobs / 22.548 GiB
+unused size after prune: 1.121 GiB (4.97% of remaining size)
+
+repacking packs
+[0:12] 100.00%  17 / 17 packs repacked
+rebuilding index
+[0:01] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 19 old packs
+[0:00] 100.00%  19 / 19 files deleted
+done
+2026-03-29T21:01:08+11:00 Backup completed
+2026-03-30T21:00:00+11:00 Starting restic backup
+using parent snapshot adc45a1d
+
+Files:         513 new,  1495 changed, 716666 unmodified
+Dirs:           45 new,   476 changed, 104192 unmodified
+Added to the repository: 686.047 MiB (254.511 MiB stored)
+
+processed 718674 files, 47.415 GiB in 0:48
+snapshot 2f9713e5 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+4169fb78  2026-03-27 21:00:02  rootnode                last snapshot  /      46.599 GiB
+7943f1c9  2026-03-28 21:00:01  rootnode                last snapshot  /      46.839 GiB
+adc45a1d  2026-03-29 21:00:01  rootnode                last snapshot  /      47.092 GiB
+2f9713e5  2026-03-30 21:00:00  rootnode                last snapshot  /      47.415 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+83e52f73  2026-03-26 21:00:24  rootnode                /      46.454 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1436 / 1436 packs processed
+
+to repack:         88362 blobs / 238.749 MiB
+this removes:        822 blobs / 145.377 MiB
+to delete:            64 blobs / 33.295 MiB
+total prune:         886 blobs / 178.672 MiB
+remaining:        486662 blobs / 22.622 GiB
+unused size after prune: 1.128 GiB (4.99% of remaining size)
+
+repacking packs
+[0:14] 100.00%  16 / 16 packs repacked
+rebuilding index
+[0:01] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 18 old packs
+[0:00] 100.00%  18 / 18 files deleted
+done
+2026-03-30T21:01:18+11:00 Backup completed
+2026-03-31T21:00:00+11:00 Starting restic backup
+using parent snapshot 2f9713e5
+
+Files:         155 new,   323 changed, 718290 unmodified
+Dirs:           57 new,   400 changed, 104282 unmodified
+Added to the repository: 430.073 MiB (127.789 MiB stored)
+
+processed 718768 files, 47.651 GiB in 0:43
+snapshot f2ffe970 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+7943f1c9  2026-03-28 21:00:01  rootnode                last snapshot  /      46.839 GiB
+adc45a1d  2026-03-29 21:00:01  rootnode                last snapshot  /      47.092 GiB
+2f9713e5  2026-03-30 21:00:00  rootnode                last snapshot  /      47.415 GiB
+f2ffe970  2026-03-31 21:00:00  rootnode                last snapshot  /      47.651 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+4169fb78  2026-03-27 21:00:02  rootnode                /      46.599 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1433 / 1433 packs processed
+
+to repack:         88288 blobs / 208.456 MiB
+this removes:        886 blobs / 112.286 MiB
+to delete:             0 blobs / 0 B
+total prune:         886 blobs / 112.286 MiB
+remaining:        487080 blobs / 22.637 GiB
+unused size after prune: 1.126 GiB (4.98% of remaining size)
+
+repacking packs
+[0:13] 100.00%  14 / 14 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 14 old packs
+[0:00] 100.00%  14 / 14 files deleted
+done
+2026-03-31T21:01:12+11:00 Backup completed
+2026-04-01T21:00:00+11:00 Starting restic backup
+using parent snapshot f2ffe970
+
+Files:          75 new,  1047 changed, 717684 unmodified
+Dirs:           34 new,   523 changed, 104200 unmodified
+Added to the repository: 443.499 MiB (216.553 MiB stored)
+
+processed 718806 files, 47.722 GiB in 0:46
+snapshot c69bfe7c saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+adc45a1d  2026-03-29 21:00:01  rootnode                last snapshot  /      47.092 GiB
+2f9713e5  2026-03-30 21:00:00  rootnode                last snapshot  /      47.415 GiB
+f2ffe970  2026-03-31 21:00:00  rootnode                last snapshot  /      47.651 GiB
+c69bfe7c  2026-04-01 21:00:00  rootnode                last snapshot  /      47.722 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+7943f1c9  2026-03-28 21:00:01  rootnode                /      46.839 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1441 / 1441 packs processed
+
+to repack:         66245 blobs / 166.170 MiB
+this removes:        631 blobs / 91.569 MiB
+to delete:            66 blobs / 16.127 MiB
+total prune:         697 blobs / 107.696 MiB
+remaining:        487950 blobs / 22.743 GiB
+unused size after prune: 1.132 GiB (4.98% of remaining size)
+
+repacking packs
+[0:11] 100.00%  12 / 12 packs repacked
+rebuilding index
+[0:01] 100.00%  12 / 12 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 13 old packs
+[0:00] 100.00%  13 / 13 files deleted
+done
+2026-04-01T21:01:14+11:00 Backup completed
+2026-04-02T21:00:00+11:00 Starting restic backup
+using parent snapshot c69bfe7c
+
+Files:          37 new,   311 changed, 718455 unmodified
+Dirs:           13 new,   309 changed, 104437 unmodified
+Added to the repository: 343.495 MiB (117.474 MiB stored)
+
+processed 718803 files, 47.741 GiB in 0:48
+snapshot 1fae231e saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+2f9713e5  2026-03-30 21:00:00  rootnode                last snapshot  /      47.415 GiB
+f2ffe970  2026-03-31 21:00:00  rootnode                last snapshot  /      47.651 GiB
+c69bfe7c  2026-04-01 21:00:00  rootnode                last snapshot  /      47.722 GiB
+1fae231e  2026-04-02 21:00:00  rootnode                last snapshot  /      47.741 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+adc45a1d  2026-03-29 21:00:01  rootnode                /      47.092 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1442 / 1442 packs processed
+
+to repack:         88303 blobs / 208.088 MiB
+this removes:        904 blobs / 116.113 MiB
+to delete:            66 blobs / 16.019 MiB
+total prune:         970 blobs / 132.133 MiB
+remaining:        487861 blobs / 22.729 GiB
+unused size after prune: 1.131 GiB (4.98% of remaining size)
+
+repacking packs
+[0:17] 100.00%  14 / 14 packs repacked
+rebuilding index
+[0:02] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 15 old packs
+[0:00] 100.00%  15 / 15 files deleted
+done
+2026-04-02T21:01:22+11:00 Backup completed
+2026-04-03T21:00:00+11:00 Starting restic backup
+using parent snapshot 1fae231e
+
+Files:          36 new,   270 changed, 718497 unmodified
+Dirs:           15 new,   297 changed, 104447 unmodified
+Added to the repository: 234.692 MiB (92.591 MiB stored)
+
+processed 718803 files, 47.750 GiB in 0:45
+snapshot 7799c3df saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+f2ffe970  2026-03-31 21:00:00  rootnode                last snapshot  /      47.651 GiB
+c69bfe7c  2026-04-01 21:00:00  rootnode                last snapshot  /      47.722 GiB
+1fae231e  2026-04-02 21:00:00  rootnode                last snapshot  /      47.741 GiB
+7799c3df  2026-04-03 21:00:00  rootnode                last snapshot  /      47.750 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+2f9713e5  2026-03-30 21:00:00  rootnode                /      47.415 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1440 / 1440 packs processed
+
+to repack:         88075 blobs / 163.438 MiB
+this removes:        612 blobs / 68.113 MiB
+to delete:             0 blobs / 0 B
+total prune:         612 blobs / 68.113 MiB
+remaining:        487929 blobs / 22.753 GiB
+unused size after prune: 1.133 GiB (4.98% of remaining size)
+
+repacking packs
+[0:15] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:02] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 11 old packs
+[0:00] 100.00%  11 / 11 files deleted
+done
+2026-04-03T21:01:17+11:00 Backup completed
+2026-04-04T21:00:00+11:00 Starting restic backup
+using parent snapshot 7799c3df
+
+Files:          39 new,   263 changed, 718462 unmodified
+Dirs:           18 new,   324 changed, 104419 unmodified
+Added to the repository: 255.991 MiB (96.826 MiB stored)
+
+processed 718764 files, 47.757 GiB in 0:45
+snapshot 70747628 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+c69bfe7c  2026-04-01 21:00:00  rootnode                last snapshot  /      47.722 GiB
+1fae231e  2026-04-02 21:00:00  rootnode                last snapshot  /      47.741 GiB
+7799c3df  2026-04-03 21:00:00  rootnode                last snapshot  /      47.750 GiB
+70747628  2026-04-04 21:00:00  rootnode                last snapshot  /      47.757 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+f2ffe970  2026-03-31 21:00:00  rootnode                /      47.651 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:08] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1442 / 1442 packs processed
+
+to repack:         88986 blobs / 261.094 MiB
+this removes:       1261 blobs / 159.161 MiB
+to delete:             0 blobs / 0 B
+total prune:        1261 blobs / 159.161 MiB
+remaining:        487412 blobs / 22.692 GiB
+unused size after prune: 1.126 GiB (4.96% of remaining size)
+
+repacking packs
+[0:17] 100.00%  17 / 17 packs repacked
+rebuilding index
+[0:02] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 17 old packs
+[0:00] 100.00%  17 / 17 files deleted
+done
+2026-04-04T21:01:19+11:00 Backup completed
+2026-04-05T21:00:00+10:00 Starting restic backup
+using parent snapshot 70747628
+
+Files:         192 new,   285 changed, 718445 unmodified
+Dirs:           74 new,   387 changed, 104362 unmodified
+Added to the repository: 275.775 MiB (99.317 MiB stored)
+
+processed 718922 files, 47.777 GiB in 0:49
+snapshot 0e655771 saved
+Applying Policy: keep 4 latest snapshots
+keep 4 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+1fae231e  2026-04-02 21:00:00  rootnode                last snapshot  /      47.741 GiB
+7799c3df  2026-04-03 21:00:00  rootnode                last snapshot  /      47.750 GiB
+70747628  2026-04-04 21:00:00  rootnode                last snapshot  /      47.757 GiB
+0e655771  2026-04-05 21:00:00  rootnode                last snapshot  /      47.777 GiB
+---------------------------------------------------------------------------------------
+4 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+c69bfe7c  2026-04-01 21:00:00  rootnode                /      47.722 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 4 snapshots
+[0:09] 100.00%  4 / 4 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:00] 100.00%  1440 / 1440 packs processed
+
+to repack:         88770 blobs / 162.823 MiB
+this removes:        627 blobs / 78.371 MiB
+to delete:           188 blobs / 32.237 MiB
+total prune:         815 blobs / 110.608 MiB
+remaining:        487606 blobs / 22.681 GiB
+unused size after prune: 1.129 GiB (4.98% of remaining size)
+
+repacking packs
+[0:18] 100.00%  11 / 11 packs repacked
+rebuilding index
+[0:02] 100.00%  13 / 13 indexes processed
+[0:00] 100.00%  8 / 8 old indexes deleted
+removing 14 old packs
+[0:00] 100.00%  14 / 14 files deleted
+done
+2026-04-05T21:01:25+10:00 Backup completed
