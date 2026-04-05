@@ -1,0 +1,30 @@
+SSH LOGIN DETAILS
+------------------
+Host   : rootnode
+Period : 2026-03-29 20:00 AEDT to 2026-04-05 20:00 AEST
+
+2026-04-04 (FAILED 0, ACCEPTED 3)
+  11:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=63803 | method=password
+    raw: 2026-04-04T11:27:32+11:00 rootnode sshd-session[2130245]: Accepted password for xindy from 10.244.10.1 port 63803 ssh2
+  21:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.3 | port=51754 | method=password
+    raw: 2026-04-04T21:13:28+11:00 rootnode sshd-session[2094739]: Accepted password for xindy from 10.244.10.3 port 51754 ssh2
+  21:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.3 | port=51761 | method=password
+    raw: 2026-04-04T21:29:19+11:00 rootnode sshd-session[2208689]: Accepted password for xindy from 10.244.10.3 port 51761 ssh2
+
+2026-03-31 (FAILED 1, ACCEPTED 4)
+  18:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=62740 | method=password
+    raw: 2026-03-31T18:02:13+11:00 rootnode sshd-session[1556217]: Accepted password for xindy from 10.244.10.1 port 62740 ssh2
+  18:05 | FAILED | user=xindy (valid) | ip=10.244.10.1 | port=63018 | method=password
+    raw: 2026-03-31T18:05:36+11:00 rootnode sshd-session[1580478]: Failed password for xindy from 10.244.10.1 port 63018 ssh2
+  18:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=63018 | method=password
+    raw: 2026-03-31T18:05:42+11:00 rootnode sshd-session[1580478]: Accepted password for xindy from 10.244.10.1 port 63018 ssh2
+  18:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50033 | method=password
+    raw: 2026-03-31T18:43:01+11:00 rootnode sshd-session[1847558]: Accepted password for xindy from 10.244.10.1 port 50033 ssh2
+  18:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50166 | method=password
+    raw: 2026-03-31T18:44:34+11:00 rootnode sshd-session[1859141]: Accepted password for xindy from 10.244.10.1 port 50166 ssh2
+
+2026-03-30 (FAILED 0, ACCEPTED 2)
+  17:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51159 | method=password
+    raw: 2026-03-30T17:43:59+11:00 rootnode sshd-session[84864]: Accepted password for xindy from 10.244.10.1 port 51159 ssh2
+  18:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53803 | method=password
+    raw: 2026-03-30T18:06:55+11:00 rootnode sshd-session[96195]: Accepted password for xindy from 10.244.10.1 port 53803 ssh2
