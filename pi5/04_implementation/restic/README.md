@@ -63,5 +63,5 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): host boundary, backup and retention model, failure implications
-- [issues_and_improvements.md](issues_and_improvements.md): known gaps and next steps
+- [issues_and_improvements.md](../../05_issues/restic.md): known gaps and next steps
 - `config/`: sanitized reference copies of the environment and exclusion files

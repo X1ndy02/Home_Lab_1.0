@@ -45,7 +45,7 @@ Trade-offs
 What is here
 - [service_model.md](service_model.md): host/service boundary and how Fail2Ban fits into the system
 - [jails.md](jails.md): the active jails, what they watch, and why they matter
-- [issues_and_improvements.md](issues_and_improvements.md): current weak spots and next cleanup items
+- [issues_and_improvements.md](../../05_issues/fail2ban.md): current weak spots and next cleanup items
 - `config/`: sanitized reference copy of the jail configuration
 - `actions/`: custom action files used by this setup
 - `reports/`: monthly reporting script and schedule reference

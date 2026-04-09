@@ -58,4 +58,4 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): test schedule, monitoring integration, drive status, failure model
-- [issues_and_improvements.md](issues_and_improvements.md): known gaps and next steps
+- [issues_and_improvements.md](../../05_issues/smart.md): known gaps and next steps

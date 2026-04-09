@@ -57,6 +57,6 @@ Trade-offs
 What is here
 - [engine.md](engine.md): runtime model and host/container boundary
 - [stacks.md](stacks.md): service grouping, dependency paths, and failure implications
-- [issues_and_improvements.md](issues_and_improvements.md): real problems found so far and what should be cleaned up next
+- [issues_and_improvements.md](../../05_issues/docker.md): real problems found so far and what should be cleaned up next
 - `compose/`
 

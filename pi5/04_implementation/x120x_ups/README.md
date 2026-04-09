@@ -67,5 +67,5 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): daemon model, GPIO/I2C boundary, shutdown sequence, failure implications
-- [issues_and_improvements.md](issues_and_improvements.md): known gaps and next steps
+- [issues_and_improvements.md](../../05_issues/x120x_ups.md): known gaps and next steps
 - `config/`: sanitized copies of the notify and shutdown configuration files

@@ -46,5 +46,5 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): host/container boundary
-- [issues_and_improvements.md](issues_and_improvements.md): known gaps and next steps
+- [issues_and_improvements.md](../../05_issues/portainer.md): known gaps and next steps
 - compose file: `../docker/compose/portainer/docker-compose.yml`

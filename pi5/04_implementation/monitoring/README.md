@@ -52,5 +52,5 @@ What is here
 
 - [service_model.md](service_model.md): host/container boundary and how monitoring is split
 - [stack_view.md](stack_view.md): the monitoring components and what each one does
-- [issues_and_improvements.md](issues_and_improvements.md): weak spots and next cleanup items
+- [issues_and_improvements.md](../../05_issues/monitoring.md): weak spots and next cleanup items
 

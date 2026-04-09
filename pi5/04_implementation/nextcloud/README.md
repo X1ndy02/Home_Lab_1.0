@@ -56,5 +56,5 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): container roles, storage layout, TLS model, failure implications
-- [issues_and_improvements.md](issues_and_improvements.md): known gaps and next steps
+- [issues_and_improvements.md](../../05_issues/nextcloud.md): known gaps and next steps
 - compose file: `../docker/compose/nextcloud/docker-compose.yml`

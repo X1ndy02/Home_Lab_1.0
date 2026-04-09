@@ -52,5 +52,5 @@ Trade-offs
 What is here
 
 - [service_model.md](service_model.md): authentication model, interface exposure, Fail2Ban integration
-- [issues_and_improvements.md](issues_and_improvements.md): known weak points and next steps
+- [issues_and_improvements.md](../../05_issues/ssh.md): known weak points and next steps
 - `config/`: sanitized copy of the active sshd configuration
