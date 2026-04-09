@@ -2,7 +2,7 @@ Pi 5 Improvement Checklist
 
 Current checklist
 
-- Review secret handling across Docker-related configs and move sensitive values out of compose files where possible.
+- ~~Review secret handling across Docker-related configs and move sensitive values out of compose files where possible.~~ Partially done 2026-04-09 — Grafana credentials moved to `.env`. Nextcloud secrets already in `.env`. Remaining: other stacks.
 - Recheck shutdown behaviour for slow-exit containers and adjust stop timing if needed.
 - Improve service health modelling so "container is running" is not treated as the same thing as "service is healthy".
 - Bring remaining Docker-related configuration under the same `pi5` repo structure.

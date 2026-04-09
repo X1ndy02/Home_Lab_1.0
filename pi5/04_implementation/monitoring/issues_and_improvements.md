@@ -16,7 +16,7 @@ Because this is a single-node system, the monitoring stack depends on the same h
 
 What I would change next
 
-1. Move Grafana secrets out of compose and into a cleaner secret-handling path.
+1. ~~Move Grafana secrets out of compose and into a cleaner secret-handling path.~~ Done 2026-04-09 — credentials moved to `/srv/monitoring/.env`.
 2. Bring more of the host-side alert scripts and timers into the repo under the `monitoring/` section.
 3. Improve monitoring for individual services so health is not treated as equivalent to container uptime.
 4. Add clearer validation of the monitoring stack itself so scrape failures, stale dashboards, or exporter drift become visible quickly.

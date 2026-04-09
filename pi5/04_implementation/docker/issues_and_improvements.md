@@ -2,10 +2,10 @@ Issues And Improvements
 
 Real issues already found
 Secret handling is weaker than it should be
-The live setup still has secret sprawl:
+The live setup still has some secret sprawl:
 
 - one stack stores sensitive values in an env file
-- the monitoring stack currently keeps the Grafana admin password directly in its compose definition
+- ~~the monitoring stack currently keeps the Grafana admin password directly in its compose definition~~ Fixed 2026-04-09 — moved to `/srv/monitoring/.env`
 - monitoring-related secret material exists on disk outside this repo and is intentionally not committed
 
 Shutdown behaviour still needs tightening

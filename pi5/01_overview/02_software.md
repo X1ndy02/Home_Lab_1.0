@@ -9,6 +9,12 @@ Containers are organised into custom bridge networks to separate
 application services from monitoring services.
 
 
+Container management
+Portainer CE is installed as a standalone Docker stack.
+It connects to the local Docker socket and provides a web UI for managing all containers, stacks, and volumes.
+Access is on port 9000 (local network) and via ZeroTier VPN.
+Image version pinned to 2.39.1.
+
 Nextcloud stack
 
 The core service is Nextcloud, running in multiple containers:

@@ -18,12 +18,24 @@ Components
 
 - provides dashboards for host and service visibility
 - stores data and provisioning material on host-mounted paths
-- currently keeps admin credentials in compose, which is a known weak point
+- admin credentials are stored in `/srv/monitoring/.env` and referenced by compose
+- port 3000 is bound to the ZeroTier interface only (`10.244.10.4:3000`) — not exposed on the LAN
 
 `renderer`
 
 - supports dashboard image rendering
 - extends Grafana output options without changing the scrape path itself
+- runs on the internal bridge network only — no host port exposed
+
+Network isolation
+Prometheus, node-exporter, and renderer have no host port bindings.
+All inter-service communication happens on an internal bridge network.
+Only Grafana is reachable from outside containers, and only via ZeroTier.
+
+Image versions (pinned 2026-04-09)
+- `prom/prometheus:v3.9.1`
+- `prom/node-exporter:v1.10.2`
+- `grafana/grafana-oss:12.3.1`
 
 How they interact
 

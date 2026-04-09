@@ -1,11 +1,12 @@
 Stack View
 
 Functional grouping
-The Docker layer is split into three functional groups rather than one combined deployment:
+The Docker layer is split into four functional groups rather than one combined deployment:
 
 - `nextcloud`: user-facing storage and collaboration path
 - `monitoring`: observability and dashboarding path
 - `home-assistant`: local automation and host-adjacent integration
+- `portainer`: container management UI
 
 Request and dependency flow
 Storage path
@@ -36,6 +37,12 @@ broken storage path.
 
 Home Assistant path
 Home Assistant is kept separate because its integration model is different from the other stacks.
+
+Portainer path
+Portainer CE runs as a standalone compose project and connects to the local Docker socket directly.
+It provides a web UI for inspecting containers, stacks, volumes, and images across the full Docker runtime.
+Access is available on the local network (port 9000) and via ZeroTier VPN.
+It does not participate in any application stack dependency chain.
 
 Design choices that matter
 - Separate compose projects reduce blast radius during routine changes.
