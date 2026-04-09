@@ -1,0 +1,7 @@
+Source: pi_monitor_alert
+Date: 2026-04-09T22:10:19+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SSH_LOGIN OK
+
+No failed SSH logins since last check
