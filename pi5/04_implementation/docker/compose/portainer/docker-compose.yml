@@ -1,0 +1,16 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:2.39.1
+    container_name: portainer
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    command: --admin-password='$$2b$$12$$<bcrypt-hash-redacted>'
+
+volumes:
+  portainer_data:
+    name: portainer_data
