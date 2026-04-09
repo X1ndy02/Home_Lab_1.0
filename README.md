@@ -19,14 +19,26 @@ The goal is to build operational knowledge by running services properly, monitor
 
 ## Pi 5 reports
 
-- [Tracker](pi5/03_reports/03_reports/tracker.md)
-- [System reports](pi5/03_reports/03_reports/01_system_reports)
-- [System alerts](pi5/03_reports/03_reports/02_system_alerts)
+- [Tracker](pi5/03_reports/tracker.md)
+- [System reports](pi5/03_reports/01_system_reports)
+- [System alerts](pi5/03_reports/02_system_alerts)
 
 ## Implementation exports
 
-The `pi5/04_implementation/` tree is reserved for structured copies of the live Pi 5 configuration and service files. Each subsystem is kept in its own folder so the repo can grow section by section without mixing documentation and runtime artifacts.
+The `pi5/04_implementation/` tree holds structured copies of the live Pi 5 configuration and service files. Each subsystem has its own folder with a README, service model, and config references.
+
+- [Docker](pi5/04_implementation/docker/)
+- [Nextcloud](pi5/04_implementation/nextcloud/)
+- [Monitoring](pi5/04_implementation/monitoring/)
+- [Portainer](pi5/04_implementation/portainer/)
+- [Fail2Ban](pi5/04_implementation/fail2ban/)
+- [Restic](pi5/04_implementation/restic/)
+- [SSH](pi5/04_implementation/ssh/)
+- [SMART](pi5/04_implementation/smart/)
+- [UPS](pi5/04_implementation/x120x_ups/)
+- [Home Assistant](pi5/04_implementation/home_assistant/)
 
 ## Pi 5 issues
 
 - [Improvement checklist](pi5/05_issues/01_improvement_checklist.md)
+- [Issues index](pi5/05_issues/README.md)
