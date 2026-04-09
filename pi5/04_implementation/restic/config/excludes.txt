@@ -1,0 +1,12 @@
+# Restic backup exclusion list
+# Live file: /etc/restic/excludes.txt
+
+/proc
+/sys
+/dev
+/run
+/tmp
+/mnt/backup
+/mnt
+/media
+/lost+found
