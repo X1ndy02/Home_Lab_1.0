@@ -19,7 +19,7 @@ Current checklist
 - Review log path dependencies whenever Dockerized services or storage paths change.
 - Keep the repo copy aligned with the live jail setup and custom action files.
 - Add Home Assistant config directory to Restic backup coverage.
-- Pin Home Assistant image to a specific version tag.
-- Add SMART tests and pi-monitor coverage for the NVMe boot drive.
+- ~~Pin Home Assistant image to a specific version tag.~~ Done 2026-04-10 — pinned to `2026.3.2`.
+- ~~Add SMART tests and pi-monitor coverage for the NVMe boot drive.~~ Partially done 2026-04-10 — pi-monitor now checks NVMe health every cycle as a separate `SMART_NVME` check. Scheduled test timer not yet added.
 - Set up SSH key authentication and disable password auth once keys are confirmed working.
 - ~~Add an offsite or remote Restic backup target.~~ Done 2026-04-10 — Cloudflare R2 bucket `rootnode-restic` configured, snapshots copied nightly after local backup, keep-last=2 on R2.
