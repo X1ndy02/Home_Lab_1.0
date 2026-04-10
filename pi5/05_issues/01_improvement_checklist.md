@@ -22,4 +22,4 @@ Current checklist
 - Pin Home Assistant image to a specific version tag.
 - Add SMART tests and pi-monitor coverage for the NVMe boot drive.
 - Set up SSH key authentication and disable password auth once keys are confirmed working.
-- Add an offsite or remote Restic backup target.
+- ~~Add an offsite or remote Restic backup target.~~ Done 2026-04-10 — Cloudflare R2 bucket `rootnode-restic` configured, snapshots copied nightly after local backup, keep-last=2 on R2.
