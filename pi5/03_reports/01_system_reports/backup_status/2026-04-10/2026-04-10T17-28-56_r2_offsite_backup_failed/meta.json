@@ -1,0 +1,14 @@
+{
+  "source": "backup_status",
+  "timestamp": "2026-04-10T17:28:56+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "R2 Offsite Backup FAILED",
+  "files": [
+    "pi5/03_reports/01_system_reports/backup_status/2026-04-10/2026-04-10T17-28-56_r2_offsite_backup_failed/email.txt",
+    "pi5/03_reports/01_system_reports/backup_status/2026-04-10/2026-04-10T17-28-56_r2_offsite_backup_failed/restic-backup.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-04-10/2026-04-10T17-28-56_r2_offsite_backup_failed/restic-summary.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-04-10/2026-04-10T17-28-56_r2_offsite_backup_failed/restic-events.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-04-10/2026-04-10T17-28-56_r2_offsite_backup_failed/attachments.md"
+  ]
+}

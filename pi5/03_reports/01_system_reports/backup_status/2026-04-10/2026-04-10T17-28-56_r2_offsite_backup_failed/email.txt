@@ -1,0 +1,21 @@
+Source: backup_status
+Date: 2026-04-10T17:28:56+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: R2 Offsite Backup FAILED
+
+R2 Offsite Backup — Friday 10 April 2026, 17:28 AEST
+============================================================
+  Copy            : OK
+  Rotation        : FAILED
+  Latest snapshot : N/A
+  Snapshots kept  : N/A
+
+------------------------------------------------------------
+WHAT TO CHECK IF THIS FAILS
+------------------------------------------------------------
+  - Check internet connectivity on rootnode
+  - Verify credentials in /etc/restic/backup.env
+  - Re-run: sudo /usr/local/sbin/restic-backup.sh
+
+Full log attached.
