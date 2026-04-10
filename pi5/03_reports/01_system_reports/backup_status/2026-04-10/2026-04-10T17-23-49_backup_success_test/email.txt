@@ -1,0 +1,20 @@
+Source: backup_status
+Date: 2026-04-10T17:23:49+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Backup Success [TEST]
+
+Local Backup — Friday 10 April 2026, 17:23 AEST
+============================================================
+  Status          : Success
+  Latest snapshot : ef416d11 2026-04-10 21:00:00
+  Disk used       : 23G used of 219G (11%)
+
+------------------------------------------------------------
+WHAT TO CHECK IF THIS FAILS
+------------------------------------------------------------
+  - /var/log/restic/backup.log on rootnode
+  - mount | grep backup  (is /mnt/backup mounted?)
+  - Re-run: sudo /usr/local/sbin/restic-backup.sh
+
+Full log attached.
