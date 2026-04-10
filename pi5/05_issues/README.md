@@ -16,3 +16,4 @@ Each file covers one subsystem and links back to the relevant implementation fol
 | [smart.md](smart.md) | SMART disk health | [04_implementation/smart/](../04_implementation/smart/) |
 | [x120x_ups.md](x120x_ups.md) | X120x UPS HAT | [04_implementation/x120x_ups/](../04_implementation/x120x_ups/) |
 | [home_assistant.md](home_assistant.md) | Home Assistant | [04_implementation/home_assistant/](../04_implementation/home_assistant/) |
+| [firewall.md](firewall.md) | Firewall & port exposure | [04_implementation/firewall/](../04_implementation/firewall/) |
