@@ -1,0 +1,21 @@
+Source: backup_status
+Date: 2026-04-10T17:23:56+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: R2 Offsite Backup Success [TEST]
+
+R2 Offsite Backup — Friday 10 April 2026, 17:23 AEST
+============================================================
+  Copy            : Success
+  Rotation        : Success
+  Latest snapshot : 902cbc37 2026-04-10 21:00:00
+  Snapshots kept  : 2
+
+------------------------------------------------------------
+WHAT TO CHECK IF THIS FAILS
+------------------------------------------------------------
+  - Check internet connectivity on rootnode
+  - Verify credentials in /etc/restic/backup.env
+  - Re-run: sudo /usr/local/sbin/restic-backup.sh
+
+Full log attached.
