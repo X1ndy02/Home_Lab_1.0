@@ -1,6 +1,7 @@
 services:
   db:
     image: mariadb:11.4
+    container_name: nextcloud-db
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: unless-stopped
     volumes:
@@ -13,12 +14,14 @@ services:
 
   redis:
     image: redis:7-alpine
+    container_name: nextcloud-redis
     restart: unless-stopped
     volumes:
       - /srv/nextcloud/redis:/data
 
   clamav:
     image: mkodockx/docker-clamav:latest
+    container_name: nextcloud-clamav
     restart: unless-stopped
     volumes:
       - clamav-db:/var/lib/clamav
@@ -27,6 +30,7 @@ services:
 
   app:
     image: nextcloud:29-apache
+    container_name: nextcloud
     restart: unless-stopped
     volumes:
       - /srv/nextcloud/app:/var/www/html
@@ -47,6 +51,7 @@ services:
 
   proxy:
     image: nginx:alpine
+    container_name: nextcloud-proxy
     restart: unless-stopped
     ports:
       - "80:80"
