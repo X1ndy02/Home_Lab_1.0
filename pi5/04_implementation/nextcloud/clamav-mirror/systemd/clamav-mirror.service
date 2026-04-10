@@ -1,0 +1,14 @@
+[Unit]
+Description=ClamAV local mirror (RangeHTTPServer)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=xindy
+WorkingDirectory=/home/xindy/.cvdupdate/database
+ExecStart=/usr/bin/python3 -m RangeHTTPServer -b 172.18.0.1 8000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

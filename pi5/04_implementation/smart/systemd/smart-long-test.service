@@ -1,0 +1,6 @@
+[Unit]
+Description=Weekly SMART long test
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/usr/sbin/smartctl -t long /dev/sda >> /srv/monitoring/logs/smart-long.log 2>&1'

@@ -1,0 +1,12 @@
+[Unit]
+Description=Geekworm X12xx UPS power-loss email notifier
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/x120x-ups-notify.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

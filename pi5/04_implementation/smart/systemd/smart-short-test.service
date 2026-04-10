@@ -1,0 +1,6 @@
+[Unit]
+Description=Daily SMART short test
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/smartctl -t short /dev/sda

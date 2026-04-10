@@ -1,0 +1,6 @@
+[Unit]
+Description=Pi monitoring checks
+
+[Service]
+Type=oneshot
+ExecStart=/srv/monitoring/bin/monitor-checks.sh

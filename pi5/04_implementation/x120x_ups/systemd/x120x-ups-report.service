@@ -1,0 +1,6 @@
+[Unit]
+Description=Monthly UPS battery report email
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/x120x-ups-report.py

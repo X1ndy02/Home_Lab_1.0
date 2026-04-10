@@ -1,0 +1,12 @@
+[Unit]
+Description=Geekworm X12xx UPS low-battery shutdown handler
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/x120x-ups-shutdown.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

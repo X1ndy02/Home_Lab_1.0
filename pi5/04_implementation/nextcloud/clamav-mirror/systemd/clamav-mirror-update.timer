@@ -1,0 +1,9 @@
+[Unit]
+Description=Run cvdupdate hourly
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Run monthly UPS battery report
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

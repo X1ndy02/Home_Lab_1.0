@@ -1,0 +1,8 @@
+[Unit]
+Description=Update ClamAV local mirror (cvdupdate)
+
+[Service]
+Type=oneshot
+User=xindy
+WorkingDirectory=/home/xindy
+ExecStart=/usr/bin/cvdupdate update
