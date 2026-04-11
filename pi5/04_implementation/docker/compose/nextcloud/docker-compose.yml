@@ -34,6 +34,7 @@ services:
     restart: unless-stopped
     volumes:
       - /srv/nextcloud/app:/var/www/html
+      - /mnt/backup/nextcloud/data:/mnt/backup/nextcloud/data
     environment:
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_DATABASE=nextcloud

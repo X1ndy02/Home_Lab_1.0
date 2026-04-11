@@ -4,28 +4,32 @@ Container roles
 
 | Container | Image | Role |
 |-----------|-------|------|
-| `nextcloud-proxy-1` | nginx:alpine | TLS termination, HTTP→HTTPS redirect, reverse proxy |
-| `nextcloud-app-1` | nextcloud:29-apache | Application logic, PHP, file handling |
-| `nextcloud-db-1` | mariadb:11.4 | Persistent application database |
-| `nextcloud-redis-1` | redis:7-alpine | Session cache and file locking |
-| `nextcloud-clamav-1` | mkodockx/docker-clamav:latest | Antivirus scanning sidecar |
+| `nextcloud-proxy` | nginx:alpine | TLS termination, HTTP→HTTPS redirect, reverse proxy |
+| `nextcloud` | nextcloud:29-apache | Application logic, PHP, file handling |
+| `nextcloud-db` | mariadb:11.4 | Persistent application database |
+| `nextcloud-redis` | redis:7-alpine | Session cache and file locking |
+| `nextcloud-clamav` | mkodockx/docker-clamav:latest | Antivirus scanning sidecar |
 
 All containers use `restart: unless-stopped`.
 No health checks are defined — container uptime is the only signal available without manual inspection.
 
 Storage model
 
-All persistent state lives in host-mounted directories under `/srv/nextcloud/`:
+Persistent state is split across NVMe (application files) and SATA SSD (user data):
 
-| Path | Contents |
-|------|----------|
-| `/srv/nextcloud/app` | Nextcloud application files and user data |
-| `/srv/nextcloud/db` | MariaDB data directory |
-| `/srv/nextcloud/redis` | Redis persistence |
-| `/srv/nextcloud/certs` | TLS certificate and key (self-signed with local CA) |
-| `/srv/nextcloud/nginx` | nginx config and access/error logs |
-| `/srv/nextcloud/clamav` | `clamd.conf` and `freshclam.conf` (mounted read-only) |
+| Path | Device | Contents |
+|------|--------|----------|
+| `/srv/nextcloud/app` | NVMe | Nextcloud application files (PHP, config, apps) |
+| `/mnt/backup/nextcloud/data` | SATA SSD | User data directory (symlinked from `/srv/nextcloud/app/data`) |
+| `/srv/nextcloud/db` | NVMe | MariaDB data directory |
+| `/srv/nextcloud/redis` | NVMe | Redis persistence |
+| `/srv/nextcloud/certs` | NVMe | TLS certificate and key (self-signed with local CA) |
+| `/srv/nextcloud/nginx` | NVMe | nginx config and access/error logs |
+| `/srv/nextcloud/clamav` | NVMe | `clamd.conf` and `freshclam.conf` (mounted read-only) |
 
+User data lives on the SATA SSD (`/dev/sda2`, mounted at `/mnt/backup`).
+`/srv/nextcloud/app/data` is a symlink to `/mnt/backup/nextcloud/data`.
+The SATA path is also bind-mounted directly into the container so the symlink resolves inside the Docker namespace.
 ClamAV virus definitions are stored in a named Docker volume (`clamav-db`) rather than a bind mount.
 All bind-mounted paths are covered by the Restic backup.
 
@@ -43,7 +47,8 @@ Trusted domains
 Configured trusted domains:
 - `localhost`
 - `192.168.1.181` (LAN IP)
-- `10.244.10.244` (ZeroTier IP)
+- `10.244.10.4` (ZeroTier primary IP)
+- `10.244.10.244` (ZeroTier secondary IP)
 
 If the Pi's LAN IP changes, Nextcloud will reject requests from the new address until the config is updated.
 
