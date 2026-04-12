@@ -1,0 +1,31 @@
+Source: pi_monitor_weekly
+Date: 2026-04-12T20:00:08.631947+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly Pi Monitor Summary (2026-04-12)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-04-05 20:00 AEST to 2026-04-12 20:00 AEST
+
+Totals
+  Total events : 4
+  OK           : 2
+  WARN         : 2
+  CRIT         : 0
+
+Top checks by event count
+  SSH_LOGIN           3  (WARN 2, CRIT 0)
+  SMART_NVME          1  (WARN 0, CRIT 0)
+
+Checks with WARN/CRIT
+  SSH_LOGIN        WARN 2   CRIT 0   last 2026-04-09 22:10 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-04-09 22:09 | SSH_LOGIN | WARN
+    SSH ALERT · FAILED LOGINS
+  2026-04-09 22:08 | SSH_LOGIN | WARN
+    SSH ALERT · FAILED LOGINS
+
+Attachments: SSH login details (no other WARN/CRIT checks this period)
