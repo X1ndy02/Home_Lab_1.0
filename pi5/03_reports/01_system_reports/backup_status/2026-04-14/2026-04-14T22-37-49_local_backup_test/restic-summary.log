@@ -1,0 +1,14 @@
+Summary (from log):
+Failures: 1
+Warnings: 1
+Successes: 1
+
+Last run details:
+Start: 2026-01-27T21:00:00+11:00 Starting restic backup
+End: 2026-01-27T21:00:03+11:00 Backup completed
+Files:        10 new,  2 changed, 100 unmodified
+Dirs:          1 new,  1 changed,  20 unmodified
+Added to the repository: 12.345 MiB (4.321 MiB stored)
+processed 112 files, 123.456 MiB in 0:03
+snapshot deadbeef saved
+Disk usage: 66G used of 219G (32%)
