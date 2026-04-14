@@ -40,13 +40,13 @@ summary_text() {
     warnings=$(grep -c "Backup WARNING" "$log_file" 2>/dev/null || true)
     successes=$(grep -c "Backup completed" "$log_file" 2>/dev/null || true)
 
-    last_start=$(grep "Starting restic backup" "$log_file" 2>/dev/null | tail -n 1)
-    last_end=$(grep "Backup completed" "$log_file" 2>/dev/null | tail -n 1)
-    files=$(grep "^Files:" "$log_file" 2>/dev/null | tail -n 1)
-    dirs=$(grep "^Dirs:" "$log_file" 2>/dev/null | tail -n 1)
-    added=$(grep "^Added to the repository:" "$log_file" 2>/dev/null | tail -n 1)
-    processed=$(grep "^processed " "$log_file" 2>/dev/null | tail -n 1)
-    snapshot=$(grep "^snapshot " "$log_file" 2>/dev/null | tail -n 1)
+    last_start=$(grep "Starting restic backup" "$log_file" 2>/dev/null | tail -n 1 || true)
+    last_end=$(grep "Backup completed" "$log_file" 2>/dev/null | tail -n 1 || true)
+    files=$(grep "^Files:" "$log_file" 2>/dev/null | tail -n 1 || true)
+    dirs=$(grep "^Dirs:" "$log_file" 2>/dev/null | tail -n 1 || true)
+    added=$(grep "^Added to the repository:" "$log_file" 2>/dev/null | tail -n 1 || true)
+    processed=$(grep "^processed " "$log_file" 2>/dev/null | tail -n 1 || true)
+    snapshot=$(grep "^snapshot " "$log_file" 2>/dev/null | tail -n 1 || true)
     usage=$(df -h /mnt/backup 2>/dev/null | awk 'NR==2 {print $3" used of "$2" ("$5")"}')
 
     printf 'Summary (from log):\n'
@@ -131,6 +131,117 @@ $archive_output" \
   fi
 }
 
+r2_summary_text() {
+  local r2_log_file="$1"
+  local copy_result="${2:-unknown}"
+  local rotate_result="${3:-unknown}"
+  local snapshot_count="${4:-N/A}"
+
+  printf 'Offsite Backup (Cloudflare R2) Summary\n'
+  printf '======================================\n'
+  printf 'Copy              : %s\n' "$copy_result"
+  printf 'Rotation          : %s\n' "$rotate_result"
+  printf 'Snapshots in R2   : %s\n' "$snapshot_count"
+
+  if [ -r "$r2_log_file" ]; then
+    local start_time end_time snap_id packs_line remove_count
+
+    start_time=$(grep "Starting R2 offsite copy" "$r2_log_file" 2>/dev/null | head -1 | awk '{print $1}' || true)
+    end_time=$(grep "R2 rotation complete" "$r2_log_file" 2>/dev/null | tail -1 | awk '{print $1}' || true)
+    snap_id=$(grep "^snapshot .* of \[" "$r2_log_file" 2>/dev/null | head -1 | awk '{print $2}' || true)
+    packs_line=$(grep "packs copied" "$r2_log_file" 2>/dev/null | tail -1 | sed 's/^[[:space:]]*//' || true)
+    remove_count=$(grep "^remove [0-9]* snapshots:" "$r2_log_file" 2>/dev/null | tail -1 | awk '{print $2}' || true)
+
+    printf '\nTimeline:\n'
+    [ -n "$start_time" ] && printf '  Started   : %s\n' "$start_time"
+    [ -n "$end_time"   ] && printf '  Completed : %s\n' "$end_time"
+
+    printf '\nCopy details:\n'
+    [ -n "$snap_id"    ] && printf '  Snapshot  : %s\n' "$snap_id"
+    [ -n "$packs_line" ] && printf '  Progress  : %s\n' "$packs_line"
+
+    printf '\nRotation details:\n'
+    printf '  Kept      : %s snapshot(s)\n' "${snapshot_count:-N/A}"
+    [ -n "$remove_count" ] && printf '  Pruned    : %s old snapshot(s)\n' "$remove_count"
+
+    # Print the kept-snapshots table from forget output
+    if grep -q "^ID.*Time.*Host" "$r2_log_file" 2>/dev/null; then
+      printf '\nKept snapshots:\n'
+      awk '/^ID[[:space:]]+Time/{p=1} p{print} /^[0-9]+ snapshots$/{p=0}' "$r2_log_file"
+    fi
+  fi
+}
+
+send_r2_mail() {
+  local subject="$1"
+  local body="$2"
+  local r2_log_file="$3"
+  local copy_result="$4"
+  local rotate_result="$5"
+  local snapshot_count="$6"
+  local boundary="====restic_$(date +%s%N)===="
+  local tmp_dir tmp_log tmp_summary tmp_events tmp_body
+
+  if ! command -v sendmail >/dev/null 2>&1; then
+    return 0
+  fi
+
+  tmp_dir=$(mktemp -d)
+  tmp_log="$tmp_dir/r2-offsite.log"
+  tmp_summary="$tmp_dir/r2-summary.log"
+  tmp_events="$tmp_dir/r2-events.log"
+  tmp_body="$tmp_dir/r2-email.txt"
+
+  if [ -r "$r2_log_file" ]; then
+    cp "$r2_log_file" "$tmp_log"
+  else
+    printf '(no R2 log available)\n' > "$tmp_log"
+  fi
+
+  {
+    r2_summary_text "$r2_log_file" "$copy_result" "$rotate_result" "$snapshot_count"
+  } > "$tmp_summary"
+
+  {
+    grep -iE "FAILED|Fatal:|error:" "$r2_log_file" 2>/dev/null || true
+  } > "$tmp_events"
+
+  printf '%s\n' "$body" > "$tmp_body"
+  chmod 755 "$tmp_dir"
+  chmod 644 "$tmp_log" "$tmp_summary" "$tmp_events" "$tmp_body"
+
+  {
+    printf 'From: %s\n' "$RESTIC_NOTIFY_FROM"
+    printf 'To: %s\n' "$RESTIC_NOTIFY_TO"
+    printf 'Subject: %s\n' "$subject"
+    printf 'MIME-Version: 1.0\n'
+    printf 'Content-Type: multipart/mixed; boundary="%s"\n' "$boundary"
+    printf '\n--%s\n' "$boundary"
+    printf 'Content-Type: text/plain; charset="utf-8"\n'
+    printf 'Content-Transfer-Encoding: 7bit\n\n'
+    printf '%s\n' "$body"
+    printf '\n--%s\n' "$boundary"
+    printf 'Content-Type: text/plain; name="r2-offsite.log"\n'
+    printf 'Content-Transfer-Encoding: base64\n'
+    printf 'Content-Disposition: attachment; filename="r2-offsite.log"\n\n'
+    base64 "$tmp_log"
+    printf '\n--%s\n' "$boundary"
+    printf 'Content-Type: text/plain; name="r2-summary.log"\n'
+    printf 'Content-Transfer-Encoding: base64\n'
+    printf 'Content-Disposition: attachment; filename="r2-summary.log"\n\n'
+    base64 "$tmp_summary"
+    printf '\n--%s\n' "$boundary"
+    printf 'Content-Type: text/plain; name="r2-events.log"\n'
+    printf 'Content-Transfer-Encoding: base64\n'
+    printf 'Content-Disposition: attachment; filename="r2-events.log"\n\n'
+    base64 "$tmp_events"
+    printf '\n--%s--\n' "$boundary"
+  } | sendmail -t || log "WARNING: sendmail failed for: $subject"
+  archive_backup_mail "$subject" "$tmp_body" "$tmp_log" "$tmp_summary" "$tmp_events" || true
+
+  rm -rf "$tmp_dir"
+}
+
 send_ntfy() {
   local subject="$1"
   local priority="${2:-default}"
@@ -197,8 +308,8 @@ send_mail() {
       printf 'Content-Disposition: attachment; filename="restic-events.log"\n\n'
       base64 "$tmp_events"
       printf '\n--%s--\n' "$boundary"
-    } | sendmail -t
-    archive_backup_mail "$subject" "$tmp_body" "$tmp_full" "$tmp_summary" "$tmp_events"
+    } | sendmail -t || log "WARNING: sendmail failed for: $subject"
+    archive_backup_mail "$subject" "$tmp_body" "$tmp_full" "$tmp_summary" "$tmp_events" || true
 
     rm -rf "$tmp_dir"
   else
@@ -216,8 +327,8 @@ send_mail() {
       printf 'Content-Type: text/plain; charset="utf-8"\n'
       printf 'Content-Transfer-Encoding: 7bit\n\n'
       printf '%s\n' "$body"
-    } | sendmail -t
-    archive_backup_mail "$subject" "$tmp_body"
+    } | sendmail -t || log "WARNING: sendmail failed for: $subject"
+    archive_backup_mail "$subject" "$tmp_body" || true
 
     rm -rf "$tmp_dir"
   fi
@@ -237,14 +348,14 @@ snapshot deadbeef saved
 2026-01-27T21:00:04+11:00 Backup WARNING: disk usage 85%
 2026-01-27T21:00:05+11:00 Backup failed
 TESTLOG
-  send_mail "Backup TEST" "$(summary_counts "$tmp_log")" "$tmp_log"
+  send_mail "Local Backup — TEST" "$(summary_counts "$tmp_log")" "$tmp_log"
   rm -rf "$tmp_dir"
   exit 0
 fi
 
 if ! mountpoint -q /mnt/backup; then
   log "Backup mount not present: /mnt/backup"
-  send_mail "Backup FAILED: /mnt/backup not mounted" "$(summary_counts "$RESTIC_LOG")" "$RESTIC_LOG"
+  send_mail "Local Backup — FAILED: /mnt/backup not mounted" "$(summary_counts "$RESTIC_LOG")" "$RESTIC_LOG"
   exit 1
 fi
 
@@ -262,8 +373,8 @@ printf '%s\n' "$backup_output" >> "$RESTIC_LOG"
 
 if [ "$backup_status" -ne 0 ]; then
   log "Backup failed"
-  send_ntfy "Backup FAILED: $RESTIC_REPOSITORY" urgent
-  send_mail "Backup FAILED" "$(summary_counts "$RESTIC_LOG")" "$RESTIC_LOG"
+  send_ntfy "Local Backup — FAILED" urgent
+  send_mail "Local Backup — FAILED" "$(summary_counts "$RESTIC_LOG")" "$RESTIC_LOG"
   exit "$backup_status"
 fi
 
@@ -296,11 +407,23 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
               --password-file "$RESTIC_PASSWORD_FILE" \
               cat config >/dev/null 2>&1; then
     log "Initializing R2 restic repo"
-    AWS_ACCESS_KEY_ID="$RESTIC_R2_ACCESS_KEY_ID" \
-    AWS_SECRET_ACCESS_KEY="$RESTIC_R2_SECRET_ACCESS_KEY" \
-    restic --repo "$RESTIC_R2_REPOSITORY" \
-           --password-file "$RESTIC_PASSWORD_FILE" \
-           init 2>&1 | tee -a "$RESTIC_LOG" "$r2_log"
+    init_output=$(
+      AWS_ACCESS_KEY_ID="$RESTIC_R2_ACCESS_KEY_ID" \
+      AWS_SECRET_ACCESS_KEY="$RESTIC_R2_SECRET_ACCESS_KEY" \
+      restic --repo "$RESTIC_R2_REPOSITORY" \
+             --password-file "$RESTIC_PASSWORD_FILE" \
+             init 2>&1
+    ) || {
+      # Tolerate "already initialized" — cat config can fail on transient network errors
+      if printf "%s\n" "$init_output" | grep -q "already initialized"; then
+        log "R2 repo already initialized (cat config failed transiently) — continuing"
+      else
+        printf "%s\n" "$init_output" | tee -a "$RESTIC_LOG" "$r2_log"
+        log "R2 restic init FAILED"
+        exit 1
+      fi
+    }
+    printf "%s\n" "$init_output" | tee -a "$RESTIC_LOG" "$r2_log"
   fi
 
   r2_copy_status=0
@@ -321,7 +444,7 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
     printf '%s R2 offsite copy FAILED\n' "$(date -Is)" >> "$r2_log"
     r2_copy_result="FAILED"
     r2_rotate_result="skipped (copy failed)"
-    send_ntfy "R2 offsite copy FAILED" high
+    send_ntfy "Offsite Backup — FAILED: copy" high
   else
     log "R2 offsite copy completed"
     printf '%s R2 offsite copy completed\n' "$(date -Is)" >> "$r2_log"
@@ -345,7 +468,16 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
       log "R2 rotation FAILED"
       printf '%s R2 rotation FAILED\n' "$(date -Is)" >> "$r2_log"
       r2_rotate_result="FAILED"
-      send_ntfy "R2 rotation FAILED" high
+      send_ntfy "Offsite Backup — FAILED: rotation" high
+      # Still query count so the email shows how many snapshots remain in R2
+      r2_snapshot_count=$(
+        AWS_ACCESS_KEY_ID="$RESTIC_R2_ACCESS_KEY_ID" \
+        AWS_SECRET_ACCESS_KEY="$RESTIC_R2_SECRET_ACCESS_KEY" \
+        restic snapshots \
+          --repo "$RESTIC_R2_REPOSITORY" \
+          --password-file "$RESTIC_PASSWORD_FILE" \
+          --compact 2>/dev/null | grep -c '^[0-9a-f]' || echo "?"
+      )
     else
       log "R2 rotation complete (keep-last=${RESTIC_R2_KEEP_LAST:-2})"
       printf '%s R2 rotation complete\n' "$(date -Is)" >> "$r2_log"
@@ -365,11 +497,11 @@ fi
 # --- Local backup email ---
 local_latest=$(restic snapshots --latest 1 --compact 2>/dev/null | grep '^[0-9a-f]' | awk '{print $1, $2, $3}' || echo "N/A")
 
-local_subject="Backup Success"
+local_subject="Local Backup — Success"
 if [ -n "$usage_pct" ] && [ "$usage_pct" -ge 80 ]; then
-  local_subject="Backup Success — WARNING: disk ${usage_pct}%"
+  local_subject="Local Backup — WARNING: disk ${usage_pct}%"
   log "Backup WARNING: disk usage ${usage_pct}%"
-  send_ntfy "Backup WARNING: disk usage ${usage_pct}%" high
+  send_ntfy "Local Backup — WARNING: disk ${usage_pct}%" high
 fi
 
 local_body="$(cat <<REPORT
@@ -402,9 +534,9 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
   [ "${r2_rotate_result}" = "FAILED" ] && r2_failed=1
 
   if [ "$r2_failed" -eq 1 ]; then
-    r2_subject="R2 Offsite Backup FAILED"
+    r2_subject="Offsite Backup — FAILED"
     r2_body="$(cat <<REPORT
-R2 Offsite Backup — $(date '+%A %d %B %Y, %H:%M %Z')
+Offsite Backup (Cloudflare R2) — $(date '+%A %d %B %Y, %H:%M %Z')
 ============================================================
   Copy            : ${r2_copy_result}
   Rotation        : ${r2_rotate_result}
@@ -418,24 +550,24 @@ WHAT TO CHECK
   - Verify credentials in /etc/restic/backup.env
   - Re-run: sudo /usr/local/sbin/restic-backup.sh
 
-R2 log attached.
+Logs attached.
 REPORT
 )"
   else
-    r2_subject="R2 Offsite Backup Success"
+    r2_subject="Offsite Backup — Success"
     r2_body="$(cat <<REPORT
-R2 Offsite Backup — $(date '+%A %d %B %Y, %H:%M %Z')
+Offsite Backup (Cloudflare R2) — $(date '+%A %d %B %Y, %H:%M %Z')
 ============================================================
   Copy            : ${r2_copy_result}
   Rotation        : ${r2_rotate_result}
   Latest snapshot : ${r2_latest}
   Snapshots kept  : ${r2_snapshot_count}
 
-R2 log attached.
+Logs attached.
 REPORT
 )"
   fi
 
-  send_mail "$r2_subject" "$r2_body" "$r2_log"
+  send_r2_mail "$r2_subject" "$r2_body" "$r2_log" "$r2_copy_result" "$r2_rotate_result" "$r2_snapshot_count"
   rm -f "$r2_log"
 fi
