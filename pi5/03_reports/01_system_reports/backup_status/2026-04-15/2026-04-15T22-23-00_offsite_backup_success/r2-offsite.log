@@ -1,0 +1,119 @@
+2026-04-15T21:00:44+10:00 Starting R2 offsite copy
+
+snapshot d926cb55 of [/] at 2026-04-12 20:22:49.352362963 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[2:53] 100.00%  71 / 71 packs copied
+
+snapshot 997accbc saved
+
+snapshot c0d48a4b of [/] at 2026-04-12 20:42:52.546159528 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:07] 100.00%  2 / 2 packs copied
+
+snapshot a73423ef saved
+
+snapshot cff7461f of [/] at 2026-04-13 21:00:00.801935002 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:29] 100.00%  8 / 8 packs copied
+
+snapshot 289a0956 saved
+
+snapshot 765832a4 of [/] at 2026-04-08 21:00:00.845847721 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[1:10:48] 100.00%  685 / 685 packs copied
+
+snapshot 6b70594b saved
+
+snapshot b2562ac3 of [/] at 2026-04-10 17:21:44.25142515 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[1:16] 100.00%  30 / 30 packs copied
+
+snapshot c03c6463 saved
+
+snapshot 00c17e82 of [/] at 2026-04-07 21:00:00.849625988 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:27] 100.00%  27 / 27 packs copied
+
+snapshot 8a95e39f saved
+
+snapshot ef416d11 of [/] at 2026-04-06 21:00:00.799447635 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:49] 100.00%  29 / 29 packs copied
+
+snapshot 80284d51 saved
+
+snapshot a04a3ea9 of [/] at 2026-04-15 21:00:00.820422429 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[1:58] 100.00%  17 / 17 packs copied
+
+snapshot 21bb4666 saved
+
+snapshot 38567644 of [/] at 2026-04-09 21:00:00.836712502 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:27] 100.00%  13 / 13 packs copied
+
+snapshot 91a7cb32 saved
+
+snapshot 708e1727 of [/] at 2026-04-11 21:00:00.77039816 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:35] 100.00%  17 / 17 packs copied
+
+snapshot 4532c08d saved
+
+snapshot 178214f2 of [/] at 2026-04-10 21:00:00.810019941 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:07] 100.00%  2 / 2 packs copied
+
+snapshot 9834c013 saved
+2026-04-15T22:21:23+10:00 R2 offsite copy completed
+Applying Policy: keep 2 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+f2e3e730  2026-04-14 21:00:00  rootnode                last snapshot  /      38.509 GiB
+21bb4666  2026-04-15 21:00:00  rootnode                last snapshot  /      38.729 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+
+remove 10 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+80284d51  2026-04-06 21:00:00  rootnode                /      47.779 GiB
+8a95e39f  2026-04-07 21:00:00  rootnode                /      47.802 GiB
+6b70594b  2026-04-08 21:00:00  rootnode                /      47.815 GiB
+91a7cb32  2026-04-09 21:00:00  rootnode                /      48.599 GiB
+c03c6463  2026-04-10 17:21:44  rootnode                /      49.166 GiB
+9834c013  2026-04-10 21:00:00  rootnode                /      49.156 GiB
+4532c08d  2026-04-11 21:00:00  rootnode                /      51.891 GiB
+997accbc  2026-04-12 20:22:49  rootnode                /      42.516 GiB
+a73423ef  2026-04-12 20:42:52  rootnode                /      42.517 GiB
+289a0956  2026-04-13 21:00:00  rootnode                /      40.421 GiB
+------------------------------------------------------------------------
+10 snapshots
+
+[0:00] 100.00%  10 / 10 files deleted
+10 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[0:16] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:02] 100.00%  1484 / 1484 packs processed
+
+to repack:            23 blobs / 16.502 MiB
+this removes:         22 blobs / 16.501 MiB
+to delete:         83787 blobs / 10.009 GiB
+total prune:       83809 blobs / 10.025 GiB
+remaining:        473087 blobs / 13.762 GiB
+unused size after prune: 702.899 MiB (4.99% of remaining size)
+
+repacking packs
+[0:03] 100.00%  1 / 1 packs repacked
+rebuilding index
+[0:03] 100.00%  28 / 28 indexes processed
+[0:01] 100.00%  19 / 19 old indexes deleted
+removing 627 old packs
+[0:37] 100.00%  627 / 627 files deleted
+done
+2026-04-15T22:22:38+10:00 R2 rotation complete
