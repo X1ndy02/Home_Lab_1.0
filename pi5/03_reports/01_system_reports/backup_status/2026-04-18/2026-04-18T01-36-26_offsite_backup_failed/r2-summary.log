@@ -1,0 +1,15 @@
+Offsite Backup (Cloudflare R2) Summary
+======================================
+Copy              : Success
+Rotation          : FAILED
+Snapshots in R2   : 16
+
+Timeline:
+  Started   : 2026-04-18T01:00:42+10:00
+
+Copy details:
+  Snapshot  : 24092557
+  Progress  : [0:20] 100.00%  13 / 13 packs copied
+
+Rotation details:
+  Kept      : 16 snapshot(s)

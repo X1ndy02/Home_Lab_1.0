@@ -1,0 +1,22 @@
+Source: backup_status
+Date: 2026-04-18T01:36:26+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Offsite Backup — FAILED
+
+Offsite Backup (Cloudflare R2) — Saturday 18 April 2026, 01:36 AEST
+============================================================
+  Copy            : Success
+  Rotation        : FAILED
+  Latest snapshot : 54cb8e34 2026-04-18 01:00:00
+1 snapshots 
+  Snapshots kept  : 16
+
+------------------------------------------------------------
+WHAT TO CHECK
+------------------------------------------------------------
+  - Check internet connectivity on rootnode
+  - Verify credentials in /etc/restic/backup.env
+  - Re-run: sudo /usr/local/sbin/restic-backup.sh
+
+Logs attached.

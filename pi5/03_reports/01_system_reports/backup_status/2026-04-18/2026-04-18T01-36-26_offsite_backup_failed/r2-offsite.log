@@ -1,0 +1,62 @@
+2026-04-18T01:00:42+10:00 Starting R2 offsite copy
+
+snapshot 24092557 of [/] at 2026-04-18 01:00:00.85735186 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:31] 100.00%  6 / 6 packs copied
+
+snapshot 54cb8e34 saved
+
+snapshot 765832a4 of [/] at 2026-04-08 21:00:00.845847721 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[29:57] 100.00%  295 / 295 packs copied
+
+snapshot c2a36b1e saved
+
+snapshot ef416d11 of [/] at 2026-04-06 21:00:00.799447635 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:55] 100.00%  33 / 33 packs copied
+
+snapshot 00b34235 saved
+
+snapshot b2562ac3 of [/] at 2026-04-10 17:21:44.25142515 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[1:30] 100.00%  32 / 32 packs copied
+
+snapshot 6cbe2a29 saved
+
+snapshot cff7461f of [/] at 2026-04-13 21:00:00.801935002 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:27] 100.00%  8 / 8 packs copied
+
+snapshot 937f90ba saved
+
+snapshot 00c17e82 of [/] at 2026-04-07 21:00:00.849625988 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:23] 100.00%  7 / 7 packs copied
+
+snapshot 727bc026 saved
+
+snapshot 708e1727 of [/] at 2026-04-11 21:00:00.77039816 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:34] 100.00%  17 / 17 packs copied
+
+snapshot 3d7382ce saved
+
+snapshot 178214f2 of [/] at 2026-04-10 21:00:00.810019941 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:10] 100.00%  3 / 3 packs copied
+
+snapshot 000d1247 saved
+
+snapshot 38567644 of [/] at 2026-04-09 21:00:00.836712502 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:20] 100.00%  13 / 13 packs copied
+
+snapshot 5e8d0af7 saved
+2026-04-18T01:36:07+10:00 R2 offsite copy completed
+repo already locked, waiting up to 0s for the lock
+unable to create lock in backend: repository is already locked by PID 3003634 on rootnode by root (UID 0, GID 0)
+lock was created at 2026-04-17 21:51:04 (3h45m6.874539894s ago)
+storage ID b9cf3c4d
+the `unlock` command can be used to remove stale locks
+2026-04-18T01:36:10+10:00 R2 rotation FAILED
