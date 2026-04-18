@@ -1,0 +1,43 @@
+Offsite Backup (Cloudflare R2) Summary
+======================================
+Copy              : Success
+Rotation          : Success
+Snapshots in R2   : 3
+
+Timeline:
+  Started   : 2026-04-19T01:00:40+10:00
+  Completed : 2026-04-19T02:25:07+10:00
+
+Copy details:
+  Snapshot  : 20cb51c2
+  Progress  : [0:07] 100.00%  2 / 2 packs copied
+
+Rotation details:
+  Kept      : 3 snapshot(s)
+  Pruned    : 14 old snapshot(s)
+
+Kept snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+54cb8e34  2026-04-18 01:00:00  rootnode                last snapshot  /      38.766 GiB
+1bba08f8  2026-04-19 01:00:00  rootnode                last snapshot  /      38.782 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+4e48f50e  2026-04-06 21:00:00  rootnode                /      47.779 GiB
+68e7690c  2026-04-07 21:00:00  rootnode                /      47.802 GiB
+8305dda4  2026-04-08 21:00:00  rootnode                /      47.815 GiB
+c8197f36  2026-04-09 21:00:00  rootnode                /      48.599 GiB
+30821148  2026-04-10 17:21:44  rootnode                /      49.166 GiB
+bb3cb38e  2026-04-10 21:00:00  rootnode                /      49.156 GiB
+1154cb02  2026-04-11 21:00:00  rootnode                /      51.891 GiB
+7fa703de  2026-04-12 20:22:49  rootnode                /      42.516 GiB
+cb230a78  2026-04-12 20:42:52  rootnode                /      42.517 GiB
+567bf49f  2026-04-13 21:00:00  rootnode                /      40.421 GiB
+df5d3b2e  2026-04-14 21:00:00  rootnode                /      38.509 GiB
+d67ac12c  2026-04-15 21:00:00  rootnode                /      38.729 GiB
+fdf70b41  2026-04-16 21:00:00  rootnode                /      38.743 GiB
+38c737ed  2026-04-17 21:00:00  rootnode                /      38.773 GiB
+------------------------------------------------------------------------
+14 snapshots
