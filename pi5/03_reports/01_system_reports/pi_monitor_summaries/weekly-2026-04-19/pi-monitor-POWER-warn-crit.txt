@@ -1,0 +1,24 @@
+Check: POWER
+Period: 2026-04-12 20:00 AEST to 2026-04-19 20:00 AEST
+
+Grouped by day (local time):
+
+2026-04-13 (WARN 0, CRIT 18)
+  02:18 | CRIT | Current throttling detected: 0x50005
+  03:42 | CRIT | Current throttling detected: 0x50005
+  03:45 | CRIT | Current throttling detected: 0x50005
+  03:47 | CRIT | Current throttling detected: 0x50005
+  03:50 | CRIT | Current throttling detected: 0x50005
+  03:55 | CRIT | Current throttling detected: 0x50005
+  04:00 | CRIT | Current throttling detected: 0x50005
+  04:11 | CRIT | Current throttling detected: 0x50005
+  04:15 | CRIT | Current throttling detected: 0x50005
+  04:20 | CRIT | Current throttling detected: 0x50005
+  04:22 | CRIT | Current throttling detected: 0x50005
+  04:25 | CRIT | Current throttling detected: 0x50005
+  04:29 | CRIT | Current throttling detected: 0x50005
+  04:33 | CRIT | Current throttling detected: 0x50005
+  04:38 | CRIT | Current throttling detected: 0x50005
+  04:41 | CRIT | Current throttling detected: 0x50005
+  04:44 | CRIT | Current throttling detected: 0x50005
+  04:51 | CRIT | Current throttling detected: 0x50005
