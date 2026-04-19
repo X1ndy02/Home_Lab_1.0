@@ -1,0 +1,10 @@
+{
+  "source": "grafana_weekly",
+  "timestamp": "2026-04-19T20:00:08.356811+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "[Pi Weekly Report] 2026-04-19",
+  "files": [
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-04-19/email.txt"
+  ]
+}
