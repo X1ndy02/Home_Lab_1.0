@@ -1,0 +1,7 @@
+Source: pi_monitor_alert
+Date: 2026-04-20T17:11:33+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] LOAD WARN
+
+Load 4.00 >= 4.0 for 3 min
