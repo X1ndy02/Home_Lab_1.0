@@ -1,0 +1,7 @@
+Source: pi_monitor_alert
+Date: 2026-04-20T12:53:28+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] PING OK
+
+Ping OK: 1.1.1.1 8.8.8.8
