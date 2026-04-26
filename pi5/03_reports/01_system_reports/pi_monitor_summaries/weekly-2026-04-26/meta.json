@@ -1,0 +1,16 @@
+{
+  "source": "pi_monitor_weekly",
+  "timestamp": "2026-04-26T20:00:06.758296+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Weekly Pi Monitor Summary (2026-04-26)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/pi-monitor-LOAD-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/pi-monitor-PING-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/pi-monitor-POWER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/pi-monitor-SMART-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-04-26/attachments.md"
+  ]
+}

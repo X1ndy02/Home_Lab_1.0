@@ -1,0 +1,47 @@
+Check: SMART
+Period: 2026-04-19 20:00 AEST to 2026-04-26 20:00 AEST
+
+Grouped by day (local time):
+
+2026-04-21 (WARN 0, CRIT 1)
+  10:04 | CRIT | SMART health FAIL on /dev/sda
+    SMART attributes:
+    realloc=0
+    pending=0
+    offline=0
+    crc=0
+    temp=30C
+    SMART output:
+    smartctl 7.4 2023-08-01 r5530 [aarch64-linux-6.12.62+rpt-rpi-2712] (local build)
+    Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
+    === START OF READ SMART DATA SECTION ===
+    SMART overall-health self-assessment test result: PASSED
+    SMART Attributes Data Structure revision number: 1
+    Vendor Specific SMART Attributes with Thresholds:
+    ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+    1 Raw_Read_Error_Rate     0x0032   100   100   000    Old_age   Always       -       100
+    9 Power_On_Hours          0x0032   100   100   000    Old_age   Always       -       2147
+    12 Power_Cycle_Count       0x0032   100   100   000    Old_age   Always       -       59
+    148 Unknown_Attribute       0x0000   100   100   000    Old_age   Offline      -       0
+    149 Unknown_Attribute       0x0000   100   100   000    Old_age   Offline      -       0
+    167 Write_Protect_Mode      0x0000   100   100   000    Old_age   Offline      -       0
+    168 SATA_Phy_Error_Count    0x0012   100   100   000    Old_age   Always       -       0
+    169 Bad_Block_Rate          0x0000   100   100   000    Old_age   Offline      -       0
+    170 Bad_Blk_Ct_Lat/Erl      0x0000   100   100   010    Old_age   Offline      -       0/0
+    172 Erase_Fail_Count        0x0032   100   100   000    Old_age   Always       -       0
+    173 MaxAvgErase_Ct          0x0000   100   100   000    Old_age   Offline      -       0
+    181 Program_Fail_Count      0x0032   100   100   000    Old_age   Always       -       0
+    182 Erase_Fail_Count        0x0000   100   100   000    Old_age   Offline      -       0
+    187 Reported_Uncorrect      0x0032   100   100   000    Old_age   Always       -       0
+    192 Unsafe_Shutdown_Count   0x0012   100   100   000    Old_age   Always       -       57
+    194 Temperature_Celsius     0x0022   030   045   000    Old_age   Always       -       30 (Min/Max 21/45)
+    196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+    199 SATA_CRC_Error_Count    0x0032   100   100   000    Old_age   Always       -       0
+    218 CRC_Error_Count         0x0032   100   100   000    Old_age   Always       -       0
+    231 SSD_Life_Left           0x0000   100   100   000    Old_age   Offline      -       100
+    233 Flash_Writes_GiB        0x0032   100   100   000    Old_age   Always       -       161
+    241 Lifetime_Writes_GiB     0x0032   100   100   000    Old_age   Always       -       127
+    242 Lifetime_Reads_GiB      0x0032   100   100   000    Old_age   Always       -       191
+    244 Average_Erase_Count     0x0000   100   100   000    Old_age   Offline      -       1
+    245 Max_Erase_Count         0x0000   100   100   000    Old_age   Offline      -       2
+    246 Total_Erase_Count       0x0000   100   100   000    Old_age   Offline      -       855

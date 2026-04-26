@@ -1,0 +1,53 @@
+Source: pi_monitor_weekly
+Date: 2026-04-26T20:00:06.758296+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly Pi Monitor Summary (2026-04-26)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-04-19 20:00 AEST to 2026-04-26 20:00 AEST
+
+Totals
+  Total events : 34
+  OK           : 17
+  WARN         : 1
+  CRIT         : 16
+
+Top checks by event count
+  POWER              28  (WARN 0, CRIT 14)
+  PING                2  (WARN 0, CRIT 1)
+  LOAD                2  (WARN 1, CRIT 0)
+  SMART               2  (WARN 0, CRIT 1)
+
+Checks with WARN/CRIT
+  POWER            WARN 0   CRIT 14  last 2026-04-21 22:58 AEST
+  PING             WARN 0   CRIT 1   last 2026-04-20 12:53 AEST
+  SMART            WARN 0   CRIT 1   last 2026-04-21 10:05 AEST
+  LOAD             WARN 1   CRIT 0   last 2026-04-20 17:12 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-04-21 22:57 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:49 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:31 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:28 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:45 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:38 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:27 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:24 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:20 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:18 | POWER | CRIT
+    Current throttling detected: 0x50005
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  LOAD, PING, POWER, SMART
