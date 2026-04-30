@@ -1,108 +1,71 @@
-# DNS & SPF Toolkit
+DNS & SPF Toolkit
 
-A set of PowerShell scripts for checking DNS health and SPF record depth across client domains. Built for MSP/IT use — runs on Windows, deploys per client via a shared network drive.
+System view
 
----
+- PowerShell toolkit for checking DNS health and SPF record depth across client domains
+- runs on Windows, structured for MSP and multi-client use
+- two core scripts with separate concerns: record health and lookup depth
+- built around a per-client folder structure that sits on a shared network drive
 
-## What it does
+DNS misconfiguration is usually invisible until something breaks. Missing DMARC means spoofing goes unchecked. SPF over the 10-lookup limit causes legitimate mail to fail silently. This toolkit makes those issues visible before they become incidents.
 
-### DNS Health Report (`Scripts/DNS_Report.ps1`)
-Pulls and reports on all key DNS records for a domain:
-- **A** — IP address
-- **MX** — mail servers and priority
-- **NS** — name servers
-- **SPF** — full record, authorized senders, and policy (hard fail / soft fail / dangerous)
-- **DMARC** — policy, coverage %, reporting addresses, alignment
-- **DKIM** — checks common selectors (selector1, selector2, google, k1, mail, default, dkim)
-- **MTA-STS** — presence check
+What interacts with what
 
-Saves a formatted `.txt` report and **detects changes** since the last run — flags anything added or removed.
+- config.txt drives both scripts — lists the domains to check, one per line
+- DNS_Report.ps1 pulls live DNS records via Resolve-DnsName and saves a formatted report
+- SPF_Depth_Check.ps1 walks the SPF include chain recursively and counts total lookup depth
+- Run_DNS_Records.bat runs both scripts from a single double-click inside a client folder
+- Run_All_Clients.bat loops across every client folder on a network share and runs each one
+- Sync_DNS_Scripts.ps1 pushes updated scripts from the master folder to every client on the share and verifies each file with MD5
+- Sync_Online_Lookup.ps1 reads config.txt and generates MXToolbox shortcut files for SPF, DMARC, and DKIM per domain
 
-### SPF Depth Checker (`Scripts/SPF_Depth_Check.ps1`)
-SPF records have a hard RFC limit of **10 DNS lookups**. Going over causes legitimate email to fail silently.
+Why this design
 
-This script:
-- Counts total lookup depth recursively across all `include:` chains
-- Flags status: `OK`, `WARN` (≥8), or `FAIL` (>10)
-- Draws the full include tree so you can see exactly where the depth comes from
-- Detects **duplicate includes**
-- Lists all resolved IP ranges per include
+- config.txt keeps domains separate from script logic so scripts can be updated and synced without touching client data
+- per-client folder structure keeps reports and scripts together and scales to any number of clients without extra tooling
+- change detection in DNS_Report.ps1 compares the current run against the last saved report, so only the bottom of each report needs reading to know if anything shifted
+- SPF depth is a silent failure mode — RFC 7208 caps DNS lookups at 10, and going over causes mail rejection with no obvious error — flagging it early avoids that
+- a single master copy of the scripts synced outward means no per-client maintenance when something changes
 
-### Sync Scripts (`Sync_DNS_Scripts.ps1` / `Sync_DNS_Scripts.bat`)
-Pushes the latest version of the scripts from your master folder out to every client folder on the network share. Verifies each file with an MD5 hash after copying.
+Flow
 
-### Sync Online Lookup (`Sync_Online_Lookup.ps1`)
-Reads `config.txt` and generates MXToolbox shortcut `.url` files (SPF, DMARC, DKIM) for each domain into an `Online Lookup/` folder. One click to open the right MXToolbox check for any client.
+Single client flow
 
----
+- add domain entries to Scripts/config.txt
+- double-click Run_DNS_Records.bat inside the client's DNS Records folder
+- DNS_Report.ps1 runs first and saves a formatted DNS health report one level up
+- SPF_Depth_Check.ps1 runs second and saves a depth report with the full include tree
+- on subsequent runs, each report includes a change section at the bottom comparing against the previous output
 
-## Folder structure
+Multi-client flow
 
-```
-dns-spf-toolkit/
-├── Scripts/
-│   ├── DNS_Report.ps1
-│   ├── SPF_Depth_Check.ps1
-│   └── config.txt
-├── Examples/
-│   ├── Example_DNS.txt
-│   ├── Example_SPF_Depth.txt
-│   └── Example_Client_Folder.txt
-├── Run_DNS_Records.bat
-├── Run_All_Clients.bat
-├── Sync_DNS_Scripts.bat
-├── Sync_DNS_Scripts.ps1
-└── Sync_Online_Lookup.ps1
-```
+- Run_All_Clients.bat walks the configured network share path
+- finds every client subfolder that contains a Run_DNS_Records.bat
+- runs each one in sequence and reports which clients were run and which were skipped
 
-Per-client deployment on the network share:
+Sync flow
 
-```
-\\SERVER\shared\!Client Infrastructure Information\
-└── ClientName\
-    └── DNS Records\
-        ├── Scripts\
-        │   ├── config.txt        ← add client domains here
-        │   ├── DNS_Report.ps1
-        │   └── SPF_Depth_Check.ps1
-        ├── Online Lookup\
-        │   ├── ClientName_SPF.url
-        │   ├── ClientName_DMARC.url
-        │   └── ClientName_DKIM.url
-        ├── ClientName DNS.txt    ← generated report
-        ├── ClientName SPF Depth.txt
-        └── Run_DNS_Records.bat
-```
+- update scripts in the master Scripts/ folder
+- run Sync_DNS_Scripts.bat from the master folder
+- Sync_DNS_Scripts.ps1 copies DNS_Report.ps1, SPF_Depth_Check.ps1, and Run_DNS_Records.bat to every client on the share
+- after copying, each file is verified against the source with an MD5 hash
+- clients with no DNS Records/Scripts folder are skipped and listed
 
----
+Trade-offs
 
-## Usage
+- SPF depth check skips known slow or timeout-prone domains (sendgrid.net, bigpond.com, outlook.com, hotmail.com) — those still count as one lookup but are not resolved live
+- DKIM check only tries common selectors (selector1, selector2, google, k1, mail, default, dkim) — custom selectors will not be found
+- no scheduling built in — reports are only as current as the last manual run
+- change detection compares against the last saved file, not a live baseline — a new client folder starts with "first run — baseline saved" and only tracks drift from that point forward
 
-### Run checks for a single client
-Double-click `Run_DNS_Records.bat` inside the client's `DNS Records\` folder.  
-Reports are saved one level up from the `Scripts\` folder.
+What is here
 
-### Run checks for all clients at once
-Edit `Run_All_Clients.bat` — set `CLIENTS_DIR` to your network share path, then run it.  
-It loops through every client folder that has a `Run_DNS_Records.bat` and runs it.
-
-### Add a domain
-Edit `Scripts\config.txt` and add a line:
-```
-domain=example.com.au
-```
-Multiple domains supported — one per line.
-
-### Push updated scripts to all clients
-Run `Sync_DNS_Scripts.bat` from the master folder.  
-It copies `DNS_Report.ps1` and `SPF_Depth_Check.ps1` to every client on the share and verifies with MD5.
-
-### Generate MXToolbox shortcuts
-Run `Sync_Online_Lookup.ps1` from inside a client's `Scripts\` folder.  
-Creates `.url` shortcut files in `Online Lookup\` for quick browser access to SPF, DMARC, and DKIM checks.
-
----
-
-## Example output
-
-See the `Examples/` folder for sample DNS report and SPF depth check output.
+- Scripts/DNS_Report.ps1: pulls A, MX, NS, SPF, DMARC, DKIM, and MTA-STS records and saves a report with change detection
+- Scripts/SPF_Depth_Check.ps1: walks the full SPF include tree, counts lookup depth, flags duplicates, and lists resolved IP ranges
+- Scripts/config.txt: domain list — edit this per client to set which domains are checked
+- Run_DNS_Records.bat: runs both scripts for the current client folder
+- Run_All_Clients.bat: runs all client folders across the network share
+- Sync_DNS_Scripts.bat: triggers the sync script
+- Sync_DNS_Scripts.ps1: copies and verifies scripts across all client folders on the share
+- Sync_Online_Lookup.ps1: generates MXToolbox shortcut files per domain from config.txt
+- Examples/: sample output from DNS_Report.ps1 and SPF_Depth_Check.ps1, and an example of the expected client folder layout
