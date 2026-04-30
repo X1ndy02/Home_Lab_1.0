@@ -1,6 +1,4 @@
-# ============================================================
 # DNS Scripts Sync
-# Runs from: C:\Users\YourName\Desktop\DNS-Health-Check
 # Syncs to : \\YOUR-SERVER\shared\!Client Infrastructure Information\
 # ============================================================
 
@@ -88,4 +86,3 @@ Get-ChildItem -Path $ClientsDir -Directory | ForEach-Object {
 
 Write-Host "------------------------------------------------------------"
 Write-Host " Verified: $verified   Mismatches: $mismatch"
-Write-Host "============================================================"
