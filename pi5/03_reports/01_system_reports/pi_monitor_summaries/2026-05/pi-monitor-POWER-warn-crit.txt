@@ -1,0 +1,44 @@
+Check: POWER
+Period: 2026-04-01 00:00 AEDT to 2026-05-01 00:00 AEST
+
+Grouped by day (local time):
+
+2026-04-21 (WARN 0, CRIT 14)
+  20:23 | CRIT | Current throttling detected: 0x50005
+  20:39 | CRIT | Current throttling detected: 0x50005
+  20:53 | CRIT | Current throttling detected: 0x50005
+  20:57 | CRIT | Current throttling detected: 0x50005
+  21:18 | CRIT | Current throttling detected: 0x50005
+  21:20 | CRIT | Current throttling detected: 0x50005
+  21:24 | CRIT | Current throttling detected: 0x50005
+  21:27 | CRIT | Current throttling detected: 0x50005
+  21:38 | CRIT | Current throttling detected: 0x50005
+  21:45 | CRIT | Current throttling detected: 0x50005
+  22:28 | CRIT | Current throttling detected: 0x50005
+  22:31 | CRIT | Current throttling detected: 0x50005
+  22:49 | CRIT | Current throttling detected: 0x50005
+  22:57 | CRIT | Current throttling detected: 0x50005
+
+2026-04-13 (WARN 0, CRIT 18)
+  02:18 | CRIT | Current throttling detected: 0x50005
+  03:42 | CRIT | Current throttling detected: 0x50005
+  03:45 | CRIT | Current throttling detected: 0x50005
+  03:47 | CRIT | Current throttling detected: 0x50005
+  03:50 | CRIT | Current throttling detected: 0x50005
+  03:55 | CRIT | Current throttling detected: 0x50005
+  04:00 | CRIT | Current throttling detected: 0x50005
+  04:11 | CRIT | Current throttling detected: 0x50005
+  04:15 | CRIT | Current throttling detected: 0x50005
+  04:20 | CRIT | Current throttling detected: 0x50005
+  04:22 | CRIT | Current throttling detected: 0x50005
+  04:25 | CRIT | Current throttling detected: 0x50005
+  04:29 | CRIT | Current throttling detected: 0x50005
+  04:33 | CRIT | Current throttling detected: 0x50005
+  04:38 | CRIT | Current throttling detected: 0x50005
+  04:41 | CRIT | Current throttling detected: 0x50005
+  04:44 | CRIT | Current throttling detected: 0x50005
+  04:51 | CRIT | Current throttling detected: 0x50005
+
+2026-04-02 (WARN 0, CRIT 2)
+  18:14 | CRIT | Current throttling detected: 0x50005
+  18:49 | CRIT | Current throttling detected: 0x50005

@@ -1,0 +1,7 @@
+Check: DOCKER
+Period: 2026-04-01 00:00 AEDT to 2026-05-01 00:00 AEST
+
+Grouped by day (local time):
+
+2026-04-14 (WARN 0, CRIT 1)
+  15:33 | CRIT | Exited containers: homeassistant

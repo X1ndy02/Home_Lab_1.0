@@ -1,0 +1,17 @@
+{
+  "source": "pi_monitor_monthly",
+  "timestamp": "2026-05-01T08:00:07.128329+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Monthly Pi Monitor Summary (2026-04)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-DOCKER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-LOAD-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-PING-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-POWER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-SMART-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-05/attachments.md"
+  ]
+}

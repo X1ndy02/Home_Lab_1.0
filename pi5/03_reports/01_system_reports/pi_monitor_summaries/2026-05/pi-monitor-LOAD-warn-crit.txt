@@ -1,0 +1,7 @@
+Check: LOAD
+Period: 2026-04-01 00:00 AEDT to 2026-05-01 00:00 AEST
+
+Grouped by day (local time):
+
+2026-04-20 (WARN 1, CRIT 0)
+  17:11 | WARN | Load 4.00 >= 4.0 for 3 min

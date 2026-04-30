@@ -1,0 +1,58 @@
+Source: pi_monitor_monthly
+Date: 2026-05-01T08:00:07.128329+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Monthly Pi Monitor Summary (2026-04)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-04-01 00:00 AEDT to 2026-05-01 00:00 AEST
+
+Totals
+  Total events : 81
+  OK           : 40
+  WARN         : 4
+  CRIT         : 37
+
+Top checks by event count
+  POWER              68  (WARN 0, CRIT 34)
+  SSH_LOGIN           5  (WARN 3, CRIT 0)
+  PING                2  (WARN 0, CRIT 1)
+  LOAD                2  (WARN 1, CRIT 0)
+  SMART               2  (WARN 0, CRIT 1)
+  SMART_NVME          1  (WARN 0, CRIT 0)
+  DOCKER              1  (WARN 0, CRIT 1)
+
+Checks with WARN/CRIT
+  POWER            WARN 0   CRIT 34  last 2026-04-21 22:58 AEST
+  PING             WARN 0   CRIT 1   last 2026-04-20 12:53 AEST
+  SMART            WARN 0   CRIT 1   last 2026-04-21 10:05 AEST
+  DOCKER           WARN 0   CRIT 1   last 2026-04-14 15:33 AEST
+  SSH_LOGIN        WARN 3   CRIT 0   last 2026-04-17 21:51 AEST
+  LOAD             WARN 1   CRIT 0   last 2026-04-20 17:12 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-04-21 22:57 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:49 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:31 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 22:28 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:45 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:38 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:27 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:24 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:20 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-04-21 21:18 | POWER | CRIT
+    Current throttling detected: 0x50005
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  DOCKER, LOAD, PING, POWER, SMART
