@@ -1,7 +1,5 @@
-# ============================================================
-# Sync Online Lookup shortcuts with config.txt
-# Adds missing, replaces existing, removes orphaned urls
-# ============================================================
+# Sync Online Lookup shortcuts with config.txt file
+# Basicallyt Adds missing, replaces existing, removes orphaned urls - In a case ther eis smth wrong with urls
 
 $ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ParentDir  = Split-Path -Parent $ScriptDir
@@ -21,7 +19,7 @@ if (-not $Domains) {
     exit
 }
 
-# Ensure Online Lookup folder exists
+# Ensure folder exists
 if (-not (Test-Path $LookupDir)) {
     New-Item -Path $LookupDir -ItemType Directory -Force | Out-Null
 }
@@ -53,8 +51,3 @@ foreach ($file in $existing) {
         Write-Host "  Removed : $($file.Name) (domain no longer in config)"
     }
 }
-
-Write-Host ""
-Write-Host "============================================================"
-Write-Host " Done."
-Write-Host "============================================================"
