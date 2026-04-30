@@ -92,3 +92,93 @@ What is here
 - Sync_DNS_Scripts.ps1: copies and verifies scripts across all client folders on the share
 - Sync_Online_Lookup.ps1: generates MXToolbox shortcut files per domain from config.txt
 - Examples/: sample output from DNS_Report.ps1 and SPF_Depth_Check.ps1, and an example of the expected client folder layout
+
+Example output
+
+DNS health report (ClientName DNS.txt)
+
+```
+DNS HEALTH REPORT
+Domain   : example.com.au
+Generated: 30 Apr 2026  17:24:07
+------------------------------------------------------------
+
+A RECORD
+  IP Address   : 203.0.113.10
+
+MX RECORD
+  Mail Server  : smtp1.mail-provider.com
+  Priority     : 10
+  Mail Server  : smtp2.mail-provider.com
+  Priority     : 20
+
+NS RECORD
+  Name Server  : ns1.registrar.net
+  Name Server  : ns2.registrar.net
+  Name Server  : ns3.registrar.net
+  Name Server  : ns4.registrar.net
+
+SPF RECORD
+  Record       : v=spf1 ip4:203.0.113.10 include:spf.protection.outlook.com include:spf.mailprovider.com ~all
+  Authorized   :
+    spf.protection.outlook.com
+    spf.mailprovider.com
+  Policy       : Soft Fail (~all)
+
+DMARC RECORD
+  Record       : v=DMARC1; p=quarantine; rua=mailto:rua@example.com.au; pct=100; adkim=r; aspf=r
+  Policy       : quarantine
+  Coverage     : 100%
+  Reports to   : mailto:rua@example.com.au
+  DKIM Align   : r
+  SPF Align    : r
+
+DKIM RECORD
+  WARN - No DKIM found for common selectors
+
+MTA-STS
+  Not configured
+
+CHANGES
+  No changes since last run
+
+------------------------------------------------------------
+```
+
+SPF depth report (ClientName SPF Depth.txt)
+
+```
+example.com.au - SPF DEPTH CHECK - 30 Apr 2026
+OK 4/10
+------------------------------------------------------------
+
+PRIMARY INCLUDES
+------------------------------------------------------------
+.-- spf.protection.outlook.com
+|-- spf.mailprovider.com
+|      nested: 2
+-- spf.thirdparty.com
+
+INCLUDES BREAKDOWN
+------------------------------------------------------------
+spf.mailprovider.com
+-- mailgun.org
+     |-- _spf.mailgun.org
+     |    |-- _spf1.mailgun.org
+     |    -- _spf2.mailgun.org
+
+------------------------------------------------------------
+TOTAL: 4/10 OK
+
+spf.protection.outlook.com
+  40.92.0.0/15
+  40.107.0.0/16
+  52.100.0.0/15
+  104.47.0.0/17
+
+spf.mailprovider.com
+  192.0.2.0/24
+  198.51.100.0/24
+
+------------------------------------------------------------
+```
