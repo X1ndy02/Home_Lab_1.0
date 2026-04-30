@@ -1,0 +1,33 @@
+example.com.au - SPF DEPTH CHECK - 30 Apr 2026
+OK 4/10
+------------------------------------------------------------
+
+PRIMARY INCLUDES
+------------------------------------------------------------
+.-- spf.protection.outlook.com
+|-- spf.mailprovider.com
+|      nested: 2
+-- spf.thirdparty.com
+
+INCLUDES BREAKDOWN
+------------------------------------------------------------
+spf.mailprovider.com
+-- mailgun.org
+     |-- _spf.mailgun.org
+     |    |-- _spf1.mailgun.org
+     |    -- _spf2.mailgun.org
+
+------------------------------------------------------------
+TOTAL: 4/10 OK
+
+spf.protection.outlook.com
+  40.92.0.0/15
+  40.107.0.0/16
+  52.100.0.0/15
+  104.47.0.0/17
+
+spf.mailprovider.com
+  192.0.2.0/24
+  198.51.100.0/24
+
+------------------------------------------------------------

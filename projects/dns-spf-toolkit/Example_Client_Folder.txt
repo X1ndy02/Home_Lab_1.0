@@ -1,0 +1,14 @@
+\\YOUR-SERVER\shared\!Client Infrastructure Information\
+  ClientName\
+    DNS Records\
+      Scripts\
+        config.txt
+        DNS_Report.ps1
+        SPF_Depth_Check.ps1
+      Online Lookup\
+        ClientName_DKIM.url
+        ClientName_DMARC.url
+        ClientName_SPF.url
+      ClientName DNS.txt
+      ClientName SPF Depth.txt
+      Run_DNS_Records.bat

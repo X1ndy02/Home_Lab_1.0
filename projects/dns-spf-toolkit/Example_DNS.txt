@@ -1,0 +1,47 @@
+DNS HEALTH REPORT
+Domain   : example.com.au
+Generated: 30 Apr 2026  17:24:07
+------------------------------------------------------------
+
+A RECORD
+  IP Address   : 203.0.113.10
+
+MX RECORD
+  Mail Server  : smtp1.mail-provider.com
+  Priority     : 10
+  Mail Server  : smtp2.mail-provider.com
+  Priority     : 20
+
+NS RECORD
+  Name Server  : ns1.registrar.net
+  Name Server  : ns2.registrar.net
+  Name Server  : ns3.registrar.net
+  Name Server  : ns4.registrar.net
+
+SPF RECORD
+  Record       : v=spf1 ip4:203.0.113.10 include:spf.protection.outlook.com include:spf.mailprovider.com ~all
+  Authorized   :
+    spf.protection.outlook.com
+    spf.mailprovider.com
+  Policy       : Soft Fail (~all)
+
+DMARC RECORD
+  Record       : v=DMARC1; p=quarantine; rua=mailto:rua@example.com.au; ruf=mailto:ruf@example.com.au; fo=0; pct=100; adkim=r; aspf=r
+
+  Policy       : quarantine
+  Coverage     : 100%
+  Reports to   : mailto:rua@example.com.au
+  Forensic to  : mailto:ruf@example.com.au
+  DKIM Align   : r
+  SPF Align    : r
+
+DKIM RECORD
+  WARN - No DKIM found for common selectors
+
+MTA-STS
+  Not configured
+
+CHANGES
+  No changes since last run
+
+------------------------------------------------------------
