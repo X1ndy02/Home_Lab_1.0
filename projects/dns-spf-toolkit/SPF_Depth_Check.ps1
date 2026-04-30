@@ -1,6 +1,4 @@
-# ============================================================
 # SPF Lookup Depth Checker
-# ============================================================
 
 $ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ParentDir  = Split-Path -Parent $ScriptDir
@@ -9,7 +7,7 @@ $today      = Get-Date -Format "dd MMM yyyy"
 
 $Domains = Get-Content $ConfigFile | Where-Object { $_ -match "^domain=" } | ForEach-Object { $_ -replace "^domain=", "" }
 
-# Cache to avoid querying same domain twice
+# Cache to avoid querying same domain twice - as i had issue where the scritp took 10 min to run 
 $DnsCache = @{}
 
 # Known slow/timeout domains - skip DNS query, count as 1 lookup
