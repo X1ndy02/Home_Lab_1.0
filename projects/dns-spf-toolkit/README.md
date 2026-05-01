@@ -73,31 +73,6 @@ Sync flow
 - Sync_Bats.ps1 copies the bat to every client folder that has a DNS Records\ folder
 - no sync needed for .ps1 files — they are always called directly from master
 
-Monthly automation
-
-The toolkit can run on a schedule using Windows Task Scheduler and push the failure report to GitHub automatically so it can be checked online after each run.
-
-Setup (one time, run as Administrator)
-
-- open Automation\Setup_Task_Scheduler.bat as Administrator
-- registers a task called "DNS Monthly Report" that runs on the 1st of each month at 09:00
-- the task calls Run_All_Reports.bat which runs all clients, builds the failure report, and pushes to GitHub
-
-Token setup (one time)
-
-- create a file at %USERPROFILE%\github_token.txt on the Windows machine running the task
-- paste your GitHub PAT into it — one line, no spaces
-- the push script reads this file at run time and uses the GitHub Contents API to push
-
-What gets pushed each month
-
-- Reports/DNS_Failure_Report_LATEST.txt — the full failure summary, always overwritten with the latest run
-- README.txt — the operational quick-reference, kept in sync
-
-Check results online
-
-https://github.com/X1ndy02/Home_Lab_1.0/blob/main/projects/dns-spf-toolkit/Reports/DNS_Failure_Report_LATEST.txt
-
 Trade-offs
 
 - SPF depth check skips known slow or timeout-prone domains (sendgrid.net, bigpond.com, outlook.com, hotmail.com) — those still count as one lookup but are not resolved live
@@ -266,11 +241,8 @@ What is here
 - Scripts/!Run_DNS_Records_Debug.bat: same as above but runs visibly with output kept open
 - Client Setup/Setup_New_Client.bat: drop into a new client folder and run to onboard
 - Client Setup/Setup_New_Client.ps1: builds folder structure, config.txt, Online Lookup shortcuts, and copies bat from master
-- Run_All_Reports.bat: runs all clients then builds the failure report
+- Run_All_Reports.bat: main entry point — option 1 runs all clients and builds the report, option 2 sets up the monthly scheduled task
 - Sync_All_Bats.bat: triggers Sync_Bats.ps1 to push the bat to all clients
 - README.txt: quick operational reference for daily use
 - Examples/: sample output files and client folder layout reference
-- Automation/Setup_Task_Scheduler.bat: run as Administrator once to register the monthly scheduled task
-- Automation/Setup_Task_Scheduler.ps1: registers the Task Scheduler entry
-- Automation/Push_Report_to_GitHub.ps1: pushes the failure report and README.txt to GitHub via API — called automatically by Run_All_Reports.bat
-- Reports/DNS_Failure_Report_LATEST.txt: latest monthly report — updated on each run and viewable at github.com/X1ndy02/Home_Lab_1.0/blob/main/projects/dns-spf-toolkit/Reports/DNS_Failure_Report_LATEST.txt
+- Reports/DNS_Failure_Report_LATEST.txt: latest monthly report — pushed to GitHub on each automated run and viewable at github.com/X1ndy02/Home_Lab_1.0/blob/main/projects/dns-spf-toolkit/Reports/DNS_Failure_Report_LATEST.txt

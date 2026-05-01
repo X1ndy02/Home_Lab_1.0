@@ -4,8 +4,8 @@ DNS SYNC FOLDER
 ROOT
 -----------------------------------------------
 Run_All_Reports.bat   - main entry point, opens a menu:
-                        1. Run reports for all clients (then pushes to GitHub)
-                        2. Set up monthly scheduled task (automates option 1)
+                        1. Run reports for all clients
+                        2. Set up monthly scheduled task (run as Administrator)
 Sync_All_Bats.bat     - pushes per-client bat to every client folder
 
 CLIENT SETUP
@@ -23,16 +23,9 @@ Scripts\Sync_Bats.ps1             - pushes per-client bat to all clients
 Scripts\Build_Report.ps1          - scans all client txts, builds failure report
 Scripts\Setup_New_Client.ps1      - called by Setup_New_Client.bat
 
-AUTOMATION
------------------------------------------------
-Automation\Setup_Task_Scheduler.ps1  - registers monthly Task Scheduler job
-                                       (called from Run_All_Reports.bat option 2)
-Automation\Push_Report_to_GitHub.ps1 - pushes failure report to GitHub after each run
-                                       token file: %USERPROFILE%\github_token.txt
-
 REPORTS
 -----------------------------------------------
-Reports\DNS_Failure_Report_LATEST.txt - newest report (also pushed to GitHub)
+Reports\DNS_Failure_Report_LATEST.txt - newest report (pushed to GitHub on automated run)
 Reports\DNS_Failure_Report_<date>.txt - timestamped archive (last 5 kept)
 
 View latest report online:
