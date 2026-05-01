@@ -1,0 +1,8 @@
+DNS FAILURE REPORT
+Generated : not yet run
+Clients   : -
+============================================================
+
+No report generated yet. Run Run_All_Reports.bat to populate this file.
+
+============================================================

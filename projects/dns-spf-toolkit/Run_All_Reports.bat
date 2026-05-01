@@ -27,6 +27,13 @@ echo.
 powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Build_Report.ps1"
 
 echo ============================================================
+echo  Pushing report to GitHub...
+echo ============================================================
+echo.
+
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Push_Report_to_GitHub.ps1"
+
+echo ============================================================
 echo  All done.
 echo ============================================================
 pause
