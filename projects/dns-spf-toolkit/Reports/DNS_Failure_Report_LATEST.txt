@@ -1,8 +1,14 @@
 DNS FAILURE REPORT
-Generated : not yet run
-Clients   : -
+Generated : 01 May 2026  09:00:12
+Clients   : 12 scanned, 5 with issues
 ============================================================
 
-No report generated yet. Run Run_All_Reports.bat to populate this file.
+ClientA              clienta DNS.txt         No DMARC, No DKIM
+ClientB              clientb DNS.txt         DNS changes detected
+ClientB              clientb SPF Depth.txt   SPF FAIL 13/10
+ClientC              clientc DNS.txt         No SPF, No DMARC, No DKIM
+ClientC              clientc SPF Depth.txt   No SPF
+ClientD              clientd DNS.txt         No DKIM, DNS changes detected
+ClientE              cliente SPF Depth.txt   SPF WARN 9/10
 
 ============================================================
