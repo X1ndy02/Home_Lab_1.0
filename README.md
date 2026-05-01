@@ -7,7 +7,6 @@ The goal is to build operational knowledge by running services properly, monitor
 ## Repository layout
 
 - [pi5/](pi5) contains Raspberry Pi 5 documentation, reports, photos/screenshots, issues, and implementation exports.
-- [pi0/](pi0) contains Raspberry Pi Zero hardware and software notes.
 - [projects/](projects) contains related side projects built around the lab.
 
 ## Pi 5 overview
