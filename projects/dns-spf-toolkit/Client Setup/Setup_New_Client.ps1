@@ -9,7 +9,7 @@ param(
     [Parameter(Mandatory=$true)][string]$ClientPath
 )
 
-$MasterDir = "\\tngsrv01\shared\!Client Infrastructure Information\010-TNG\DNS Records\DNS Sync Folder\Scripts"
+$MasterDir = "\\YOUR-SERVER\shared\!Client Infrastructure Information\YOUR-MASTER-CLIENT\DNS Records\DNS Sync Folder\Scripts"
 
 Write-Host "============================================================"
 Write-Host " Setup New Client"

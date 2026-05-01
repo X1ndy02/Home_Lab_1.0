@@ -7,7 +7,7 @@
 
 $ScriptDir   = Split-Path -Parent $MyInvocation.MyCommand.Path
 $MasterDir   = Split-Path -Parent $ScriptDir
-$ClientsDir  = "\\tngsrv01\shared\!Client Infrastructure Information"
+$ClientsDir  = "\\YOUR-SERVER\shared\!Client Infrastructure Information"
 $ReportsDir  = Join-Path $MasterDir "Reports"
 
 if (-not (Test-Path -LiteralPath $ReportsDir)) {

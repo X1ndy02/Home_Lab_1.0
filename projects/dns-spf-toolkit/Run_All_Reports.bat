@@ -4,7 +4,7 @@ echo  Running DNS Records for all clients
 echo ============================================================
 echo.
 
-set "CLIENTS_DIR=\\tngsrv01\shared\!Client Infrastructure Information"
+set "CLIENTS_DIR=\\YOUR-SERVER\shared\!Client Infrastructure Information"
 
 for /d %%C in ("%CLIENTS_DIR%\*") do (
     if exist "%%C\DNS Records\!Run_DNS_Records.bat" (

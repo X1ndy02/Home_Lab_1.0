@@ -5,7 +5,7 @@
 
 $ScriptDir   = Split-Path -Parent $MyInvocation.MyCommand.Path
 $BatTemplate = Join-Path $ScriptDir "!Run_DNS_Records.bat"
-$ClientsDir  = "\\tngsrv01\shared\!Client Infrastructure Information"
+$ClientsDir  = "\\YOUR-SERVER\shared\!Client Infrastructure Information"
 
 Write-Host "============================================================"
 Write-Host " Syncing !Run_DNS_Records.bat to all client folders"
