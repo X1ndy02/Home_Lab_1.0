@@ -56,3 +56,7 @@ The design must remain lightweight and focused on networking functionality
 USB gadget networking behavior depends on host operating system support
 Different systems may prefer different driver implementations
 Boot time will typically range between 15 and 40 seconds depending on system configuration
+
+Lab setup — both Pi Zeros alongside the Pi 5 rootnode
+
+![Lab setup overview](photos/Image%20(5).jpg)
