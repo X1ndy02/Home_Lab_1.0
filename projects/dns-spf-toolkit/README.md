@@ -123,6 +123,34 @@ Client folder layout
 
 The Online Lookup folder is populated by Sync_URLs.ps1. Each .url file opens the matching MXToolbox check directly in the browser for that client's domain.
 
+Failure report (DNS_Failure_Report_LATEST.txt)
+
+```
+DNS FAILURE REPORT
+Generated : 01 May 2026  13:42:38
+Clients   : 8 scanned, 4 with issues
+============================================================
+
+ClientA              clienta DNS.txt       DNS changes detected
+ClientB              clientb DNS.txt       No DMARC, No DKIM
+ClientB              clientb SPF Depth.txt SPF FAIL 15/10
+ClientC              clientc DNS.txt       No SPF, No DMARC, No DKIM
+ClientD              clientd DNS.txt       No DKIM, DNS changes detected
+
+============================================================
+```
+
+Issue codes
+
+- No SPF — domain has no SPF record
+- No DMARC — domain has no DMARC record
+- No DKIM — no DKIM found for common selectors
+- SPF FAIL x/10 — SPF lookup depth exceeds RFC limit of 10
+- SPF WARN x/10 — SPF lookup depth at 8 or 9, close to limit
+- Duplicate: x — same include appears more than once in SPF chain
+- DNS changes detected — records changed since last run
+- +all DANGEROUS — SPF record allows all senders (critical misconfiguration)
+
 Example output
 
 DNS health report (ClientName DNS.txt)
