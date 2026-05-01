@@ -1,5 +1,22 @@
 @echo off
 echo ============================================================
+echo  DNS Toolkit
+echo ============================================================
+echo.
+echo  1. Run reports for all clients
+echo  2. Set up monthly scheduled task (run as Administrator)
+echo.
+set /p CHOICE="Choose option (1 or 2): "
+
+if "%CHOICE%"=="2" goto SETUP_TASK
+if "%CHOICE%"=="1" goto RUN_REPORTS
+echo Invalid choice.
+pause
+exit /b
+
+:RUN_REPORTS
+echo.
+echo ============================================================
 echo  Running DNS Records for all clients
 echo ============================================================
 echo.
@@ -37,3 +54,10 @@ echo ============================================================
 echo  All done.
 echo ============================================================
 pause
+exit /b
+
+:SETUP_TASK
+echo.
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Setup_Task_Scheduler.ps1"
+pause
+exit /b
