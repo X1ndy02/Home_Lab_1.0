@@ -1,0 +1,18 @@
+Source: pi_monitor_alert
+Date: 2026-05-01T14:04:01+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SSH_LOGIN WARN
+
+SSH ALERT · FAILED LOGINS
+────────────────────────
+Host    : rootnode
+User    : xindy\n (valid)
+Count   : 2 failed attempts
+Source  : 10.244.10.2\n
+Window  : May 01 14:02:45 → 14:03:56 (71s)
+Method  : password\n
+Port    : 59563\n (seen)
+
+Timeline
+• 14:03:30  password check failed (pam)• 14:03:32  failed password for xindy from 10.244.10.2:59563
