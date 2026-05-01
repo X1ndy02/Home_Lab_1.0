@@ -72,11 +72,11 @@ for /d %%C in ("%CLIENTS_DIR%\*") do (
 )
 
 powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Build_Report.ps1"
-powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Push_Report_to_GitHub.ps1"
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Push_Report_to_GitHub.ps1"
 exit /b
 
 :SETUP_TASK
 echo.
-powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Setup_Task_Scheduler.ps1"
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Setup_Task_Scheduler.ps1"
 pause
 exit /b

@@ -14,8 +14,8 @@ $RepoName   = "Home_Lab_1.0"
 $Branch     = "main"
 
 # Resolve paths relative to this script
-$AutomationDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$MasterDir     = Split-Path -Parent $AutomationDir
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$MasterDir = Split-Path -Parent $ScriptDir
 $ReportsDir    = Join-Path $MasterDir "Reports"
 $LatestFile    = Join-Path $ReportsDir "DNS_Failure_Report_LATEST.txt"
 $ReadmeFile    = Join-Path $MasterDir "README.txt"
