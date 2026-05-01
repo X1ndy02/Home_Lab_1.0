@@ -9,7 +9,7 @@ $Description = "Runs DNS checks on all clients, builds failure report, and pushe
 $TriggerDay  = 1       # day of month to run
 $TriggerTime = "09:00" # time to run
 
-$action   = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$BatPath`""
+$action   = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$BatPath`" /auto"
 $trigger  = New-ScheduledTaskTrigger -Monthly -DaysOfMonth $TriggerDay -At $TriggerTime
 $settings = New-ScheduledTaskSettingsSet `
     -ExecutionTimeLimit (New-TimeSpan -Hours 2) `

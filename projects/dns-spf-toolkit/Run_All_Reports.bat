@@ -1,4 +1,8 @@
 @echo off
+
+REM When called with /auto (by Task Scheduler) — skips menu, runs all clients + builds report + pushes to GitHub
+if /i "%1"=="/auto" goto AUTO
+
 echo ============================================================
 echo  DNS Toolkit
 echo ============================================================
@@ -44,16 +48,31 @@ echo.
 powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Build_Report.ps1"
 
 echo ============================================================
-echo  Pushing report to GitHub...
-echo ============================================================
-echo.
-
-powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Push_Report_to_GitHub.ps1"
-
-echo ============================================================
 echo  All done.
 echo ============================================================
 pause
+exit /b
+
+:AUTO
+echo.
+echo ============================================================
+echo  DNS Toolkit - Automated Monthly Run
+echo ============================================================
+echo.
+
+set "CLIENTS_DIR=\\YOUR-SERVER\shared\!Client Infrastructure Information"
+
+for /d %%C in ("%CLIENTS_DIR%\*") do (
+    if exist "%%C\DNS Records\!Run_DNS_Records.bat" (
+        echo Running: %%~nxC
+        pushd "%%C\DNS Records"
+        call "%%C\DNS Records\!Run_DNS_Records.bat"
+        popd
+    )
+)
+
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Scripts\Build_Report.ps1"
+powershell.exe -ExecutionPolicy Bypass -File "%~dp0Automation\Push_Report_to_GitHub.ps1"
 exit /b
 
 :SETUP_TASK
