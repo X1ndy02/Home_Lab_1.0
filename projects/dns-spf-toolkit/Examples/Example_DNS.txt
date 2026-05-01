@@ -26,12 +26,10 @@ SPF RECORD
   Policy       : Soft Fail (~all)
 
 DMARC RECORD
-  Record       : v=DMARC1; p=quarantine; rua=mailto:rua@example.com.au; ruf=mailto:ruf@example.com.au; fo=0; pct=100; adkim=r; aspf=r
-
+  Record       : v=DMARC1; p=quarantine; rua=mailto:rua@example.com.au; pct=100; adkim=r; aspf=r
   Policy       : quarantine
   Coverage     : 100%
   Reports to   : mailto:rua@example.com.au
-  Forensic to  : mailto:ruf@example.com.au
   DKIM Align   : r
   SPF Align    : r
 

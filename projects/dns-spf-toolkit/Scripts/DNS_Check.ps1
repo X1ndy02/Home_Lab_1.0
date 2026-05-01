@@ -1,22 +1,47 @@
 # DNS Record Extractor
-# Reads domains from config.txt in Scripts folder
-# Saves reports to parent folder
+# Reads domain from config file passed as parameter
+# Writes report to OutputDir passed as parameter
+# All DNS queries have hard timeouts to prevent hangs
 
-$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ParentDir  = Split-Path -Parent $ScriptDir
-$ConfigFile = Join-Path $ScriptDir "config.txt"
+param(
+    [Parameter(Mandatory=$true)][string]$ConfigFile,
+    [Parameter(Mandatory=$true)][string]$OutputDir
+)
 
-$Domains = Get-Content $ConfigFile | Where-Object { $_ -match "^domain=" } | ForEach-Object { $_ -replace "^domain=", "" }
+if (-not (Test-Path -LiteralPath $ConfigFile)) { Write-Host "Config not found: $ConfigFile"; return }
+if (-not (Test-Path -LiteralPath $OutputDir))  { Write-Host "Output dir not found: $OutputDir"; return }
+
+$Domains = Get-Content -LiteralPath $ConfigFile | Where-Object { $_ -match "^domain=" } | ForEach-Object { $_ -replace "^domain=", "" }
 
 $DkimSelector = @('selector1','selector2','google','k1','mail','default','dkim')
+
+# Wrapper around Resolve-DnsName with hard timeout via background job
+function Resolve-WithTimeout {
+    param($Name, $Type, $TimeoutSec = 5)
+    $job = Start-Job -ScriptBlock {
+        param($n, $t)
+        try { Resolve-DnsName -Name $n -Type $t -ErrorAction SilentlyContinue -DnsOnly }
+        catch { $null }
+    } -ArgumentList $Name, $Type
+
+    if (Wait-Job $job -Timeout $TimeoutSec) {
+        $result = Receive-Job $job
+        Remove-Job $job -Force
+        return $result
+    } else {
+        Stop-Job $job -ErrorAction SilentlyContinue
+        Remove-Job $job -Force -ErrorAction SilentlyContinue
+        return $null
+    }
+}
 
 foreach ($domain in $Domains) {
 
     $domainShort = $domain -replace '\.com\.au','' -replace '\.com','' -replace '\.au',''
-        $today       = Get-Date -Format "dd MMM yyyy  HH:mm:ss"
-    $outputFile  = Join-Path $ParentDir "$domainShort DNS.txt"
+    $today       = Get-Date -Format "dd MMM yyyy  HH:mm:ss"
+    $outputFile  = Join-Path $OutputDir "$domainShort DNS.txt"
 
-    $prevFile = if (Test-Path $outputFile) { Get-Content $outputFile } else { $null }
+    $prevFile = if (Test-Path -LiteralPath $outputFile) { Get-Content -LiteralPath $outputFile } else { $null }
 
     $output = @(
         "DNS HEALTH REPORT",
@@ -28,34 +53,36 @@ foreach ($domain in $Domains) {
 
     # A RECORD
     $output += "A RECORD"
-    $aResult = Resolve-DnsName -Name $domain -Type A -ErrorAction SilentlyContinue
-    if ($aResult) { foreach ($e in $aResult) { $output += "  IP Address   : $($e.IPAddress)" } }
+    $aResult = Resolve-WithTimeout -Name $domain -Type A
+    if ($aResult) { foreach ($e in $aResult) { if ($e.IPAddress) { $output += "  IP Address   : $($e.IPAddress)" } } }
     else          { $output += "  Not found" }
     $output += ""
 
     # MX RECORD
     $output += "MX RECORD"
-    $mxResult = Resolve-DnsName -Name $domain -Type MX -ErrorAction SilentlyContinue
+    $mxResult = Resolve-WithTimeout -Name $domain -Type MX
     if ($mxResult) {
         foreach ($e in $mxResult) {
             $mx = if ($e.NameExchange) { $e.NameExchange } else { $e.Exchange }
-            $output += "  Mail Server  : $mx"
-            $output += "  Priority     : $($e.Preference)"
+            if ($mx) {
+                $output += "  Mail Server  : $mx"
+                $output += "  Priority     : $($e.Preference)"
+            }
         }
     } else { $output += "  Not found" }
     $output += ""
 
     # NS RECORD
     $output += "NS RECORD"
-    $nsResult = Resolve-DnsName -Name $domain -Type NS -ErrorAction SilentlyContinue
-    if ($nsResult) { foreach ($e in $nsResult) { $output += "  Name Server  : $($e.NameHost)" } }
+    $nsResult = Resolve-WithTimeout -Name $domain -Type NS
+    if ($nsResult) { foreach ($e in $nsResult) { if ($e.NameHost) { $output += "  Name Server  : $($e.NameHost)" } } }
     else           { $output += "  Not found" }
     $output += ""
 
     # SPF
     $output += "SPF RECORD"
-    $spfResult = Resolve-DnsName -Name $domain -Type TXT -ErrorAction SilentlyContinue |
-                 Where-Object { ($_.Strings -join " ") -like "v=spf1*" }
+    $txtResult = Resolve-WithTimeout -Name $domain -Type TXT
+    $spfResult = $txtResult | Where-Object { ($_.Strings -join " ") -like "v=spf1*" }
     if ($spfResult) {
         foreach ($s in $spfResult) {
             $spftxt = $s.Strings -join " "
@@ -74,10 +101,11 @@ foreach ($domain in $Domains) {
 
     # DMARC
     $output += "DMARC RECORD"
-    $dmarcResult = Resolve-DnsName -Name "_dmarc.$domain" -Type TXT -ErrorAction SilentlyContinue
+    $dmarcResult = Resolve-WithTimeout -Name "_dmarc.$domain" -Type TXT
     if ($dmarcResult) {
         foreach ($d in $dmarcResult) {
             $txt = if ($d.Strings) { ($d.Strings -join " ") } else { ($d.Text -join " ") }
+            if (-not $txt) { continue }
             $output += "  Record       : $txt"
             $output += ""
             if ($txt -match 'p=(\w+)')     { $output += "  Policy       : $($Matches[1])" }
@@ -94,15 +122,16 @@ foreach ($domain in $Domains) {
     $output += "DKIM RECORD"
     $dkimFound = $false
     foreach ($sel in $DkimSelector) {
-        $dkimResult = Resolve-DnsName -Name "$sel._domainkey.$domain" -Type TXT -ErrorAction SilentlyContinue
+        $dkimResult = Resolve-WithTimeout -Name "$sel._domainkey.$domain" -Type TXT -TimeoutSec 3
         if ($dkimResult) {
             foreach ($d in $dkimResult) {
                 $txt = if ($d.Strings) { ($d.Strings -join " ") } else { ($d.Text -join " ") }
+                if (-not $txt) { continue }
                 $output += "  Selector     : $sel"
                 $output += "  Record       : $txt"
                 $output += ""
+                $dkimFound = $true
             }
-            $dkimFound = $true
         }
     }
     if (-not $dkimFound) { $output += "  WARN - No DKIM found for common selectors" }
@@ -110,8 +139,8 @@ foreach ($domain in $Domains) {
 
     # MTA-STS
     $output += "MTA-STS"
-    $mtaResult = Resolve-DnsName -Name "_mta-sts.$domain" -Type TXT -ErrorAction SilentlyContinue
-    if ($mtaResult) { foreach ($m in $mtaResult) { $output += "  Record       : $($m.Strings -join ' ')" } }
+    $mtaResult = Resolve-WithTimeout -Name "_mta-sts.$domain" -Type TXT
+    if ($mtaResult) { foreach ($m in $mtaResult) { if ($m.Strings) { $output += "  Record       : $($m.Strings -join ' ')" } } }
     else            { $output += "  Not configured" }
     $output += ""
 
@@ -136,8 +165,4 @@ foreach ($domain in $Domains) {
     $output += ""
     $output += "------------------------------------------------------------"
     $output | Out-File -FilePath $outputFile -Encoding UTF8 -Force
-    Write-Host "Saved: $outputFile"
 }
-
-Write-Host ""
-Write-Host "All done."

@@ -1,13 +1,22 @@
+# ============================================================
 # SPF Lookup Depth Checker
+# Reads domain from config file passed as parameter
+# Writes report to OutputDir passed as parameter
+# ============================================================
 
-$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ParentDir  = Split-Path -Parent $ScriptDir
-$ConfigFile = Join-Path $ScriptDir "config.txt"
-$today      = Get-Date -Format "dd MMM yyyy"
+param(
+    [Parameter(Mandatory=$true)][string]$ConfigFile,
+    [Parameter(Mandatory=$true)][string]$OutputDir
+)
+
+if (-not (Test-Path $ConfigFile)) { Write-Host "Config not found: $ConfigFile"; return }
+if (-not (Test-Path $OutputDir))  { Write-Host "Output dir not found: $OutputDir"; return }
+
+$today = Get-Date -Format "dd MMM yyyy"
 
 $Domains = Get-Content $ConfigFile | Where-Object { $_ -match "^domain=" } | ForEach-Object { $_ -replace "^domain=", "" }
 
-# Cache to avoid querying same domain twice - as i had issue where the scritp took 10 min to run 
+# Cache to avoid querying same domain twice
 $DnsCache = @{}
 
 # Known slow/timeout domains - skip DNS query, count as 1 lookup
@@ -143,9 +152,8 @@ foreach ($domain in $Domains) {
         $output += "FAIL - No SPF record found"
         $output += "TIP  - Check Online Lookup folder for direct MXToolbox link"
         $domainShort = $domain -replace '\.com\.au','' -replace '\.com','' -replace '\.au',''
-        $outputFile  = Join-Path $ParentDir "$domainShort SPF Depth.txt"
+        $outputFile  = Join-Path $OutputDir "$domainShort SPF Depth.txt"
         $output | Out-File -FilePath $outputFile -Encoding UTF8 -Force
-        Write-Host "Saved: $outputFile"
         continue
     }
 
@@ -208,7 +216,6 @@ foreach ($domain in $Domains) {
     $output += ""
 
     $domainShort = $domain -replace '\.com\.au','' -replace '\.com','' -replace '\.au',''
-    $outputFile  = Join-Path $ParentDir "$domainShort SPF Depth.txt"
+    $outputFile  = Join-Path $OutputDir "$domainShort SPF Depth.txt"
     $output | Out-File -FilePath $outputFile -Encoding UTF8 -Force
-    Write-Host "Saved: $outputFile"
 }

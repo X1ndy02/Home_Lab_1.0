@@ -1,25 +1,28 @@
-# Sync Online Lookup shortcuts with config.txt file
-# Basicallyt Adds missing, replaces existing, removes orphaned urls - In a case ther eis smth wrong with urls
+# ============================================================
+# Sync Online Lookup shortcuts with config.txt
+# Reads domain from ConfigFile, writes .url shortcuts to OutputDir\Online Lookup
+# Adds missing, replaces existing, removes orphaned urls
+# ============================================================
 
-$ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ParentDir  = Split-Path -Parent $ScriptDir
-$ConfigFile = Join-Path $ScriptDir "config.txt"
-$LookupDir  = Join-Path $ParentDir "Online Lookup"
+param(
+    [Parameter(Mandatory=$true)][string]$ConfigFile,
+    [Parameter(Mandatory=$true)][string]$OutputDir
+)
 
-Write-Host "============================================================"
-Write-Host " Sync Online Lookup"
-Write-Host "============================================================"
-Write-Host ""
+if (-not (Test-Path $ConfigFile)) { Write-Host "Config not found: $ConfigFile"; return }
+if (-not (Test-Path $OutputDir))  { Write-Host "Output dir not found: $OutputDir"; return }
+
+$LookupDir = Join-Path $OutputDir "Online Lookup"
 
 # Read domains from config.txt
 $Domains = Get-Content $ConfigFile | Where-Object { $_ -match "^domain=" } | ForEach-Object { $_ -replace "^domain=", "" }
 
 if (-not $Domains) {
-    Write-Host "No domains found in config.txt. Exiting."
-    exit
+    Write-Host "No domains found in $ConfigFile. Exiting."
+    return
 }
 
-# Ensure folder exists
+# Ensure Online Lookup folder exists
 if (-not (Test-Path $LookupDir)) {
     New-Item -Path $LookupDir -ItemType Directory -Force | Out-Null
 }

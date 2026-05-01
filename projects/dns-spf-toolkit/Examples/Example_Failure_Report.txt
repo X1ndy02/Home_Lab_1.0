@@ -1,0 +1,12 @@
+DNS FAILURE REPORT
+Generated : 01 May 2026  13:42:38
+Clients   : 8 scanned, 4 with issues
+============================================================
+
+ClientA              clienta DNS.txt      DNS changes detected
+ClientB              clientb DNS.txt      No DMARC, No DKIM
+ClientB              clientb SPF Depth.txt SPF FAIL 15/10
+ClientC              clientc DNS.txt      No SPF, No DMARC, No DKIM
+ClientD              clientd DNS.txt      No DKIM, DNS changes detected
+
+============================================================
