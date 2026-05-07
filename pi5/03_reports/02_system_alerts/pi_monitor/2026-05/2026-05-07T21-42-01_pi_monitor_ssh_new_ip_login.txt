@@ -1,0 +1,14 @@
+Source: pi_monitor_alert
+Date: 2026-05-07T21:42:01+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SSH NEW IP LOGIN
+
+SSH ALERT · NEW IP LOGIN
+───────────────────────
+Host    : rootnode
+User    : xindy
+Source  : 192.168.1.207
+Time    : May 07 21:41:51
+Method  : publickey
+Port    : 55032
