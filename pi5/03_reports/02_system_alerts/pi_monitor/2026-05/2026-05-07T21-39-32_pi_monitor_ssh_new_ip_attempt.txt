@@ -1,0 +1,15 @@
+Source: pi_monitor_alert
+Date: 2026-05-07T21:39:32+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SSH NEW IP ATTEMPT
+
+SSH ALERT · NEW IP ATTEMPT
+─────────────────────────
+Host    : rootnode
+User    : xindy
+Source  : 192.168.1.207
+Time    : May 07 21:38:34
+Method  : password
+Port    : 54851
+Result  : ACCEPTED
