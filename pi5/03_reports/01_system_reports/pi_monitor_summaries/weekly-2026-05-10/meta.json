@@ -1,0 +1,13 @@
+{
+  "source": "pi_monitor_weekly",
+  "timestamp": "2026-05-10T20:00:07.066547+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Weekly Pi Monitor Summary (2026-05-10)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-05-10/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-05-10/pi-monitor-FS-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-05-10/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-05-10/attachments.md"
+  ]
+}
