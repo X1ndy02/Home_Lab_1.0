@@ -1,0 +1,14 @@
+Source: backup_status
+Date: 2026-05-11T01:02:12+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Local Backup — Success
+
+Local Backup — Monday 11 May 2026, 01:02 AEST
+============================================================
+  Status          : Success
+  Latest snapshot : 438341a9 2026-05-11 01:00:18
+1 snapshots 
+  Disk used       : 63G used of 219G (31%)
+
+Full log attached.
