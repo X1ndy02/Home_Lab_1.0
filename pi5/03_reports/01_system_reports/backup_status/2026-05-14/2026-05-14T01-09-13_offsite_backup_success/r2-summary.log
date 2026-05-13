@@ -1,0 +1,30 @@
+Offsite Backup (Cloudflare R2) Summary
+======================================
+Copy              : Success
+Rotation          : Success
+Snapshots in R2   : 3
+
+Timeline:
+  Started   : 2026-05-14T01:02:33+10:00
+  Completed : 2026-05-14T01:09:00+10:00
+
+Copy details:
+  Snapshot  : f90d3672
+  Progress  : [3:46] 100.00%  33 / 33 packs copied
+
+Rotation details:
+  Kept      : 3 snapshot(s)
+  Pruned    : 1 old snapshot(s)
+
+Kept snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+b2e38697  2026-05-13 01:00:28  rootnode                last snapshot  /      58.222 GiB
+16a51faf  2026-05-14 01:00:18  rootnode                last snapshot  /      58.135 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+dfc45bd3  2026-05-12 01:00:08  rootnode                /      58.177 GiB
+------------------------------------------------------------------------
+1 snapshots
