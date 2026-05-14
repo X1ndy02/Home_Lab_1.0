@@ -426,6 +426,13 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
     printf "%s\n" "$init_output" | tee -a "$RESTIC_LOG" "$r2_log"
   fi
 
+  mapfile -t r2_snap_ids < <(
+    restic --repo "$RESTIC_REPOSITORY" \
+           --password-file "$RESTIC_PASSWORD_FILE" \
+           snapshots --latest "${RESTIC_R2_KEEP_LAST:-2}" --compact 2>/dev/null \
+      | grep '^[0-9a-f]' | awk '{print $1}'
+  )
+
   r2_copy_status=0
   r2_copy_output=$(
     AWS_ACCESS_KEY_ID="$RESTIC_R2_ACCESS_KEY_ID" \
@@ -434,7 +441,8 @@ if [ -n "${RESTIC_R2_REPOSITORY:-}" ] && [ -n "${RESTIC_R2_ACCESS_KEY_ID:-}" ]; 
       --from-repo "$RESTIC_REPOSITORY" \
       --from-password-file "$RESTIC_PASSWORD_FILE" \
       --repo "$RESTIC_R2_REPOSITORY" \
-      --password-file "$RESTIC_PASSWORD_FILE" 2>&1
+      --password-file "$RESTIC_PASSWORD_FILE" \
+      "${r2_snap_ids[@]}" 2>&1
   ) || r2_copy_status=$?
   printf '%s\n' "$r2_copy_output" >> "$RESTIC_LOG"
   printf '%s\n' "$r2_copy_output" >> "$r2_log"
