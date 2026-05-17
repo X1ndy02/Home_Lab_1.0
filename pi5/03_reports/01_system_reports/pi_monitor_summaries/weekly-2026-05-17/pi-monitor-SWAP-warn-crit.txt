@@ -1,0 +1,7 @@
+Check: SWAP
+Period: 2026-05-10 20:00 AEST to 2026-05-17 20:00 AEST
+
+Grouped by day (local time):
+
+2026-05-12 (WARN 1, CRIT 0)
+  19:48 | WARN | Swap usage 75% >= 75% for 3 min
