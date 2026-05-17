@@ -1,0 +1,21 @@
+{
+  "source": "grafana_weekly",
+  "timestamp": "2026-05-17T20:01:22.754758+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "[Pi Weekly Report] 2026-05-17",
+  "files": [
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/email.txt",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/temperature.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/load.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/memory.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/throttling.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/ping-latency.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/ping-loss.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/bandwidth.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/services.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/fs-errors.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/smart.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/weekly-2026-05-17/attachments.md"
+  ]
+}
