@@ -1,0 +1,14 @@
+Source: pi_monitor_alert
+Date: 2026-05-17T22:25:02+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SSH LOGIN RECOVERED
+
+SSH ALERT · FAILED THEN SUCCESS
+──────────────────────────────
+Host    : rootnode
+User    : xindy
+Source  : 10.244.10.1
+Failures: 2 within last 15 min
+Window  : May 17 22:23:30 → May 17 22:23:30
+Success : May 17 22:23:45 (method=publickey, port=50373)
