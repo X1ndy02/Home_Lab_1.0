@@ -1,0 +1,30 @@
+Source: pi_monitor_weekly
+Date: 2026-05-24T20:00:08.099839+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly Pi Monitor Summary (2026-05-24)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-05-17 20:00 AEST to 2026-05-24 20:00 AEST
+
+Totals
+  Total events : 4
+  OK           : 2
+  WARN         : 2
+  CRIT         : 0
+
+Top checks by event count
+  SSH_LOGIN           4  (WARN 2, CRIT 0)
+
+Checks with WARN/CRIT
+  SSH_LOGIN        WARN 2   CRIT 0   last 2026-05-21 19:54 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-05-21 19:53 | SSH_LOGIN | WARN
+    SSH ALERT · FAILED LOGINS
+  2026-05-17 22:23 | SSH_LOGIN | WARN
+    SSH ALERT · FAILED LOGINS
+
+Attachments: SSH login details (no other WARN/CRIT checks this period)
