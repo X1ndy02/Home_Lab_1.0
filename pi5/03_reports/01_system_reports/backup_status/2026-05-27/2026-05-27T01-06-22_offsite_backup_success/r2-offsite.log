@@ -1,0 +1,51 @@
+2026-05-27T01:02:12+10:00 Starting R2 offsite copy
+
+snapshot 67aa9bb7 of [/] at 2026-05-27 01:00:26.910841587 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+Ignoring "2": no matching ID found for prefix "2"
+[0:47] 100.00%  8 / 8 packs copied
+
+snapshot 9a609dab saved
+2026-05-27T01:03:24+10:00 R2 offsite copy completed
+Applying Policy: keep 2 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+e8978b0e  2026-05-26 01:00:26  rootnode                last snapshot  /      58.660 GiB
+9a609dab  2026-05-27 01:00:26  rootnode                last snapshot  /      58.704 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+12bf191c  2026-05-25 01:00:06  rootnode                /      58.608 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[0:11] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:02] 100.00%  1158 / 1158 packs processed
+
+to repack:        186869 blobs / 362.302 MiB
+this removes:        838 blobs / 90.798 MiB
+to delete:             0 blobs / 0 B
+total prune:         838 blobs / 90.798 MiB
+remaining:        799509 blobs / 18.347 GiB
+unused size after prune: 936.337 MiB (4.98% of remaining size)
+
+repacking packs
+[2:12] 100.00%  24 / 24 packs repacked
+rebuilding index
+[0:08] 100.00%  21 / 21 indexes processed
+[0:00] 100.00%  12 / 12 old indexes deleted
+removing 24 old packs
+[0:01] 100.00%  24 / 24 files deleted
+done
+2026-05-27T01:06:09+10:00 R2 rotation complete
