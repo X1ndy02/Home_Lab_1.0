@@ -1,0 +1,50 @@
+2026-05-28T01:02:18+10:00 Starting R2 offsite copy
+
+snapshot 295bc175 of [/] at 2026-05-28 01:00:11.501833092 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[3:53] 100.00%  43 / 43 packs copied
+
+snapshot c8e0da12 saved
+2026-05-28T01:06:35+10:00 R2 offsite copy completed
+Applying Policy: keep 2 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+9a609dab  2026-05-27 01:00:26  rootnode                last snapshot  /      58.704 GiB
+c8e0da12  2026-05-28 01:00:11  rootnode                last snapshot  /      58.878 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+e8978b0e  2026-05-26 01:00:26  rootnode                /      58.660 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[0:14] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:02] 100.00%  1183 / 1183 packs processed
+
+to repack:        185684 blobs / 211.652 MiB
+this removes:        532 blobs / 70.716 MiB
+to delete:             0 blobs / 0 B
+total prune:         532 blobs / 70.716 MiB
+remaining:        844901 blobs / 18.779 GiB
+unused size after prune: 957.839 MiB (4.98% of remaining size)
+
+repacking packs
+[1:12] 100.00%  14 / 14 packs repacked
+rebuilding index
+[0:05] 100.00%  20 / 20 indexes processed
+[0:00] 100.00%  7 / 7 old indexes deleted
+removing 14 old packs
+[0:00] 100.00%  14 / 14 files deleted
+done
+2026-05-28T01:08:20+10:00 R2 rotation complete
