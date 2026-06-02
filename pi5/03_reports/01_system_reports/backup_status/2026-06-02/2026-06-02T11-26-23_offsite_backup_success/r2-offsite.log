@@ -1,0 +1,50 @@
+2026-06-02T11:19:33+10:00 Starting R2 offsite copy
+
+snapshot ea0168c7 of [/] at 2026-06-02 11:16:36.362210339 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[1:06] 100.00%  15 / 15 packs copied
+
+snapshot 6d00e359 saved
+2026-06-02T11:21:12+10:00 R2 offsite copy completed
+Applying Policy: keep 2 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+c8e0da12  2026-05-28 01:00:11  rootnode                last snapshot  /      58.878 GiB
+6d00e359  2026-06-02 11:16:36  rootnode                last snapshot  /      58.946 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+
+remove 1 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+9a609dab  2026-05-27 01:00:26  rootnode                /      58.704 GiB
+------------------------------------------------------------------------
+1 snapshots
+
+[0:00] 100.00%  1 / 1 files deleted
+1 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[0:20] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:02] 100.00%  1188 / 1188 packs processed
+
+to repack:        191629 blobs / 858.497 MiB
+this removes:      45135 blobs / 383.055 MiB
+to delete:             0 blobs / 0 B
+total prune:       45135 blobs / 383.055 MiB
+remaining:        843639 blobs / 18.538 GiB
+unused size after prune: 946.879 MiB (4.99% of remaining size)
+
+repacking packs
+[3:59] 100.00%  56 / 56 packs repacked
+rebuilding index
+[0:16] 100.00%  20 / 20 indexes processed
+[0:01] 100.00%  17 / 17 old indexes deleted
+removing 56 old packs
+[0:04] 100.00%  56 / 56 files deleted
+done
+2026-06-02T11:26:09+10:00 R2 rotation complete
