@@ -1,0 +1,57 @@
+2026-06-04T01:01:54+10:00 Starting R2 offsite copy
+
+snapshot 89699c4c of [/] at 2026-06-04 01:00:04.337128059 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:13] 100.00%  4 / 4 packs copied
+
+snapshot e4a55c51 saved
+
+snapshot 295bc175 of [/] at 2026-05-28 01:00:11.501833092 +1000 AEST by root@rootnode
+  copy started, this may take a while...
+[0:52] 100.00%  33 / 33 packs copied
+
+snapshot a009d093 saved
+2026-06-04T01:03:28+10:00 R2 offsite copy completed
+Applying Policy: keep 2 latest snapshots
+keep 2 snapshots:
+ID        Time                 Host        Tags        Reasons        Paths  Size
+---------------------------------------------------------------------------------------
+ad8a0fc5  2026-06-03 01:00:02  rootnode                last snapshot  /      59.267 GiB
+e4a55c51  2026-06-04 01:00:04  rootnode                last snapshot  /      59.321 GiB
+---------------------------------------------------------------------------------------
+2 snapshots
+
+remove 2 snapshots:
+ID        Time                 Host        Tags        Paths  Size
+------------------------------------------------------------------------
+a009d093  2026-05-28 01:00:11  rootnode                /      58.878 GiB
+6d00e359  2026-06-02 11:16:36  rootnode                /      58.946 GiB
+------------------------------------------------------------------------
+2 snapshots
+
+[0:00] 100.00%  2 / 2 files deleted
+2 snapshots have been removed, running prune
+loading indexes...
+loading all snapshots...
+finding data that is still in use for 2 snapshots
+[0:11] 100.00%  2 / 2 snapshots
+searching used packs...
+collecting packs for deletion and repacking
+[0:02] 100.00%  1179 / 1179 packs processed
+
+to repack:        186661 blobs / 320.124 MiB
+this removes:       1273 blobs / 74.838 MiB
+to delete:         43555 blobs / 102.801 MiB
+total prune:       44828 blobs / 177.639 MiB
+remaining:        801411 blobs / 18.593 GiB
+unused size after prune: 949.393 MiB (4.99% of remaining size)
+
+repacking packs
+[2:06] 100.00%  21 / 21 packs repacked
+rebuilding index
+[0:07] 100.00%  21 / 21 indexes processed
+[0:00] 100.00%  11 / 11 old indexes deleted
+removing 29 old packs
+[0:01] 100.00%  29 / 29 files deleted
+done
+2026-06-04T01:06:07+10:00 R2 rotation complete
