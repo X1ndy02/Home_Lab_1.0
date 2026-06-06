@@ -1,0 +1,14 @@
+Summary (from log):
+Failures: 0
+Warnings: 0
+Successes: 130
+
+Last run details:
+Start: 2026-06-07T01:00:04+10:00 Starting restic backup
+End: 2026-06-07T01:01:54+10:00 Backup completed
+Files:          70 new,   139 changed, 1351089 unmodified
+Dirs:           16 new,   194 changed, 206711 unmodified
+Added to the repository: 170.278 MiB (27.296 MiB stored)
+processed 1351298 files, 59.712 GiB in 1:04
+snapshot a806c7c3 saved
+Disk usage: 73G used of 219G (35%)
