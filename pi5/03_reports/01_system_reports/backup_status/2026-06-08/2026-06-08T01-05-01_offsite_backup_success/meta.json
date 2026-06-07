@@ -1,0 +1,14 @@
+{
+  "source": "backup_status",
+  "timestamp": "2026-06-08T01:05:01+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Offsite Backup \u2014 Success",
+  "files": [
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-08/2026-06-08T01-05-01_offsite_backup_success/email.txt",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-08/2026-06-08T01-05-01_offsite_backup_success/r2-offsite.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-08/2026-06-08T01-05-01_offsite_backup_success/r2-summary.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-08/2026-06-08T01-05-01_offsite_backup_success/r2-events.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-08/2026-06-08T01-05-01_offsite_backup_success/attachments.md"
+  ]
+}
