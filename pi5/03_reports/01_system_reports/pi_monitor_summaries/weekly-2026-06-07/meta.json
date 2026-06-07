@@ -1,0 +1,14 @@
+{
+  "source": "pi_monitor_weekly",
+  "timestamp": "2026-06-07T20:00:09.776181+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Weekly Pi Monitor Summary (2026-06-07)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-06-07/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-06-07/pi-monitor-LOAD-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-06-07/pi-monitor-POWER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-06-07/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-06-07/attachments.md"
+  ]
+}

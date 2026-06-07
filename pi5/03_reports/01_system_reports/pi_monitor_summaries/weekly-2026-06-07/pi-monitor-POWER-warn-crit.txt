@@ -1,0 +1,10 @@
+Check: POWER
+Period: 2026-05-31 20:00 AEST to 2026-06-07 20:00 AEST
+
+Grouped by day (local time):
+
+2026-06-05 (WARN 0, CRIT 1)
+  00:48 | CRIT | Current throttling detected: 0x50005
+
+2026-06-04 (WARN 0, CRIT 1)
+  20:18 | CRIT | Current throttling detected: 0x50005
