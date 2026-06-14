@@ -1,0 +1,23 @@
+Source: smart_weekly
+Date: 2026-06-14T20:00:07.313317+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly SMART Summary (2026-06-14)
+
+SMART DISK WEEKLY SUMMARY
+---------------------------
+Host   : rootnode
+Period : 2026-06-07 20:00 AEST to 2026-06-14 20:00 AEST
+
+Totals
+  Log lines       : 1
+  Warnings/errors : 0
+
+Warnings/errors (most recent first, max 10)
+  none
+
+Recent smartd activity (max 5)
+  (time unknown)
+    -- No entries --
+
+Full log lines are attached.

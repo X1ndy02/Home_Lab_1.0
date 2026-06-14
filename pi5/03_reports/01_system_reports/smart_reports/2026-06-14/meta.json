@@ -1,0 +1,12 @@
+{
+  "source": "smart_weekly",
+  "timestamp": "2026-06-14T20:00:07.313317+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Weekly SMART Summary (2026-06-14)",
+  "files": [
+    "pi5/03_reports/01_system_reports/smart_reports/2026-06-14/email.txt",
+    "pi5/03_reports/01_system_reports/smart_reports/2026-06-14/smartd-log-2026-06-14.txt",
+    "pi5/03_reports/01_system_reports/smart_reports/2026-06-14/attachments.md"
+  ]
+}
