@@ -1,0 +1,15 @@
+Source: backup_status
+Date: 2026-06-18T01:08:18+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Offsite Backup — Success
+
+Offsite Backup (Cloudflare R2) — Thursday 18 June 2026, 01:08 AEST
+============================================================
+  Copy            : Success
+  Rotation        : Success
+  Latest snapshot : 50626cf1 2026-06-18 01:00:27
+1 snapshots 
+  Snapshots kept  : 3
+
+Logs attached.
