@@ -1,0 +1,14 @@
+{
+  "source": "backup_status",
+  "timestamp": "2026-06-19T01:02:12+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Local Backup \u2014 Success",
+  "files": [
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-19/2026-06-19T01-02-12_local_backup_success/email.txt",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-19/2026-06-19T01-02-12_local_backup_success/restic-backup.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-19/2026-06-19T01-02-12_local_backup_success/restic-summary.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-19/2026-06-19T01-02-12_local_backup_success/restic-events.log",
+    "pi5/03_reports/01_system_reports/backup_status/2026-06-19/2026-06-19T01-02-12_local_backup_success/attachments.md"
+  ]
+}
