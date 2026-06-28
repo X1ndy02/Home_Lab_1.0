@@ -1,0 +1,10 @@
+Source: grafana_weekly
+Date: 2026-06-28T20:01:21.921835+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Weekly Report] 2026-06-28
+
+Weekly Grafana report
+Period: 2026-06-21 20:00 AEST to 2026-06-28 20:00 AEST
+
+Dashboard: pi-monitor
