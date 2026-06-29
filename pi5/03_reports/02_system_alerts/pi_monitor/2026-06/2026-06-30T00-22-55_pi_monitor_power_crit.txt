@@ -1,0 +1,7 @@
+Source: pi_monitor_alert
+Date: 2026-06-30T00:22:55+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] POWER CRIT
+
+Current throttling detected: 0x50005
