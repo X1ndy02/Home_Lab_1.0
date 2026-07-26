@@ -1,0 +1,1002 @@
+SSH LOGIN DETAILS
+------------------
+Host   : rootnode
+Period : 2026-07-19 20:00 AEST to 2026-07-26 20:00 AEST
+
+2026-07-26 (FAILED 0, ACCEPTED 87)
+  09:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56088 | method=publickey
+    raw: 2026-07-26T09:43:55+10:00 rootnode sshd-session[1244186]: Accepted publickey for xindy from 10.244.10.1 port 56088 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56111 | method=publickey
+    raw: 2026-07-26T09:43:56+10:00 rootnode sshd-session[1244195]: Accepted publickey for xindy from 10.244.10.1 port 56111 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56123 | method=publickey
+    raw: 2026-07-26T09:44:57+10:00 rootnode sshd-session[1244690]: Accepted publickey for xindy from 10.244.10.1 port 56123 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56132 | method=publickey
+    raw: 2026-07-26T09:45:57+10:00 rootnode sshd-session[1245214]: Accepted publickey for xindy from 10.244.10.1 port 56132 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56149 | method=publickey
+    raw: 2026-07-26T09:46:57+10:00 rootnode sshd-session[1245685]: Accepted publickey for xindy from 10.244.10.1 port 56149 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56161 | method=publickey
+    raw: 2026-07-26T09:47:58+10:00 rootnode sshd-session[1246155]: Accepted publickey for xindy from 10.244.10.1 port 56161 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56170 | method=publickey
+    raw: 2026-07-26T09:48:58+10:00 rootnode sshd-session[1246641]: Accepted publickey for xindy from 10.244.10.1 port 56170 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56178 | method=publickey
+    raw: 2026-07-26T09:49:59+10:00 rootnode sshd-session[1247103]: Accepted publickey for xindy from 10.244.10.1 port 56178 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56184 | method=publickey
+    raw: 2026-07-26T09:50:59+10:00 rootnode sshd-session[1247626]: Accepted publickey for xindy from 10.244.10.1 port 56184 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56193 | method=publickey
+    raw: 2026-07-26T09:51:59+10:00 rootnode sshd-session[1248092]: Accepted publickey for xindy from 10.244.10.1 port 56193 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56200 | method=publickey
+    raw: 2026-07-26T09:53:00+10:00 rootnode sshd-session[1248581]: Accepted publickey for xindy from 10.244.10.1 port 56200 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56211 | method=publickey
+    raw: 2026-07-26T09:54:00+10:00 rootnode sshd-session[1249043]: Accepted publickey for xindy from 10.244.10.1 port 56211 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56218 | method=publickey
+    raw: 2026-07-26T09:55:01+10:00 rootnode sshd-session[1249525]: Accepted publickey for xindy from 10.244.10.1 port 56218 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56244 | method=publickey
+    raw: 2026-07-26T09:56:01+10:00 rootnode sshd-session[1250044]: Accepted publickey for xindy from 10.244.10.1 port 56244 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56256 | method=publickey
+    raw: 2026-07-26T09:57:01+10:00 rootnode sshd-session[1250414]: Accepted publickey for xindy from 10.244.10.1 port 56256 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56277 | method=publickey
+    raw: 2026-07-26T09:58:02+10:00 rootnode sshd-session[1250723]: Accepted publickey for xindy from 10.244.10.1 port 56277 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56291 | method=publickey
+    raw: 2026-07-26T09:59:02+10:00 rootnode sshd-session[1251203]: Accepted publickey for xindy from 10.244.10.1 port 56291 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56325 | method=publickey
+    raw: 2026-07-26T10:00:02+10:00 rootnode sshd-session[1251732]: Accepted publickey for xindy from 10.244.10.1 port 56325 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56344 | method=publickey
+    raw: 2026-07-26T10:01:03+10:00 rootnode sshd-session[1252220]: Accepted publickey for xindy from 10.244.10.1 port 56344 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56361 | method=publickey
+    raw: 2026-07-26T10:02:04+10:00 rootnode sshd-session[1252696]: Accepted publickey for xindy from 10.244.10.1 port 56361 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56384 | method=publickey
+    raw: 2026-07-26T10:03:04+10:00 rootnode sshd-session[1253186]: Accepted publickey for xindy from 10.244.10.1 port 56384 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56398 | method=publickey
+    raw: 2026-07-26T10:04:04+10:00 rootnode sshd-session[1253666]: Accepted publickey for xindy from 10.244.10.1 port 56398 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56422 | method=publickey
+    raw: 2026-07-26T10:05:05+10:00 rootnode sshd-session[1254217]: Accepted publickey for xindy from 10.244.10.1 port 56422 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56438 | method=publickey
+    raw: 2026-07-26T10:06:05+10:00 rootnode sshd-session[1254716]: Accepted publickey for xindy from 10.244.10.1 port 56438 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56454 | method=publickey
+    raw: 2026-07-26T10:07:06+10:00 rootnode sshd-session[1255169]: Accepted publickey for xindy from 10.244.10.1 port 56454 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56463 | method=publickey
+    raw: 2026-07-26T10:08:06+10:00 rootnode sshd-session[1255683]: Accepted publickey for xindy from 10.244.10.1 port 56463 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56471 | method=publickey
+    raw: 2026-07-26T10:09:06+10:00 rootnode sshd-session[1256141]: Accepted publickey for xindy from 10.244.10.1 port 56471 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56479 | method=publickey
+    raw: 2026-07-26T10:10:07+10:00 rootnode sshd-session[1256740]: Accepted publickey for xindy from 10.244.10.1 port 56479 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56490 | method=publickey
+    raw: 2026-07-26T10:11:07+10:00 rootnode sshd-session[1257144]: Accepted publickey for xindy from 10.244.10.1 port 56490 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56498 | method=publickey
+    raw: 2026-07-26T10:12:07+10:00 rootnode sshd-session[1257687]: Accepted publickey for xindy from 10.244.10.1 port 56498 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56511 | method=publickey
+    raw: 2026-07-26T10:13:08+10:00 rootnode sshd-session[1258098]: Accepted publickey for xindy from 10.244.10.1 port 56511 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56522 | method=publickey
+    raw: 2026-07-26T10:14:08+10:00 rootnode sshd-session[1258671]: Accepted publickey for xindy from 10.244.10.1 port 56522 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56531 | method=publickey
+    raw: 2026-07-26T10:15:09+10:00 rootnode sshd-session[1259119]: Accepted publickey for xindy from 10.244.10.1 port 56531 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56549 | method=publickey
+    raw: 2026-07-26T10:16:09+10:00 rootnode sshd-session[1259659]: Accepted publickey for xindy from 10.244.10.1 port 56549 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56572 | method=publickey
+    raw: 2026-07-26T10:17:09+10:00 rootnode sshd-session[1260065]: Accepted publickey for xindy from 10.244.10.1 port 56572 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56585 | method=publickey
+    raw: 2026-07-26T10:18:10+10:00 rootnode sshd-session[1260625]: Accepted publickey for xindy from 10.244.10.1 port 56585 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56599 | method=publickey
+    raw: 2026-07-26T10:19:10+10:00 rootnode sshd-session[1261022]: Accepted publickey for xindy from 10.244.10.1 port 56599 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56615 | method=publickey
+    raw: 2026-07-26T10:20:10+10:00 rootnode sshd-session[1261622]: Accepted publickey for xindy from 10.244.10.1 port 56615 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56628 | method=publickey
+    raw: 2026-07-26T10:21:11+10:00 rootnode sshd-session[1262019]: Accepted publickey for xindy from 10.244.10.1 port 56628 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56638 | method=publickey
+    raw: 2026-07-26T10:22:11+10:00 rootnode sshd-session[1262555]: Accepted publickey for xindy from 10.244.10.1 port 56638 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56650 | method=publickey
+    raw: 2026-07-26T10:23:12+10:00 rootnode sshd-session[1262978]: Accepted publickey for xindy from 10.244.10.1 port 56650 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56659 | method=publickey
+    raw: 2026-07-26T10:24:12+10:00 rootnode sshd-session[1263518]: Accepted publickey for xindy from 10.244.10.1 port 56659 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=56683 | method=publickey
+    raw: 2026-07-26T10:25:12+10:00 rootnode sshd-session[1264003]: Accepted publickey for xindy from 10.244.10.1 port 56683 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57266 | method=publickey
+    raw: 2026-07-26T10:26:13+10:00 rootnode sshd-session[1264494]: Accepted publickey for xindy from 10.244.10.1 port 57266 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57292 | method=publickey
+    raw: 2026-07-26T10:27:13+10:00 rootnode sshd-session[1264954]: Accepted publickey for xindy from 10.244.10.1 port 57292 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57425 | method=publickey
+    raw: 2026-07-26T10:28:13+10:00 rootnode sshd-session[1265486]: Accepted publickey for xindy from 10.244.10.1 port 57425 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57472 | method=publickey
+    raw: 2026-07-26T10:29:14+10:00 rootnode sshd-session[1265916]: Accepted publickey for xindy from 10.244.10.1 port 57472 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57511 | method=publickey
+    raw: 2026-07-26T10:30:14+10:00 rootnode sshd-session[1266510]: Accepted publickey for xindy from 10.244.10.1 port 57511 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57525 | method=publickey
+    raw: 2026-07-26T10:31:15+10:00 rootnode sshd-session[1266922]: Accepted publickey for xindy from 10.244.10.1 port 57525 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57617 | method=publickey
+    raw: 2026-07-26T10:32:15+10:00 rootnode sshd-session[1267456]: Accepted publickey for xindy from 10.244.10.1 port 57617 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57654 | method=publickey
+    raw: 2026-07-26T10:33:15+10:00 rootnode sshd-session[1267879]: Accepted publickey for xindy from 10.244.10.1 port 57654 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57690 | method=publickey
+    raw: 2026-07-26T10:34:16+10:00 rootnode sshd-session[1268427]: Accepted publickey for xindy from 10.244.10.1 port 57690 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57707 | method=publickey
+    raw: 2026-07-26T10:35:16+10:00 rootnode sshd-session[1268898]: Accepted publickey for xindy from 10.244.10.1 port 57707 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57729 | method=publickey
+    raw: 2026-07-26T10:36:16+10:00 rootnode sshd-session[1269427]: Accepted publickey for xindy from 10.244.10.1 port 57729 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57790 | method=publickey
+    raw: 2026-07-26T10:37:17+10:00 rootnode sshd-session[1269838]: Accepted publickey for xindy from 10.244.10.1 port 57790 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57887 | method=publickey
+    raw: 2026-07-26T10:38:17+10:00 rootnode sshd-session[1270385]: Accepted publickey for xindy from 10.244.10.1 port 57887 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57919 | method=publickey
+    raw: 2026-07-26T10:39:18+10:00 rootnode sshd-session[1270797]: Accepted publickey for xindy from 10.244.10.1 port 57919 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57941 | method=publickey
+    raw: 2026-07-26T10:40:18+10:00 rootnode sshd-session[1271393]: Accepted publickey for xindy from 10.244.10.1 port 57941 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=57979 | method=publickey
+    raw: 2026-07-26T10:41:18+10:00 rootnode sshd-session[1271793]: Accepted publickey for xindy from 10.244.10.1 port 57979 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58146 | method=publickey
+    raw: 2026-07-26T10:42:19+10:00 rootnode sshd-session[1272355]: Accepted publickey for xindy from 10.244.10.1 port 58146 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58203 | method=publickey
+    raw: 2026-07-26T10:43:19+10:00 rootnode sshd-session[1272751]: Accepted publickey for xindy from 10.244.10.1 port 58203 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58226 | method=publickey
+    raw: 2026-07-26T10:44:19+10:00 rootnode sshd-session[1273302]: Accepted publickey for xindy from 10.244.10.1 port 58226 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58250 | method=publickey
+    raw: 2026-07-26T10:45:20+10:00 rootnode sshd-session[1273778]: Accepted publickey for xindy from 10.244.10.1 port 58250 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58272 | method=publickey
+    raw: 2026-07-26T10:46:20+10:00 rootnode sshd-session[1274317]: Accepted publickey for xindy from 10.244.10.1 port 58272 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58298 | method=publickey
+    raw: 2026-07-26T10:47:21+10:00 rootnode sshd-session[1274719]: Accepted publickey for xindy from 10.244.10.1 port 58298 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58388 | method=publickey
+    raw: 2026-07-26T10:48:21+10:00 rootnode sshd-session[1275281]: Accepted publickey for xindy from 10.244.10.1 port 58388 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58429 | method=publickey
+    raw: 2026-07-26T10:49:21+10:00 rootnode sshd-session[1275678]: Accepted publickey for xindy from 10.244.10.1 port 58429 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58490 | method=publickey
+    raw: 2026-07-26T10:50:22+10:00 rootnode sshd-session[1276331]: Accepted publickey for xindy from 10.244.10.1 port 58490 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58513 | method=publickey
+    raw: 2026-07-26T10:51:22+10:00 rootnode sshd-session[1276674]: Accepted publickey for xindy from 10.244.10.1 port 58513 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58530 | method=publickey
+    raw: 2026-07-26T10:52:23+10:00 rootnode sshd-session[1277273]: Accepted publickey for xindy from 10.244.10.1 port 58530 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58606 | method=publickey
+    raw: 2026-07-26T10:53:23+10:00 rootnode sshd-session[1277633]: Accepted publickey for xindy from 10.244.10.1 port 58606 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58624 | method=publickey
+    raw: 2026-07-26T10:54:23+10:00 rootnode sshd-session[1278270]: Accepted publickey for xindy from 10.244.10.1 port 58624 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58654 | method=publickey
+    raw: 2026-07-26T10:55:24+10:00 rootnode sshd-session[1278654]: Accepted publickey for xindy from 10.244.10.1 port 58654 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58671 | method=publickey
+    raw: 2026-07-26T10:56:24+10:00 rootnode sshd-session[1279293]: Accepted publickey for xindy from 10.244.10.1 port 58671 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58692 | method=publickey
+    raw: 2026-07-26T10:57:24+10:00 rootnode sshd-session[1279602]: Accepted publickey for xindy from 10.244.10.1 port 58692 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58710 | method=publickey
+    raw: 2026-07-26T10:58:25+10:00 rootnode sshd-session[1280241]: Accepted publickey for xindy from 10.244.10.1 port 58710 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58771 | method=publickey
+    raw: 2026-07-26T10:59:25+10:00 rootnode sshd-session[1280564]: Accepted publickey for xindy from 10.244.10.1 port 58771 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58787 | method=publickey
+    raw: 2026-07-26T11:00:26+10:00 rootnode sshd-session[1281099]: Accepted publickey for xindy from 10.244.10.1 port 58787 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58830 | method=publickey
+    raw: 2026-07-26T11:01:26+10:00 rootnode sshd-session[1281572]: Accepted publickey for xindy from 10.244.10.1 port 58830 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58841 | method=publickey
+    raw: 2026-07-26T11:02:26+10:00 rootnode sshd-session[1282052]: Accepted publickey for xindy from 10.244.10.1 port 58841 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58864 | method=publickey
+    raw: 2026-07-26T11:03:27+10:00 rootnode sshd-session[1282542]: Accepted publickey for xindy from 10.244.10.1 port 58864 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=58999 | method=publickey
+    raw: 2026-07-26T11:04:27+10:00 rootnode sshd-session[1283024]: Accepted publickey for xindy from 10.244.10.1 port 58999 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=59154 | method=publickey
+    raw: 2026-07-26T11:05:27+10:00 rootnode sshd-session[1283573]: Accepted publickey for xindy from 10.244.10.1 port 59154 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=59330 | method=publickey
+    raw: 2026-07-26T11:06:28+10:00 rootnode sshd-session[1284049]: Accepted publickey for xindy from 10.244.10.1 port 59330 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=59354 | method=publickey
+    raw: 2026-07-26T11:07:28+10:00 rootnode sshd-session[1284518]: Accepted publickey for xindy from 10.244.10.1 port 59354 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=59374 | method=publickey
+    raw: 2026-07-26T11:08:29+10:00 rootnode sshd-session[1285012]: Accepted publickey for xindy from 10.244.10.1 port 59374 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=59388 | method=publickey
+    raw: 2026-07-26T11:09:29+10:00 rootnode sshd-session[1285489]: Accepted publickey for xindy from 10.244.10.1 port 59388 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+
+2026-07-25 (FAILED 0, ACCEPTED 151)
+  00:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51696 | method=publickey
+    raw: 2026-07-25T00:36:21+10:00 rootnode sshd-session[341907]: Accepted publickey for xindy from 10.244.10.1 port 51696 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  01:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51723 | method=publickey
+    raw: 2026-07-25T01:11:08+10:00 rootnode sshd-session[357879]: Accepted publickey for xindy from 10.244.10.1 port 51723 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  01:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51753 | method=publickey
+    raw: 2026-07-25T01:36:49+10:00 rootnode sshd-session[369597]: Accepted publickey for xindy from 10.244.10.1 port 51753 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  02:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51799 | method=publickey
+    raw: 2026-07-25T02:37:46+10:00 rootnode sshd-session[397070]: Accepted publickey for xindy from 10.244.10.1 port 51799 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  03:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51841 | method=publickey
+    raw: 2026-07-25T03:38:45+10:00 rootnode sshd-session[424580]: Accepted publickey for xindy from 10.244.10.1 port 51841 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  03:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51861 | method=publickey
+    raw: 2026-07-25T03:40:22+10:00 rootnode sshd-session[425199]: Accepted publickey for xindy from 10.244.10.1 port 51861 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  04:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51901 | method=publickey
+    raw: 2026-07-25T04:39:59+10:00 rootnode sshd-session[452117]: Accepted publickey for xindy from 10.244.10.1 port 51901 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  04:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51924 | method=publickey
+    raw: 2026-07-25T04:56:58+10:00 rootnode sshd-session[459756]: Accepted publickey for xindy from 10.244.10.1 port 51924 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  05:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51970 | method=publickey
+    raw: 2026-07-25T05:39:37+10:00 rootnode sshd-session[479065]: Accepted publickey for xindy from 10.244.10.1 port 51970 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  05:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51997 | method=publickey
+    raw: 2026-07-25T05:55:53+10:00 rootnode sshd-session[486333]: Accepted publickey for xindy from 10.244.10.1 port 51997 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  05:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52025 | method=publickey
+    raw: 2026-07-25T05:57:31+10:00 rootnode sshd-session[487185]: Accepted publickey for xindy from 10.244.10.1 port 52025 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  05:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52039 | method=publickey
+    raw: 2026-07-25T05:58:33+10:00 rootnode sshd-session[487669]: Accepted publickey for xindy from 10.244.10.1 port 52039 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  06:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52055 | method=publickey
+    raw: 2026-07-25T06:00:42+10:00 rootnode sshd-session[488674]: Accepted publickey for xindy from 10.244.10.1 port 52055 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  06:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52069 | method=publickey
+    raw: 2026-07-25T06:01:44+10:00 rootnode sshd-session[489141]: Accepted publickey for xindy from 10.244.10.1 port 52069 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  06:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52089 | method=publickey
+    raw: 2026-07-25T06:03:33+10:00 rootnode sshd-session[490037]: Accepted publickey for xindy from 10.244.10.1 port 52089 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  06:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52129 | method=publickey
+    raw: 2026-07-25T06:40:53+10:00 rootnode sshd-session[506764]: Accepted publickey for xindy from 10.244.10.1 port 52129 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  07:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52185 | method=publickey
+    raw: 2026-07-25T07:31:51+10:00 rootnode sshd-session[529828]: Accepted publickey for xindy from 10.244.10.1 port 52185 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  07:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52217 | method=publickey
+    raw: 2026-07-25T07:42:03+10:00 rootnode sshd-session[534250]: Accepted publickey for xindy from 10.244.10.1 port 52217 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  07:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52234 | method=publickey
+    raw: 2026-07-25T07:47:41+10:00 rootnode sshd-session[537002]: Accepted publickey for xindy from 10.244.10.1 port 52234 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  08:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52272 | method=publickey
+    raw: 2026-07-25T08:23:39+10:00 rootnode sshd-session[553179]: Accepted publickey for xindy from 10.244.10.1 port 52272 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  08:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52299 | method=publickey
+    raw: 2026-07-25T08:42:45+10:00 rootnode sshd-session[561827]: Accepted publickey for xindy from 10.244.10.1 port 52299 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52336 | method=publickey
+    raw: 2026-07-25T09:09:56+10:00 rootnode sshd-session[574108]: Accepted publickey for xindy from 10.244.10.1 port 52336 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52360 | method=publickey
+    raw: 2026-07-25T09:10:57+10:00 rootnode sshd-session[574622]: Accepted publickey for xindy from 10.244.10.1 port 52360 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52369 | method=publickey
+    raw: 2026-07-25T09:11:57+10:00 rootnode sshd-session[575290]: Accepted publickey for xindy from 10.244.10.1 port 52369 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52394 | method=publickey
+    raw: 2026-07-25T09:12:58+10:00 rootnode sshd-session[575762]: Accepted publickey for xindy from 10.244.10.1 port 52394 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52406 | method=publickey
+    raw: 2026-07-25T09:13:58+10:00 rootnode sshd-session[576243]: Accepted publickey for xindy from 10.244.10.1 port 52406 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52459 | method=publickey
+    raw: 2026-07-25T09:14:59+10:00 rootnode sshd-session[576708]: Accepted publickey for xindy from 10.244.10.1 port 52459 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52523 | method=publickey
+    raw: 2026-07-25T09:15:59+10:00 rootnode sshd-session[577234]: Accepted publickey for xindy from 10.244.10.1 port 52523 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52539 | method=publickey
+    raw: 2026-07-25T09:16:59+10:00 rootnode sshd-session[577718]: Accepted publickey for xindy from 10.244.10.1 port 52539 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52558 | method=publickey
+    raw: 2026-07-25T09:18:00+10:00 rootnode sshd-session[578214]: Accepted publickey for xindy from 10.244.10.1 port 52558 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52579 | method=publickey
+    raw: 2026-07-25T09:19:00+10:00 rootnode sshd-session[578676]: Accepted publickey for xindy from 10.244.10.1 port 52579 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52590 | method=publickey
+    raw: 2026-07-25T09:20:01+10:00 rootnode sshd-session[579144]: Accepted publickey for xindy from 10.244.10.1 port 52590 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52616 | method=publickey
+    raw: 2026-07-25T09:21:01+10:00 rootnode sshd-session[579667]: Accepted publickey for xindy from 10.244.10.1 port 52616 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52634 | method=publickey
+    raw: 2026-07-25T09:22:01+10:00 rootnode sshd-session[580135]: Accepted publickey for xindy from 10.244.10.1 port 52634 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52643 | method=publickey
+    raw: 2026-07-25T09:23:02+10:00 rootnode sshd-session[580618]: Accepted publickey for xindy from 10.244.10.1 port 52643 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52666 | method=publickey
+    raw: 2026-07-25T09:24:02+10:00 rootnode sshd-session[581085]: Accepted publickey for xindy from 10.244.10.1 port 52666 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52686 | method=publickey
+    raw: 2026-07-25T09:25:02+10:00 rootnode sshd-session[581609]: Accepted publickey for xindy from 10.244.10.1 port 52686 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52699 | method=publickey
+    raw: 2026-07-25T09:26:03+10:00 rootnode sshd-session[581977]: Accepted publickey for xindy from 10.244.10.1 port 52699 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52730 | method=publickey
+    raw: 2026-07-25T09:27:03+10:00 rootnode sshd-session[582286]: Accepted publickey for xindy from 10.244.10.1 port 52730 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52753 | method=publickey
+    raw: 2026-07-25T09:28:04+10:00 rootnode sshd-session[582778]: Accepted publickey for xindy from 10.244.10.1 port 52753 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52767 | method=publickey
+    raw: 2026-07-25T09:29:04+10:00 rootnode sshd-session[583254]: Accepted publickey for xindy from 10.244.10.1 port 52767 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52784 | method=publickey
+    raw: 2026-07-25T09:30:04+10:00 rootnode sshd-session[583789]: Accepted publickey for xindy from 10.244.10.1 port 52784 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52802 | method=publickey
+    raw: 2026-07-25T09:31:05+10:00 rootnode sshd-session[584263]: Accepted publickey for xindy from 10.244.10.1 port 52802 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52831 | method=publickey
+    raw: 2026-07-25T09:32:05+10:00 rootnode sshd-session[584743]: Accepted publickey for xindy from 10.244.10.1 port 52831 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52869 | method=publickey
+    raw: 2026-07-25T09:33:06+10:00 rootnode sshd-session[585233]: Accepted publickey for xindy from 10.244.10.1 port 52869 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52883 | method=publickey
+    raw: 2026-07-25T09:34:06+10:00 rootnode sshd-session[585711]: Accepted publickey for xindy from 10.244.10.1 port 52883 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52894 | method=publickey
+    raw: 2026-07-25T09:35:06+10:00 rootnode sshd-session[586245]: Accepted publickey for xindy from 10.244.10.1 port 52894 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52902 | method=publickey
+    raw: 2026-07-25T09:36:07+10:00 rootnode sshd-session[586719]: Accepted publickey for xindy from 10.244.10.1 port 52902 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52913 | method=publickey
+    raw: 2026-07-25T09:37:07+10:00 rootnode sshd-session[587208]: Accepted publickey for xindy from 10.244.10.1 port 52913 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52921 | method=publickey
+    raw: 2026-07-25T09:38:07+10:00 rootnode sshd-session[587706]: Accepted publickey for xindy from 10.244.10.1 port 52921 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52941 | method=publickey
+    raw: 2026-07-25T09:39:08+10:00 rootnode sshd-session[588185]: Accepted publickey for xindy from 10.244.10.1 port 52941 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52952 | method=publickey
+    raw: 2026-07-25T09:40:08+10:00 rootnode sshd-session[588722]: Accepted publickey for xindy from 10.244.10.1 port 52952 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52960 | method=publickey
+    raw: 2026-07-25T09:41:09+10:00 rootnode sshd-session[589198]: Accepted publickey for xindy from 10.244.10.1 port 52960 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52968 | method=publickey
+    raw: 2026-07-25T09:42:09+10:00 rootnode sshd-session[589671]: Accepted publickey for xindy from 10.244.10.1 port 52968 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52982 | method=publickey
+    raw: 2026-07-25T09:43:09+10:00 rootnode sshd-session[590157]: Accepted publickey for xindy from 10.244.10.1 port 52982 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=52992 | method=publickey
+    raw: 2026-07-25T09:44:10+10:00 rootnode sshd-session[590639]: Accepted publickey for xindy from 10.244.10.1 port 52992 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53008 | method=publickey
+    raw: 2026-07-25T09:45:10+10:00 rootnode sshd-session[591173]: Accepted publickey for xindy from 10.244.10.1 port 53008 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53017 | method=publickey
+    raw: 2026-07-25T09:46:11+10:00 rootnode sshd-session[591650]: Accepted publickey for xindy from 10.244.10.1 port 53017 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53026 | method=publickey
+    raw: 2026-07-25T09:47:11+10:00 rootnode sshd-session[592134]: Accepted publickey for xindy from 10.244.10.1 port 53026 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53035 | method=publickey
+    raw: 2026-07-25T09:48:11+10:00 rootnode sshd-session[592626]: Accepted publickey for xindy from 10.244.10.1 port 53035 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53052 | method=publickey
+    raw: 2026-07-25T09:49:12+10:00 rootnode sshd-session[593102]: Accepted publickey for xindy from 10.244.10.1 port 53052 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53061 | method=publickey
+    raw: 2026-07-25T09:50:12+10:00 rootnode sshd-session[593636]: Accepted publickey for xindy from 10.244.10.1 port 53061 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53069 | method=publickey
+    raw: 2026-07-25T09:51:13+10:00 rootnode sshd-session[594107]: Accepted publickey for xindy from 10.244.10.1 port 53069 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53078 | method=publickey
+    raw: 2026-07-25T09:52:13+10:00 rootnode sshd-session[594586]: Accepted publickey for xindy from 10.244.10.1 port 53078 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53086 | method=publickey
+    raw: 2026-07-25T09:53:13+10:00 rootnode sshd-session[595076]: Accepted publickey for xindy from 10.244.10.1 port 53086 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53097 | method=publickey
+    raw: 2026-07-25T09:54:14+10:00 rootnode sshd-session[595556]: Accepted publickey for xindy from 10.244.10.1 port 53097 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53107 | method=publickey
+    raw: 2026-07-25T09:55:14+10:00 rootnode sshd-session[596091]: Accepted publickey for xindy from 10.244.10.1 port 53107 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53116 | method=publickey
+    raw: 2026-07-25T09:56:14+10:00 rootnode sshd-session[596567]: Accepted publickey for xindy from 10.244.10.1 port 53116 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53125 | method=publickey
+    raw: 2026-07-25T09:57:15+10:00 rootnode sshd-session[597053]: Accepted publickey for xindy from 10.244.10.1 port 53125 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53133 | method=publickey
+    raw: 2026-07-25T09:58:15+10:00 rootnode sshd-session[597538]: Accepted publickey for xindy from 10.244.10.1 port 53133 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  09:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53144 | method=publickey
+    raw: 2026-07-25T09:59:16+10:00 rootnode sshd-session[598016]: Accepted publickey for xindy from 10.244.10.1 port 53144 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53152 | method=publickey
+    raw: 2026-07-25T10:00:16+10:00 rootnode sshd-session[598549]: Accepted publickey for xindy from 10.244.10.1 port 53152 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53164 | method=publickey
+    raw: 2026-07-25T10:01:16+10:00 rootnode sshd-session[599027]: Accepted publickey for xindy from 10.244.10.1 port 53164 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53172 | method=publickey
+    raw: 2026-07-25T10:02:17+10:00 rootnode sshd-session[599502]: Accepted publickey for xindy from 10.244.10.1 port 53172 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53180 | method=publickey
+    raw: 2026-07-25T10:03:17+10:00 rootnode sshd-session[599981]: Accepted publickey for xindy from 10.244.10.1 port 53180 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53189 | method=publickey
+    raw: 2026-07-25T10:04:18+10:00 rootnode sshd-session[600462]: Accepted publickey for xindy from 10.244.10.1 port 53189 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53199 | method=publickey
+    raw: 2026-07-25T10:05:18+10:00 rootnode sshd-session[600994]: Accepted publickey for xindy from 10.244.10.1 port 53199 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53212 | method=publickey
+    raw: 2026-07-25T10:06:18+10:00 rootnode sshd-session[601473]: Accepted publickey for xindy from 10.244.10.1 port 53212 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53222 | method=publickey
+    raw: 2026-07-25T10:07:19+10:00 rootnode sshd-session[601960]: Accepted publickey for xindy from 10.244.10.1 port 53222 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53246 | method=publickey
+    raw: 2026-07-25T10:08:19+10:00 rootnode sshd-session[602454]: Accepted publickey for xindy from 10.244.10.1 port 53246 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53278 | method=publickey
+    raw: 2026-07-25T10:09:20+10:00 rootnode sshd-session[602932]: Accepted publickey for xindy from 10.244.10.1 port 53278 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53305 | method=publickey
+    raw: 2026-07-25T10:10:20+10:00 rootnode sshd-session[603465]: Accepted publickey for xindy from 10.244.10.1 port 53305 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53318 | method=publickey
+    raw: 2026-07-25T10:11:20+10:00 rootnode sshd-session[603941]: Accepted publickey for xindy from 10.244.10.1 port 53318 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53327 | method=publickey
+    raw: 2026-07-25T10:12:21+10:00 rootnode sshd-session[604416]: Accepted publickey for xindy from 10.244.10.1 port 53327 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53340 | method=publickey
+    raw: 2026-07-25T10:13:21+10:00 rootnode sshd-session[604904]: Accepted publickey for xindy from 10.244.10.1 port 53340 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53351 | method=publickey
+    raw: 2026-07-25T10:14:21+10:00 rootnode sshd-session[605388]: Accepted publickey for xindy from 10.244.10.1 port 53351 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53364 | method=publickey
+    raw: 2026-07-25T10:15:22+10:00 rootnode sshd-session[605925]: Accepted publickey for xindy from 10.244.10.1 port 53364 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53379 | method=publickey
+    raw: 2026-07-25T10:16:22+10:00 rootnode sshd-session[606404]: Accepted publickey for xindy from 10.244.10.1 port 53379 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53392 | method=publickey
+    raw: 2026-07-25T10:17:23+10:00 rootnode sshd-session[606893]: Accepted publickey for xindy from 10.244.10.1 port 53392 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53401 | method=publickey
+    raw: 2026-07-25T10:18:23+10:00 rootnode sshd-session[607383]: Accepted publickey for xindy from 10.244.10.1 port 53401 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53411 | method=publickey
+    raw: 2026-07-25T10:19:23+10:00 rootnode sshd-session[607861]: Accepted publickey for xindy from 10.244.10.1 port 53411 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53419 | method=publickey
+    raw: 2026-07-25T10:20:24+10:00 rootnode sshd-session[608391]: Accepted publickey for xindy from 10.244.10.1 port 53419 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53434 | method=publickey
+    raw: 2026-07-25T10:21:24+10:00 rootnode sshd-session[608866]: Accepted publickey for xindy from 10.244.10.1 port 53434 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53445 | method=publickey
+    raw: 2026-07-25T10:22:24+10:00 rootnode sshd-session[609346]: Accepted publickey for xindy from 10.244.10.1 port 53445 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53454 | method=publickey
+    raw: 2026-07-25T10:23:25+10:00 rootnode sshd-session[609837]: Accepted publickey for xindy from 10.244.10.1 port 53454 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53462 | method=publickey
+    raw: 2026-07-25T10:24:25+10:00 rootnode sshd-session[610309]: Accepted publickey for xindy from 10.244.10.1 port 53462 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53473 | method=publickey
+    raw: 2026-07-25T10:25:26+10:00 rootnode sshd-session[610840]: Accepted publickey for xindy from 10.244.10.1 port 53473 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53486 | method=publickey
+    raw: 2026-07-25T10:26:26+10:00 rootnode sshd-session[611316]: Accepted publickey for xindy from 10.244.10.1 port 53486 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53497 | method=publickey
+    raw: 2026-07-25T10:27:26+10:00 rootnode sshd-session[611802]: Accepted publickey for xindy from 10.244.10.1 port 53497 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53552 | method=publickey
+    raw: 2026-07-25T10:28:27+10:00 rootnode sshd-session[612299]: Accepted publickey for xindy from 10.244.10.1 port 53552 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53561 | method=publickey
+    raw: 2026-07-25T10:29:27+10:00 rootnode sshd-session[612777]: Accepted publickey for xindy from 10.244.10.1 port 53561 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53574 | method=publickey
+    raw: 2026-07-25T10:30:28+10:00 rootnode sshd-session[613310]: Accepted publickey for xindy from 10.244.10.1 port 53574 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53584 | method=publickey
+    raw: 2026-07-25T10:31:28+10:00 rootnode sshd-session[613783]: Accepted publickey for xindy from 10.244.10.1 port 53584 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53601 | method=publickey
+    raw: 2026-07-25T10:32:28+10:00 rootnode sshd-session[614257]: Accepted publickey for xindy from 10.244.10.1 port 53601 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53611 | method=publickey
+    raw: 2026-07-25T10:33:29+10:00 rootnode sshd-session[614745]: Accepted publickey for xindy from 10.244.10.1 port 53611 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53621 | method=publickey
+    raw: 2026-07-25T10:34:29+10:00 rootnode sshd-session[615225]: Accepted publickey for xindy from 10.244.10.1 port 53621 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53631 | method=publickey
+    raw: 2026-07-25T10:35:29+10:00 rootnode sshd-session[615760]: Accepted publickey for xindy from 10.244.10.1 port 53631 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53644 | method=publickey
+    raw: 2026-07-25T10:36:30+10:00 rootnode sshd-session[616236]: Accepted publickey for xindy from 10.244.10.1 port 53644 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53656 | method=publickey
+    raw: 2026-07-25T10:37:30+10:00 rootnode sshd-session[616722]: Accepted publickey for xindy from 10.244.10.1 port 53656 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53666 | method=publickey
+    raw: 2026-07-25T10:38:31+10:00 rootnode sshd-session[617215]: Accepted publickey for xindy from 10.244.10.1 port 53666 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53686 | method=publickey
+    raw: 2026-07-25T10:39:31+10:00 rootnode sshd-session[617693]: Accepted publickey for xindy from 10.244.10.1 port 53686 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53706 | method=publickey
+    raw: 2026-07-25T10:40:31+10:00 rootnode sshd-session[618222]: Accepted publickey for xindy from 10.244.10.1 port 53706 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53721 | method=publickey
+    raw: 2026-07-25T10:41:32+10:00 rootnode sshd-session[618699]: Accepted publickey for xindy from 10.244.10.1 port 53721 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53730 | method=publickey
+    raw: 2026-07-25T10:42:32+10:00 rootnode sshd-session[619176]: Accepted publickey for xindy from 10.244.10.1 port 53730 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53744 | method=publickey
+    raw: 2026-07-25T10:43:32+10:00 rootnode sshd-session[619670]: Accepted publickey for xindy from 10.244.10.1 port 53744 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53755 | method=publickey
+    raw: 2026-07-25T10:44:33+10:00 rootnode sshd-session[620155]: Accepted publickey for xindy from 10.244.10.1 port 53755 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53765 | method=publickey
+    raw: 2026-07-25T10:45:33+10:00 rootnode sshd-session[620684]: Accepted publickey for xindy from 10.244.10.1 port 53765 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53774 | method=publickey
+    raw: 2026-07-25T10:46:34+10:00 rootnode sshd-session[621160]: Accepted publickey for xindy from 10.244.10.1 port 53774 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53784 | method=publickey
+    raw: 2026-07-25T10:47:34+10:00 rootnode sshd-session[621643]: Accepted publickey for xindy from 10.244.10.1 port 53784 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53792 | method=publickey
+    raw: 2026-07-25T10:48:34+10:00 rootnode sshd-session[622139]: Accepted publickey for xindy from 10.244.10.1 port 53792 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53801 | method=publickey
+    raw: 2026-07-25T10:49:35+10:00 rootnode sshd-session[622613]: Accepted publickey for xindy from 10.244.10.1 port 53801 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53813 | method=publickey
+    raw: 2026-07-25T10:50:35+10:00 rootnode sshd-session[623145]: Accepted publickey for xindy from 10.244.10.1 port 53813 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53825 | method=publickey
+    raw: 2026-07-25T10:51:36+10:00 rootnode sshd-session[623613]: Accepted publickey for xindy from 10.244.10.1 port 53825 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53836 | method=publickey
+    raw: 2026-07-25T10:52:36+10:00 rootnode sshd-session[624092]: Accepted publickey for xindy from 10.244.10.1 port 53836 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53845 | method=publickey
+    raw: 2026-07-25T10:53:36+10:00 rootnode sshd-session[624584]: Accepted publickey for xindy from 10.244.10.1 port 53845 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53853 | method=publickey
+    raw: 2026-07-25T10:54:37+10:00 rootnode sshd-session[625067]: Accepted publickey for xindy from 10.244.10.1 port 53853 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53864 | method=publickey
+    raw: 2026-07-25T10:55:37+10:00 rootnode sshd-session[625598]: Accepted publickey for xindy from 10.244.10.1 port 53864 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53873 | method=publickey
+    raw: 2026-07-25T10:56:37+10:00 rootnode sshd-session[626076]: Accepted publickey for xindy from 10.244.10.1 port 53873 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53883 | method=publickey
+    raw: 2026-07-25T10:57:38+10:00 rootnode sshd-session[626564]: Accepted publickey for xindy from 10.244.10.1 port 53883 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53894 | method=publickey
+    raw: 2026-07-25T10:58:38+10:00 rootnode sshd-session[627061]: Accepted publickey for xindy from 10.244.10.1 port 53894 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  10:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53955 | method=publickey
+    raw: 2026-07-25T10:59:39+10:00 rootnode sshd-session[627536]: Accepted publickey for xindy from 10.244.10.1 port 53955 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53964 | method=publickey
+    raw: 2026-07-25T11:00:39+10:00 rootnode sshd-session[628076]: Accepted publickey for xindy from 10.244.10.1 port 53964 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=53985 | method=publickey
+    raw: 2026-07-25T11:01:39+10:00 rootnode sshd-session[628549]: Accepted publickey for xindy from 10.244.10.1 port 53985 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54020 | method=publickey
+    raw: 2026-07-25T11:02:40+10:00 rootnode sshd-session[629024]: Accepted publickey for xindy from 10.244.10.1 port 54020 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54031 | method=publickey
+    raw: 2026-07-25T11:03:40+10:00 rootnode sshd-session[629510]: Accepted publickey for xindy from 10.244.10.1 port 54031 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54049 | method=publickey
+    raw: 2026-07-25T11:04:40+10:00 rootnode sshd-session[629991]: Accepted publickey for xindy from 10.244.10.1 port 54049 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54059 | method=publickey
+    raw: 2026-07-25T11:05:41+10:00 rootnode sshd-session[630524]: Accepted publickey for xindy from 10.244.10.1 port 54059 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54071 | method=publickey
+    raw: 2026-07-25T11:06:41+10:00 rootnode sshd-session[630993]: Accepted publickey for xindy from 10.244.10.1 port 54071 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54083 | method=publickey
+    raw: 2026-07-25T11:07:42+10:00 rootnode sshd-session[631480]: Accepted publickey for xindy from 10.244.10.1 port 54083 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54100 | method=publickey
+    raw: 2026-07-25T11:08:42+10:00 rootnode sshd-session[631973]: Accepted publickey for xindy from 10.244.10.1 port 54100 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54115 | method=publickey
+    raw: 2026-07-25T11:09:42+10:00 rootnode sshd-session[632449]: Accepted publickey for xindy from 10.244.10.1 port 54115 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54133 | method=publickey
+    raw: 2026-07-25T11:10:43+10:00 rootnode sshd-session[632979]: Accepted publickey for xindy from 10.244.10.1 port 54133 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54142 | method=publickey
+    raw: 2026-07-25T11:11:43+10:00 rootnode sshd-session[633449]: Accepted publickey for xindy from 10.244.10.1 port 54142 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54156 | method=publickey
+    raw: 2026-07-25T11:12:43+10:00 rootnode sshd-session[633922]: Accepted publickey for xindy from 10.244.10.1 port 54156 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54166 | method=publickey
+    raw: 2026-07-25T11:13:44+10:00 rootnode sshd-session[634417]: Accepted publickey for xindy from 10.244.10.1 port 54166 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54177 | method=publickey
+    raw: 2026-07-25T11:14:44+10:00 rootnode sshd-session[634889]: Accepted publickey for xindy from 10.244.10.1 port 54177 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54192 | method=publickey
+    raw: 2026-07-25T11:15:45+10:00 rootnode sshd-session[635425]: Accepted publickey for xindy from 10.244.10.1 port 54192 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54202 | method=publickey
+    raw: 2026-07-25T11:16:45+10:00 rootnode sshd-session[635900]: Accepted publickey for xindy from 10.244.10.1 port 54202 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54212 | method=publickey
+    raw: 2026-07-25T11:17:45+10:00 rootnode sshd-session[636389]: Accepted publickey for xindy from 10.244.10.1 port 54212 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54220 | method=publickey
+    raw: 2026-07-25T11:18:46+10:00 rootnode sshd-session[636884]: Accepted publickey for xindy from 10.244.10.1 port 54220 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  11:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=54230 | method=publickey
+    raw: 2026-07-25T11:19:46+10:00 rootnode sshd-session[637378]: Accepted publickey for xindy from 10.244.10.1 port 54230 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+
+2026-07-24 (FAILED 2, ACCEPTED 256)
+  18:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=64982 | method=publickey
+    raw: 2026-07-24T18:33:55+10:00 rootnode sshd-session[2158]: Accepted publickey for xindy from 10.244.10.1 port 64982 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=64997 | method=publickey
+    raw: 2026-07-24T18:34:31+10:00 rootnode sshd-session[2435]: Accepted publickey for xindy from 10.244.10.1 port 64997 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65006 | method=publickey
+    raw: 2026-07-24T18:35:32+10:00 rootnode sshd-session[6224]: Accepted publickey for xindy from 10.244.10.1 port 65006 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65016 | method=publickey
+    raw: 2026-07-24T18:36:32+10:00 rootnode sshd-session[9288]: Accepted publickey for xindy from 10.244.10.1 port 65016 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65032 | method=publickey
+    raw: 2026-07-24T18:37:33+10:00 rootnode sshd-session[11928]: Accepted publickey for xindy from 10.244.10.1 port 65032 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:38 | FAILED | user=xindy (valid) | ip=192.168.1.184 | port=65039 | method=password
+    raw: 2026-07-24T18:38:15+10:00 rootnode sshd-session[13215]: Failed password for xindy from 192.168.1.184 port 65039 ssh2
+  18:38 | FAILED | user=xindy (valid) | ip=192.168.1.184 | port=65039 | method=password
+    raw: 2026-07-24T18:38:22+10:00 rootnode sshd-session[13215]: Failed password for xindy from 192.168.1.184 port 65039 ssh2
+  18:38 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=65039 | method=password
+    raw: 2026-07-24T18:38:27+10:00 rootnode sshd-session[13215]: Accepted password for xindy from 192.168.1.184 port 65039 ssh2
+  18:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65045 | method=publickey
+    raw: 2026-07-24T18:38:33+10:00 rootnode sshd-session[14567]: Accepted publickey for xindy from 10.244.10.1 port 65045 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65063 | method=publickey
+    raw: 2026-07-24T18:39:33+10:00 rootnode sshd-session[17464]: Accepted publickey for xindy from 10.244.10.1 port 65063 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65072 | method=publickey
+    raw: 2026-07-24T18:40:34+10:00 rootnode sshd-session[20136]: Accepted publickey for xindy from 10.244.10.1 port 65072 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65081 | method=publickey
+    raw: 2026-07-24T18:41:34+10:00 rootnode sshd-session[22761]: Accepted publickey for xindy from 10.244.10.1 port 65081 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65092 | method=publickey
+    raw: 2026-07-24T18:42:35+10:00 rootnode sshd-session[25651]: Accepted publickey for xindy from 10.244.10.1 port 65092 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65100 | method=publickey
+    raw: 2026-07-24T18:43:35+10:00 rootnode sshd-session[28363]: Accepted publickey for xindy from 10.244.10.1 port 65100 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65109 | method=publickey
+    raw: 2026-07-24T18:44:35+10:00 rootnode sshd-session[30899]: Accepted publickey for xindy from 10.244.10.1 port 65109 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65123 | method=publickey
+    raw: 2026-07-24T18:45:36+10:00 rootnode sshd-session[2034]: Accepted publickey for xindy from 10.244.10.1 port 65123 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65116 | method=publickey
+    raw: 2026-07-24T18:45:36+10:00 rootnode sshd-session[2068]: Accepted publickey for xindy from 10.244.10.1 port 65116 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65145 | method=publickey
+    raw: 2026-07-24T18:46:36+10:00 rootnode sshd-session[3108]: Accepted publickey for xindy from 10.244.10.1 port 65145 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:47 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=65149 | method=password
+    raw: 2026-07-24T18:47:13+10:00 rootnode sshd-session[3554]: Accepted password for xindy from 192.168.1.184 port 65149 ssh2
+  18:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65155 | method=publickey
+    raw: 2026-07-24T18:47:36+10:00 rootnode sshd-session[7144]: Accepted publickey for xindy from 10.244.10.1 port 65155 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65173 | method=publickey
+    raw: 2026-07-24T18:48:37+10:00 rootnode sshd-session[9895]: Accepted publickey for xindy from 10.244.10.1 port 65173 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65184 | method=publickey
+    raw: 2026-07-24T18:49:37+10:00 rootnode sshd-session[12520]: Accepted publickey for xindy from 10.244.10.1 port 65184 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65195 | method=publickey
+    raw: 2026-07-24T18:50:37+10:00 rootnode sshd-session[15199]: Accepted publickey for xindy from 10.244.10.1 port 65195 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65207 | method=publickey
+    raw: 2026-07-24T18:51:28+10:00 rootnode sshd-session[1439]: Accepted publickey for xindy from 10.244.10.1 port 65207 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65212 | method=publickey
+    raw: 2026-07-24T18:51:38+10:00 rootnode sshd-session[2085]: Accepted publickey for xindy from 10.244.10.1 port 65212 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:52 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=65218 | method=password
+    raw: 2026-07-24T18:52:25+10:00 rootnode sshd-session[2771]: Accepted password for xindy from 192.168.1.184 port 65218 ssh2
+  18:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65226 | method=publickey
+    raw: 2026-07-24T18:52:38+10:00 rootnode sshd-session[3123]: Accepted publickey for xindy from 10.244.10.1 port 65226 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65243 | method=publickey
+    raw: 2026-07-24T18:53:39+10:00 rootnode sshd-session[7296]: Accepted publickey for xindy from 10.244.10.1 port 65243 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65255 | method=publickey
+    raw: 2026-07-24T18:54:39+10:00 rootnode sshd-session[10020]: Accepted publickey for xindy from 10.244.10.1 port 65255 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65267 | method=publickey
+    raw: 2026-07-24T18:55:39+10:00 rootnode sshd-session[12727]: Accepted publickey for xindy from 10.244.10.1 port 65267 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65278 | method=publickey
+    raw: 2026-07-24T18:56:40+10:00 rootnode sshd-session[15386]: Accepted publickey for xindy from 10.244.10.1 port 65278 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65289 | method=publickey
+    raw: 2026-07-24T18:57:40+10:00 rootnode sshd-session[17988]: Accepted publickey for xindy from 10.244.10.1 port 65289 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65311 | method=publickey
+    raw: 2026-07-24T18:58:40+10:00 rootnode sshd-session[20574]: Accepted publickey for xindy from 10.244.10.1 port 65311 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  18:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65324 | method=publickey
+    raw: 2026-07-24T18:59:41+10:00 rootnode sshd-session[33509]: Accepted publickey for xindy from 10.244.10.1 port 65324 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65341 | method=publickey
+    raw: 2026-07-24T19:01:08+10:00 rootnode sshd-session[1288]: Accepted publickey for xindy from 10.244.10.1 port 65341 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:01 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=65350 | method=password
+    raw: 2026-07-24T19:01:41+10:00 rootnode sshd-session[2128]: Accepted password for xindy from 192.168.1.184 port 65350 ssh2
+  19:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65353 | method=publickey
+    raw: 2026-07-24T19:01:49+10:00 rootnode sshd-session[2176]: Accepted publickey for xindy from 10.244.10.1 port 65353 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65398 | method=publickey
+    raw: 2026-07-24T19:02:50+10:00 rootnode sshd-session[5174]: Accepted publickey for xindy from 10.244.10.1 port 65398 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65412 | method=publickey
+    raw: 2026-07-24T19:03:50+10:00 rootnode sshd-session[8846]: Accepted publickey for xindy from 10.244.10.1 port 65412 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65425 | method=publickey
+    raw: 2026-07-24T19:04:50+10:00 rootnode sshd-session[11480]: Accepted publickey for xindy from 10.244.10.1 port 65425 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65484 | method=publickey
+    raw: 2026-07-24T19:05:51+10:00 rootnode sshd-session[13836]: Accepted publickey for xindy from 10.244.10.1 port 65484 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65494 | method=publickey
+    raw: 2026-07-24T19:06:51+10:00 rootnode sshd-session[16487]: Accepted publickey for xindy from 10.244.10.1 port 65494 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65504 | method=publickey
+    raw: 2026-07-24T19:07:52+10:00 rootnode sshd-session[19110]: Accepted publickey for xindy from 10.244.10.1 port 65504 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65516 | method=publickey
+    raw: 2026-07-24T19:08:52+10:00 rootnode sshd-session[21750]: Accepted publickey for xindy from 10.244.10.1 port 65516 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=65527 | method=publickey
+    raw: 2026-07-24T19:09:52+10:00 rootnode sshd-session[24401]: Accepted publickey for xindy from 10.244.10.1 port 65527 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49158 | method=publickey
+    raw: 2026-07-24T19:10:53+10:00 rootnode sshd-session[27059]: Accepted publickey for xindy from 10.244.10.1 port 49158 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49170 | method=publickey
+    raw: 2026-07-24T19:11:53+10:00 rootnode sshd-session[29710]: Accepted publickey for xindy from 10.244.10.1 port 49170 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49182 | method=publickey
+    raw: 2026-07-24T19:12:53+10:00 rootnode sshd-session[32330]: Accepted publickey for xindy from 10.244.10.1 port 49182 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49191 | method=publickey
+    raw: 2026-07-24T19:13:54+10:00 rootnode sshd-session[34894]: Accepted publickey for xindy from 10.244.10.1 port 49191 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49200 | method=publickey
+    raw: 2026-07-24T19:14:54+10:00 rootnode sshd-session[37556]: Accepted publickey for xindy from 10.244.10.1 port 49200 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49211 | method=publickey
+    raw: 2026-07-24T19:15:54+10:00 rootnode sshd-session[40380]: Accepted publickey for xindy from 10.244.10.1 port 49211 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49221 | method=publickey
+    raw: 2026-07-24T19:16:55+10:00 rootnode sshd-session[42886]: Accepted publickey for xindy from 10.244.10.1 port 49221 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49231 | method=publickey
+    raw: 2026-07-24T19:17:55+10:00 rootnode sshd-session[45484]: Accepted publickey for xindy from 10.244.10.1 port 49231 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49240 | method=publickey
+    raw: 2026-07-24T19:18:56+10:00 rootnode sshd-session[48098]: Accepted publickey for xindy from 10.244.10.1 port 49240 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49250 | method=publickey
+    raw: 2026-07-24T19:19:56+10:00 rootnode sshd-session[50715]: Accepted publickey for xindy from 10.244.10.1 port 49250 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49258 | method=publickey
+    raw: 2026-07-24T19:20:56+10:00 rootnode sshd-session[53375]: Accepted publickey for xindy from 10.244.10.1 port 49258 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49267 | method=publickey
+    raw: 2026-07-24T19:21:57+10:00 rootnode sshd-session[55988]: Accepted publickey for xindy from 10.244.10.1 port 49267 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49276 | method=publickey
+    raw: 2026-07-24T19:22:57+10:00 rootnode sshd-session[58627]: Accepted publickey for xindy from 10.244.10.1 port 49276 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49288 | method=publickey
+    raw: 2026-07-24T19:23:57+10:00 rootnode sshd-session[61261]: Accepted publickey for xindy from 10.244.10.1 port 49288 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49306 | method=publickey
+    raw: 2026-07-24T19:24:58+10:00 rootnode sshd-session[63852]: Accepted publickey for xindy from 10.244.10.1 port 49306 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49317 | method=publickey
+    raw: 2026-07-24T19:25:58+10:00 rootnode sshd-session[66520]: Accepted publickey for xindy from 10.244.10.1 port 49317 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49326 | method=publickey
+    raw: 2026-07-24T19:26:58+10:00 rootnode sshd-session[69174]: Accepted publickey for xindy from 10.244.10.1 port 49326 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49336 | method=publickey
+    raw: 2026-07-24T19:27:59+10:00 rootnode sshd-session[71762]: Accepted publickey for xindy from 10.244.10.1 port 49336 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49346 | method=publickey
+    raw: 2026-07-24T19:28:59+10:00 rootnode sshd-session[74358]: Accepted publickey for xindy from 10.244.10.1 port 49346 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49354 | method=publickey
+    raw: 2026-07-24T19:29:59+10:00 rootnode sshd-session[77017]: Accepted publickey for xindy from 10.244.10.1 port 49354 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49363 | method=publickey
+    raw: 2026-07-24T19:31:00+10:00 rootnode sshd-session[79697]: Accepted publickey for xindy from 10.244.10.1 port 49363 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49374 | method=publickey
+    raw: 2026-07-24T19:32:00+10:00 rootnode sshd-session[82505]: Accepted publickey for xindy from 10.244.10.1 port 49374 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49385 | method=publickey
+    raw: 2026-07-24T19:33:01+10:00 rootnode sshd-session[84985]: Accepted publickey for xindy from 10.244.10.1 port 49385 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49396 | method=publickey
+    raw: 2026-07-24T19:34:01+10:00 rootnode sshd-session[87586]: Accepted publickey for xindy from 10.244.10.1 port 49396 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49403 | method=publickey
+    raw: 2026-07-24T19:35:01+10:00 rootnode sshd-session[90203]: Accepted publickey for xindy from 10.244.10.1 port 49403 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49423 | method=publickey
+    raw: 2026-07-24T19:36:02+10:00 rootnode sshd-session[92952]: Accepted publickey for xindy from 10.244.10.1 port 49423 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49432 | method=publickey
+    raw: 2026-07-24T19:37:02+10:00 rootnode sshd-session[95545]: Accepted publickey for xindy from 10.244.10.1 port 49432 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49442 | method=publickey
+    raw: 2026-07-24T19:38:02+10:00 rootnode sshd-session[98144]: Accepted publickey for xindy from 10.244.10.1 port 49442 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49452 | method=publickey
+    raw: 2026-07-24T19:39:03+10:00 rootnode sshd-session[100722]: Accepted publickey for xindy from 10.244.10.1 port 49452 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49460 | method=publickey
+    raw: 2026-07-24T19:40:03+10:00 rootnode sshd-session[103509]: Accepted publickey for xindy from 10.244.10.1 port 49460 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49471 | method=publickey
+    raw: 2026-07-24T19:41:03+10:00 rootnode sshd-session[106182]: Accepted publickey for xindy from 10.244.10.1 port 49471 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49481 | method=publickey
+    raw: 2026-07-24T19:42:04+10:00 rootnode sshd-session[108688]: Accepted publickey for xindy from 10.244.10.1 port 49481 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49489 | method=publickey
+    raw: 2026-07-24T19:43:04+10:00 rootnode sshd-session[111290]: Accepted publickey for xindy from 10.244.10.1 port 49489 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49504 | method=publickey
+    raw: 2026-07-24T19:44:05+10:00 rootnode sshd-session[114015]: Accepted publickey for xindy from 10.244.10.1 port 49504 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49514 | method=publickey
+    raw: 2026-07-24T19:45:05+10:00 rootnode sshd-session[116547]: Accepted publickey for xindy from 10.244.10.1 port 49514 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49525 | method=publickey
+    raw: 2026-07-24T19:46:05+10:00 rootnode sshd-session[119188]: Accepted publickey for xindy from 10.244.10.1 port 49525 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49535 | method=publickey
+    raw: 2026-07-24T19:47:06+10:00 rootnode sshd-session[121893]: Accepted publickey for xindy from 10.244.10.1 port 49535 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49544 | method=publickey
+    raw: 2026-07-24T19:48:06+10:00 rootnode sshd-session[124625]: Accepted publickey for xindy from 10.244.10.1 port 49544 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49553 | method=publickey
+    raw: 2026-07-24T19:49:06+10:00 rootnode sshd-session[127308]: Accepted publickey for xindy from 10.244.10.1 port 49553 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49561 | method=publickey
+    raw: 2026-07-24T19:50:07+10:00 rootnode sshd-session[129998]: Accepted publickey for xindy from 10.244.10.1 port 49561 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49570 | method=publickey
+    raw: 2026-07-24T19:51:07+10:00 rootnode sshd-session[132614]: Accepted publickey for xindy from 10.244.10.1 port 49570 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49581 | method=publickey
+    raw: 2026-07-24T19:52:07+10:00 rootnode sshd-session[135098]: Accepted publickey for xindy from 10.244.10.1 port 49581 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49589 | method=publickey
+    raw: 2026-07-24T19:53:08+10:00 rootnode sshd-session[137735]: Accepted publickey for xindy from 10.244.10.1 port 49589 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49598 | method=publickey
+    raw: 2026-07-24T19:54:08+10:00 rootnode sshd-session[140416]: Accepted publickey for xindy from 10.244.10.1 port 49598 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49606 | method=publickey
+    raw: 2026-07-24T19:55:08+10:00 rootnode sshd-session[143047]: Accepted publickey for xindy from 10.244.10.1 port 49606 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49616 | method=publickey
+    raw: 2026-07-24T19:56:09+10:00 rootnode sshd-session[145700]: Accepted publickey for xindy from 10.244.10.1 port 49616 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49625 | method=publickey
+    raw: 2026-07-24T19:57:09+10:00 rootnode sshd-session[148380]: Accepted publickey for xindy from 10.244.10.1 port 49625 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49641 | method=publickey
+    raw: 2026-07-24T19:58:10+10:00 rootnode sshd-session[150953]: Accepted publickey for xindy from 10.244.10.1 port 49641 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  19:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49649 | method=publickey
+    raw: 2026-07-24T19:59:10+10:00 rootnode sshd-session[153691]: Accepted publickey for xindy from 10.244.10.1 port 49649 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49658 | method=publickey
+    raw: 2026-07-24T20:00:10+10:00 rootnode sshd-session[156308]: Accepted publickey for xindy from 10.244.10.1 port 49658 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49666 | method=publickey
+    raw: 2026-07-24T20:01:11+10:00 rootnode sshd-session[158969]: Accepted publickey for xindy from 10.244.10.1 port 49666 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49675 | method=publickey
+    raw: 2026-07-24T20:02:11+10:00 rootnode sshd-session[161654]: Accepted publickey for xindy from 10.244.10.1 port 49675 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49686 | method=publickey
+    raw: 2026-07-24T20:03:11+10:00 rootnode sshd-session[164305]: Accepted publickey for xindy from 10.244.10.1 port 49686 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49694 | method=publickey
+    raw: 2026-07-24T20:04:12+10:00 rootnode sshd-session[166949]: Accepted publickey for xindy from 10.244.10.1 port 49694 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49708 | method=publickey
+    raw: 2026-07-24T20:05:12+10:00 rootnode sshd-session[169644]: Accepted publickey for xindy from 10.244.10.1 port 49708 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49716 | method=publickey
+    raw: 2026-07-24T20:06:13+10:00 rootnode sshd-session[172314]: Accepted publickey for xindy from 10.244.10.1 port 49716 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49725 | method=publickey
+    raw: 2026-07-24T20:07:13+10:00 rootnode sshd-session[174990]: Accepted publickey for xindy from 10.244.10.1 port 49725 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49738 | method=publickey
+    raw: 2026-07-24T20:08:13+10:00 rootnode sshd-session[177600]: Accepted publickey for xindy from 10.244.10.1 port 49738 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49750 | method=publickey
+    raw: 2026-07-24T20:09:14+10:00 rootnode sshd-session[180260]: Accepted publickey for xindy from 10.244.10.1 port 49750 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49759 | method=publickey
+    raw: 2026-07-24T20:10:14+10:00 rootnode sshd-session[182960]: Accepted publickey for xindy from 10.244.10.1 port 49759 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49768 | method=publickey
+    raw: 2026-07-24T20:11:15+10:00 rootnode sshd-session[185607]: Accepted publickey for xindy from 10.244.10.1 port 49768 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49778 | method=publickey
+    raw: 2026-07-24T20:12:15+10:00 rootnode sshd-session[188267]: Accepted publickey for xindy from 10.244.10.1 port 49778 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49788 | method=publickey
+    raw: 2026-07-24T20:13:15+10:00 rootnode sshd-session[190797]: Accepted publickey for xindy from 10.244.10.1 port 49788 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49796 | method=publickey
+    raw: 2026-07-24T20:14:16+10:00 rootnode sshd-session[193481]: Accepted publickey for xindy from 10.244.10.1 port 49796 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49808 | method=publickey
+    raw: 2026-07-24T20:15:16+10:00 rootnode sshd-session[196161]: Accepted publickey for xindy from 10.244.10.1 port 49808 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49817 | method=publickey
+    raw: 2026-07-24T20:16:16+10:00 rootnode sshd-session[198864]: Accepted publickey for xindy from 10.244.10.1 port 49817 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49827 | method=publickey
+    raw: 2026-07-24T20:17:17+10:00 rootnode sshd-session[201541]: Accepted publickey for xindy from 10.244.10.1 port 49827 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49836 | method=publickey
+    raw: 2026-07-24T20:18:17+10:00 rootnode sshd-session[204144]: Accepted publickey for xindy from 10.244.10.1 port 49836 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49846 | method=publickey
+    raw: 2026-07-24T20:19:17+10:00 rootnode sshd-session[206838]: Accepted publickey for xindy from 10.244.10.1 port 49846 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49858 | method=publickey
+    raw: 2026-07-24T20:20:18+10:00 rootnode sshd-session[209540]: Accepted publickey for xindy from 10.244.10.1 port 49858 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49868 | method=publickey
+    raw: 2026-07-24T20:21:18+10:00 rootnode sshd-session[212234]: Accepted publickey for xindy from 10.244.10.1 port 49868 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49888 | method=publickey
+    raw: 2026-07-24T20:22:19+10:00 rootnode sshd-session[214845]: Accepted publickey for xindy from 10.244.10.1 port 49888 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49900 | method=publickey
+    raw: 2026-07-24T20:23:19+10:00 rootnode sshd-session[217523]: Accepted publickey for xindy from 10.244.10.1 port 49900 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49930 | method=publickey
+    raw: 2026-07-24T20:24:19+10:00 rootnode sshd-session[220175]: Accepted publickey for xindy from 10.244.10.1 port 49930 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49940 | method=publickey
+    raw: 2026-07-24T20:25:20+10:00 rootnode sshd-session[222845]: Accepted publickey for xindy from 10.244.10.1 port 49940 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49949 | method=publickey
+    raw: 2026-07-24T20:26:20+10:00 rootnode sshd-session[225584]: Accepted publickey for xindy from 10.244.10.1 port 49949 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49958 | method=publickey
+    raw: 2026-07-24T20:27:20+10:00 rootnode sshd-session[229215]: Accepted publickey for xindy from 10.244.10.1 port 49958 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49966 | method=publickey
+    raw: 2026-07-24T20:28:21+10:00 rootnode sshd-session[233002]: Accepted publickey for xindy from 10.244.10.1 port 49966 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49977 | method=publickey
+    raw: 2026-07-24T20:29:21+10:00 rootnode sshd-session[236897]: Accepted publickey for xindy from 10.244.10.1 port 49977 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49988 | method=publickey
+    raw: 2026-07-24T20:30:21+10:00 rootnode sshd-session[240888]: Accepted publickey for xindy from 10.244.10.1 port 49988 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=49996 | method=publickey
+    raw: 2026-07-24T20:31:22+10:00 rootnode sshd-session[243536]: Accepted publickey for xindy from 10.244.10.1 port 49996 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50005 | method=publickey
+    raw: 2026-07-24T20:32:22+10:00 rootnode sshd-session[246163]: Accepted publickey for xindy from 10.244.10.1 port 50005 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50013 | method=publickey
+    raw: 2026-07-24T20:33:23+10:00 rootnode sshd-session[249049]: Accepted publickey for xindy from 10.244.10.1 port 50013 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50058 | method=publickey
+    raw: 2026-07-24T20:34:23+10:00 rootnode sshd-session[251686]: Accepted publickey for xindy from 10.244.10.1 port 50058 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50072 | method=publickey
+    raw: 2026-07-24T20:35:23+10:00 rootnode sshd-session[254383]: Accepted publickey for xindy from 10.244.10.1 port 50072 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50083 | method=publickey
+    raw: 2026-07-24T20:36:24+10:00 rootnode sshd-session[257848]: Accepted publickey for xindy from 10.244.10.1 port 50083 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50108 | method=publickey
+    raw: 2026-07-24T20:37:57+10:00 rootnode sshd-session[1226]: Accepted publickey for xindy from 10.244.10.1 port 50108 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50117 | method=publickey
+    raw: 2026-07-24T20:38:32+10:00 rootnode sshd-session[2203]: Accepted publickey for xindy from 10.244.10.1 port 50117 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50129 | method=publickey
+    raw: 2026-07-24T20:39:33+10:00 rootnode sshd-session[3631]: Accepted publickey for xindy from 10.244.10.1 port 50129 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:40 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=50136 | method=password
+    raw: 2026-07-24T20:40:12+10:00 rootnode sshd-session[7638]: Accepted password for xindy from 192.168.1.184 port 50136 ssh2
+  20:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50144 | method=publickey
+    raw: 2026-07-24T20:40:33+10:00 rootnode sshd-session[8715]: Accepted publickey for xindy from 10.244.10.1 port 50144 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50157 | method=publickey
+    raw: 2026-07-24T20:41:33+10:00 rootnode sshd-session[11469]: Accepted publickey for xindy from 10.244.10.1 port 50157 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50164 | method=password
+    raw: 2026-07-24T20:41:58+10:00 rootnode sshd-session[12470]: Accepted password for xindy from 10.244.10.1 port 50164 ssh2
+  20:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50170 | method=publickey
+    raw: 2026-07-24T20:42:34+10:00 rootnode sshd-session[14167]: Accepted publickey for xindy from 10.244.10.1 port 50170 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50184 | method=publickey
+    raw: 2026-07-24T20:43:34+10:00 rootnode sshd-session[16881]: Accepted publickey for xindy from 10.244.10.1 port 50184 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50193 | method=publickey
+    raw: 2026-07-24T20:44:34+10:00 rootnode sshd-session[19524]: Accepted publickey for xindy from 10.244.10.1 port 50193 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50206 | method=publickey
+    raw: 2026-07-24T20:45:35+10:00 rootnode sshd-session[22238]: Accepted publickey for xindy from 10.244.10.1 port 50206 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50227 | method=publickey
+    raw: 2026-07-24T20:46:35+10:00 rootnode sshd-session[24971]: Accepted publickey for xindy from 10.244.10.1 port 50227 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50241 | method=publickey
+    raw: 2026-07-24T20:47:35+10:00 rootnode sshd-session[27628]: Accepted publickey for xindy from 10.244.10.1 port 50241 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50253 | method=publickey
+    raw: 2026-07-24T20:48:36+10:00 rootnode sshd-session[30340]: Accepted publickey for xindy from 10.244.10.1 port 50253 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:48 | ACCEPTED | user=xindy (valid) | ip=192.168.1.179 | port=56442 | method=password
+    raw: 2026-07-24T20:48:39+10:00 rootnode sshd-session[30227]: Accepted password for xindy from 192.168.1.179 port 56442 ssh2
+  20:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50265 | method=publickey
+    raw: 2026-07-24T20:49:36+10:00 rootnode sshd-session[33096]: Accepted publickey for xindy from 10.244.10.1 port 50265 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:50 | ACCEPTED | user=xindy (valid) | ip=192.168.1.184 | port=50269 | method=password
+    raw: 2026-07-24T20:50:02+10:00 rootnode sshd-session[33862]: Accepted password for xindy from 192.168.1.184 port 50269 ssh2
+  20:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50284 | method=publickey
+    raw: 2026-07-24T20:50:36+10:00 rootnode sshd-session[35865]: Accepted publickey for xindy from 10.244.10.1 port 50284 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50293 | method=publickey
+    raw: 2026-07-24T20:51:37+10:00 rootnode sshd-session[38512]: Accepted publickey for xindy from 10.244.10.1 port 50293 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50305 | method=publickey
+    raw: 2026-07-24T20:52:37+10:00 rootnode sshd-session[41200]: Accepted publickey for xindy from 10.244.10.1 port 50305 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:53 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50317 | method=publickey
+    raw: 2026-07-24T20:53:37+10:00 rootnode sshd-session[43879]: Accepted publickey for xindy from 10.244.10.1 port 50317 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50328 | method=publickey
+    raw: 2026-07-24T20:54:38+10:00 rootnode sshd-session[46553]: Accepted publickey for xindy from 10.244.10.1 port 50328 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50343 | method=publickey
+    raw: 2026-07-24T20:55:38+10:00 rootnode sshd-session[49331]: Accepted publickey for xindy from 10.244.10.1 port 50343 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50356 | method=publickey
+    raw: 2026-07-24T20:56:39+10:00 rootnode sshd-session[51966]: Accepted publickey for xindy from 10.244.10.1 port 50356 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50367 | method=publickey
+    raw: 2026-07-24T20:57:39+10:00 rootnode sshd-session[54502]: Accepted publickey for xindy from 10.244.10.1 port 50367 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50382 | method=publickey
+    raw: 2026-07-24T20:58:39+10:00 rootnode sshd-session[57006]: Accepted publickey for xindy from 10.244.10.1 port 50382 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  20:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50410 | method=publickey
+    raw: 2026-07-24T20:59:40+10:00 rootnode sshd-session[59746]: Accepted publickey for xindy from 10.244.10.1 port 50410 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50427 | method=publickey
+    raw: 2026-07-24T21:00:40+10:00 rootnode sshd-session[62436]: Accepted publickey for xindy from 10.244.10.1 port 50427 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50439 | method=publickey
+    raw: 2026-07-24T21:01:40+10:00 rootnode sshd-session[65511]: Accepted publickey for xindy from 10.244.10.1 port 50439 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50454 | method=publickey
+    raw: 2026-07-24T21:02:41+10:00 rootnode sshd-session[68244]: Accepted publickey for xindy from 10.244.10.1 port 50454 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50465 | method=publickey
+    raw: 2026-07-24T21:03:41+10:00 rootnode sshd-session[70893]: Accepted publickey for xindy from 10.244.10.1 port 50465 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50471 | method=password
+    raw: 2026-07-24T21:03:55+10:00 rootnode sshd-session[71596]: Accepted password for xindy from 10.244.10.1 port 50471 ssh2
+  21:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50478 | method=publickey
+    raw: 2026-07-24T21:04:41+10:00 rootnode sshd-session[73662]: Accepted publickey for xindy from 10.244.10.1 port 50478 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50501 | method=publickey
+    raw: 2026-07-24T21:05:42+10:00 rootnode sshd-session[76411]: Accepted publickey for xindy from 10.244.10.1 port 50501 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50519 | method=publickey
+    raw: 2026-07-24T21:06:42+10:00 rootnode sshd-session[79111]: Accepted publickey for xindy from 10.244.10.1 port 50519 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50531 | method=publickey
+    raw: 2026-07-24T21:07:42+10:00 rootnode sshd-session[81810]: Accepted publickey for xindy from 10.244.10.1 port 50531 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50543 | method=publickey
+    raw: 2026-07-24T21:08:43+10:00 rootnode sshd-session[84517]: Accepted publickey for xindy from 10.244.10.1 port 50543 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50553 | method=publickey
+    raw: 2026-07-24T21:09:43+10:00 rootnode sshd-session[87175]: Accepted publickey for xindy from 10.244.10.1 port 50553 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50565 | method=publickey
+    raw: 2026-07-24T21:10:44+10:00 rootnode sshd-session[89862]: Accepted publickey for xindy from 10.244.10.1 port 50565 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50578 | method=publickey
+    raw: 2026-07-24T21:11:44+10:00 rootnode sshd-session[92537]: Accepted publickey for xindy from 10.244.10.1 port 50578 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50590 | method=publickey
+    raw: 2026-07-24T21:12:44+10:00 rootnode sshd-session[95224]: Accepted publickey for xindy from 10.244.10.1 port 50590 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50604 | method=publickey
+    raw: 2026-07-24T21:13:45+10:00 rootnode sshd-session[98003]: Accepted publickey for xindy from 10.244.10.1 port 50604 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50617 | method=publickey
+    raw: 2026-07-24T21:14:45+10:00 rootnode sshd-session[101511]: Accepted publickey for xindy from 10.244.10.1 port 50617 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50641 | method=publickey
+    raw: 2026-07-24T21:15:45+10:00 rootnode sshd-session[104301]: Accepted publickey for xindy from 10.244.10.1 port 50641 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50653 | method=publickey
+    raw: 2026-07-24T21:16:46+10:00 rootnode sshd-session[106978]: Accepted publickey for xindy from 10.244.10.1 port 50653 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50669 | method=publickey
+    raw: 2026-07-24T21:17:46+10:00 rootnode sshd-session[109751]: Accepted publickey for xindy from 10.244.10.1 port 50669 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50692 | method=publickey
+    raw: 2026-07-24T21:18:46+10:00 rootnode sshd-session[112757]: Accepted publickey for xindy from 10.244.10.1 port 50692 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50704 | method=publickey
+    raw: 2026-07-24T21:19:47+10:00 rootnode sshd-session[115464]: Accepted publickey for xindy from 10.244.10.1 port 50704 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50713 | method=publickey
+    raw: 2026-07-24T21:20:47+10:00 rootnode sshd-session[118202]: Accepted publickey for xindy from 10.244.10.1 port 50713 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50724 | method=publickey
+    raw: 2026-07-24T21:21:47+10:00 rootnode sshd-session[120874]: Accepted publickey for xindy from 10.244.10.1 port 50724 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50735 | method=publickey
+    raw: 2026-07-24T21:22:48+10:00 rootnode sshd-session[123606]: Accepted publickey for xindy from 10.244.10.1 port 50735 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50747 | method=publickey
+    raw: 2026-07-24T21:23:48+10:00 rootnode sshd-session[126282]: Accepted publickey for xindy from 10.244.10.1 port 50747 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50756 | method=publickey
+    raw: 2026-07-24T21:24:49+10:00 rootnode sshd-session[128976]: Accepted publickey for xindy from 10.244.10.1 port 50756 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50765 | method=publickey
+    raw: 2026-07-24T21:25:49+10:00 rootnode sshd-session[131715]: Accepted publickey for xindy from 10.244.10.1 port 50765 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50774 | method=publickey
+    raw: 2026-07-24T21:26:49+10:00 rootnode sshd-session[134424]: Accepted publickey for xindy from 10.244.10.1 port 50774 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50785 | method=publickey
+    raw: 2026-07-24T21:27:50+10:00 rootnode sshd-session[137136]: Accepted publickey for xindy from 10.244.10.1 port 50785 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50795 | method=publickey
+    raw: 2026-07-24T21:28:50+10:00 rootnode sshd-session[139747]: Accepted publickey for xindy from 10.244.10.1 port 50795 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50804 | method=publickey
+    raw: 2026-07-24T21:29:50+10:00 rootnode sshd-session[142463]: Accepted publickey for xindy from 10.244.10.1 port 50804 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50814 | method=publickey
+    raw: 2026-07-24T21:30:51+10:00 rootnode sshd-session[145180]: Accepted publickey for xindy from 10.244.10.1 port 50814 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50848 | method=publickey
+    raw: 2026-07-24T21:31:51+10:00 rootnode sshd-session[147901]: Accepted publickey for xindy from 10.244.10.1 port 50848 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50864 | method=publickey
+    raw: 2026-07-24T21:32:52+10:00 rootnode sshd-session[150586]: Accepted publickey for xindy from 10.244.10.1 port 50864 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50873 | method=publickey
+    raw: 2026-07-24T21:33:52+10:00 rootnode sshd-session[153288]: Accepted publickey for xindy from 10.244.10.1 port 50873 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50884 | method=publickey
+    raw: 2026-07-24T21:34:52+10:00 rootnode sshd-session[156010]: Accepted publickey for xindy from 10.244.10.1 port 50884 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.7 | port=50916 | method=password
+    raw: 2026-07-24T21:35:51+10:00 rootnode sshd-session[157802]: Accepted password for xindy from 10.244.10.7 port 50916 ssh2
+  21:35 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50893 | method=publickey
+    raw: 2026-07-24T21:35:53+10:00 rootnode sshd-session[158764]: Accepted publickey for xindy from 10.244.10.1 port 50893 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:36 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50902 | method=publickey
+    raw: 2026-07-24T21:36:53+10:00 rootnode sshd-session[161510]: Accepted publickey for xindy from 10.244.10.1 port 50902 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:37 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50911 | method=publickey
+    raw: 2026-07-24T21:37:53+10:00 rootnode sshd-session[164173]: Accepted publickey for xindy from 10.244.10.1 port 50911 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:38 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50924 | method=publickey
+    raw: 2026-07-24T21:38:54+10:00 rootnode sshd-session[166884]: Accepted publickey for xindy from 10.244.10.1 port 50924 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:39 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50932 | method=publickey
+    raw: 2026-07-24T21:39:54+10:00 rootnode sshd-session[169595]: Accepted publickey for xindy from 10.244.10.1 port 50932 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50943 | method=publickey
+    raw: 2026-07-24T21:40:55+10:00 rootnode sshd-session[172326]: Accepted publickey for xindy from 10.244.10.1 port 50943 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:41 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50951 | method=publickey
+    raw: 2026-07-24T21:41:55+10:00 rootnode sshd-session[175037]: Accepted publickey for xindy from 10.244.10.1 port 50951 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:42 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50961 | method=publickey
+    raw: 2026-07-24T21:42:55+10:00 rootnode sshd-session[177737]: Accepted publickey for xindy from 10.244.10.1 port 50961 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:43 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50976 | method=publickey
+    raw: 2026-07-24T21:43:56+10:00 rootnode sshd-session[181031]: Accepted publickey for xindy from 10.244.10.1 port 50976 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:44 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50985 | method=publickey
+    raw: 2026-07-24T21:44:56+10:00 rootnode sshd-session[183722]: Accepted publickey for xindy from 10.244.10.1 port 50985 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:45 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=50996 | method=publickey
+    raw: 2026-07-24T21:45:57+10:00 rootnode sshd-session[186441]: Accepted publickey for xindy from 10.244.10.1 port 50996 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:46 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51007 | method=publickey
+    raw: 2026-07-24T21:46:57+10:00 rootnode sshd-session[189142]: Accepted publickey for xindy from 10.244.10.1 port 51007 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:47 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51016 | method=publickey
+    raw: 2026-07-24T21:47:57+10:00 rootnode sshd-session[191814]: Accepted publickey for xindy from 10.244.10.1 port 51016 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:48 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51027 | method=publickey
+    raw: 2026-07-24T21:48:58+10:00 rootnode sshd-session[194532]: Accepted publickey for xindy from 10.244.10.1 port 51027 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:49 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51036 | method=publickey
+    raw: 2026-07-24T21:49:58+10:00 rootnode sshd-session[197218]: Accepted publickey for xindy from 10.244.10.1 port 51036 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:50 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51045 | method=publickey
+    raw: 2026-07-24T21:50:58+10:00 rootnode sshd-session[199937]: Accepted publickey for xindy from 10.244.10.1 port 51045 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51055 | method=publickey
+    raw: 2026-07-24T21:51:59+10:00 rootnode sshd-session[202643]: Accepted publickey for xindy from 10.244.10.1 port 51055 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:52 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51064 | method=publickey
+    raw: 2026-07-24T21:52:59+10:00 rootnode sshd-session[205371]: Accepted publickey for xindy from 10.244.10.1 port 51064 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:54 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51073 | method=publickey
+    raw: 2026-07-24T21:54:00+10:00 rootnode sshd-session[208063]: Accepted publickey for xindy from 10.244.10.1 port 51073 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:55 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51085 | method=publickey
+    raw: 2026-07-24T21:55:00+10:00 rootnode sshd-session[210760]: Accepted publickey for xindy from 10.244.10.1 port 51085 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:56 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51094 | method=publickey
+    raw: 2026-07-24T21:56:00+10:00 rootnode sshd-session[213489]: Accepted publickey for xindy from 10.244.10.1 port 51094 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:57 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51103 | method=publickey
+    raw: 2026-07-24T21:57:01+10:00 rootnode sshd-session[216215]: Accepted publickey for xindy from 10.244.10.1 port 51103 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:58 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51114 | method=publickey
+    raw: 2026-07-24T21:58:01+10:00 rootnode sshd-session[218847]: Accepted publickey for xindy from 10.244.10.1 port 51114 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  21:59 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51123 | method=publickey
+    raw: 2026-07-24T21:59:01+10:00 rootnode sshd-session[221572]: Accepted publickey for xindy from 10.244.10.1 port 51123 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:00 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51136 | method=publickey
+    raw: 2026-07-24T22:00:02+10:00 rootnode sshd-session[224332]: Accepted publickey for xindy from 10.244.10.1 port 51136 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:01 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51145 | method=publickey
+    raw: 2026-07-24T22:01:02+10:00 rootnode sshd-session[227009]: Accepted publickey for xindy from 10.244.10.1 port 51145 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:02 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51153 | method=publickey
+    raw: 2026-07-24T22:02:02+10:00 rootnode sshd-session[229931]: Accepted publickey for xindy from 10.244.10.1 port 51153 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:03 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51162 | method=publickey
+    raw: 2026-07-24T22:03:03+10:00 rootnode sshd-session[232399]: Accepted publickey for xindy from 10.244.10.1 port 51162 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:04 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51172 | method=publickey
+    raw: 2026-07-24T22:04:03+10:00 rootnode sshd-session[235114]: Accepted publickey for xindy from 10.244.10.1 port 51172 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:05 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51180 | method=publickey
+    raw: 2026-07-24T22:05:04+10:00 rootnode sshd-session[237851]: Accepted publickey for xindy from 10.244.10.1 port 51180 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:06 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51194 | method=publickey
+    raw: 2026-07-24T22:06:04+10:00 rootnode sshd-session[240560]: Accepted publickey for xindy from 10.244.10.1 port 51194 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:07 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51203 | method=publickey
+    raw: 2026-07-24T22:07:04+10:00 rootnode sshd-session[243263]: Accepted publickey for xindy from 10.244.10.1 port 51203 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:08 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51215 | method=publickey
+    raw: 2026-07-24T22:08:05+10:00 rootnode sshd-session[245955]: Accepted publickey for xindy from 10.244.10.1 port 51215 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:09 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51228 | method=publickey
+    raw: 2026-07-24T22:09:05+10:00 rootnode sshd-session[248681]: Accepted publickey for xindy from 10.244.10.1 port 51228 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:10 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51236 | method=publickey
+    raw: 2026-07-24T22:10:05+10:00 rootnode sshd-session[251438]: Accepted publickey for xindy from 10.244.10.1 port 51236 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:11 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51246 | method=publickey
+    raw: 2026-07-24T22:11:06+10:00 rootnode sshd-session[254134]: Accepted publickey for xindy from 10.244.10.1 port 51246 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:12 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51254 | method=publickey
+    raw: 2026-07-24T22:12:06+10:00 rootnode sshd-session[256827]: Accepted publickey for xindy from 10.244.10.1 port 51254 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:13 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51264 | method=publickey
+    raw: 2026-07-24T22:13:06+10:00 rootnode sshd-session[259561]: Accepted publickey for xindy from 10.244.10.1 port 51264 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:14 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51272 | method=publickey
+    raw: 2026-07-24T22:14:07+10:00 rootnode sshd-session[262289]: Accepted publickey for xindy from 10.244.10.1 port 51272 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:15 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51282 | method=publickey
+    raw: 2026-07-24T22:15:07+10:00 rootnode sshd-session[265047]: Accepted publickey for xindy from 10.244.10.1 port 51282 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51294 | method=publickey
+    raw: 2026-07-24T22:16:08+10:00 rootnode sshd-session[267878]: Accepted publickey for xindy from 10.244.10.1 port 51294 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:16 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51329 | method=publickey
+    raw: 2026-07-24T22:16:40+10:00 rootnode sshd-session[269333]: Accepted publickey for xindy from 10.244.10.1 port 51329 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:17 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51352 | method=publickey
+    raw: 2026-07-24T22:17:08+10:00 rootnode sshd-session[270588]: Accepted publickey for xindy from 10.244.10.1 port 51352 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:18 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51370 | method=publickey
+    raw: 2026-07-24T22:18:08+10:00 rootnode sshd-session[273585]: Accepted publickey for xindy from 10.244.10.1 port 51370 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:19 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51381 | method=publickey
+    raw: 2026-07-24T22:19:09+10:00 rootnode sshd-session[276377]: Accepted publickey for xindy from 10.244.10.1 port 51381 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:20 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51391 | method=publickey
+    raw: 2026-07-24T22:20:09+10:00 rootnode sshd-session[278759]: Accepted publickey for xindy from 10.244.10.1 port 51391 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:21 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51419 | method=publickey
+    raw: 2026-07-24T22:21:09+10:00 rootnode sshd-session[279159]: Accepted publickey for xindy from 10.244.10.1 port 51419 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:22 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51454 | method=publickey
+    raw: 2026-07-24T22:22:10+10:00 rootnode sshd-session[279715]: Accepted publickey for xindy from 10.244.10.1 port 51454 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:23 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51463 | method=publickey
+    raw: 2026-07-24T22:23:10+10:00 rootnode sshd-session[280136]: Accepted publickey for xindy from 10.244.10.1 port 51463 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:24 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51472 | method=publickey
+    raw: 2026-07-24T22:24:11+10:00 rootnode sshd-session[280816]: Accepted publickey for xindy from 10.244.10.1 port 51472 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51492 | method=publickey
+    raw: 2026-07-24T22:25:11+10:00 rootnode sshd-session[281343]: Accepted publickey for xindy from 10.244.10.1 port 51492 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:26 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51503 | method=publickey
+    raw: 2026-07-24T22:26:11+10:00 rootnode sshd-session[281946]: Accepted publickey for xindy from 10.244.10.1 port 51503 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:27 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51515 | method=publickey
+    raw: 2026-07-24T22:27:12+10:00 rootnode sshd-session[282311]: Accepted publickey for xindy from 10.244.10.1 port 51515 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:28 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51525 | method=publickey
+    raw: 2026-07-24T22:28:12+10:00 rootnode sshd-session[282902]: Accepted publickey for xindy from 10.244.10.1 port 51525 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:29 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51534 | method=publickey
+    raw: 2026-07-24T22:29:12+10:00 rootnode sshd-session[283284]: Accepted publickey for xindy from 10.244.10.1 port 51534 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:30 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51543 | method=publickey
+    raw: 2026-07-24T22:30:13+10:00 rootnode sshd-session[283912]: Accepted publickey for xindy from 10.244.10.1 port 51543 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:31 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51552 | method=publickey
+    raw: 2026-07-24T22:31:13+10:00 rootnode sshd-session[284292]: Accepted publickey for xindy from 10.244.10.1 port 51552 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:32 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51561 | method=publickey
+    raw: 2026-07-24T22:32:14+10:00 rootnode sshd-session[284875]: Accepted publickey for xindy from 10.244.10.1 port 51561 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:33 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51569 | method=publickey
+    raw: 2026-07-24T22:33:14+10:00 rootnode sshd-session[285266]: Accepted publickey for xindy from 10.244.10.1 port 51569 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:34 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51576 | method=publickey
+    raw: 2026-07-24T22:34:14+10:00 rootnode sshd-session[285854]: Accepted publickey for xindy from 10.244.10.1 port 51576 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  22:51 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51606 | method=publickey
+    raw: 2026-07-24T22:51:31+10:00 rootnode sshd-session[293850]: Accepted publickey for xindy from 10.244.10.1 port 51606 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  23:25 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51638 | method=publickey
+    raw: 2026-07-24T23:25:56+10:00 rootnode sshd-session[309667]: Accepted publickey for xindy from 10.244.10.1 port 51638 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
+  23:40 | ACCEPTED | user=xindy (valid) | ip=10.244.10.1 | port=51655 | method=publickey
+    raw: 2026-07-24T23:40:13+10:00 rootnode sshd-session[316056]: Accepted publickey for xindy from 10.244.10.1 port 51655 ssh2: ED25519 SHA256:XUGuYMf1+zmUzZ11ugKNPfvaNQ+s/NyyJURa/NWwlr0
