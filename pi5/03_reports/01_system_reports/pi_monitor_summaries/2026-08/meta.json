@@ -1,0 +1,14 @@
+{
+  "source": "pi_monitor_monthly",
+  "timestamp": "2026-08-01T08:00:07.823770+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Monthly Pi Monitor Summary (2026-07)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-08/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-08/pi-monitor-FS-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-08/pi-monitor-POWER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-08/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-08/attachments.md"
+  ]
+}

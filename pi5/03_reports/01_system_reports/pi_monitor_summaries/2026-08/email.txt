@@ -1,0 +1,41 @@
+Source: pi_monitor_monthly
+Date: 2026-08-01T08:00:07.823770+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Monthly Pi Monitor Summary (2026-07)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-07-01 00:00 AEST to 2026-08-01 00:00 AEST
+
+Totals
+  Total events : 11
+  OK           : 6
+  WARN         : 1
+  CRIT         : 4
+
+Top checks by event count
+  POWER               7  (WARN 0, CRIT 3)
+  SSH_LOGIN           2  (WARN 1, CRIT 0)
+  FS                  2  (WARN 0, CRIT 1)
+
+Checks with WARN/CRIT
+  POWER            WARN 0   CRIT 3   last 2026-07-06 21:47 AEST
+  FS               WARN 0   CRIT 1   last 2026-07-24 21:15 AEST
+  SSH_LOGIN        WARN 1   CRIT 0   last 2026-07-24 18:39 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-07-24 21:14 | FS | CRIT
+    Filesystem errors: 1 new
+  2026-07-24 18:38 | SSH_LOGIN | WARN
+    SSH ALERT · FAILED LOGINS
+  2026-07-06 21:45 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-07-06 21:43 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-07-06 21:40 | POWER | CRIT
+    Current throttling detected: 0x50005
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  FS, POWER
