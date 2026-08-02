@@ -1,0 +1,13 @@
+{
+  "source": "pi_monitor_weekly",
+  "timestamp": "2026-08-02T20:00:08.234409+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Weekly Pi Monitor Summary (2026-08-02)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-08-02/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-08-02/pi-monitor-warn-crit-none.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-08-02/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/weekly-2026-08-02/attachments.md"
+  ]
+}
