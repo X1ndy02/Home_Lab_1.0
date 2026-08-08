@@ -1,0 +1,13 @@
+Offsite Backup (Cloudflare R2) Summary
+======================================
+Copy              : FAILED
+Rotation          : skipped (copy failed)
+Snapshots in R2   : N/A
+
+Timeline:
+  Started   : 2026-08-09T01:01:39+10:00
+
+Copy details:
+
+Rotation details:
+  Kept      : N/A snapshot(s)
