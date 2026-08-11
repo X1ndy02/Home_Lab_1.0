@@ -1,0 +1,2 @@
+Fatal: create key in repository at s3:https://bb1b3d907a4b14fe0e9c14b5fe8a14da.r2.cloudflarestorage.com/rootnode-restic failed: repository master key and config already initialized
+2026-08-12T01:01:47+10:00 R2 offsite copy FAILED
