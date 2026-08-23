@@ -1,0 +1,7 @@
+Check: POWER
+Period: 2026-08-16 20:00 AEST to 2026-08-23 20:00 AEST
+
+Grouped by day (local time):
+
+2026-08-18 (WARN 0, CRIT 1)
+  12:03 | CRIT | Current throttling detected: 0x50005

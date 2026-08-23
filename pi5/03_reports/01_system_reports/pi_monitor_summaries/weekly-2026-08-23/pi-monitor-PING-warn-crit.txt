@@ -1,0 +1,7 @@
+Check: PING
+Period: 2026-08-16 20:00 AEST to 2026-08-23 20:00 AEST
+
+Grouped by day (local time):
+
+2026-08-18 (WARN 0, CRIT 1)
+  07:56 | CRIT | Ping failed 2 times: 1.1.1.1 8.8.8.8
