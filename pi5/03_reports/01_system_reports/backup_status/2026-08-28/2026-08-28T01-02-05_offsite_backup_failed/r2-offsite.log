@@ -1,0 +1,8 @@
+2026-08-28T01:01:48+10:00 Starting R2 offsite copy
+Fatal: create key in repository at s3:https://bb1b3d907a4b14fe0e9c14b5fe8a14da.r2.cloudflarestorage.com/rootnode-restic failed: repository master key and config already initialized
+repo already locked, waiting up to 0s for the lock
+unable to create lock in backend: repository is already locked exclusively by PID 22311 on rootnode by root (UID 0, GID 0)
+lock was created at 2026-07-06 21:47:17 (1251h14m39.572041662s ago)
+storage ID 0c928051
+the `unlock` command can be used to remove stale locks
+2026-08-28T01:01:56+10:00 R2 offsite copy FAILED
