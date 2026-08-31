@@ -1,0 +1,16 @@
+{
+  "source": "pi_monitor_monthly",
+  "timestamp": "2026-09-01T08:00:15.474943+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "Monthly Pi Monitor Summary (2026-08)",
+  "files": [
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/email.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/pi-monitor-FS-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/pi-monitor-PING-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/pi-monitor-POWER-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/pi-monitor-SMART_NVME-warn-crit.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/pi-monitor-ssh-logins.txt",
+    "pi5/03_reports/01_system_reports/pi_monitor_summaries/2026-09/attachments.md"
+  ]
+}

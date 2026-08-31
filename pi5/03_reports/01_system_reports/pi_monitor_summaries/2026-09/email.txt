@@ -1,0 +1,44 @@
+Source: pi_monitor_monthly
+Date: 2026-09-01T08:00:15.474943+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Monthly Pi Monitor Summary (2026-08)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-08-01 00:00 AEST to 2026-09-01 00:00 AEST
+
+Totals
+  Total events : 11
+  OK           : 6
+  WARN         : 0
+  CRIT         : 5
+
+Top checks by event count
+  POWER               4  (WARN 0, CRIT 2)
+  FS                  2  (WARN 0, CRIT 1)
+  PING                2  (WARN 0, CRIT 1)
+  SMART_NVME          2  (WARN 0, CRIT 1)
+  DOCKER              1  (WARN 0, CRIT 0)
+
+Checks with WARN/CRIT
+  POWER            WARN 0   CRIT 2   last 2026-08-29 12:45 AEST
+  FS               WARN 0   CRIT 1   last 2026-08-17 19:51 AEST
+  PING             WARN 0   CRIT 1   last 2026-08-18 08:50 AEST
+  SMART_NVME       WARN 0   CRIT 1   last 2026-08-27 01:12 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-08-29 12:44 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-08-27 01:10 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-08-18 12:03 | POWER | CRIT
+    Current throttling detected: 0x50005
+  2026-08-18 07:56 | PING | CRIT
+    Ping failed 2 times: 1.1.1.1 8.8.8.8
+  2026-08-17 19:50 | FS | CRIT
+    Filesystem errors: 1 new
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  FS, PING, POWER, SMART_NVME
