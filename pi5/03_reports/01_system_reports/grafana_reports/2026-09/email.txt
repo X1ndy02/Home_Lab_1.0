@@ -1,0 +1,10 @@
+Source: grafana_monthly
+Date: 2026-09-01T00:05:38.034684+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monthly Report] 2026-08
+
+Monthly report for 2026-08\n\nMonthly report for 2026-08
+
+Uptime: 93% (samples 8316 / expected 8928)
+samples=8316 avg_temp=42.9 max_temp=57 avg_load=0.19 avg_ram=12.6 max_disk=12 max_swap=0\n\nAlerts: 11\nSSH login alerts: 0\n

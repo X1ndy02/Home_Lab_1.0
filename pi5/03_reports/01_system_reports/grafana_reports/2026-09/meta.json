@@ -1,0 +1,14 @@
+{
+  "source": "grafana_monthly",
+  "timestamp": "2026-09-01T00:05:38.034684+10:00",
+  "from": "xindy.notifications@gmail.com",
+  "to": "xindy.notifications@gmail.com",
+  "subject": "[Pi Monthly Report] 2026-08",
+  "files": [
+    "pi5/03_reports/01_system_reports/grafana_reports/2026-09/email.txt",
+    "pi5/03_reports/01_system_reports/grafana_reports/2026-09/temperature.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/2026-09/load.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/2026-09/memory.png",
+    "pi5/03_reports/01_system_reports/grafana_reports/2026-09/attachments.md"
+  ]
+}
