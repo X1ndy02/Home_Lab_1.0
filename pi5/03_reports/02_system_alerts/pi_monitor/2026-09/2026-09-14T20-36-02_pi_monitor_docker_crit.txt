@@ -1,0 +1,7 @@
+Source: pi_monitor_alert
+Date: 2026-09-14T20:36:02+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] DOCKER CRIT
+
+Exited containers: supabase-storage supabase-edge-functions supabase-rest supabase-meta supabase-pooler supabase-auth realtime-dev.supabase-realtime supabase-kong supabase-db supabase-imgproxy supabase-studio supabase-vector
