@@ -1,0 +1,10 @@
+Source: pi_monitor_alert
+Date: 2026-09-14T21:30:06+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] FS CRIT
+
+Filesystem errors: 1 new
+
+Kernel errors since last check:
+Sep 14 21:28:55 rootnode kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
