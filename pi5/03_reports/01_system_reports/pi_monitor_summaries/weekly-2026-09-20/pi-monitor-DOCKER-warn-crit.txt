@@ -1,0 +1,8 @@
+Check: DOCKER
+Period: 2026-09-13 20:00 AEST to 2026-09-20 20:00 AEST
+
+Grouped by day (local time):
+
+2026-09-14 (WARN 0, CRIT 2)
+  20:35 | CRIT | Exited containers: supabase-storage supabase-edge-functions supabase-rest supabase-meta supabase-pooler supabase-auth realtime-dev.supabase-realtime supabase-kong supabase-db supabase-imgproxy supabase-studio supabase-vector
+  21:29 | CRIT | Exited containers: supabase-storage supabase-edge-functions supabase-rest supabase-meta supabase-pooler supabase-auth realtime-dev.supabase-realtime supabase-kong supabase-db supabase-imgproxy supabase-studio supabase-vector

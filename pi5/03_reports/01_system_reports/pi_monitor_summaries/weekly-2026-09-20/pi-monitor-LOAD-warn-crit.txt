@@ -1,0 +1,74 @@
+Check: LOAD
+Period: 2026-09-13 20:00 AEST to 2026-09-20 20:00 AEST
+
+Grouped by day (local time):
+
+2026-09-15 (WARN 50, CRIT 0)
+  00:03 | WARN | Load 4.27 >= 4.0 for 3 min
+  00:21 | WARN | Load 4.20 >= 4.0 for 3 min
+  00:34 | WARN | Load 4.26 >= 4.0 for 3 min
+  00:46 | WARN | Load 4.36 >= 4.0 for 3 min
+  00:54 | WARN | Load 4.44 >= 4.0 for 3 min
+  00:58 | WARN | Load 4.16 >= 4.0 for 3 min
+  01:27 | WARN | Load 4.32 >= 4.0 for 3 min
+  01:44 | WARN | Load 4.23 >= 4.0 for 3 min
+  01:58 | WARN | Load 4.43 >= 4.0 for 3 min
+  02:05 | WARN | Load 4.36 >= 4.0 for 3 min
+  02:15 | WARN | Load 4.18 >= 4.0 for 3 min
+  02:22 | WARN | Load 4.52 >= 4.0 for 3 min
+  02:28 | WARN | Load 4.19 >= 4.0 for 3 min
+  02:35 | WARN | Load 4.11 >= 4.0 for 3 min
+  02:50 | WARN | Load 4.21 >= 4.0 for 3 min
+  02:54 | WARN | Load 4.11 >= 4.0 for 3 min
+  03:01 | WARN | Load 4.35 >= 4.0 for 3 min
+  03:18 | WARN | Load 4.27 >= 4.0 for 3 min
+  03:32 | WARN | Load 4.07 >= 4.0 for 3 min
+  03:41 | WARN | Load 4.31 >= 4.0 for 3 min
+  04:01 | WARN | Load 4.31 >= 4.0 for 3 min
+  04:09 | WARN | Load 4.13 >= 4.0 for 3 min
+  04:20 | WARN | Load 4.48 >= 4.0 for 3 min
+  05:02 | WARN | Load 4.15 >= 4.0 for 3 min
+  05:22 | WARN | Load 4.51 >= 4.0 for 3 min
+  05:38 | WARN | Load 4.31 >= 4.0 for 3 min
+  05:50 | WARN | Load 4.14 >= 4.0 for 3 min
+  06:09 | WARN | Load 4.40 >= 4.0 for 3 min
+  06:16 | WARN | Load 4.34 >= 4.0 for 3 min
+  06:36 | WARN | Load 4.27 >= 4.0 for 3 min
+  06:47 | WARN | Load 4.35 >= 4.0 for 3 min
+  07:01 | WARN | Load 4.46 >= 4.0 for 3 min
+  07:07 | WARN | Load 4.31 >= 4.0 for 3 min
+  07:31 | WARN | Load 4.05 >= 4.0 for 3 min
+  07:53 | WARN | Load 4.05 >= 4.0 for 3 min
+  08:15 | WARN | Load 4.06 >= 4.0 for 3 min
+  08:25 | WARN | Load 4.32 >= 4.0 for 3 min
+  08:34 | WARN | Load 4.28 >= 4.0 for 3 min
+  08:57 | WARN | Load 4.23 >= 4.0 for 3 min
+  09:08 | WARN | Load 4.00 >= 4.0 for 3 min
+  09:29 | WARN | Load 4.39 >= 4.0 for 3 min
+  09:39 | WARN | Load 4.08 >= 4.0 for 3 min
+  09:50 | WARN | Load 4.12 >= 4.0 for 3 min
+  10:10 | WARN | Load 4.57 >= 4.0 for 3 min
+  10:17 | WARN | Load 4.06 >= 4.0 for 3 min
+  10:21 | WARN | Load 4.57 >= 4.0 for 3 min
+  10:26 | WARN | Load 4.49 >= 4.0 for 3 min
+  10:42 | WARN | Load 4.37 >= 4.0 for 3 min
+  10:57 | WARN | Load 4.25 >= 4.0 for 3 min
+  11:08 | WARN | Load 4.19 >= 4.0 for 3 min
+
+2026-09-14 (WARN 16, CRIT 0)
+  20:38 | WARN | Load 5.62 >= 4.0 for 3 min
+  20:46 | WARN | Load 4.35 >= 4.0 for 3 min
+  21:01 | WARN | Load 4.39 >= 4.0 for 3 min
+  21:09 | WARN | Load 4.25 >= 4.0 for 3 min
+  21:14 | WARN | Load 4.16 >= 4.0 for 3 min
+  21:25 | WARN | Load 4.47 >= 4.0 for 3 min
+  21:32 | WARN | Load 4.65 >= 4.0 for 3 min
+  21:45 | WARN | Load 4.12 >= 4.0 for 3 min
+  21:55 | WARN | Load 4.22 >= 4.0 for 3 min
+  22:08 | WARN | Load 4.48 >= 4.0 for 3 min
+  22:15 | WARN | Load 4.53 >= 4.0 for 3 min
+  22:26 | WARN | Load 4.43 >= 4.0 for 3 min
+  22:36 | WARN | Load 4.65 >= 4.0 for 3 min
+  23:07 | WARN | Load 4.05 >= 4.0 for 3 min
+  23:33 | WARN | Load 4.96 >= 4.0 for 3 min
+  23:51 | WARN | Load 4.06 >= 4.0 for 3 min

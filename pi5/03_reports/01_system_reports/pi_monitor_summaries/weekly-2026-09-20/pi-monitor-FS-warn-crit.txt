@@ -1,0 +1,8 @@
+Check: FS
+Period: 2026-09-13 20:00 AEST to 2026-09-20 20:00 AEST
+
+Grouped by day (local time):
+
+2026-09-14 (WARN 0, CRIT 1)
+  21:30 | CRIT | Filesystem errors: 1 new
+    Sep 14 21:28:55 rootnode kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.

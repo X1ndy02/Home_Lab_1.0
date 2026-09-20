@@ -1,0 +1,56 @@
+Source: pi_monitor_weekly
+Date: 2026-09-20T20:00:09.505856+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly Pi Monitor Summary (2026-09-20)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-09-13 20:00 AEST to 2026-09-20 20:00 AEST
+
+Totals
+  Total events : 150
+  OK           : 75
+  WARN         : 66
+  CRIT         : 9
+
+Top checks by event count
+  LOAD              131  (WARN 66, CRIT 0)
+  SMART               8  (WARN 0, CRIT 4)
+  DOCKER              4  (WARN 0, CRIT 2)
+  SMART_NVME          4  (WARN 0, CRIT 2)
+  FS                  2  (WARN 0, CRIT 1)
+  SSH                 1  (WARN 0, CRIT 0)
+
+Checks with WARN/CRIT
+  SMART            WARN 0   CRIT 4   last 2026-09-20 11:03 AEST
+  DOCKER           WARN 0   CRIT 2   last 2026-09-14 21:31 AEST
+  SMART_NVME       WARN 0   CRIT 2   last 2026-09-20 05:33 AEST
+  FS               WARN 0   CRIT 1   last 2026-09-14 21:30 AEST
+  LOAD             WARN 66  CRIT 0   last 2026-09-15 11:08 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-09-20 11:02 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-20 05:32 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-09-19 17:19 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-17 23:04 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-16 20:38 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-15 11:08 | LOAD | WARN
+    Load 4.19 >= 4.0 for 3 min
+  2026-09-15 10:57 | LOAD | WARN
+    Load 4.25 >= 4.0 for 3 min
+  2026-09-15 10:42 | LOAD | WARN
+    Load 4.37 >= 4.0 for 3 min
+  2026-09-15 10:26 | LOAD | WARN
+    Load 4.49 >= 4.0 for 3 min
+  2026-09-15 10:21 | LOAD | WARN
+    Load 4.57 >= 4.0 for 3 min
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  DOCKER, FS, LOAD, SMART, SMART_NVME
