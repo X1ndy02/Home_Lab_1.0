@@ -1,0 +1,40 @@
+Source: pi_monitor_alert
+Date: 2026-09-26T03:16:02+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: [Pi Monitor] SMART_NVME CRIT
+
+SMART health FAIL on /dev/nvme0n1
+
+NVMe attributes:
+  available_spare=100%
+  percentage_used=0%
+  media_errors=0
+  temp=36C
+
+SMART output:
+smartctl 7.4 2023-08-01 r5530 [aarch64-linux-6.18.34+rpt-rpi-2712] (local build)
+Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+SMART/Health Information (NVMe Log 0x02)
+Critical Warning:                   0x00
+Temperature:                        36 Celsius
+Available Spare:                    100%
+Available Spare Threshold:          10%
+Percentage Used:                    0%
+Data Units Read:                    1,328,575 [680 GB]
+Data Units Written:                 3,085,268 [1.57 TB]
+Host Read Commands:                 14,841,847
+Host Write Commands:                92,615,006
+Controller Busy Time:               15,448
+Power Cycles:                       91
+Power On Hours:                     4,863
+Unsafe Shutdowns:                   47
+Media and Data Integrity Errors:    0
+Error Information Log Entries:      1,139,360
+Warning  Comp. Temperature Time:    0
+Critical Comp. Temperature Time:    0
+Temperature Sensor 2:               53 Celsius
