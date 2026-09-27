@@ -1,0 +1,49 @@
+Source: pi_monitor_weekly
+Date: 2026-09-27T20:00:07.365350+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Weekly Pi Monitor Summary (2026-09-27)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-09-20 20:00 AEST to 2026-09-27 20:00 AEST
+
+Totals
+  Total events : 22
+  OK           : 11
+  WARN         : 0
+  CRIT         : 11
+
+Top checks by event count
+  SMART              18  (WARN 0, CRIT 9)
+  SMART_NVME          4  (WARN 0, CRIT 2)
+
+Checks with WARN/CRIT
+  SMART            WARN 0   CRIT 9   last 2026-09-27 05:06 AEST
+  SMART_NVME       WARN 0   CRIT 2   last 2026-09-27 01:39 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-09-27 05:05 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 03:25 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 01:38 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-09-27 00:25 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 00:06 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-26 03:15 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-09-24 08:20 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-23 07:35 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-22 12:26 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-21 12:12 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  SMART, SMART_NVME
