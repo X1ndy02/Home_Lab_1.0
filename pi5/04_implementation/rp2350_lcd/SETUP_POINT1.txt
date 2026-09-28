@@ -1,0 +1,55 @@
+POINT 1 (LOCKED) – RP2350 LCD DASHBOARD
+========================================
+
+Hardware / Firmware
+- Board: RP2350-LCD-1.47-A
+- MicroPython firmware: WAVESHARE-RP2350-LCD-1.47-A.uf2
+- Display orientation: MADCTL 0xC0 (locked)
+
+Files
+- On Pi: /home/xindy/rp2350-dashboard/board_main.py
+- On Pi: /home/xindy/rp2350-dashboard/pi_sender.py
+- On board: main.py (copied from board_main.py)
+- Service: /etc/systemd/system/rp2350-stats.service
+
+Service (live updates)
+- Service name: rp2350-stats.service
+- ExecStart:
+  /usr/bin/python3 /home/xindy/rp2350-dashboard/pi_sender.py \
+    --port /dev/serial/by-id/usb-MicroPython_Board_in_FS_mode_2becb3983dccd341-if00 \
+    --interval 1 --ping-host 1.1.1.1
+
+Display Layout (current)
+- Top: centered HOSTNAME
+- Next line: centered "STATS:"
+- Metrics block (spaced):
+  CPU/RAM, UPS/PING, TMP/THR
+- Separator line
+- Centered label: "CPU LOAD:"
+- Service list: 7 lines (s1..s7), right-aligned %
+- Bottom: 3 IP lines (ip1..ip3) with tags on left, IP right-aligned
+  Tag mapping: ETH / WRL / ZT
+
+Data Fields (payload)
+- host, cpu, ram, ups, ping, temp, thr
+- s1..s7 (service:percent with 1 decimal)
+- ip1, ip2, ip3 (tag:ip)
+- col (text color in RGB565)
+
+Color Rules (day/night)
+- Day color: #9 from 12-color grid = 0xFFFF (white)
+- Night color: shade #6 from “#1 shades” grid = 0x04C0
+- Daytime window: 06:00–21:00
+
+Notes
+- UPS shows "--" if no data source (NUT upsc / apcupsd apcaccess).
+- Geekworm X1201: reads UPS % from I2C addr 0x36 (MAX1704x SOC reg 0x04).
+- Per-service CPU values are aggregated by process name and can exceed 100%.
+- CPU/RAM are updated every 1 second.
+
+Useful Commands
+- Status:  sudo systemctl status rp2350-stats.service
+- Logs:    sudo journalctl -u rp2350-stats.service -f
+- Restart: sudo systemctl restart rp2350-stats.service
+
+END
