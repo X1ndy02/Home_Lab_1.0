@@ -1,0 +1,7 @@
+Check: SSH
+Period: 2026-09-01 00:00 AEST to 2026-10-01 00:00 AEST
+
+Grouped by day (local time):
+
+2026-09-03 (WARN 0, CRIT 1)
+  07:52 | CRIT | SSH service is not active

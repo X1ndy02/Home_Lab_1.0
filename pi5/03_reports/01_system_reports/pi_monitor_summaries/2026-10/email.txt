@@ -1,0 +1,59 @@
+Source: pi_monitor_monthly
+Date: 2026-10-01T08:00:11.797472+10:00
+From: xindy.notifications@gmail.com
+To: xindy.notifications@gmail.com
+Subject: Monthly Pi Monitor Summary (2026-09)
+
+PI MONITOR WEEKLY SUMMARY
+----------------------------
+Host   : rootnode
+Period : 2026-09-01 00:00 AEST to 2026-10-01 00:00 AEST
+
+Totals
+  Total events : 179
+  OK           : 89
+  WARN         : 66
+  CRIT         : 24
+
+Top checks by event count
+  LOAD              131  (WARN 66, CRIT 0)
+  SMART              30  (WARN 0, CRIT 15)
+  SMART_NVME          8  (WARN 0, CRIT 4)
+  DOCKER              4  (WARN 0, CRIT 2)
+  POWER               2  (WARN 0, CRIT 1)
+  SSH                 2  (WARN 0, CRIT 1)
+  FS                  2  (WARN 0, CRIT 1)
+
+Checks with WARN/CRIT
+  SMART            WARN 0   CRIT 15  last 2026-09-30 21:50 AEST
+  SMART_NVME       WARN 0   CRIT 4   last 2026-09-27 01:39 AEST
+  DOCKER           WARN 0   CRIT 2   last 2026-09-14 21:31 AEST
+  POWER            WARN 0   CRIT 1   last 2026-09-02 19:55 AEST
+  SSH              WARN 0   CRIT 1   last 2026-09-14 20:35 AEST
+  FS               WARN 0   CRIT 1   last 2026-09-14 21:30 AEST
+  LOAD             WARN 66  CRIT 0   last 2026-09-15 11:08 AEST
+
+Recent WARN/CRIT events (max 10)
+  2026-09-30 21:49 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-30 03:58 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 05:05 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 03:25 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 01:38 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-09-27 00:25 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-27 00:06 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-26 03:15 | SMART_NVME | CRIT
+    SMART health FAIL on /dev/nvme0n1
+  2026-09-24 08:20 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+  2026-09-23 07:35 | SMART | CRIT
+    SMART health FAIL on /dev/sda
+
+Attachments: one file per check with WARN/CRIT + SSH login details
+  DOCKER, FS, LOAD, POWER, SMART, SMART_NVME, SSH
